@@ -57,6 +57,11 @@ const byHackId: Record<string, string> = {
 	'denkzeit-vor-partnerarbeit': withIconClass(clock),
 	'monitoring-chart-diskussion': withIconClass(clipboardDocumentList),
 	'vertiefungsfragen-nachfassen': withIconClass(arrowUturnLeft),
+	'denkendes-klassenzimmer': withIconClass(sparkles),
+	'problemaufgaben-denken-zwingen': withIconClass(flag),
+	'vertikal-wechselnde-flaechen': withIconClass(viewColumns),
+	'sichtbar-zufaellige-gruppen': withIconClass(rectangleGroup),
+	'btc-stufe-eins-kleine-brueche': withIconClass(bolt),
 };
 
 const emojiByHackId: Record<string, string> = {
@@ -89,6 +94,11 @@ const emojiByHackId: Record<string, string> = {
 	'denkzeit-vor-partnerarbeit': '🤔',
 	'monitoring-chart-diskussion': '📋',
 	'vertiefungsfragen-nachfassen': '🔁',
+	'denkendes-klassenzimmer': '💡',
+	'problemaufgaben-denken-zwingen': '🧩',
+	'vertikal-wechselnde-flaechen': '⬆️',
+	'sichtbar-zufaellige-gruppen': '🎲',
+	'btc-stufe-eins-kleine-brueche': '🪜',
 };
 
 export function hackCardIconMarkup(hackId: string): string {
