@@ -45,6 +45,13 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).href;
 		</header>
 		<main class="site-main">
 			<slot />
+			<footer class="site-footer">
+				<p>
+					<a href={`${import.meta.env.BASE_URL}gebote/`}>Die zehn Gebote</a>
+					<span aria-hidden="true"> · </span>
+					<a href={import.meta.env.BASE_URL}>Alle Beiträge</a>
+				</p>
+			</footer>
 		</main>
 		<script is:inline>
 			(() => {
