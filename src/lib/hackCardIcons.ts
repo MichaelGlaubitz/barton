@@ -48,6 +48,15 @@ const byHackId: Record<string, string> = {
 	'fragetechnik': withIconClass(chatBubbleLeftRight),
 	'sprachsensibel-erklaeren': withIconClass(language),
 	'kognitive-last': withIconClass(scale),
+	'lernziel-loesungswege-vorwegdenken': withIconClass(flag),
+	'arbeitsphasen-zielgerichtet-beobachten': withIconClass(eye),
+	'beitraege-fuers-plenum-auswaehlen': withIconClass(viewColumns),
+	'praesentationen-sequenzieren': withIconClass(barsArrowDown),
+	'schuelerideen-mit-lernziel-verbinden': withIconClass(arrowsRightLeft),
+	'diskussion-braucht-hochlevel-aufgabe': withIconClass(flag),
+	'denkzeit-vor-partnerarbeit': withIconClass(clock),
+	'monitoring-chart-diskussion': withIconClass(clipboardDocumentList),
+	'vertiefungsfragen-nachfassen': withIconClass(arrowUturnLeft),
 };
 
 const emojiByHackId: Record<string, string> = {
@@ -71,6 +80,15 @@ const emojiByHackId: Record<string, string> = {
 	'fragetechnik': '❓',
 	'sprachsensibel-erklaeren': '🗣️',
 	'kognitive-last': '🪶',
+	'lernziel-loesungswege-vorwegdenken': '🎯',
+	'arbeitsphasen-zielgerichtet-beobachten': '👀',
+	'beitraege-fuers-plenum-auswaehlen': '🎛️',
+	'praesentationen-sequenzieren': '🔀',
+	'schuelerideen-mit-lernziel-verbinden': '🔗',
+	'diskussion-braucht-hochlevel-aufgabe': '📈',
+	'denkzeit-vor-partnerarbeit': '🤔',
+	'monitoring-chart-diskussion': '📋',
+	'vertiefungsfragen-nachfassen': '🔁',
 };
 
 export function hackCardIconMarkup(hackId: string): string {

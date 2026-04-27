@@ -22,3 +22,6 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# Lokale Quellen (Buch-Exporte, Volltexte) — nur lokal, nicht im öffentlichen Repo
+/sources/
