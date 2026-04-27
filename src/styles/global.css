@@ -417,6 +417,49 @@ a:hover {
 	margin-top: 2.5rem;
 }
 
+.credo {
+	margin: 3rem 0 1rem;
+	padding: 1.75rem 1.5rem;
+	background: var(--surface);
+	border: 1px solid var(--surface2);
+	border-radius: var(--radius);
+	border-left: 4px solid var(--accent);
+}
+
+.credo__head {
+	text-align: center;
+	margin-bottom: 1.25rem;
+}
+
+.credo__head h2 {
+	margin: 0 0 0.4rem;
+	font-size: clamp(1.3rem, 2.6vw, 1.65rem);
+	line-height: 1.2;
+}
+
+.credo__body {
+	font-family: 'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;
+	line-height: 1.75;
+	max-width: 38rem;
+	margin: 0 auto;
+}
+
+.credo__body p {
+	margin: 0 0 1.1rem;
+}
+
+.credo__body p:last-child {
+	margin-bottom: 0;
+}
+
+.credo__amen {
+	text-align: center;
+	color: var(--muted);
+	margin-top: 1.5rem !important;
+	font-size: 0.95rem;
+	letter-spacing: 0.02em;
+}
+
 .quiz {
 	margin-top: 2.5rem;
 	padding: 1.5rem;
