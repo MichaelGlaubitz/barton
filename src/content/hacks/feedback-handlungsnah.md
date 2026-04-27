@@ -1,4 +1,4 @@
----
+﻿---
 title: Rückmeldungen knapp und handlungsnah
 summary: Kurzes, präzises Feedback mit nächstem Schritt wirkt stärker als lange allgemeine Kommentare.
 tags:
@@ -8,25 +8,25 @@ order: 18
 quiz:
   - question: Was macht Feedback im Unterricht besonders wirksam?
     options:
-      - Viele allgemeine Hinweise, damit alle Aspekte erwähnt werden.
-      - Konkreter Hinweis plus klarer nächster Bearbeitungsschritt.
-      - Fokus auf Endpunktzahl, damit Lernende ihren Stand kennen.
+      - "Möglichst viele Hinweise, damit alle Schwächen erfasst sind und nichts unbemerkt bleibt."
+      - "Wenige, präzise Hinweise mit einer markierten Stelle und einem klar formulierten nächsten Schritt."
+      - "Eine prägnante Endbewertung mit Punktzahl und kurzer Tendenz, damit Lernende ihren Stand kennen."
     correctIndex: 1
-    explanation: "Wirksam ist Feedback, das direkt in Handeln überführt werden kann."
-  - question: Welche Formulierung passt am besten?
+    explanation: "Feedback wirkt, wenn es Handeln auslöst. Vollständigkeit überfordert, Endbewertung schließt ab — beides verhindert Bearbeitung."
+  - question: Welche Rückmeldung ist für eine Überarbeitung am hilfreichsten?
     options:
-      - "Achte mehr auf Genauigkeit."
-      - "Im zweiten Schritt fehlt die Begründung für das Vorzeichen. Ergänze genau dort einen Satz."
-      - "Insgesamt solide, aber noch ausbaufähig."
+      - "Achte beim nächsten Mal mehr auf Genauigkeit, sonst bleibt die Lösung anfällig."
+      - "Im zweiten Schritt fehlt die Begründung, warum die Wurzel positiv gewählt wird. Ergänze genau dort einen Satz."
+      - "Insgesamt solide, aber Argumentation noch ausbaufähig — schau dir das nochmal an."
     correctIndex: 1
-    explanation: "Spezifische Rückmeldung mit Ort und Aktion ist am nützlichsten."
-  - question: "Fallbeispiel: Deine Rückmeldungen sind korrekt, führen aber zu wenig Verbesserung. Was änderst du?"
+    explanation: "„Mehr Genauigkeit“ und „ausbaufähig“ klingen freundlich, lassen aber offen, was genau wo zu tun ist. Erst Stelle + Aktion macht Überarbeitung möglich."
+  - question: "Deine Rückmeldungen sind sachlich richtig, führen aber zu wenig Veränderung in den Überarbeitungen. Was ist der wirksamste Hebel?"
     options:
-      - "Mehr allgemeine Kommentare pro Aufgabe schreiben."
-      - "Einen konkreten nächsten Schritt an einer markierten Stelle geben."
-      - "Nur noch Punkte statt Kommentare vergeben."
+      - "Mehr Beispiele pro Aufgabe geben, damit Lernende einen Vergleich haben."
+      - "An genau einer markierten Stelle eine konkrete nächste Handlung formulieren — und die Klasse den Schritt direkt ausführen lassen."
+      - "Auf rein numerische Rückmeldung umstellen, weil Texte die Lernenden überfordern."
     correctIndex: 1
-    explanation: "Konkrete Anschlussaktionen machen Feedback unmittelbar nutzbar."
+    explanation: "Wenn Feedback nicht ankommt, fehlt selten Information — meist Anschlusshandlung. Markierte Stelle plus konkreter Schritt ist der aktive Teil."
 
 ---
 

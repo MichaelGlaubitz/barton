@@ -7,27 +7,27 @@ tags:
   - Diskussion
 order: 26
 quiz:
-  - question: "Warum eignen sich reine Verfahrensaufgaben („rechne nach Schema X“) selten für ein mathematisch reiches Plenum?"
+  - question: "Warum tragen reine Verfahrensaufgaben („rechne nach Schema X“) ein mathematisch reiches Plenum selten?"
     options:
-      - "Weil die Erwartung meist ist, dass alle dasselbe Verfahren anwenden — dann gibt es wenig zu vergleichen und zu begründen."
-      - "Weil sie immer zu schwer für die Klasse sind."
-      - "Weil im Plenum nur schriftliche Arbeit erlaubt ist."
+      - "Weil das Verfahren vorgegeben ist und damit kaum Raum für Strategievergleich oder Begründung bleibt."
+      - "Weil sie für den Klassendurchschnitt zu schwer sind und die Diskussion deshalb stockt."
+      - "Weil das Plenum vor allem an mündlichen Aufgaben funktioniert, nicht an gerechneten."
     correctIndex: 0
-    explanation: "Produktive Diskussion braucht Raum für Sinnstiftung, Strategiewahl und Begründung — nicht nur für das Abspulen eines Algorithmus."
-  - question: "Was ist ein Kennzeichen einer Aufgabe, die zu verschiedenen Lösungswegen einlädt?"
+    explanation: "Verfahrensaufgaben sind nicht zu schwer — sie sind didaktisch zu eng. Wenn alle dasselbe tun, gibt es nur Reihenfolge zu diskutieren, keine Mathematik."
+  - question: "Welches Merkmal lässt eine Aufgabe verschiedene Lösungswege zu?"
     options:
-      - "Der Lösungsweg steht schon in der Aufgabenstellung oder ist durch sie nahegelegt."
-      - "Lernende müssen die Situation verstehen und einen eigenen Kurs wählen — mehrere tragfähige Wege sind denkbar."
-      - "Es gibt genau eine Zeile Platz für die Antwort."
+      - "Der Lösungsweg ist in der Aufgabenformulierung bereits explizit angedeutet — Lernende müssen ihn nur ausführen."
+      - "Lernende müssen die Situation selbst modellieren, einen Kurs wählen und können auf mehreren tragfähigen Wegen ankommen."
+      - "Die Aufgabe lässt sich in genau einer Zeile beantworten und prüft eine eindeutige Regel ab."
     correctIndex: 1
-    explanation: "Offene, anspruchsvolle Aufgaben fördern Argumentation und Vergleich — zentral für mathematisch reiche Gespräche."
-  - question: "Fallbeispiel: Im Plenum sollen nur vorgelesen werden, wie jede Gruppe „vereinfacht hat“. Was fehlt meist?"
+    explanation: "Offenheit liegt nicht im Antwortformat, sondern in der Modellierungs- und Strategiefreiheit auf dem Weg dorthin."
+  - question: "Im Plenum berichtet jede Gruppe der Reihe nach, wie sie „vereinfacht hat“. Was fehlt diesem Plenum strukturell?"
     options:
-      - "Mathematische Zusammenhänge, Vergleich von Wegen und explizite Ideen zum Lernziel."
-      - "Genug Kopien für alle."
-      - "Eine zweite Farbe Kreide."
+      - "Mathematische Verknüpfung — Wege werden nebeneinandergestellt, aber nicht zueinander in Beziehung gesetzt."
+      - "Bessere Visualisierung — die Wege gehören farbig markiert, nicht nur erzählt."
+      - "Mehr Beteiligung — wenn alle Gruppen vortragen, ist das Plenum vollständig."
     correctIndex: 0
-    explanation: "Ohne kognitiv anspruchsvolle Vorarbeit bleibt die Diskussion auf der Verfahrensebene."
+    explanation: "Vortragsreihe ≠ Diskussion. Solange das Plenum nur eine Aufzählung ist, fehlt der eigentliche Lerngewinn: das Vergleichen und Verbinden."
 
 ---
 

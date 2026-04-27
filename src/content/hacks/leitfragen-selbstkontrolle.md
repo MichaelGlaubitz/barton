@@ -1,4 +1,4 @@
----
+﻿---
 title: Leitfragen für Selbstkontrolle nutzen
 summary: Gute Leitfragen fördern Selbstüberprüfung und reduzieren blinde Routinefehler.
 tags:
@@ -6,27 +6,27 @@ tags:
   - Selbstkontrolle
 order: 19
 quiz:
-  - question: Wozu dienen Leitfragen in Übungsphasen?
+  - question: Wozu dienen Leitfragen während einer Übungsphase?
     options:
-      - Sie ersetzen die fachliche Korrektur durch die Lehrkraft.
-      - Sie strukturieren Selbstkontrolle an kritischen Entscheidungspunkten.
-      - Sie beschleunigen Bearbeitung vor allem bei einfachen Aufgaben.
+      - "Sie ersetzen die nachgelagerte Korrektur durch die Lehrkraft, weil Lernende mit Leitfragen alle Fehler selbst finden."
+      - "Sie strukturieren Selbstkontrolle an kritischen Entscheidungspunkten innerhalb des Lösungswegs."
+      - "Sie beschleunigen vor allem die Bearbeitung leichter Aufgaben, indem sie eine Routinecheckliste anbieten."
     correctIndex: 1
-    explanation: "Leitfragen verbessern die Qualität der Selbstprüfung."
-  - question: Welche Leitfrage ist besonders hilfreich?
+    explanation: "Leitfragen ersetzen keine Korrektur und sind für leichte Aufgaben überdimensioniert. Ihr Platz ist dort, wo eine inhaltliche Entscheidung im Lösungsweg über Erfolg und Scheitern entscheidet."
+  - question: Welche Formulierung ist als Leitfrage besonders tragfähig?
     options:
-      - "Bin ich fertig?"
-      - "Welche Annahme nutze ich hier und passt sie zur Aufgabenstellung?"
-      - "Habe ich alle Zeilen ausgeschrieben?"
+      - "Bin ich mit der Aufgabe fertig?"
+      - "Welche Annahme habe ich hier gemacht — und passt sie zu Voraussetzungen und Definitionsmenge?"
+      - "Habe ich alle Zeilen ordentlich abgesetzt?"
     correctIndex: 1
-    explanation: "Gute Leitfragen zielen auf inhaltliche Entscheidungen, nicht auf Oberflächenmerkmale."
-  - question: "Fallbeispiel: Viele Fehler entstehen durch unbemerkte Annahmen. Welche Maßnahme passt?"
+    explanation: "Fertigkeitsfragen prüfen den Status, Form-Fragen die Optik. Eine Leitfrage muss den fachlich kritischen Schritt treffen — sonst ist sie nur Routine."
+  - question: "Lernende verlieren immer wieder Lösungen oder erhalten Scheinlösungen, weil sie unbemerkt Annahmen treffen. Was hilft am ehesten?"
     options:
-      - "Lernende sollen einfach sorgfältiger arbeiten."
-      - "Feste Leitfragen zur Selbstkontrolle pro Aufgabentyp einsetzen."
-      - "Mehr Zeit bei der Klassenarbeit geben."
+      - "Den Appell „arbeitet sorgfältiger“ am Anfang der Stunde verstärken."
+      - "Pro Aufgabentyp zwei bis drei feste Leitfragen einführen, die genau auf die typischen Annahmen-Fallen zielen (z. B. Definitionsmenge, Vorzeichen, Probe)."
+      - "In der nächsten Klassenarbeit mehr Zeit geben, damit für die Probe Spielraum bleibt."
     correctIndex: 1
-    explanation: "Leitfragen strukturieren die Selbstprüfung fachlich präzise."
+    explanation: "Sorgfaltsappelle ändern keine Routine. Mehr Zeit verschiebt das Problem. Leitfragen am Aufgabentyp greifen genau dort, wo die unbemerkte Annahme entsteht."
 
 ---
 

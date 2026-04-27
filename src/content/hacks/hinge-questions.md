@@ -1,4 +1,4 @@
----
+﻿---
 title: Hinge Questions im Mittelteil einsetzen
 summary: Eine gut gewählte Schlüsselfrage entscheidet, ob du weitergehst oder gezielt nachsteuerst.
 tags:
@@ -6,27 +6,27 @@ tags:
   - Unterrichtssteuerung
 order: 15
 quiz:
-  - question: Wozu dient eine Hinge Question primär?
+  - question: Wozu dient eine Hinge Question im engen Sinn?
     options:
-      - Sie ersetzt die komplette Übungsphase einer Stunde.
-      - Sie prüft an einem kritischen Punkt, ob die Klasse bereit für den nächsten Schritt ist.
-      - Sie dient als motivierende Auflockerung ohne Leistungsbezug.
+      - "Sie ersetzt die Übungsphase, weil eine gute Schlüsselfrage genauso intensiv arbeiten lässt."
+      - "Sie liefert an einem definierten Schwellenpunkt der Stunde eine schnelle Diagnose, die direkt zwischen Weitergehen und Klären entscheidet."
+      - "Sie hält die Klasse mit einem überraschenden Impuls wach und erfüllt damit eine motivationale Funktion."
     correctIndex: 1
-    explanation: "Hinge Questions steuern den Unterrichtsverlauf an Schlüsselstellen."
-  - question: Welche Eigenschaft sollte eine gute Hinge Question haben?
+    explanation: "Hinge Questions sind Steuerinstrumente an einem Knotenpunkt, kein Übungs- oder Motivationsformat."
+  - question: Welche Eigenschaft braucht eine wirksame Hinge Question?
     options:
-      - Sie sollte möglichst komplex sein, damit nur sichere Lernende korrekt antworten.
-      - Sie sollte typische Fehlvorstellungen klar differenzieren.
-      - Sie sollte offen bleiben, damit jede Antwort interpretierbar ist.
+      - "Sie sollte hoch anspruchsvoll formuliert sein, damit Unterschiede in der Spitzengruppe sichtbar werden."
+      - "Die falschen Antwortoptionen müssen jeweils einer typischen Fehlvorstellung entsprechen, sodass die Verteilung der Antworten direkt zeigt, was zu klären ist."
+      - "Sie sollte offen sein, damit die Auswertung mit Mini-Whiteboards die ganze Bandbreite zeigt."
     correctIndex: 1
-    explanation: "Gute Distraktoren zeigen klar, welche Fehlidee vorliegt."
-  - question: "Fallbeispiel: Du musst entscheiden, ob die Klasse für den nächsten Schritt bereit ist. Was passt?"
+    explanation: "Eine Hinge Question lebt von ihren Distraktoren: jede falsche Option muss einem konkreten, vorhersagbaren Denkfehler entsprechen — nur dann ist die Verteilung diagnostisch."
+  - question: "Du musst in den nächsten Minuten entscheiden, ob die Klasse für den nächsten Schritt bereit ist. Was tust du?"
     options:
-      - "Direkt weitergehen, um den Plan einzuhalten."
-      - "Eine trennscharfe Hinge Question mit typischen Fehloptionen einsetzen."
-      - "Die Stunde mit einer offenen Diskussion beenden."
+      - "Du fragst beiläufig „Habt ihr noch Fragen?“ und gehst je nach Stille oder Wortmeldung weiter."
+      - "Du stellst eine vorbereitete Hinge Question mit drei Optionen, in der jede falsche Option eine bekannte Fehlvorstellung trifft."
+      - "Du gehst weiter und prüfst die Bereitschaft erst am Ergebnis der Übungsphase."
     correctIndex: 1
-    explanation: "Hinge Questions liefern schnelle, handlungsleitende Diagnosen."
+    explanation: "Beiläufige Verständnisfragen produzieren Schweigen oder Höflichkeitsantworten. Das nachträgliche Prüfen über die Übung kommt zu spät — bis dahin ist der nächste Schritt schon eingebaut."
 
 ---
 

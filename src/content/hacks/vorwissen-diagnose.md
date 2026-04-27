@@ -1,4 +1,4 @@
----
+﻿---
 title: Vorwissen gezielt diagnostizieren
 summary: Kurze Diagnosen vor neuen Inhalten verhindern, dass Unterricht auf falschen Voraussetzungen aufbaut.
 tags:
@@ -6,27 +6,27 @@ tags:
   - Vorwissen
 order: 9
 quiz:
-  - question: Warum ist eine Vorwissensdiagnose vor einem neuen Thema sinnvoll?
+  - question: Warum lohnt sich eine Vorwissensdiagnose vor einem neuen Thema?
     options:
-      - Sie macht primär Noten transparenter, ohne den Unterrichtsverlauf zu beeinflussen.
-      - Sie zeigt, welche Grundlagen verfügbar sind und wo Brücken nötig werden.
-      - Sie ersetzt die Einführung, wenn genügend richtige Antworten vorliegen.
+      - "Sie liefert eine schnelle Note, mit der die Klasse ihren Stand realistisch einschätzen kann."
+      - "Sie macht sichtbar, welche Voraussetzungen tatsächlich tragen — und an welchen Stellen der Einstieg vorhersehbar stockt."
+      - "Sie spart Lernzeit, weil bereits beherrschte Grundlagen einfach übersprungen werden können."
     correctIndex: 1
-    explanation: "Diagnose hilft bei der Planung von Erklärungen, Aufgabenwahl und Tempo."
-  - question: Welche Form passt für eine schnelle Diagnose im Alltag?
+    explanation: "Diagnose ist kein Notenwerkzeug und keine Abkürzung — sie ersetzt vermutete Lücken durch reale, damit Erklärungen, Aufgabenwahl und Tempo passen."
+  - question: Welche Form passt am besten für eine schnelle Alltagsdiagnose?
     options:
-      - Eine vollständige Klassenarbeit vor jeder neuen Einheit.
-      - Drei gezielte Einstiegsaufgaben mit typischen Stolperstellen und kurzer Auswertung.
-      - Eine offene Frage ohne Rückmeldung, um den Start nicht zu verzögern.
-    correctIndex: 1
-    explanation: "Kurzdiagnosen sind praktikabel und liefern genug Steuerungsinformation."
-  - question: "Fallbeispiel: Du bist unsicher, ob die Klasse die nötige Basis hat. Was tust du zuerst?"
+      - "Drei gezielte Einstiegsaufgaben mit typischen Stolperstellen und kurzer Auswertung."
+      - "Eine vollständige Klassenarbeit vor jeder neuen Einheit, damit die Auswertung belastbar ist."
+      - "Eine offene Gesprächsrunde — wer mag, sagt, was er noch erinnert."
+    correctIndex: 0
+    explanation: "Vollständige Tests fressen Lernzeit; offene Runden bevorzugen die ohnehin Sprechfreudigen. Wenige präzise Items zeigen Lücken am schnellsten."
+  - question: "Du bist unsicher, ob die Klasse die nötige Basis für ein neues Thema hat. Was tust du zuerst?"
     options:
-      - "Sofort mit dem neuen Stoff starten und später ggf. nachholen."
-      - "Drei Schlüsselaufgaben als Kurzdiagnose einsetzen und den Plan daran anpassen."
-      - "Nur die stärkeren Lernenden kurz abfragen."
+      - "Mit dem neuen Stoff starten — wenn Lücken auffallen, lassen sie sich später nachholen."
+      - "Drei Schlüsselaufgaben als Kurzdiagnose einsetzen und den Stundenplan daran anpassen."
+      - "Die stärkeren Lernenden kurz abfragen — wenn sie sicher sind, ist der Einstieg gerechtfertigt."
     correctIndex: 1
-    explanation: "Eine kurze Diagnostik verhindert Fehlstart und spart später Zeit."
+    explanation: "Späteres Nachholen kostet mehr als ein klarer Einstieg. Und der Stand der Stärkeren sagt nichts über den Stand derjenigen, deren Einstieg du eigentlich diagnostizieren willst."
 
 ---
 

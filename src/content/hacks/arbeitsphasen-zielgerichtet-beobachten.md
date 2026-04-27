@@ -7,27 +7,27 @@ tags:
   - Monitoring
 order: 22
 quiz:
-  - question: Was ist das Hauptziel des „zielgerichteten Beobachtens“ während einer Erarbeitungsphase?
+  - question: Was ist das Hauptziel des zielgerichteten Beobachtens in der Erarbeitungsphase?
     options:
-      - "Herausfinden, wer zuerst fertig ist, um Aufgaben nachzulegen."
-      - "Typische Lösungswege und Denkspuren erfassen, um die spätere Plenumsphase vorzubereiten."
-      - "Jede Lernperson einzeln zur vollständigen Lösung führen."
+      - "Möglichst alle Gruppen auf einen einheitlichen Lösungsstand bringen, bevor das Plenum beginnt."
+      - "Strategien, Stolperstellen und Darstellungen erfassen, um die spätere Diskussion bewusst zu komponieren."
+      - "Schnell jede Lernperson individuell zur fertigen Lösung führen, damit niemand abgehängt zurückbleibt."
     correctIndex: 1
-    explanation: "Monitoring dient der Orchestrierung des Gesprächs, nicht primär der Einzelbetreuung bis zur Endlösung."
-  - question: "Was ist oft sinnvoller als viele kurze Einzelgespräche?"
+    explanation: "Beobachten ist Vorbereitung des Plenums — kein paralleler Förderunterricht. Wer alles ausgleicht, hat im Plenum nichts mehr zu zeigen außer dem fertigen Ergebnis."
+  - question: "Was ist während der Arbeitsphase meist wirksamer als ausführliches Helfen an einzelnen Tischen?"
     options:
-      - "Kurz viele Gruppen anhören und stichwortartig notieren, welche Strategie wo sichtbar wird."
-      - "Bei einer Gruppe bleiben, bis alles korrekt ist."
-      - "Nur die Tafel betrachten und warten, bis sich jemand meldet."
+      - "Kurz an vielen Tischen zuhören, knapp notieren, welche Strategie wo entsteht — und Eingriffe minimal halten."
+      - "Bei der Gruppe bleiben, bei der man gerade ist, und sie sauber zu Ende führen."
+      - "Erst eingreifen, wenn die ersten fertig sind und Zeit für die anderen frei wird."
     correctIndex: 0
-    explanation: "Breite, flache Information liefert Material für Auswahl und Reihenfolge im Plenum."
-  - question: "Fallbeispiel: Zwei Gruppen haben unterschiedliche, beide plausible Rechenwege. Was notierst du dir?"
+    explanation: "Tiefes Helfen bei einer Gruppe lässt drei andere Gruppen unbeobachtet — und das Plenum erbt die Lücke. Kurze, breite Stichproben liefern Auswahlmaterial."
+  - question: "Zwei Gruppen haben unterschiedliche, beide tragfähige Wege gefunden. Was bringt das Plenum am weitesten?"
     options:
-      - "Nur die Gruppe, die schneller war."
-      - "Beide Wege mit einem Stichwort zur Idee — für spätere Gegenüberstellung im Plenum."
-      - "Nichts, bis die Stunde vorbei ist."
+      - "Den eleganteren Weg notieren, den anderen weglassen — sonst wird es im Plenum unübersichtlich."
+      - "Beide Wege mit Stichwort zur Idee festhalten, um sie später gezielt aufeinander zu beziehen."
+      - "Den Weg notieren, der näher am Lehrbuchverfahren liegt — er passt am besten zur Klassenarbeit."
     correctIndex: 1
-    explanation: "Unterschiedliche tragfähige Wege sind Gold für mathematisch produktive Diskussionen."
+    explanation: "Mehrere tragfähige Wege sind keine Verkomplizierung, sondern der Stoff produktiver Diskussion: Was haben sie gemeinsam, worin unterscheiden sie sich?"
 
 ---
 

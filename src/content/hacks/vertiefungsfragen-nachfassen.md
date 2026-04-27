@@ -7,27 +7,27 @@ tags:
   - Verlauf
 order: 29
 quiz:
-  - question: "Warum reicht es oft nicht, nur eine anspruchsvolle Abschlussfrage zu stellen?"
+  - question: "Warum reicht eine kluge Abschlussfrage am Stundenende selten aus?"
     options:
-      - "Weil Lernende die Frage im nächsten Unterrichtsgang wieder aufgreifen müssen — sonst bleibt der Fortschritt unklar."
-      - "Weil schwere Fragen immer unfair sind."
-      - "Weil das Plenum keine Fragen erlaubt."
+      - "Ohne sichtbares Wiederaufgreifen lernt die Klasse, dass solche Fragen rhetorisch sind — beim nächsten Mal nimmt sie sie nicht mehr ernst."
+      - "Anspruchsvolle Fragen am Ende einer Stunde sind grundsätzlich unfair — Vorbereitungszeit hatte niemand."
+      - "Im Plenum sind solche Fragen nicht erlaubt — sie gehören in Einzelarbeit am Folgetag."
     correctIndex: 0
-    explanation: "Follow-up macht aus einer Impulsfrage einen Lernweg."
-  - question: "Was ist ein konkretes Follow-up nach einer Vertiefungsfrage?"
+    explanation: "Es ist kein Fairness- und kein Ordnungsproblem, sondern eine Lernkultur-Frage: Was nicht wiederkommt, gilt nicht."
+  - question: "Was ist ein wirksames Follow-up zu einer Vertiefungsfrage?"
     options:
-      - "Nichts — die Frage war nur Dekoration."
-      - "Kurz zu Beginn der nächsten Stunde zurückkommen: Was wurde herausgearbeitet, was ist offen geblieben?"
-      - "Sofort die Note setzen."
+      - "Bewusst keines — die Frage soll als offener Denkimpuls stehen bleiben."
+      - "Zu Beginn der nächsten Stunde knapp zurückkommen: Was wurde herausgearbeitet, was ist offen geblieben?"
+      - "Eine Notenrelevanz festlegen — Verbindlichkeit entsteht durch Bewertung."
     correctIndex: 1
-    explanation: "Rückbindung schafft Verantwortung und Kontinuität."
-  - question: "Fallbeispiel: Du gibst „Sucht zu Hause noch ein Beispiel dafür“. Was solltest du mindestens planen?"
+    explanation: "Offen-stehen-Lassen ist die Form, an der die Klasse Verbindlichkeit verlernt. Notenrelevanz erzeugt Druck, aber selten Anschlussdenken — sichtbares Wiederaufgreifen schon."
+  - question: "Du gibst der Klasse mit „Sucht zu Hause noch ein Beispiel dafür“ einen Auftrag mit. Was musst du mindestens vorsehen?"
     options:
-      - "Einen Moment in der nächsten Stunde, an dem ihr euch die Beispiele anseht oder einen Teil davon besprecht."
-      - "Nichts — Hausaufgaben zählen nicht."
-      - "Nur die Lösung in den Klassenchat posten."
+      - "Einen festen Slot zu Beginn der nächsten Stunde, in dem zumindest ein Teil der Beispiele in den Unterricht einfließt."
+      - "Nichts Weiteres — wer ein Beispiel findet, wird es schon einbringen."
+      - "Eine Lösung im Klassenchat posten, damit niemand zu lange grübeln muss."
     correctIndex: 0
-    explanation: "Ohne Nachfassen bleibt die Aufgabe ohne Wirkung auf das gemeinsame Lernen."
+    explanation: "Ohne festen Slot bleibt die Aufgabe Privatsache. Eine Musterlösung im Chat erspart genau das Mitdenken, das die Aufgabe auslösen sollte."
 
 ---
 

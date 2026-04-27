@@ -1,4 +1,4 @@
----
+﻿---
 title: Vergleichsaufgaben statt Einzelsichten
 summary: Vergleichsaufgaben fördern tieferes Verständnis, weil Unterschiede und Gemeinsamkeiten explizit werden.
 tags:
@@ -6,27 +6,27 @@ tags:
   - Konzeptverständnis
 order: 17
 quiz:
-  - question: Was leisten Vergleichsaufgaben didaktisch besonders gut?
+  - question: Was leisten Vergleichsaufgaben didaktisch, was Einzelaufgaben nicht leisten können?
     options:
-      - Sie zeigen schneller, wer Aufgaben auswendig beherrscht.
-      - Sie machen Strukturmerkmale sichtbar, indem Fälle gegeneinander gestellt werden.
-      - Sie ersetzen die Notwendigkeit, Lösungswege zu dokumentieren.
+      - "Sie diagnostizieren schneller, welche Aufgabentypen schon auswendig beherrscht werden."
+      - "Sie machen Strukturmerkmale sichtbar, weil sie Fälle direkt gegeneinander stellen — Verstehen entsteht im Kontrast."
+      - "Sie ersetzen die ausführliche Dokumentation der Lösungswege durch einen kurzen Vergleich."
     correctIndex: 1
-    explanation: "Vergleich aktiviert konzeptuelles Denken über Merkmale und Bedingungen."
-  - question: Welche Frage passt zu einer Vergleichsaufgabe?
+    explanation: "Vergleich ist kein Diagnose- und kein Dokumentationsersatz, sondern ein eigenständiger Lerneffekt: Struktur wird im Kontrast überhaupt erst wahrnehmbar."
+  - question: Welche Frage trägt den Vergleich am besten?
     options:
-      - "Welche Aufgabe war leichter?"
-      - "In welchem Schritt unterscheiden sich die Verfahren und warum?"
-      - "Wie viele Minuten hast du gebraucht?"
+      - "Welche der beiden Aufgaben fandet ihr leichter?"
+      - "In welchem konkreten Schritt unterscheiden sich die Verfahren — und warum gerade dort?"
+      - "Wie viele Minuten habt ihr für beide Aufgaben gebraucht?"
     correctIndex: 1
-    explanation: "Die Frage lenkt auf tragfähige mathematische Unterschiede."
-  - question: "Fallbeispiel: Lernende sehen zwei Aufgaben als gleich an, obwohl sie strukturell unterschiedlich sind. Was tust du?"
+    explanation: "Schwierigkeits- und Zeitfragen lenken auf Oberfläche. Erst eine Frage nach dem Ort und dem Grund der Differenz erzwingt strukturelles Denken."
+  - question: "Lernende halten zwei Aufgaben für gleichwertig, obwohl sie strukturell verschieden sind. Was ist der wirksamste nächste Schritt?"
     options:
-      - "Nur eine der Aufgaben rechnen lassen."
-      - "Beide Fälle gezielt gegenüberstellen und Unterschiede explizit benennen lassen."
-      - "Eine dritte, schwierigere Aufgabe hinzufügen."
+      - "Nur die schwierigere der beiden Aufgaben rechnen lassen — die strukturelle Differenz tritt dabei automatisch zutage."
+      - "Beide Aufgaben nebeneinander auf einer Seite zeigen und die Klasse die strukturelle Differenz konkret benennen lassen."
+      - "Eine dritte, deutlich schwierigere Aufgabe ergänzen, an der die strukturelle Differenz dann selbsterklärend wird."
     correctIndex: 1
-    explanation: "Vergleich macht relevante Strukturunterschiede sichtbar."
+    explanation: "Mehr Schwierigkeit oder mehr Aufgaben verschieben das Problem. Die Differenz wird sichtbar genau dann, wenn die zwei Fälle direkt gegenübergestellt und ausgesprochen werden."
 
 ---
 

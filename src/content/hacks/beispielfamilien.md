@@ -6,27 +6,27 @@ tags:
   - Konzeptverständnis
 order: 10
 quiz:
-  - question: Was ist der Vorteil einer Beispielfamilie?
+  - question: Worin liegt der Wirkmechanismus einer Beispielfamilie?
     options:
-      - Lernende sehen, was sich ändert und was invariant bleibt.
-      - Die Korrektur ist einfacher, weil alle Ergebnisse gleich sind.
-      - Sie senkt grundsätzlich den Schwierigkeitsgrad für alle Lernenden.
+      - "Lernende erkennen am Vergleich, was zwischen Beispielen variiert und was strukturell gleich bleibt."
+      - "Die Korrektur ist einheitlicher, weil alle Aufgaben dieselbe Lösung haben."
+      - "Eine Familie senkt automatisch das Niveau, weil mehrere Beispiele leichter sind als ein einzelnes."
     correctIndex: 0
-    explanation: "Variationen machen Strukturmerkmale sichtbar."
-  - question: Welche Variation ist didaktisch besonders nützlich?
+    explanation: "Der Effekt entsteht aus dem Vergleich, nicht aus der Wiederholung. Ohne sichtbar gemachten Unterschied wirken Familien wie reine Übungsserien."
+  - question: Welche Form der Variation ist didaktisch besonders ergiebig?
     options:
-      - Nur Zahlen austauschen, aber sonst jede Aufgabe identisch lassen.
-      - Gezielte Änderung eines Merkmals pro Aufgabe und Vergleich der Auswirkungen.
-      - Möglichst viele Aspekte gleichzeitig variieren, um Transfer zu erzwingen.
+      - "Nur die Zahlen austauschen — Struktur und Darstellung bleiben sonst exakt gleich."
+      - "Pro Schritt genau ein Merkmal verändern und benennen, was dadurch passiert."
+      - "Möglichst viele Merkmale gleichzeitig variieren, damit Lernende selbst sortieren müssen."
     correctIndex: 1
-    explanation: "Kontrollierte Variation schärft den Blick für relevante Merkmale."
-  - question: "Fallbeispiel: Lernende erkennen das zugrunde liegende Muster nicht. Welche Aufgabenwahl hilft?"
+    explanation: "Reine Zahlenvariation übt Routine. Mehrfachvariation überfordert. Genau ein Merkmal pro Schritt isoliert den Effekt — dasselbe Prinzip wie eine kontrollierte Versuchsanordnung."
+  - question: "Lernende erkennen das gemeinsame Muster mehrerer Aufgaben nicht. Was bringt sie weiter?"
     options:
-      - "Viele identische Aufgaben mit anderen Zahlen."
-      - "Eine Beispielfamilie mit genau einer Variation pro Schritt."
-      - "Eine besonders schwierige Mischaufgabe als Einstieg."
+      - "Eine längere Serie identisch strukturierter Aufgaben mit nur anderen Zahlen."
+      - "Drei Aufgaben aus einer Familie nebeneinander legen — pro Schritt genau ein Merkmal verändert — und vergleichen lassen."
+      - "Eine besonders schwierige Mischaufgabe vorausschicken, die alle Aspekte gleichzeitig fordert."
     correctIndex: 1
-    explanation: "Kontrollierte Variation macht Strukturen sichtbar."
+    explanation: "Wenn das Muster nicht sichtbar wird, ändert die Klasse nicht den Schwierigkeitsgrad, sondern die Sichtbarkeit. Nebeneinanderstellen + ein Merkmal verändert = Struktur springt heraus."
 
 ---
 

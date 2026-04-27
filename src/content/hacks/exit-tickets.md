@@ -1,4 +1,4 @@
----
+﻿---
 title: Exit-Tickets für die nächste Stunde nutzen
 summary: Ein kurzes Abschlussformat zeigt, was sitzt und was in der Folgestunde gezielt aufgegriffen werden sollte.
 tags:
@@ -6,27 +6,27 @@ tags:
   - Unterrichtsplanung
 order: 12
 quiz:
-  - question: Was ist die zentrale Funktion eines Exit-Tickets?
+  - question: Was ist die Hauptfunktion eines Exit-Tickets?
     options:
-      - Hausaufgabenkontrolle durch ein zusätzliches Pflichtformat.
-      - Schnelle Lernstandsdiagnose zur Planung des nächsten Unterrichtsschritts.
-      - Ersatz für mündliche Beteiligung im gesamten Unterricht.
+      - "Anwesenheitskontrolle am Stundenende — wer abgibt, war beteiligt."
+      - "Schnelle Lernstandsdiagnose, die direkt in die Planung der nächsten Stunde einfließt."
+      - "Selbsteinschätzung der Lernenden, ohne Auswertung durch die Lehrkraft."
     correctIndex: 1
-    explanation: "Exit-Tickets liefern unmittelbare Steuerungsdaten für die nächste Stunde."
-  - question: Welche Gestaltung ist besonders wirksam?
+    explanation: "Exit-Tickets sind kein Beleg, sondern ein Steuerungsinstrument. Wenn die Antworten nicht in den nächsten Einstieg fließen, war es nur Papier."
+  - question: Welches Format ist am wirksamsten?
     options:
-      - Eine einzige Ja/Nein-Frage zum Wohlbefinden.
-      - "Zwei inhaltsnahe Fragen: ein Kernkonzept, eine typische Stolperstelle."
-      - Eine offene Freitextseite ohne Auswertungsraster.
+      - "Eine Skala 1–5, wie sicher sich die Klasse fühlt — schnell auswertbar, anonym vergleichbar."
+      - "Zwei knappe inhaltliche Fragen — ein Kernkonzept und eine bekannte Stolperstelle."
+      - "Eine offene Freitextfrage, weil sie das vollständigste Bild liefert."
     correctIndex: 1
-    explanation: "Kompakte, zielnahe Fragen sind schnell auswertbar und handlungsleitend."
-  - question: "Fallbeispiel: Du willst die nächste Stunde gezielt planen. Welche Exit-Ticket-Frage ist am nützlichsten?"
+    explanation: "Selbsteinschätzungen korrelieren schlecht mit Können. Freitext ist nicht auswertbar in der knappen Vorbereitung. Zwei zielgerichtete Fragen treffen die Mitte."
+  - question: "Welche Exit-Ticket-Frage liefert die beste Grundlage für die Planung der Folgestunde?"
     options:
-      - "Hat euch die Stunde gefallen? (Ja/Nein)"
-      - "Nenne einen Schritt, der heute noch unklar ist, und löse eine Mini-Aufgabe dazu."
-      - "Wie lange hast du heute gearbeitet?"
+      - "Wie hilfreich war die Stunde für dich? (1 = gar nicht, 5 = sehr)"
+      - "Notiere den Schritt der heutigen Aufgabe, an dem du noch unsicher bist, und löse eine ähnliche Mini-Aufgabe dazu."
+      - "Wie lange hast du an der Aufgabe gesessen?"
     correctIndex: 1
-    explanation: "Diagnostische Fragen liefern direkte Planungsinformation für den Folgetag."
+    explanation: "Stimmungs- und Zeitfragen liefern Schein-Diagnose. Eine Antwort, die Stelle und Können zeigt, ist sofort planungsrelevant."
 
 ---
 

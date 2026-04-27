@@ -1,4 +1,4 @@
----
+﻿---
 title: Aufgaben in kleinen Stufen öffnen
 summary: "Vom stark geführten Start zur offenen Anwendung: gestufte Öffnung reduziert Überforderung und fördert Transfer."
 tags:
@@ -8,25 +8,25 @@ order: 20
 quiz:
   - question: Was ist das Ziel gestufter Öffnung?
     options:
-      - Möglichst schnell alle Hilfen entfernen, um Leistungsunterschiede sichtbar zu machen.
-      - Unterstützung so reduzieren, dass Lernende schrittweise Eigenständigkeit aufbauen.
-      - Alle Aufgaben auf demselben Unterstützungsniveau halten.
+      - "Differenzierung allein über die Anzahl der Aufgaben — mehr Aufgaben für die Schnellen, weniger für die anderen."
+      - "Hilfen kontrolliert zurücknehmen, sodass Lernende schrittweise mehr Eigenständigkeit übernehmen."
+      - "Alle Lernenden auf identischem Strukturierungsniveau halten, damit niemand bevorzugt wird."
     correctIndex: 1
-    explanation: "Fading bedeutet kontrolliertes Zurücknehmen von Hilfen."
-  - question: Welche Reihenfolge passt gut?
+    explanation: "„Mehr vom Gleichen“ ist keine Öffnung. Gestufte Öffnung ändert nicht die Menge, sondern den Grad der Eigenleistung — innerhalb einer Aufgabenfamilie."
+  - question: Welche Reihenfolge der Aufgabentypen ist tragfähig?
     options:
-      - Offene Problemaufgabe -> Musterlösung -> Lückentext.
-      - Musterbeispiel -> teilstrukturierte Aufgabe -> offene Transferaufgabe.
-      - Reine Übungsserien ohne Veränderung der Hilfen.
+      - "Offene Problemaufgabe → ausgearbeitetes Musterbeispiel → Lückentext zum Verfahren."
+      - "Ausgearbeitetes Beispiel → teilstrukturierte Variante → offene Transferaufgabe."
+      - "Drei Übungsserien gleicher Schwierigkeit hintereinander, damit Routine entsteht."
     correctIndex: 1
-    explanation: "Die Unterstützung nimmt graduell ab, während Eigenleistung zunimmt."
-  - question: "Fallbeispiel: Einige sind bei offenen Aufgaben sofort überfordert. Wie gestaltest du den Übergang?"
+    explanation: "Die Hilfen nehmen ab, während die Eigenleistung zunimmt. Mit der offenen Aufgabe zu starten überspringt das Verständnis; identische Serien zementieren es."
+  - question: "Mehrere Lernende kapitulieren sofort vor offenen Aufgaben. Was hilft am ehesten?"
     options:
-      - "Nur noch offene Aufgaben geben, damit sie sich daran gewöhnen."
-      - "Mit geführten Schritten starten und Hilfen planvoll abbauen."
-      - "Bei geschlossenen Aufgaben bleiben und Offenheit vermeiden."
+      - "Nur noch offene Aufgaben geben — Gewöhnung erzwingt schon Selbstständigkeit."
+      - "Mit einem ausgearbeiteten Beispiel starten und Hilfen über die nächsten Aufgaben dosiert abbauen."
+      - "Bei stark geschlossenen Aufgaben bleiben, bis die Klassenarbeit vorbei ist."
     correctIndex: 1
-    explanation: "Gestufte Öffnung verbindet Sicherheit mit wachsender Eigenständigkeit."
+    explanation: "Wer bei Offenheit blockiert, hat oft kein Strukturproblem, sondern noch keinen Anker. Ein Anker plus dosierter Abbau löst das, ohne den Anspruch zu senken."
 
 ---
 

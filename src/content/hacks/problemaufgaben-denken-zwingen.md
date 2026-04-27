@@ -7,27 +7,27 @@ tags:
   - Problemorientierung
 order: 31
 quiz:
-  - question: "Warum sind „nur sehr schwere Aha-Aufgaben“ als Einstieg in Problemlösen oft zu grob?"
+  - question: "Warum ist es problematisch, in einer Klasse ohne Problemlöse-Erfahrung sofort mit anspruchsvollen Aha-Aufgaben einzusteigen?"
     options:
-      - "Weil zuerst überhaupt wieder echte Problemlöse-Erfahrungen in der Klasse aufgebaut werden müssen — bevor extrem schwierige Illuminationsaufgaben sinnvoll sind."
-      - "Weil schwere Aufgaben illegal sind."
-      - "Weil Schüler keine Aufgaben mögen."
+      - "Erst muss überhaupt wieder Erfahrung mit Problemlösen aufgebaut werden — extreme Insight-Aufgaben sind erst auf dieser Basis tragfähig."
+      - "Schwere Aufgaben gelten in vielen Lehrplänen als nicht zulässig für Einstiegsstunden."
+      - "Lernende reagieren auf Aufgaben prinzipiell mit Ablehnung — leichte Aufgaben senken die Schwelle stärker."
     correctIndex: 0
-    explanation: "Der Einstieg zielt auf Engagement im Problemlösen, nicht sofort auf den perfekten Aha-Moment."
-  - question: "Was ist ein Merkmal einer denk-anstoßenden Problemaufgabe?"
+    explanation: "Es geht nicht um eine grundsätzliche Aufgabenfeindlichkeit, sondern um eine Stufung: ohne Problemlöse-Erfahrung fällt der Einstieg in eine schwierige Aufgabe in routiniertes Warten auf die Lösung."
+  - question: "Was ist das entscheidende Merkmal einer denk-anstoßenden Problemaufgabe?"
     options:
-      - "Der komplette Rechenweg steht schon in der Aufgabenstellung."
-      - "Lernende müssen die Situation verarbeiten und einen eigenen Zugang finden — nicht nur ein Schema abspulen."
-      - "Es gibt nur eine Zeile Platz für die Lösung."
+      - "Der Lösungsweg ist in der Aufgabenstellung bereits angedeutet — Lernende müssen ihn nur konsequent ausführen."
+      - "Lernende müssen die Situation selbst durchdringen, eine Strategie wählen und ihren Weg begründen — nicht ein Schema abspulen."
+      - "Die Aufgabe ist auf engstem Raum formuliert und akzeptiert nur eine kurze Antwort."
     correctIndex: 1
-    explanation: "Offenere Aufgaben ermöglichen Strategien, Begründungen und Vergleich — Grundlage für ein denkendes Klassenzimmer."
-  - question: "Fallbeispiel: Nach dem Workshop lieben es fast alle Klassen — außer die, die nur Arbeitsblätter mit Musterbeispielen kennen. Was ist die wahrscheinlichste Ursache?"
+    explanation: "Knappe Antwortformate können Problemaufgaben sein — entscheidend ist nicht das Format, sondern dass der Weg nicht aus der Formulierung folgt."
+  - question: "Die meisten Klassen reagieren begeistert auf Problemaufgaben — eine Klasse, die bisher nur Arbeitsblätter mit Musterbeispielen kannte, blockiert. Was ist die plausibelste Ursache?"
     options:
-      - "Die Klasse ist unmotiviert."
-      - "Es fehlte bereits eine Kultur des Problemlösens — reine Übungsroutinen blockieren den Einstieg."
-      - "Mathematik ist zu schwer."
+      - "Die Klasse ist motivational schlechter aufgestellt als andere."
+      - "Reine Verfahrensroutinen haben dort eine Erwartung etabliert, dass die Lehrkraft Lösungswege liefert — die fehlt jetzt."
+      - "Die Aufgabenstellung war für diese spezielle Klasse zu schwer."
     correctIndex: 1
-    explanation: "Aufgaben- und Unterrichtskultur hängen zusammen; BTC braucht passende Aufgabenformate."
+    explanation: "Es ist selten ein Motivations- oder Niveauproblem, sondern eines der eingeübten Erwartungen: Wer jahrelang Schemata zugeteilt bekommen hat, erlebt die Abwesenheit eines Schemas zunächst als Rückzug der Lehrkraft."
 
 ---
 

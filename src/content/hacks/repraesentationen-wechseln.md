@@ -1,4 +1,4 @@
----
+﻿---
 title: Repräsentationen gezielt wechseln
 summary: Der Wechsel zwischen Tabelle, Term, Graph und Sprache fördert tiefes Verständnis mathematischer Beziehungen.
 tags:
@@ -6,27 +6,27 @@ tags:
   - Transfer
 order: 11
 quiz:
-  - question: Warum ist Repräsentationswechsel didaktisch wirksam?
+  - question: Warum wirkt der gezielte Wechsel zwischen Repräsentationen lernpsychologisch stark?
     options:
-      - Er reduziert den Rechenaufwand und spart Unterrichtszeit.
-      - Er zwingt dazu, denselben Inhalt in verschiedenen Formen zu verstehen.
-      - Er eignet sich nur für leistungsstarke Lerngruppen.
+      - "Er reduziert den Rechenaufwand und spart Unterrichtszeit für Wiederholung."
+      - "Er zwingt zur Übersetzung derselben Idee in unterschiedliche Darstellungen — wer übersetzen kann, hat den Gegenstand wirklich verstanden."
+      - "Er eignet sich vor allem für stärkere Lerngruppen, die formale Inhalte schon beherrschen."
     correctIndex: 1
-    explanation: "Wer zwischen Darstellungen übersetzen kann, versteht Beziehungen meist tragfähiger."
-  - question: Welche Aufgabe nutzt Repräsentationswechsel sinnvoll?
+    explanation: "Repräsentationswechsel ist kein Zeit- oder Niveauwerkzeug, sondern ein Verständniswerkzeug: das Übersetzen ist die kognitive Arbeit, die Verständnis hinterlässt."
+  - question: Welche Aufgabenstellung nutzt Repräsentationswechsel produktiv?
     options:
-      - "Löse nur rechnerisch und gib keine Begründung an."
-      - "Ordne Gleichung, Graph und Textbeschreibung einander zu und begründe deine Wahl."
-      - "Zeichne den Graphen erst nach der Klassenarbeit zur Wiederholung."
+      - "Rechne die Aufgabe nur algebraisch — eine Skizze ist überflüssig."
+      - "Ordne Gleichung, Graph und Textbeschreibung einander zu und begründe in einem Satz, woran du es jeweils erkennst."
+      - "Zeichne den Graphen erst nach der Klassenarbeit als Wiederholung."
     correctIndex: 1
-    explanation: "Zuordnen und Begründen verbindet Darstellungen aktiv."
-  - question: "Fallbeispiel: Ergebnisse stimmen, aber Zusammenhänge bleiben unklar. Was ist der beste nächste Schritt?"
+    explanation: "Skizze nachträglich oder gar nicht trennt die Repräsentationen voneinander. Erst Zuordnen und Begründen erzwingt das, was Verständnis hinterlässt: das Erkennen der Korrespondenz."
+  - question: "Lernende rechnen sicher, können den Zusammenhang zwischen Rechenweg und mathematischer Idee aber nicht erklären. Wie reagierst du didaktisch?"
     options:
-      - "Weitere Rechenaufgaben im gleichen Format."
-      - "Term, Graph und Tabelle derselben Situation zuordnen und begründen lassen."
-      - "Nur Definitionen auswendig lernen lassen."
+      - "Mit einer weiteren Übungsserie im gleichen Format — Sicherheit erzeugt mit der Zeit Verständnis."
+      - "Mit einer Aufgabe, in der dieselbe Situation als Term, Graph und Tabelle vorliegt — und Lernende die Korrespondenzen begründen."
+      - "Mit einer Definitionsabfrage, die das Vokabular schärft und so Erklären erleichtert."
     correctIndex: 1
-    explanation: "Der Wechsel zwischen Repräsentationen stärkt konzeptuelles Verständnis."
+    explanation: "Mehr Übung in derselben Repräsentation festigt das Verfahren, nicht den Begriff. Definitionen schärfen Sprache, nicht Verständnis. Erst der Wechsel macht den Zusammenhang sichtbar."
 
 ---
 

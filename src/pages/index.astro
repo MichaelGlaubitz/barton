@@ -8,14 +8,11 @@ const hacks = (await getCollection('hacks')).sort(
 );
 const base = import.meta.env.BASE_URL;
 
-type SourceKey = 'barton' | 'fivepractices' | 'btc';
-
 interface FunctionGroup {
 	key: string;
 	chipLabel: string;
 	title: string;
 	description: string;
-	source: SourceKey;
 	ids: string[];
 }
 
@@ -25,7 +22,6 @@ const functionGroups: FunctionGroup[] = [
 		chipLabel: 'Wissen',
 		title: 'Wissen sichern und abrufbar machen',
 		description: 'Hacks für Erinnerung, Wiederkehr und langfristiges Behalten.',
-		source: 'barton',
 		ids: ['abruf-ueben', 'zeitlicher-abstand', 'vorwissen-diagnose', 'exit-tickets'],
 	},
 	{
@@ -33,7 +29,6 @@ const functionGroups: FunctionGroup[] = [
 		chipLabel: 'Verstehen',
 		title: 'Verstehen aufbauen und transferieren',
 		description: 'Hacks für Konzeptaufbau, Vergleich und flexibles Anwenden.',
-		source: 'barton',
 		ids: [
 			'geloestes-beispiel',
 			'beispielfamilien',
@@ -48,7 +43,6 @@ const functionGroups: FunctionGroup[] = [
 		chipLabel: 'Üben',
 		title: 'Üben wirksamer steuern',
 		description: 'Hacks für bessere Aufgabenwahl, Rückmeldung und Selbstkontrolle.',
-		source: 'barton',
 		ids: ['zweckvolle-uebung', 'feedback-handlungsnah', 'leitfragen-selbstkontrolle'],
 	},
 	{
@@ -56,7 +50,6 @@ const functionGroups: FunctionGroup[] = [
 		chipLabel: 'Diagnose',
 		title: 'Diagnose und Unterrichtsentscheidungen',
 		description: 'Hacks, mit denen du Unterricht in Echtzeit adaptierst.',
-		source: 'barton',
 		ids: ['hinge-questions', 'mini-whiteboards'],
 	},
 	{
@@ -64,8 +57,7 @@ const functionGroups: FunctionGroup[] = [
 		chipLabel: 'Plenum',
 		title: 'Besprechung und Unterrichtsgespräch',
 		description:
-			'Hacks für zielgerichtete Plenumsphasen — aus Smith & Stein, Five Practices (inhaltlich paraphrasiert).',
-		source: 'fivepractices',
+			'Hacks für zielgerichtete Plenumsphasen — Auswahl, Sequenzierung und Diskussionsführung.',
 		ids: [
 			'diskussion-braucht-hochlevel-aufgabe',
 			'denkzeit-vor-partnerarbeit',
@@ -80,11 +72,10 @@ const functionGroups: FunctionGroup[] = [
 	},
 	{
 		key: 'thinking',
-		chipLabel: 'BTC',
-		title: 'Denkendes Klassenzimmer (Liljedahl)',
+		chipLabel: 'Denken',
+		title: 'Denkendes Klassenzimmer',
 		description:
-			'Hacks aus dem BTC-Forschungskapitel — Problemorientierung, Flächen, Gruppen, Einstieg; inhaltlich paraphrasiert.',
-		source: 'btc',
+			'Hacks für ein Klassenzimmer, in dem mathematisches Denken regelmäßig sichtbar wird — Aufgaben, Flächen, Gruppen.',
 		ids: [
 			'denkendes-klassenzimmer',
 			'problemaufgaben-denken-zwingen',
@@ -98,7 +89,6 @@ const functionGroups: FunctionGroup[] = [
 		chipLabel: 'Fehler & Denken',
 		title: 'Fehlerkultur und mathematisches Denken',
 		description: 'Hacks für produktive Fehlerarbeit und hochwertige Diskussionen.',
-		source: 'barton',
 		ids: ['fehler-lernen', 'fehler-vorhersagen', 'fragetechnik', 'sprachsensibel-erklaeren'],
 	},
 	{
@@ -106,25 +96,20 @@ const functionGroups: FunctionGroup[] = [
 		chipLabel: 'Entlastung',
 		title: 'Kognitive Entlastung',
 		description: 'Hacks, die unnötige Belastung reduzieren und Denkraum schaffen.',
-		source: 'barton',
 		ids: ['kognitive-last'],
 	},
 ];
 
 const hacksById = new Map(hacks.map((hack) => [hack.id, hack]));
 
-const sourceCounts = functionGroups.reduce(
-	(acc, g) => {
-		const n = g.ids.filter((id) => hacksById.has(id)).length;
-		acc[g.source] = (acc[g.source] ?? 0) + n;
-		return acc;
-	},
-	{ barton: 0, fivepractices: 0, btc: 0 } as Record<SourceKey, number>,
-);
 const totalHacks = hacks.length;
 const totalFields = functionGroups.filter((g) =>
 	g.ids.some((id) => hacksById.has(id)),
 ).length;
+const totalQuizQuestions = hacks.reduce(
+	(sum, hack) => sum + (hack.data.quiz?.length ?? 0),
+	0,
+);
 const featuredIds = [
 	'mini-whiteboards',
 	'vertikal-wechselnde-flaechen',
@@ -150,16 +135,8 @@ const featuredHacks = featuredIds.map((id) => hacksById.get(id)).filter(Boolean)
 				<span>Themenfelder</span>
 			</div>
 			<div>
-				<strong>{sourceCounts.barton}</strong>
-				<span>aus Craig Barton</span>
-			</div>
-			<div>
-				<strong>{sourceCounts.fivepractices}</strong>
-				<span>aus Smith &amp; Stein</span>
-			</div>
-			<div>
-				<strong>{sourceCounts.btc}</strong>
-				<span>aus Liljedahl (BTC)</span>
+				<strong>{totalQuizQuestions}</strong>
+				<span>Quizfragen zum Selbstcheck</span>
 			</div>
 		</div>
 	</section>

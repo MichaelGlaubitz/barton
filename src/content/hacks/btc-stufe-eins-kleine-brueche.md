@@ -7,27 +7,27 @@ tags:
   - Einstieg
 order: 34
 quiz:
-  - question: "Was meint die Idee einer „Stufe eins“?"
+  - question: "Was bedeutet „Stufe eins“ in diesem Sinn?"
     options:
-      - "Ein Bündel relativ leicht einführbarer Methoden, das in vielen Kontexten **Normen umgeht**, die sonst Denken und Kooperation blockieren."
-      - "Dass nur Klassenstufe 1 Mathe lernen darf."
-      - "Dass alle Aufgaben halbiert werden."
+      - "Ein kleines Bündel leicht einführbarer Praktiken, das gezielt jene Klassenraum-Normen unterläuft, die Denken und Kooperation sonst blockieren."
+      - "Eine Methode nur für Anfangsklassen — ältere Jahrgänge brauchen aufwendigere Verfahren."
+      - "Eine Stufe, in der die Aufgaben einfacher sind als im regulären Unterricht — Niveau wird später wieder angehoben."
     correctIndex: 0
-    explanation: "Stufe eins ist ein Einstieg in das denkende Klassenzimmer — nicht die Schulstufe."
-  - question: "Warum geht der Ansatz bewusst **gegenläufig** zu etablierten Routinen vor?"
+    explanation: "„Stufe eins“ meint die Einstiegs-Schicht eines Reformprozesses, nicht eine Schulstufe oder ein Anspruchsniveau."
+  - question: "Warum setzt der Ansatz gezielt **gegen** etablierte Routinen an, statt sie behutsam zu ergänzen?"
     options:
-      - "Weil etablierte Routinen oft genau das verhindern, was du neu sehen willst — gezielte Brüche schaffen den Raum für anderes Verhalten."
-      - "Weil Lehrkräfte unhöflich sein sollen."
-      - "Weil Mathe andersrum besser ist."
+      - "Weil bestehende Routinen genau die Phänomene erzeugen, die du verändern willst — sanftes Anbauen lässt sie ungestört weiterlaufen."
+      - "Weil neue Methoden grundsätzlich nur durch Provokation ankommen."
+      - "Weil die alten Routinen falsch waren — alles, was vorher funktionierte, gehört abgeschafft."
     correctIndex: 0
-    explanation: "Gezielte Abweichung von Normen ist der Kern dieses Hacks — sonst läuft alles weiter wie immer."
-  - question: "Fallbeispiel: Nach wenigen Wochen Stufe eins wollen Lehrkräfte „mehr“ (Aufgaben, Raum, Fragen …). Wie ist das einzuschätzen?"
+    explanation: "Es geht nicht um Provokation um ihrer selbst willen, sondern um eine Diagnose: Wer Mitdenken ergänzen will, ohne Erklärroutinen zu unterbrechen, bekommt die Routinen plus etwas Lärm."
+  - question: "Nach wenigen Wochen Stufe eins fragen Lehrkräfte nach „mehr“ — andere Aufgaben, andere Fragen. Wie ist das einzuordnen?"
     options:
-      - "Das ist naheliegend — erfolgreiche Erfahrungen mit Stufe eins ziehen Interesse an tieferen Elementen nach sich."
-      - "Das ist unrealistisch."
-      - "Stufe eins reicht für immer."
+      - "Erwarteter Folgeeffekt — Erfolgserlebnisse auf Stufe eins erzeugen Interesse an den tieferen Elementen."
+      - "Warnsignal — die Lehrkraft hat Stufe eins nicht ernst genommen und überspringt zu schnell."
+      - "Nebenwirkung ohne Bedeutung — der Effekt der Stufe eins ist schon ausgereizt."
     correctIndex: 0
-    explanation: "Die Dynamik ist erwünschter Folgeeffekt — kein Planungsfehler."
+    explanation: "Die Bewegung „mehr wollen“ ist kein Planungsfehler, sondern der eigentlich gesuchte Sog. Die Stufe ist Sprungbrett, nicht Plateau."
 
 ---
 

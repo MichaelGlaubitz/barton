@@ -1,4 +1,4 @@
----
+﻿---
 title: Kognitive Last sichtbar machen
 summary: Zu viele neue Anforderungen gleichzeitig überfordern. Gute Struktur entlastet und schafft Denkraum.
 tags:
@@ -6,27 +6,27 @@ tags:
   - Scaffolding
 order: 5
 quiz:
-  - question: Was beschreibt „extraneous load“ am besten?
+  - question: Was meint der Begriff „extraneous load“?
     options:
-      - Die mathematische Herausforderung selbst, die zum Lernziel gehört.
-      - Zusätzliche Belastung durch unklare Darstellung, unnötige Schritte oder wechselnde Formate.
-      - Den Anteil an Wissen, den Lernende bereits sicher beherrschen.
+      - "Die inhaltliche Schwierigkeit der Mathematik selbst — also genau die Last, die zum Lernziel gehört."
+      - "Zusätzliche Belastung des Arbeitsgedächtnisses durch unklare Darstellung, formale Brüche oder gleichzeitige Neuheit auf mehreren Ebenen."
+      - "Den Wissensanteil, den die Klasse bereits abrufbereit beherrscht und der deshalb keine Belastung mehr verursacht."
     correctIndex: 1
-    explanation: "Extraneous load entsteht durch Darstellungsprobleme, nicht durch das eigentliche mathematische Denken."
-  - question: Welche Maßnahme reduziert extraneous load meist schnell?
+    explanation: "Extraneous load ist die *vermeidbare* Last — sie entsteht durch Form und Material, nicht durch die Mathematik. Genau deshalb ist sie der primäre Hebel."
+  - question: Welche Maßnahme entlastet das Arbeitsgedächtnis bei Einführungen am verlässlichsten?
     options:
-      - Aufgaben bewusst ohne Zwischenüberschriften lassen, damit Lernende mehr Eigenstruktur aufbauen.
-      - Klare Schrittstruktur mit konsistenter Notation und sichtbaren Teilzielen.
-      - Mehrere neue Darstellungsformen gleichzeitig einsetzen, um Transfer zu beschleunigen.
+      - "Zwischenüberschriften und Strukturhilfen weglassen, damit Lernende ihre eigene Ordnung bilden."
+      - "Konsistente Notation, klare Schrittstruktur und Begrenzung auf jeweils eine neue Idee pro Schritt."
+      - "Bewusst mehrere Darstellungsformen parallel einsetzen, um Transfer von Anfang an mit zu trainieren."
     correctIndex: 1
-    explanation: "Konsistenz und transparente Schritte entlasten das Arbeitsgedächtnis."
-  - question: "Fallbeispiel: Beim neuen Thema sind viele gleichzeitig mit Notation und Inhalt überfordert. Was ist die beste Reaktion?"
+    explanation: "Selbst-Strukturieren erfordert *zusätzliche* Kapazität, die in der Einführung fehlt. Mehrfachdarstellung beim Erstkontakt verdoppelt die Last, statt sie zu verteilen."
+  - question: "Beim neuen Thema überfordert die Kombination aus neuer Notation und neuem Inhalt viele Lernende. Was ist die beste Reaktion?"
     options:
-      - "Mehr Darstellungen parallel zeigen, damit alle Lernkanäle bedient werden."
-      - "Auf einen Neuheitsaspekt fokussieren und Material klar in Schritte strukturieren."
-      - "Zusätzliche Aufgabenblätter zur Vertiefung verteilen."
+      - "Mehrere Repräsentationen parallel anbieten, damit jede Lernperson einen passenden Zugang findet."
+      - "Auf eine Neuheit reduzieren — etwa zuerst die Notation an bekanntem Inhalt, dann den neuen Inhalt in der nun vertrauten Notation."
+      - "Mehr Übungsmaterial zur Vertiefung austeilen — Vertiefung kompensiert Einstiegsprobleme."
     correctIndex: 1
-    explanation: "Reduzierte extraneous load schafft Kapazität für das Kernverständnis."
+    explanation: "Wenn die Klasse zwei neue Dinge gleichzeitig in einen Kopf packen soll, hilft kein zusätzliches Material — die Sequenzierung der Neuheiten ist der wirksame Eingriff."
 
 ---
 

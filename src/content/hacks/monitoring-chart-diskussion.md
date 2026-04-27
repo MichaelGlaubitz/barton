@@ -7,27 +7,27 @@ tags:
   - Monitoring
 order: 28
 quiz:
-  - question: "Wozu dient ein Monitoring-Chart bei zielgerichteter Plenumsplanung?"
+  - question: "Wozu dient ein Monitoring-Chart in einer Plenumsplanung?"
     options:
-      - "Um während der Arbeitsphase schnell zu erfassen, welche Lösungswege wo vorkommen — als Grundlage für Auswahl und Reihenfolge im Plenum."
-      - "Um Noten für Gruppenarbeit zu vergeben."
-      - "Um Elternbriefe zu schreiben."
+      - "Während der Arbeitsphase schnell festhalten, welche Lösungswege wo vorkommen — als Grundlage für Auswahl und Reihenfolge im Plenum."
+      - "Eine sichtbare Aktivitätsdokumentation produzieren, die bei Beschwerden Beteiligung der Klasse belegen kann."
+      - "Den Lernfortschritt einzelner Gruppen für die nächste Notenkonferenz schriftlich festhalten."
     correctIndex: 0
-    explanation: "Das Chart ist ein Planungs- und Steuerinstrument für die Diskussion, kein Bewertungsbogen."
-  - question: "Was steht typischerweise in den Zeilen bzw. Spalten?"
+    explanation: "Das Chart ist ein Steuerwerkzeug für die Diskussion — kein Beleg- und kein Bewertungsbogen. Wer es zur Doku einsetzt, verliert es als Planungshilfe."
+  - question: "Welche Achsen tragen ein wirksames Monitoring-Chart?"
     options:
-      - "Nur die Namen der Lernenden."
-      - "Erwartbare Lösungsansätze / Strategien und Gruppen oder Lernende — mit kurzen Notizen während des Rundgangs."
-      - "Nur das Datum der nächsten Klassenfahrt."
+      - "Eine Liste aller Namen der Klasse, abgehakt nach Anwesenheit."
+      - "Die zuvor antizipierten Strategien als eine Achse, die Gruppen oder Lernenden als andere — Häkchen oder kurzer Code beim Rundgang."
+      - "Aufgabenstellung und Lösungszeit, um Effizienzunterschiede sichtbar zu machen."
     correctIndex: 1
-    explanation: "Strategien aus der Vorbereitung kreuzen mit Beobachtung der realen Arbeit."
-  - question: "Fallbeispiel: Du hast drei erwartete Wege notiert, im Unterricht taucht ein vierter auf. Was ist sinnvoll?"
+    explanation: "Anwesenheit oder Tempo sagen nichts über mathematische Substanz. Erst die Kreuztabelle Strategie × Person/Gruppe macht das Chart zur Landkarte."
+  - question: "Du hast drei Wege antizipiert, in der Klasse taucht spontan ein vierter auf. Wie gehst du damit um?"
     options:
-      - "Den vierten ignorieren, weil er nicht auf dem Chart steht."
-      - "Platz lassen oder nachtragen und gezielt mathematisch einsortieren — vorbereitete Charts sind Landkarten, keine Zwänge."
-      - "Die Stunde abbrechen."
+      - "Den vierten ignorieren — er steht nicht im Chart und stört die geplante Diskussion."
+      - "Den vierten Weg als zusätzliche Spalte aufnehmen, kurz mathematisch einordnen und für die Auswahl mitdenken."
+      - "Die Erarbeitungsphase verlängern, bis sich der vierte Weg einer der drei vorbereiteten Spalten zuordnen lässt."
     correctIndex: 1
-    explanation: "Anticipating hilft dem Monitoring; Unvorhergesehtes bleibt willkommen."
+    explanation: "Antizipation ist Landkarte, nicht Zwang. Ignorieren verwirft potenziell die produktivste Spur. Die Diskussion an die Vorbereitung anzupassen, kehrt das Verhältnis um."
 
 ---
 

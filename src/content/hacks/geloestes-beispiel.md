@@ -1,4 +1,4 @@
----
+﻿---
 title: Gelöstes Beispiel vor offenen Aufgaben
 summary: Ein gutes worked example reduziert Einstiegslast und bereitet eigenständige Bearbeitung gezielt vor.
 tags:
@@ -6,27 +6,27 @@ tags:
   - Beispiele
 order: 4
 quiz:
-  - question: Worin liegt der Hauptnutzen eines worked example zu Beginn?
+  - question: Worin liegt der Hauptnutzen eines gelösten Beispiels beim Einstieg?
     options:
-      - Es liefert ein Referenzmuster, damit Lernende zunächst Struktur und Entscheidungen erkennen können.
-      - Es spart Zeit, weil danach keine Rückfragen mehr auftreten.
-      - Es zeigt, wie man Aufgaben direkt für die Klassenarbeit auswendig lernt.
+      - "Es entlastet das Arbeitsgedächtnis, sodass Lernende ihre Aufmerksamkeit auf Struktur und Entscheidungen lenken können."
+      - "Es spart Unterrichtszeit, weil danach keine Nachfragen mehr auftreten."
+      - "Es liefert eine kopierbare Vorlage, an der sich Lernende für die Klassenarbeit orientieren."
     correctIndex: 0
-    explanation: "Der Fokus liegt auf Strukturverständnis und Entscheidungslogik, nicht auf bloßem Nachmachen."
-  - question: Welche Abfolge ist didaktisch besonders sinnvoll?
+    explanation: "Worked examples wirken kognitionspsychologisch: sie befreien Kapazität für das, was wirklich gelernt werden soll — nicht weil sie Fragen verhindern."
+  - question: Welche Abfolge ist didaktisch am tragfähigsten?
     options:
-      - Erst komplexe offene Aufgaben, danach ein Muster zur Korrektur.
-      - Musterbeispiel, dann Lückenbeispiel, dann nahe Transferaufgabe.
-      - Mehrere vollständige Muster nacheinander ohne eigene Bearbeitung.
+      - "Eine komplexe offene Aufgabe zuerst — das Musterbeispiel folgt als Korrektur am Ende."
+      - "Vollständiges Beispiel → Aufgabe mit Lücken (completion task) → naher Transfer."
+      - "Drei vollständige Muster hintereinander — Lernende üben erst, wenn alle Varianten gezeigt sind."
     correctIndex: 1
-    explanation: "Die schrittweise Öffnung vom Modell zur Eigenleistung ist meist am wirksamsten."
-  - question: "Fallbeispiel: Eine neue Methode führt zu vielen Nachfragen. Wie startest du didaktisch günstig?"
+    explanation: "Sofort offen erzeugt Überlast und Frustration. Drei Muster ohne Eigenarbeit erzeugen Scheinverstehen. Die Completion-Sequenz ist der empirisch belastbarste Pfad."
+  - question: "Eine neu eingeführte Methode erzeugt sofort viele Nachfragen. Womit beginnst du am besten?"
     options:
-      - "Direkt offene Transferaufgaben geben, um Selbstständigkeit zu erzwingen."
-      - "Ein worked example mit kommentierten Schritten zeigen, dann in teiloffene Aufgaben übergehen."
-      - "Nur die Formel präsentieren und sofort üben lassen."
+      - "Eine offene Transferaufgabe — Selbstständigkeit entsteht durch Anforderung."
+      - "Ein gelöstes Beispiel mit kommentierten Entscheidungen, dann Übergang zu teiloffenen Aufgaben."
+      - "Die nackte Formel an die Tafel und sofortige Übungsserien zur Festigung."
     correctIndex: 1
-    explanation: "Ein gutes Musterbeispiel senkt Einstiegslast und klärt Entscheidungsstellen."
+    explanation: "Anforderung ohne Anker erzeugt nicht Selbstständigkeit, sondern Blockaden. Formel ohne Beispiel zeigt das Was, nicht das Warum. Das kommentierte Beispiel macht Entscheidungen sichtbar."
 
 ---
 

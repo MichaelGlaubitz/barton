@@ -1,4 +1,4 @@
----
+﻿---
 title: Zeitlichen Abstand nutzen
 summary: Verteiltes Üben über Tage und Wochen festigt Inhalte oft besser als ein einziger großer Übungsblock.
 tags:
@@ -6,27 +6,27 @@ tags:
   - Planung
 order: 2
 quiz:
-  - question: Was meint „Spacing“ beim Üben?
+  - question: Was bedeutet „Spacing“ beim Üben?
     options:
-      - Ein Thema wird in einer intensiven Woche komplett abgeschlossen und danach nicht mehr berührt.
-      - Wiederholungen werden bewusst über längere Zeit verteilt und in neuen Kontexten erneut aufgegriffen.
-      - Alte Themen tauchen erst in der letzten Woche vor der Klassenarbeit wieder auf.
-    correctIndex: 1
-    explanation: "Spacing bedeutet verteilte Wiederkehr statt einmaliger Massenübung."
+      - "Wiederholungen werden bewusst über längere Zeit verteilt und in neuen Kontexten wieder aufgegriffen."
+      - "Ein Thema wird in einer intensiven Übungswoche möglichst gründlich abgeschlossen und gilt danach als gesichert."
+      - "Alte Themen werden gezielt in der letzten Woche vor der Klassenarbeit reaktiviert, damit sie zum richtigen Zeitpunkt präsent sind."
+    correctIndex: 0
+    explanation: "Eine intensive Übungswoche fühlt sich gründlich an, hinterlässt aber wenig Langzeitwirkung. Späte Reaktivierung erzeugt Vertrautheit für die Klassenarbeit, nicht aber stabiles Können."
   - question: Welche Unterrichtsentscheidung passt am ehesten zu Spacing?
     options:
-      - Nach Kapitelabschluss nur neue Inhalte, um den Stoffplan einzuhalten.
-      - In den nächsten Wochen regelmäßig kurze Rückgriffe auf frühere Themen einbauen.
-      - Alte Inhalte nur in freiwilligen Zusatzblättern anbieten.
+      - "Nach Kapitelabschluss zügig nur neue Inhalte bearbeiten, um den Stoffplan zu halten."
+      - "In den nächsten Wochen regelmäßig kurze Rückgriffe auf frühere Themen einbauen."
+      - "Alte Inhalte als freiwillige Zusatzblätter zur Verfügung stellen — wer übt, profitiert."
     correctIndex: 1
-    explanation: "Geplante Rückgriffe im Regelunterricht halten Wissen abrufbar."
-  - question: "Fallbeispiel: Ein Thema wurde vor drei Wochen abgeschlossen. Was ist jetzt die beste Spacing-Entscheidung?"
+    explanation: "Stoffplan-Disziplin opfert Behaltenswirkung dem Tempo. Freiwillige Angebote erreichen vor allem die ohnehin Stabilen — Spacing wirkt nur, wenn es alle trifft."
+  - question: "Ein Thema wurde vor drei Wochen abgeschlossen. Was ist jetzt die beste Spacing-Entscheidung?"
     options:
-      - "Das Thema erst wieder direkt vor der Klassenarbeit aufnehmen."
+      - "Das Thema erst direkt vor der Klassenarbeit wieder aufnehmen, damit es bis dahin frisch ist."
       - "In den Startern der nächsten Stunden jeweils eine kurze Rückgriff-Aufgabe einbauen."
-      - "Nur freiwillige Zusatzaufgaben für interessierte Lernende anbieten."
+      - "Eine ausführliche Wiederholungsstunde einplanen, damit alle Aspekte zusammenhängend wieder präsent sind."
     correctIndex: 1
-    explanation: "Regelmäßige kleine Rückgriffe sind wirksamer als spätes Block-Wiederholen."
+    explanation: "Späte Blockwiederholung erzeugt Vertrautheit, aber kein stabiles Können. Eine geballte Wiederholungsstunde ist Massenübung im Spacing-Gewand."
 
 ---
 

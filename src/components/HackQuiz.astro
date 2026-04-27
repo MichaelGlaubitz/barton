@@ -27,30 +27,37 @@ const questionsJson = JSON.stringify(questions);
 	data-questions={questionsJson}
 >
 	<h2 id={`quiz-heading-${quizId}`}>Mini-Quiz</h2>
+	<p class="quiz-intro">Wähle eine Antwort — Rückmeldung erscheint sofort.</p>
 	{
 		questions.map((q, qi) => (
 			<div class="quiz-question" data-quiz-question={qi}>
-				<p>{q.question}</p>
-				<div class="quiz-options" role="radiogroup" aria-labelledby={`q-${quizId}-${qi}-label`}>
+				<p class="quiz-question__prompt">
+					<span class="quiz-question__num">{String(qi + 1).padStart(2, '0')}</span>
+					<span set:html={q.question} />
+				</p>
+				<div
+					class="quiz-options"
+					role="radiogroup"
+					aria-labelledby={`q-${quizId}-${qi}-label`}
+					data-quiz-options={`${quizId}-${qi}`}
+				>
 					<span id={`q-${quizId}-${qi}-label`} class="visually-hidden">
 						Frage {qi + 1}
 					</span>
 					{q.options.map((opt, oi) => (
-						<label>
+						<label class="quiz-option" data-option-index={oi}>
 							<input type="radio" name={`q-${quizId}-${qi}`} value={oi} />
-							<span>{opt}</span>
+							<span class="quiz-option__bullet" aria-hidden="true" />
+							<span class="quiz-option__text" set:html={opt} />
 						</label>
 					))}
 				</div>
-				<div class="quiz-actions">
-					<button type="button" class="btn" data-check={`${quizId}-${qi}`}>
-						Antwort prüfen
-					</button>
+				<div class="quiz-feedback" data-feedback={`${quizId}-${qi}`} hidden />
+				<div class="quiz-actions" data-actions={`${quizId}-${qi}`} hidden>
 					<button type="button" class="btn btn--ghost" data-reset={`${quizId}-${qi}`}>
-						Zurücksetzen
+						Noch einmal
 					</button>
 				</div>
-				<div class="quiz-feedback" data-feedback={`${quizId}-${qi}`} hidden />
 			</div>
 		))
 	}
@@ -86,37 +93,67 @@ const questionsJson = JSON.stringify(questions);
 
 		questions.forEach((q, qi) => {
 			const key = `${quizId}-${qi}`;
-			const checkBtn = root.querySelector<HTMLButtonElement>(`[data-check="${key}"]`);
-			const resetBtn = root.querySelector<HTMLButtonElement>(`[data-reset="${key}"]`);
-			const feedback = root.querySelector<HTMLDivElement>(`[data-feedback="${key}"]`);
+			const optionGroup = root.querySelector<HTMLElement>(`[data-quiz-options="${key}"]`);
+			const labels = optionGroup
+				? Array.from(optionGroup.querySelectorAll<HTMLLabelElement>('.quiz-option'))
+				: [];
 			const radios = root.querySelectorAll<HTMLInputElement>(`input[name="q-${quizId}-${qi}"]`);
+			const feedback = root.querySelector<HTMLDivElement>(`[data-feedback="${key}"]`);
+			const actions = root.querySelector<HTMLDivElement>(`[data-actions="${key}"]`);
+			const resetBtn = root.querySelector<HTMLButtonElement>(`[data-reset="${key}"]`);
 
-			checkBtn?.addEventListener('click', () => {
-				if (!feedback) return;
-				const selected = [...radios].find((r) => r.checked);
-				if (!selected) {
-					feedback.hidden = false;
-					feedback.className = 'quiz-feedback quiz-feedback--bad';
-					feedback.textContent = 'Bitte eine Antwort auswählen.';
-					return;
-				}
-				const idx = parseInt(selected.value, 10);
-				const ok = idx === q.correctIndex;
-				feedback.hidden = false;
-				feedback.className = ok ? 'quiz-feedback quiz-feedback--ok' : 'quiz-feedback quiz-feedback--bad';
-				feedback.textContent = ok ? `Stimmt. ${q.explanation}` : `Noch nicht passend. ${q.explanation}`;
-			});
-
-			resetBtn?.addEventListener('click', () => {
+			function lock() {
 				radios.forEach((r) => {
+					r.disabled = true;
+				});
+				labels.forEach((l) => l.classList.add('is-locked'));
+			}
+
+			function unlock() {
+				radios.forEach((r) => {
+					r.disabled = false;
 					r.checked = false;
 				});
+				labels.forEach((l) =>
+					l.classList.remove('is-locked', 'is-correct', 'is-wrong', 'is-reveal'),
+				);
 				if (feedback) {
 					feedback.hidden = true;
 					feedback.textContent = '';
 					feedback.className = 'quiz-feedback';
 				}
+				if (actions) actions.hidden = true;
+			}
+
+			radios.forEach((radio) => {
+				radio.addEventListener('change', () => {
+					if (!radio.checked || !feedback) return;
+					const idx = parseInt(radio.value, 10);
+					const ok = idx === q.correctIndex;
+
+					labels.forEach((label, i) => {
+						if (i === idx) {
+							label.classList.add(ok ? 'is-correct' : 'is-wrong');
+						}
+						if (!ok && i === q.correctIndex) {
+							label.classList.add('is-reveal');
+						}
+					});
+
+					feedback.hidden = false;
+					feedback.className = ok
+						? 'quiz-feedback quiz-feedback--ok'
+						: 'quiz-feedback quiz-feedback--bad';
+					feedback.innerHTML = ok
+						? `<strong>Richtig.</strong> ${(q as { explanation: string }).explanation}`
+						: `<strong>Noch nicht passend.</strong> ${(q as { explanation: string }).explanation}`;
+
+					lock();
+					if (actions) actions.hidden = false;
+				});
 			});
+
+			resetBtn?.addEventListener('click', unlock);
 		});
 	}
 

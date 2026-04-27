@@ -6,27 +6,27 @@ tags:
   - Diagnose
 order: 14
 quiz:
-  - question: Was ist ein didaktischer Vorteil von Mini-Whiteboards?
+  - question: Was ist der didaktische Kerngewinn von Mini-Whiteboards?
     options:
-      - Alle Lernenden können gleichzeitig antworten, nicht nur schnelle Meldende.
-      - Die Lehrkraft muss weniger Fragen vorbereiten.
-      - Die Methode funktioniert nur in ruhigen Lerngruppen.
+      - "Alle Lernenden antworten zur selben Zeit — Diagnose erfasst die Klasse, nicht nur die Schnellsten."
+      - "Die Lehrkraft braucht weniger inhaltliche Vorbereitung, weil Whiteboards die Aufgabe ersetzen."
+      - "Sie eignen sich besonders für Abschriften von Tafelbildern, die so synchron erfolgen können."
     correctIndex: 0
-    explanation: "Synchrones Antworten verbessert Beteiligung und Diagnostik."
-  - question: Wie nutzt man Whiteboards besonders wirksam?
+    explanation: "Mini-Whiteboards sind ein Diagnoseinstrument, kein Aufwandsreduzierer und kein Ersatz für die Tafel. Der Effekt liegt in der Gleichzeitigkeit der Antworten."
+  - question: Wie setzt du Mini-Whiteboards am wirksamsten ein?
     options:
-      - Nur Endergebnisse zeigen lassen, um Zeit zu sparen.
-      - Erst denken lassen, dann gleichzeitig hochhalten und typische Muster besprechen.
-      - Hauptsächlich für Abschriften von Tafelbildern nutzen.
+      - "Nur das Endergebnis zeigen lassen — das spart Zeit und gibt einen klaren Überblick."
+      - "Eine kurze Denkphase, dann alle gleichzeitig hochhalten — und sofort die typischen Antwortmuster gemeinsam einordnen."
+      - "Vor allem als alternatives Heft nutzen, sodass Lernende ihre Notizen größer schreiben können."
     correctIndex: 1
-    explanation: "Gleichzeitiges Zeigen plus Musteranalyse liefert wertvolle Rückmeldung."
-  - question: "Fallbeispiel: Im Plenum melden sich immer dieselben drei Personen. Was hilft sofort?"
+    explanation: "Wer nur Endergebnisse zeigen lässt, sieht „richtig/falsch“, aber kein Denken. Der diagnostische Wert entsteht erst in der gemeinsamen Sichtung der Muster."
+  - question: "Im Plenum melden sich seit Wochen dieselben drei Personen. Was bricht das Muster sofort?"
     options:
-      - "Mündliche Abfrage wie bisher beibehalten."
-      - "Kurze Whiteboard-Prompt geben und alle gleichzeitig antworten lassen."
-      - "Nur schriftliche Hausaufgabe zur Kontrolle nutzen."
+      - "Die Lehrkraft fragt gezielt jene auf, die sich nie melden — soziale Verpflichtung erzwingt Beteiligung."
+      - "Eine Mini-Whiteboard-Frage zur aktuellen Aufgabe — alle antworten gleichzeitig, niemand kann sich zurückziehen."
+      - "Mehr Hausaufgaben zum Thema, damit Beteiligung über schriftliche Kontrolle ergänzt wird."
     correctIndex: 1
-    explanation: "Synchrones Antworten erhöht Beteiligung und Sichtbarkeit aller Denkstände."
+    explanation: "Gezieltes Aufrufen erzeugt Druck, aber keine breitere Beteiligung. Mehr Hausaufgaben verschieben das Problem nach außen. Synchrones Antworten ist der einzige strukturelle Eingriff in das Meldemuster."
 
 ---
 

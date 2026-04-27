@@ -7,27 +7,27 @@ tags:
   - Kooperation
 order: 33
 quiz:
-  - question: "Worin liegt der Unterschied zwischen „Zufallsgruppen hinter dem Vorhang“ und **sichtbar** zufälligen Gruppen?"
+  - question: "Worin liegt der entscheidende Unterschied zwischen heimlicher und sichtbarer Zufallsgruppierung?"
     options:
-      - "Ohne sichtbares Ziehen vermuten Lernende oft trotzdem eine versteckte Lehrkraft-Agenda — das Verhalten ändert sich kaum."
-      - "Es gibt keinen Unterschied."
-      - "Sichtbares Zufallsprinzip ist verboten."
+      - "Ohne sichtbares Ziehen unterstellen Lernende meist eine versteckte Lehrkraft-Agenda — das Kooperationsverhalten ändert sich kaum."
+      - "Praktisch keiner — der pädagogische Effekt entsteht aus dem Mischen selbst, nicht aus seiner Sichtbarkeit."
+      - "Sichtbares Ziehen wirkt nur in jüngeren Klassen — ältere brauchen eine inhaltlich begründete Gruppenwahl."
     correctIndex: 0
-    explanation: "Transparenz des Zufallsprinzips ist entscheidend für Vertrauen und neue Kooperationsmuster."
-  - question: "Welche Häufigkeit ist auf weiterführenden Stufen sinnvoll, damit der Effekt sich entfaltet?"
+    explanation: "Das Mischen allein reicht nicht, weil die Klasse die Zuteilung sonst weiter als gelenkt liest. Auch ältere Klassen reagieren auf Sichtbarkeit — wenn die Praxis konsequent ist."
+  - question: "Welche Häufigkeit lässt den Effekt der sichtbar zufälligen Gruppen tragen?"
     options:
-      - "Einmal im Schuljahr."
-      - "In der Regel **jede** Unterrichtsstunde neu gruppieren (sichtbar zufällig)."
-      - "Nur an Prüfungstagen."
+      - "Einmal pro Halbjahr — sonst werden die Gruppen nicht produktiv genug."
+      - "In der Regel jede Stunde neu — nur bei genügend Wiederholung verlieren die alten Cliquen-Erwartungen ihre Kraft."
+      - "Nur, wenn der Stoff besonders kooperativ ist — bei normalen Stunden bleibt die Stammgruppe."
     correctIndex: 1
-    explanation: "Regelmäßiges Neugruppieren gehört zum Kern dieses Hacks — sonst kehren alte Muster zurück."
-  - question: "Welche Wirkung lässt sich nach wenigen Wochen typischerweise beobachten?"
+    explanation: "Halbjahresrhythmus zementiert Stammgruppen, und kooperationsabhängiges Mischen sortiert sich am Stoff vorbei. Erst regelmäßige Wiederholung untergräbt das Erwartungsmuster."
+  - question: "Was lässt sich nach einigen Wochen sichtbarer Zufallsgruppierung typischerweise beobachten?"
     options:
-      - "Lernende arbeiten eher in **jeder** Zuteilung mit, soziale Barrieren können abnehmen, Wissensaustausch zwischen Gruppen kann zunehmen."
-      - "Alle werden sofort Mathe-Olympiasieger."
-      - "Gruppenarbeit wird überflüssig."
+      - "Lernende arbeiten eher in jeder Zuteilung mit, soziale Barrieren werden durchlässiger, Wissen wandert zwischen Gruppen."
+      - "Schnelle Leistungssprünge der Klasse als Ganzes — die Methode wirkt vor allem als Performance-Boost."
+      - "Gruppenarbeit wird überflüssig, weil Lernende bald lieber wieder allein arbeiten."
     correctIndex: 0
-    explanation: "Es geht um Klima und Kooperation, nicht um sofortige Leistungssprünge."
+    explanation: "Der Effekt ist sozial-kooperativ, nicht primär leistungssprunghaft. Gruppenarbeit wird auch nicht überflüssig — sie wird brauchbar."
 
 ---
 

@@ -7,27 +7,27 @@ tags:
   - Auswahl
 order: 23
 quiz:
-  - question: Wonach solltest du primär auswählen, wer im Plenum vorstellt?
+  - question: Wonach solltest du primär entscheiden, wer im Plenum vorstellt?
     options:
-      - "Nach der mathematischen Bedeutung für das Lernziel — nicht nur nach Meldegeschwindigkeit oder „richtig/falsch“."
-      - "Nach alphabetischer Reihenfolge, damit es fair ist."
-      - "Nach der schönsten Heftschrift."
+      - "Nach der mathematischen Tragfähigkeit der Idee für das Lernziel — bewusst, nicht über Meldegeschwindigkeit."
+      - "Nach Reihenfolge der Meldungen — wer zuerst da ist, kommt zuerst dran."
+      - "Nach Beteiligungsstatistik — diejenigen, die in den letzten Stunden noch nicht dran waren."
     correctIndex: 0
-    explanation: "Selecting bedient das Lernziel; Fairness kann über Zeit und Rotation gelingen, nicht über „alle mal dran“."
-  - question: "Warum kann eine absichtlich gewählte „unvollständige“ Lösung im Plenum sinnvoll sein?"
+    explanation: "Wer Beteiligungsfairness über Lernziel-Logik stellt, baut ein Plenum, in dem ankommt, was zufällig in der Auswahlrunde war — nicht, was die Klasse mathematisch weiterbringt."
+  - question: "Warum kann eine bewusst gewählte unvollständige oder nicht ganz fertige Lösung das Plenum stärken?"
     options:
-      - "Weil sie oft typische Denkfehler sichtbar macht und Begründungsbedarf erzeugt."
-      - "Weil sie schneller an der Tafel steht."
-      - "Weil sie die Note verschlechtert und Motivation schafft."
+      - "Sie macht typische Stolperstellen sichtbar und erzeugt einen echten Begründungsbedarf."
+      - "Sie spart Zeit, weil weniger geschrieben werden muss als bei einer vollständigen Lösung."
+      - "Sie ersetzt das Üben — Lernende müssen die Lösung dann ohnehin selbst zu Ende führen."
     correctIndex: 0
-    explanation: "Produktive Diskussion lebt von mathematisch klärbaren Spuren, nicht nur von Endprodukten."
-  - question: "Fallbeispiel: Drei richtige, aber gleiche Rechenwege. Was ist meist die beste Wahl?"
+    explanation: "Produktive Diskussion entsteht an der Bruchstelle, nicht am fertigen Ergebnis. Eine vollständige Lösung lädt zum Bewundern ein, eine unvollständige zum Mitdenken."
+  - question: "Drei Gruppen haben denselben Lösungsweg richtig gerechnet. Was ist meist die beste Wahl fürs Plenum?"
     options:
-      - "Alle drei nacheinander vortragen lassen."
-      - "Einen vertreten lassen und die Zeit für einen anderen Zugang oder eine Verknüpfung nutzen."
-      - "Niemanden wählen."
+      - "Alle drei der Reihe nach vorstellen lassen, damit die Vielfalt der Beteiligung sichtbar wird."
+      - "Einen Vertreter vorstellen lassen — und mit der gewonnenen Zeit einen abweichenden Zugang oder eine Querverbindung sichtbar machen."
+      - "Den optisch saubersten Weg auswählen, weil das Tafelbild dann zur Mitschrift wird."
     correctIndex: 1
-    explanation: "Wiederholung desselben Wegs nutzt dem Plenum selten; Vielfalt oder Tiefe schon."
+    explanation: "Drei identische Wege mehrmals vortragen verlängert das Plenum, ohne die Mathematik zu vertiefen. Stellvertretung schafft Raum für Vergleich und Verknüpfung."
 
 ---
 

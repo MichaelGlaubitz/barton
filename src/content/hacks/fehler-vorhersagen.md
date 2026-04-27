@@ -1,4 +1,4 @@
----
+﻿---
 title: Fehler vorhersagen lassen
 summary: Vorhersage typischer Fehler schärft Aufmerksamkeit für kritische Stellen in Lösungswegen.
 tags:
@@ -6,27 +6,27 @@ tags:
   - Metakognition
 order: 13
 quiz:
-  - question: Warum ist „Fehler vorhersagen“ lernwirksam?
+  - question: Warum wirkt das Vorhersagen typischer Fehler vor dem Rechnen?
     options:
-      - Es trainiert die Bewertung von Lösungsstrategien vor dem Rechnen.
-      - Es spart Korrekturzeit, weil weniger Fehler gemacht werden.
-      - Es ersetzt die Notwendigkeit, Aufgaben vollständig zu lösen.
+      - "Es zwingt zur metakognitiven Inspektion der Aufgabe und macht kritische Schritte schon vor der Bearbeitung bewusst."
+      - "Es senkt die Fehlerquote spürbar, weil schon der Vorsatz, vorsichtig zu sein, die meisten Fehler verhindert."
+      - "Es ersetzt das vollständige Durchrechnen — wer die Fallstricke kennt, hat das Verfahren verstanden."
     correctIndex: 0
-    explanation: "Vorhersage aktiviert metakognitives Denken über typische Fallstricke."
-  - question: Welche Aufgabe passt dazu?
+    explanation: "Vorsicht und Vorsatz wirken kaum. Wirksam ist die *strukturelle* Verschiebung der Aufmerksamkeit auf die Stelle, *bevor* sie schiefläuft."
+  - question: Welche Aufgabenstellung passt zu diesem Hack?
     options:
-      - "Löse die Aufgabe allein und vergleiche erst am Ende."
-      - "Markiere vorab zwei Stellen, an denen häufig Fehler passieren, und begründe."
-      - "Wähle nur Aufgaben ohne schwierige Zwischenschritte."
+      - "Löst die Aufgabe zuerst — kontrolliert am Ende, ob sich die typischen Fehler eingeschlichen haben."
+      - "Markiert vor dem Rechnen zwei Stellen, an denen erfahrungsgemäß Fehler passieren, und begründet kurz warum."
+      - "Wählt nur Aufgaben mit kurzen Zwischenschritten, dann sind Fehler unwahrscheinlich."
     correctIndex: 1
-    explanation: "Das explizite Benennen kritischer Schritte verbessert Fehlerprävention."
-  - question: "Fallbeispiel: Bei Wurzelgleichungen treten immer wieder dieselben Fehler auf. Was ist sinnvoll?"
+    explanation: "Nachträgliches Kontrollieren ist Lehrer-Korrektur, nicht Metakognition. Schwierigkeit reduzieren ist Vermeidung. Vorab markieren ist die eigentliche Übung."
+  - question: "Bei Wurzelgleichungen tauchen jedes Jahr dieselben Fehlerarten auf. Wie nutzt du den Hack?"
     options:
-      - "Erst lösen lassen, dann nur Ergebnisse kontrollieren."
-      - "Vor dem Rechnen zwei typische Fehlerstellen vorhersagen und nachher vergleichen."
-      - "Das Thema wechseln und später wieder aufnehmen."
+      - "Eine Übungsserie geben — die Wiederholung dürfte die Fehler diesmal abschleifen."
+      - "Vor dem Rechnen zwei typische Fehlerstellen vorhersagen lassen, dann lösen, dann Vorhersage und Rechnung gegeneinander halten."
+      - "Den Stoffabschnitt zunächst überspringen und in einigen Wochen erneut versuchen."
     correctIndex: 1
-    explanation: "Vorhersage aktiviert Aufmerksamkeit an kritischen Schritten."
+    explanation: "Reine Wiederholung verstärkt oft genau die Fehler. Vermeidung verschiebt das Problem. Der Schritt „vorhersagen → rechnen → vergleichen“ verändert die Aufmerksamkeit beim nächsten Mal."
 
 ---
 

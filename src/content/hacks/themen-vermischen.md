@@ -1,4 +1,4 @@
----
+﻿---
 title: Aufgaben sinnvoll vermischen
 summary: Gemischte Aufgabenfolgen erschweren kurzfristig, fördern aber oft bessere Strategieauswahl und Transfer.
 tags:
@@ -6,27 +6,27 @@ tags:
   - Aufgaben
 order: 3
 quiz:
-  - question: Warum kann Aufgabenmischung wirksam sein?
+  - question: Worin liegt der Wirkmechanismus von Aufgabenmischung (Interleaving)?
     options:
-      - Weil ähnliche Aufgabenblöcke schneller korrigiert werden können.
-      - Weil Lernende bei jeder Aufgabe erst entscheiden müssen, welches Verfahren passt.
-      - Weil gemischte Blätter automatisch die Motivation aller erhöhen.
+      - "Gemischte Blätter wirken als Blockunterbrechung und halten die Klasse aufmerksamer als monotone Serien."
+      - "Bei jeder Aufgabe muss zuerst entschieden werden, welches Verfahren passt — genau diese Auswahl ist die geübte Fähigkeit."
+      - "Mischen senkt im Schnitt den Schwierigkeitsgrad, weil bekanntes Material zwischen schwierigem auftaucht."
     correctIndex: 1
-    explanation: "Interleaving trainiert die Auswahl passender Verfahren statt bloßer Wiederholung desselben Schemas."
-  - question: Was ist eine sinnvolle Einführung von Interleaving?
+    explanation: "Aufmerksamkeit allein erklärt den Effekt nicht. Mischen senkt nicht den Schwierigkeitsgrad — es *erhöht* ihn an der entscheidenden Stelle: bei der Verfahrenswahl."
+  - question: Welcher Einstieg in Interleaving ist tragfähig?
     options:
-      - Sofort sehr heterogene Blätter aus allen Jahresthemen einsetzen.
-      - Zunächst zwei bis drei nah verwandte Aufgabentypen moderat mischen und gemeinsam auswerten.
-      - Erst dann mischen, wenn ein Thema vollständig fehlerfrei beherrscht wird.
+      - "Sofort heterogene Blätter mit Aufgaben aus allen Jahresthemen — der Effekt ist umso größer, je breiter gemischt wird."
+      - "Zwei bis drei eng verwandte Aufgabentypen moderat mischen und die Auswahlbegründung gemeinsam auswerten."
+      - "Erst mischen, wenn alle Lernenden den jeweiligen Aufgabentyp einzeln fehlerfrei beherrschen."
     correctIndex: 1
-    explanation: "Moderates Mischen mit Auswertung verhindert Überforderung und stärkt Unterscheidungskompetenz."
-  - question: "Fallbeispiel: Lernende verwechseln bei ähnlichen Aufgaben häufig den Lösungsweg. Was hilft am meisten?"
+    explanation: "Maximale Breite produziert Raten statt Unterscheiden. Warten auf Fehlerfreiheit ist die alte Block-Logik in neuem Namen — der Effekt entsteht *zwischen* Beherrschen und Unterscheiden."
+  - question: "Lernende verwechseln bei ähnlichen Aufgabentypen oft den passenden Weg. Was hilft am wirksamsten?"
     options:
-      - "Eine lange Serie nur eines Typs, bis keine Fehler mehr auftreten."
-      - "Zwei bis drei verwandte Typen gemischt üben und die Auswahl des Weges begründen lassen."
-      - "Gemischte Aufgaben erst in der Abschlussprüfung nutzen."
+      - "Eine lange Serie nur eines Typs, bis das Schema fest sitzt und nicht mehr verwechselt wird."
+      - "Zwei bis drei verwandte Typen gemischt üben und die Wahl des Lösungswegs jedes Mal kurz begründen lassen."
+      - "Mischaufgaben erst in der Klassenarbeit verwenden — dort entscheidet sich, was sitzt."
     correctIndex: 1
-    explanation: "Interleaving trainiert die bewusste Verfahrenswahl im Vergleich."
+    explanation: "Lange Serien stabilisieren das Verfahren, nicht die Auswahl. Wer Mischaufgaben erst in der Prüfung sieht, übt das Unterscheiden gerade nicht."
 
 ---
 

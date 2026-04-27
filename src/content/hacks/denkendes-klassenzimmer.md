@@ -7,27 +7,27 @@ tags:
   - Problemorientierung
 order: 30
 quiz:
-  - question: "Was kennzeichnet ein „denkendes Klassenzimmer“?"
+  - question: "Was kennzeichnet ein denkendes Klassenzimmer im engen Sinn?"
     options:
-      - "Ein Unterricht, in dem Denken nicht nur erlaubt ist, sondern regelmäßig ausgelöst und von der Lehrkraft erwartet wird — auch im gemeinsamen Arbeiten."
-      - "Ein Raum ohne Aufgaben, damit niemand unter Druck steht."
-      - "Ein Klassenzimmer, in dem nur schnelle Lernende sprechen dürfen."
+      - "Ein Raum, in dem mathematisches Denken regelmäßig ausgelöst, von der Lehrkraft erwartet und für alle sichtbar gemacht wird."
+      - "Ein Raum, in dem Aufgaben weitgehend selbst gewählt werden und niemand zu konkreten Inhalten gedrängt wird."
+      - "Ein Raum, in dem die Lehrkraft das Erklären reduziert und stattdessen Lernende untereinander erklären lässt."
     correctIndex: 0
-    explanation: "Es geht um Bedingungen, unter denen mathematisches Denken tatsächlich passiert, nicht nur um freundliche Atmosphäre."
-  - question: "Warum reicht „gute Stimmung“ allein selten?"
+    explanation: "Wahlfreiheit und Schüler-Schüler-Erklärungen sind Symptome, nicht das Konzept. Der Kern ist die *Erwartung*, dass Denken sichtbar passiert — auch im gemeinsamen Arbeiten."
+  - question: "Warum reicht eine entspannte, freundliche Atmosphäre allein meist nicht aus?"
     options:
-      - "Weil etablierte Unterrichtsroutinen oft weiterlaufen und echtes Problemlösen verdrängen — ohne gezielte Brüche bleibt alles beim Alten."
-      - "Weil Mathematik ohne Stimmung nicht geht."
-      - "Weil Gruppenarbeit immer unfair ist."
+      - "Weil bestehende Unterrichtsroutinen unter freundlicher Atmosphäre einfach weiterlaufen — Denken wird nicht erzwungen, nur erlaubt."
+      - "Weil Lernende heute härtere Reize brauchen, um überhaupt zu reagieren."
+      - "Weil Mathematik in entspannter Atmosphäre seltener als ernsthaftes Fach wahrgenommen wird."
     correctIndex: 0
-    explanation: "Normen und Gewohnheiten müssen aktiv unterlaufen werden, nicht nur beschwichtigt."
-  - question: "Fallbeispiel: Lernende warten auf die „richtige“ Erklärung der Lehrkraft. Was ist eine passende Richtung?"
+    explanation: "Es geht nicht um Härte oder Image, sondern um Strukturen: Gewohnheiten produzieren Verhalten, sympathische Stimmung verändert keine Gewohnheit."
+  - question: "Lernende warten ohne Eigeninitiative auf die richtige Erklärung der Lehrkraft. Was ist die richtige Bewegung?"
     options:
-      - "Noch mehr Erklären am Plenum."
-      - "Aufgaben und Sozialform so ändern, dass Begründen, Probieren und Sichtbarkeit von Denkwegen im Vordergrund stehen."
-      - "Schwierige Aufgaben weglassen."
+      - "Erklärungen straffer, klarer und didaktisch besser strukturieren — dann werden Lernende selbstständiger."
+      - "Aufgaben, Sozialform und Sichtbarkeit so verändern, dass Probieren, Begründen und Vergleichen den Erklärsog ersetzen."
+      - "Schwierige Aufgaben reduzieren — weniger Anspruch ergibt mehr Eigeninitiative."
     correctIndex: 1
-    explanation: "Denken braucht Anlass und Struktur — nicht nur Motivationssprüche."
+    explanation: "Bessere Erklärungen verstärken die Erklärerwartung. Der Hebel liegt nicht im Erklären, sondern in den Bedingungen, unter denen Erklären überhaupt nicht zuerst kommt."
 
 ---
 

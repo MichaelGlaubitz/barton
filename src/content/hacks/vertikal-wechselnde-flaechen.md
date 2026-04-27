@@ -7,27 +7,27 @@ tags:
   - Sichtbarkeit
 order: 32
 quiz:
-  - question: "Warum unterstützt eine **nicht-permanente** (leicht löschbare) Oberfläche den Start ins Mathematisieren?"
+  - question: "Warum erleichtert eine leicht löschbare (nicht-permanente) Oberfläche den Einstieg ins Mathematisieren?"
     options:
-      - "Weil Fehler schnell wegwischenbar sind — Lernende riskieren eher erste Notationen und frühere mathematische Schritte."
-      - "Weil Permanentmarker schöner sind."
-      - "Weil vertikale Flächen immer kleiner sind."
+      - "Weil ein falsch gesetzter Strich folgenlos verschwindet — die Schwelle zur ersten Notation sinkt deutlich."
+      - "Weil Permanentmarker schwerer in der Hand liegen und das Schreiben verlangsamen."
+      - "Weil leicht löschbare Flächen automatisch kleiner sind und damit zur Konzentration auf das Wesentliche zwingen."
     correctIndex: 0
-    explanation: "Wechselhaftigkeit senkt die Angst vor dem ersten Strich — entscheidend für den schnellen Einstieg ins Mathematisieren."
-  - question: "Warum schneiden **vertikale** Flächen in der Praxis oft besser ab als **horizontale** Whiteboards auf dem Tisch?"
+    explanation: "Es geht weder um Stiftgewicht noch um Größe, sondern um die psychologische Folgenlosigkeit des ersten Versuchs. Genau diese Folgenlosigkeit produziert das frühe Mathematisieren."
+  - question: "Warum schneidet eine vertikale Fläche in der Praxis meist besser ab als ein horizontales Whiteboard auf dem Tisch?"
     options:
-      - "Weil sitzend am Tisch weiterhin Anonymität und „Ausweichen“ möglich ist — stehend an der Wand ist die Arbeit für alle sichtbarer."
-      - "Weil horizontal mathematisch falsch ist."
-      - "Weil Tische zu hoch sind."
+      - "Weil sitzend am Tisch Rückzug und Stillarbeit weiter möglich sind — stehend an der Wand wird die Arbeit für alle sichtbar."
+      - "Weil senkrechtes Schreiben ergonomisch grundsätzlich günstiger ist."
+      - "Weil horizontale Flächen kleiner ausfallen und damit weniger Notation erlauben."
     correctIndex: 0
-    explanation: "Sichtbarkeit und Körperhaltung beeinflussen, wer wirklich mitarbeitet."
-  - question: "Fallbeispiel: Flipchart mit Filzstift — alle reden lange, aber niemand schreibt. Was ist die wahrscheinlichste Ursache?"
+    explanation: "Es ist keine Ergonomie- und keine Größenfrage, sondern eine Sichtbarkeitsfrage: Vertikalität verhindert das stille Abtauchen, das am Tisch jederzeit möglich bleibt."
+  - question: "Eine Gruppe arbeitet an einem Flipchart mit Permanentmarker — alle reden, niemand schreibt. Was ist die wahrscheinlichste Ursache?"
     options:
-      - "Permanente Spuren erhöhen die Schwelle zum ersten Aufschreiben; wechselnde Oberflächen wären hier hilfreicher."
-      - "Filzstifte sind immer schuld."
-      - "Die Aufgabe war zu leicht."
+      - "Die Permanenz der Spur hebt die Hemmschwelle für den ersten Strich — wechselnde Flächen wären hier hilfreicher."
+      - "Die Aufgabe war zu leicht — die Klasse rechnet nebenbei im Kopf."
+      - "Die Gruppengröße ist falsch dimensioniert — kleinere Gruppen würden eher schreiben."
     correctIndex: 0
-    explanation: "Permanenz bremst Risikobereitschaft; nicht-permanente Medien fördern den Start."
+    explanation: "Bei zu leichten Aufgaben wäre etwas geschrieben — wenn auch knapp. Die Konstellation „viel reden, nichts schreiben“ ist das klassische Symptom für *Permanenz*-Hemmung."
 
 ---
 

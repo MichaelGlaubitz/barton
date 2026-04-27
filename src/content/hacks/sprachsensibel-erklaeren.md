@@ -1,4 +1,4 @@
----
+﻿---
 title: Sprachsensibel Mathematik erklären
 summary: Klare Sprache und Satzstarter helfen, mathematische Gedanken präzise zu formulieren.
 tags:
@@ -6,27 +6,27 @@ tags:
   - Begründen
 order: 16
 quiz:
-  - question: Warum ist sprachsensibles Arbeiten im Matheunterricht wichtig?
+  - question: Warum ist sprachsensibles Arbeiten im Mathematikunterricht keine Kür?
     options:
-      - Weil mathematisches Verstehen ohne Sprache nicht zuverlässig sichtbar wird.
-      - Weil damit schriftliche Leistung automatisch besser bewertet werden kann.
-      - Weil Fachsprache erst in höheren Klassen relevant ist.
+      - "Weil mathematisches Verstehen ohne sprachliche Form weder sicher artikuliert noch sicher überprüft werden kann."
+      - "Weil sich schriftliche Leistung dadurch automatisch besser benoten lässt — ein bewertungsrationaler Vorteil."
+      - "Weil Fachsprache erst ab der Oberstufe wirklich entscheidend wird — vorher ist die Frage zweitrangig."
     correctIndex: 0
-    explanation: "Sprache ist Träger von Begründung, Vergleich und Verallgemeinerung."
-  - question: Welche Maßnahme ist besonders wirksam?
+    explanation: "Es geht nicht um Bewertung und auch nicht um Klassenstufe. Begründen, Vergleichen, Verallgemeinern *ist* Sprache — wer sie nicht stützt, sieht das mathematische Denken nicht."
+  - question: Welche Maßnahme stützt mathematisches Begründen am verlässlichsten?
     options:
-      - Satzstarter wie "Ich erkenne ..., weil ..." für Begründungen anbieten.
-      - Freies Sprechen ohne Strukturvorgaben, damit Sprache natürlich bleibt.
-      - Fachbegriffe zunächst ganz vermeiden, um Überforderung auszuschließen.
+      - "Satzstarter wie „Ich entscheide …, weil …“ als Gerüst anbieten und an konkreten Aufgaben einüben."
+      - "Bewusst auf Strukturvorgaben verzichten, damit eine möglichst natürliche Lernsprache entsteht."
+      - "Fachbegriffe zunächst meiden und erst nach gefestigtem Inhalt einführen."
     correctIndex: 0
-    explanation: "Satzstarter stützen präzises Denken, besonders bei Begründungsaufgaben."
-  - question: "Fallbeispiel: Fachlich richtige Ideen werden unklar formuliert. Was ist eine wirksame Intervention?"
+    explanation: "Ohne Gerüst greifen Lernende auf Alltagssprache zurück — und verfehlen die mathematische Präzision genau dann, wenn sie zählt. Verzicht auf Fachbegriffe verschiebt das Problem nur."
+  - question: "Lernende haben fachlich richtige Ideen, formulieren sie aber unklar. Welche Intervention wirkt am ehesten?"
     options:
-      - "Nur auf richtige Endergebnisse achten."
-      - "Satzstarter für Begründungen vorgeben und gezielt einüben."
-      - "Fachbegriffe vorerst vollständig vermeiden."
+      - "Nur das Endergebnis bewerten — die korrekte Idee zählt, die Formulierung wird sich entwickeln."
+      - "Passende Satzstarter für Begründungen einführen und an konkreten Beispielen mit Rückmeldung üben."
+      - "Fachbegriffe vorerst aus dem Unterricht entfernen, damit Lernende frei reden können."
     correctIndex: 1
-    explanation: "Sprachliche Gerüste verbessern die Qualität mathematischer Argumente."
+    explanation: "Wenn Form und Inhalt auseinanderfallen, ist die Form das offene Problem. Verzicht auf Form (Endergebnis allein, keine Fachbegriffe) verschleiert die Lücke, statt sie zu schließen."
 
 ---
 

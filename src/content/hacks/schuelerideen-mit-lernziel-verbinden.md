@@ -7,27 +7,27 @@ tags:
   - Verknüpfung
 order: 25
 quiz:
-  - question: "Was ist die Kernfunktion der „Verbindungs“-Phase nach mehreren Schülerbeiträgen?"
+  - question: "Was ist die Kernfunktion der Verbindungsphase nach mehreren Schülerbeiträgen?"
     options:
-      - "Lob verteilen und zur nächsten Aufgabe übergehen."
-      - "Gemeinsam herausarbeiten, wie die gezeigten Ideen zum Lernziel, zueinander und zu Begriffen passen."
-      - "Alle Lösungen noch einmal abschreiben lassen."
+      - "Anerkennung verteilen, um die Beteiligungskultur zu pflegen, und dann zur nächsten Aufgabe übergehen."
+      - "Gemeinsam sichtbar machen, wie die gezeigten Ideen zueinander, zum Lernziel und zu mathematischen Begriffen stehen."
+      - "Die richtige Lösung als Standard an der Tafel festhalten, damit alle einen einheitlichen Stand haben."
     correctIndex: 1
-    explanation: "Connecting macht aus einzelnen Vorträgen ein gemeinsames mathematisches Bild."
-  - question: "Welche Frage ist dafür oft besonders wirksam?"
+    explanation: "Anerkennung schließt die Beiträge sozial ab. Eine Standardlösung schließt sie inhaltlich ab. Beides verhindert genau die Beziehungsarbeit, die Connecting ausmacht."
+  - question: "Welche Lehrkraftfrage trägt das Verbinden am besten?"
     options:
-      - "„Wer war noch richtig?“"
-      - "„Was ist bei beiden Wegen dasselbe mathematisch — und wo unterscheiden sie sich?“"
-      - "„Wie fandet ihr die Stunde?“"
+      - "Wer hat die Aufgabe denn auch richtig gelöst — eine kurze Bestätigungsrunde."
+      - "Was ist bei diesen beiden Wegen mathematisch dasselbe — und wo genau unterscheiden sie sich?"
+      - "Welcher Weg hat euch persönlich am besten gefallen?"
     correctIndex: 1
-    explanation: "Vergleichs- und Strukturfragen knüpfen Beiträge aneinander und an Begriffe."
-  - question: "Fallbeispiel: Zwei Wege führen zum gleichen Ergebnis. Was solltest du mindestens klarstellen?"
+    explanation: "Bestätigungs- und Vorliebenfragen erzeugen sozialen Konsens, keine mathematische Beziehung. Erst die Frage nach Gleichheit und Differenz verbindet die Beiträge inhaltlich."
+  - question: "Zwei verschiedene Wege führen zum selben Ergebnis. Was muss im Plenum mindestens passieren?"
     options:
-      - "Nur das Ergebnis an der Tafel festhalten."
-      - "Warum beide Wege gültig sind und welche Begriffe oder Regeln sie verbinden (z. B. Äquivalenz, Struktur)."
-      - "Welcher Weg kürzer war."
+      - "Das gemeinsame Ergebnis groß an der Tafel festhalten — beide Wege haben es bestätigt."
+      - "Die mathematische Verbindung der beiden Wege benennen — etwa welche Begriffe oder Regeln sie strukturell verklammern."
+      - "Vergleichen, welcher Weg weniger Zeilen brauchte — Effizienz ist ein klarer Maßstab."
     correctIndex: 1
-    explanation: "Mathematische Verbindung hebt das Lernziel über schnelles Rechnen hinaus."
+    explanation: "Ergebnis und Effizienz sind Nebenprodukte. Wert hat das Gespräch, wenn die *strukturelle* Beziehung zwischen den Wegen explizit wird — daran knüpfen Klassenverständnis und Lernziel."
 
 ---
 

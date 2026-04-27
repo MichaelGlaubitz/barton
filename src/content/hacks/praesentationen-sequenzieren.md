@@ -7,27 +7,27 @@ tags:
   - Sequenz
 order: 24
 quiz:
-  - question: "Was ist eine typische sinnvolle Reihenfolge beim Vergleich verschiedener Lösungswege?"
+  - question: "Welches Reihenfolge-Prinzip ist beim Vergleich von Lösungswegen meist tragfähig?"
     options:
-      - "Zuerst den abstraktesten, formalen Weg, dann das konkrete Beispiel."
-      - "Oft vom zugänglichen oder häufigen Zugang zum präziseren oder verallgemeinernden — je nach Ziel."
-      - "Immer alphabetisch nach Nachnamen."
+      - "Zuerst den formal exakten, abstraktesten Weg — daran orientieren sich konkrete Beispiele danach."
+      - "Häufig vom zugänglichen, weiter verbreiteten Weg zum präziseren oder verallgemeinernden — abhängig vom Lernziel."
+      - "Mit dem mathematisch elegantesten Weg beginnen — er bleibt am stärksten in Erinnerung."
     correctIndex: 1
-    explanation: "Sequencing nutzt didaktische Progression; der beste Pfad hängt vom Lernziel ab."
-  - question: "Warum solltest du nicht immer zuerst die korrekte Musterlösung zeigen?"
+    explanation: "Eleganz und Abstraktion sind keine Einstiegseigenschaften. Wer formal startet, lässt die Klasse nicht teilhaben — sie sieht das Ergebnis vor dem Weg."
+  - question: "Warum ist es selten klug, das Plenum mit der korrekten Musterlösung zu beginnen?"
     options:
-      - "Weil sie oft den Raum für Vergleich und Begründung nimmt, bevor andere Ideen sichtbar wurden."
-      - "Weil sie rechtlich nicht erlaubt ist."
-      - "Weil sie immer zu lang ist."
+      - "Weil sie den Raum für Vergleich und Begründung schließt, bevor andere Wege überhaupt zur Sprache kommen."
+      - "Weil eine vorgezeigte Musterlösung Lernende verunsichert, die einen anderen Weg gegangen sind."
+      - "Weil eine sofort gezeigte Musterlösung in der Klasse als unfair empfunden wird."
     correctIndex: 0
-    explanation: "Manchmal baut eine spätere Präzisierung auf zuvor gezeigten Lernwegen auf."
-  - question: "Fallbeispiel: Ziel ist „Gemeinsamer Nenner verstehen“. Was ist oft didaktisch klug?"
+    explanation: "Es geht nicht um Verunsicherung oder Fairness, sondern um die Diskussionsökonomie: Sobald die richtige Lösung steht, sind alle anderen Wege rückwirkend nur „Vorstufen“ — und keine Argumente mehr."
+  - question: "Lernziel: Gemeinsamer Nenner verstehen. Welche Reihenfolge ist oft am produktivsten?"
     options:
-      - "Zuerst zwei verschiedene plausible Fehlversuche, dann einen tragfähigen Weg zur Klärung."
-      - "Nur den schnellsten korrekten Rechenweg."
-      - "Keine Reihenfolge — wer will, stellt vor."
+      - "Zwei plausible, aber fehlerhafte Versuche zuerst — dann einen tragfähigen Weg, der die Brüche im Vergleich klärt."
+      - "Nur den schnellsten korrekten Rechenweg vorstellen — die Klasse hat die Idee dann sofort."
+      - "Auf Reihenfolge ganz verzichten — wer mag, präsentiert."
     correctIndex: 0
-    explanation: "Sequencing kann Missverständnisse sichtbar machen, bevor die tragfähige Idee verankert wird."
+    explanation: "Wenn das Lernziel das Verstehen einer Begründung ist, braucht es etwas zu begründen *gegen*. Nur die korrekte Lösung zeigen produziert Konsens, keine Einsicht."
 
 ---
 

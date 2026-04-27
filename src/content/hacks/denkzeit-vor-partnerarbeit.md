@@ -7,27 +7,27 @@ tags:
   - Sozialform
 order: 27
 quiz:
-  - question: "Warum ist unabhängiges Arbeiten vor der Partnerarbeit für eine spätere Diskussion hilfreich?"
+  - question: "Warum lohnt sich eine kurze Einzeldenkphase **vor** der Partner- oder Gruppenarbeit?"
     options:
-      - "Weil jede Person erst eine eigene Spur entwickeln kann — sonst übernimmt oft schnell eine vorherrschende Idee."
-      - "Weil Partnerarbeit ohnehin immer zu lange dauert."
-      - "Weil allein arbeiten keine mathematischen Fehler erzeugt."
+      - "Weil sonst die schnellste Idee in der Gruppe sofort dominiert und die anderen Spuren gar nicht erst entstehen."
+      - "Weil Einzelarbeit konzentrierter ist als jede Gruppenarbeit und deshalb möglichst lang sein sollte."
+      - "Weil Lernende in Gruppen weniger Verantwortung übernehmen — Einzelarbeit vorher kompensiert das."
     correctIndex: 0
-    explanation: "Eigenes Denken zuerst steigert Vielfalt und Verständlichkeit der späteren Präsentationen."
-  - question: "Was ist eine pragmatische Leitplanke für die erste Denkphase?"
+    explanation: "Es geht nicht um Konzentration oder Verantwortung, sondern um *Vielfalt der Ideen*. Ohne Vorlauf hat die Gruppe nur eine Stimme zum Aushandeln."
+  - question: "Wie sollte die erste Denkphase pragmatisch dimensioniert sein?"
     options:
-      - "Mindestens 45 Minuten, bis alle fertig sind."
-      - "Knappe, klar begrenzte Zeit mit einer konkreten Mini-Aufgabe („notiere einen Weg / eine Skizze“)."
-      - "Gar keine Zeit — sofort in Gruppen, damit es lebendig wird."
+      - "Mindestens fünfzehn Minuten — sonst entsteht keine ernsthafte eigene Idee."
+      - "Zwei bis fünf Minuten mit einem klaren Mini-Auftrag (z. B. einen Lösungsweg oder eine Skizze notieren)."
+      - "Möglichst keine Zeit — die Diskussion in der Gruppe erzeugt die Ideen ohnehin."
     correctIndex: 1
-    explanation: "Kurz und zielgebunden verhindert Leerlauf und hält die kognitive Anforderung."
-  - question: "Fallbeispiel: In jeder Gruppe steht nach 30 Sekunden dieselbe Lösung. Was ist eine plausible Ursache?"
+    explanation: "Zu lang erzeugt Leerlauf und Frustration der Schnelleren, zu kurz produziert nichts. Ein klarer kleiner Auftrag in wenigen Minuten genügt für eine eigene Spur."
+  - question: "In jeder Gruppe steht nach kürzester Zeit dieselbe Lösung. Was ist die plausibelste Ursache?"
     options:
-      - "Die Aufgabe war zu schwer."
-      - "Es gab keine Phase, in der jede Person für sich denken musste — eine dominante Idee hat sofort gewonnen."
-      - "Zu wenig Plakatpapier."
+      - "Die Aufgabe war für alle zu leicht — sonst wäre die Lösung nicht so schnell aufgetaucht."
+      - "Es gab keine Phase eigenen Denkens vor der Gruppe — eine Stimme hat sofort entschieden."
+      - "Die Klasse hat das Thema bereits beherrscht — keine weitere Erarbeitung nötig."
     correctIndex: 1
-    explanation: "Ohne Denkzeit für alle klont sich oft der schnellste Vorschlag."
+    explanation: "Selbst bei anspruchsvollen Aufgaben produziert eine Gruppe oft nur eine Lösung — nämlich die der ersten lauten Stimme. Vielfalt entsteht nicht im Konsens, sondern davor."
 
 ---
 

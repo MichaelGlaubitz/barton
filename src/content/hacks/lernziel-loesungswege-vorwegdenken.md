@@ -7,27 +7,27 @@ tags:
   - Lernziele
 order: 21
 quiz:
-  - question: Was gehört zur Vorbereitung einer produktiven Besprechungsphase dazu?
+  - question: Was gehört zur Vorbereitung einer produktiven Plenumsphase wirklich dazu?
     options:
-      - "Mathematisches Lernziel präzisieren und mögliche Lösungswege sowie typische Fehlvorstellungen vorher durchdenken."
-      - "Möglichst viele Aufgaben auswählen, damit jede Lernperson etwas findet."
-      - "Die Besprechung spontan zu führen, je nachdem wer meldet."
+      - "Das mathematische Lernziel präzise formulieren und vorweg mehrere realistische Lösungswege samt typischer Fehlvorstellungen durchdenken."
+      - "Eine möglichst große Aufgabenauswahl bereithalten, damit jedes Niveau abgedeckt ist."
+      - "Bewusst nichts vorbereiten, um im Plenum spontan und offen auf Beiträge reagieren zu können."
     correctIndex: 0
-    explanation: "Klares Ziel und vorweggenommene Lösungswege ermöglichen später gezielte Auswahl und Verknüpfung im Plenum."
-  - question: "Warum notierst du dir vor der Stunde typische Strategien (nicht nur die Musterlösung)?"
+    explanation: "Aufgabenmenge ersetzt keine Zielklärung. Bewusste Spontaneität klingt offen, ist aber strukturell ein Verzicht auf Steuerung — und endet meist beim ersten lauten Beitrag."
+  - question: "Warum reicht es nicht, vor der Stunde nur die Musterlösung zu notieren?"
     options:
-      - "Damit du im Unterricht schneller bewerten kannst, wer richtig liegt."
-      - "Damit du beim Beobachten erkennst, welche Arbeit sich fürs Plenum eignet und wie du sie verknüpfen kannst."
-      - "Damit die Lernenden weniger selbst überlegen müssen."
-    correctIndex: 1
-    explanation: "Mehrere erwartbare Wege sind die Grundlage für Monitoring, Auswahl und sinnvolle Reihenfolge im Gespräch."
-  - question: "Fallbeispiel: Das Lernziel ist „Begründen, warum ein Term umgeformt bleibt“. Was ist vor der Stunde besonders hilfreich?"
+      - "Weil ohne erwartete Strategien beim Beobachten unklar bleibt, welche Arbeit für das Plenum welche Funktion hat."
+      - "Weil die Musterlösung in der Stunde ohnehin sichtbar wird und deshalb nicht doppelt gebraucht wird."
+      - "Weil Lernende durch antizipierte Lösungswege weniger selbst nachdenken müssen."
+    correctIndex: 0
+    explanation: "Die Musterlösung sagt, wie es richtig geht — sie sagt nichts darüber, *welche* Beiträge im Plenum welchen Beitrag zum Ziel leisten. Genau dafür sind die antizipierten Wege da."
+  - question: "Das Lernziel lautet: Begründen, warum eine Umformung Äquivalenz erhält. Was ist die wirksamste Vorbereitung?"
     options:
-      - "Nur die richtige Umformung aufschreiben."
-      - "Typische falsche Umformungen und gute Begründungsansätze skizzieren."
-      - "Die Aufgabe so leicht wählen, dass keine Fehler entstehen."
+      - "Eine korrekte Umformungssequenz vollständig ausschreiben — sie dient als Folie für die Stunde."
+      - "Typische unvollständige Begründungen und tragfähige Argumentationsmuster nebeneinander notieren."
+      - "Die Aufgabe so leicht wählen, dass alle eine korrekte Umformung produzieren."
     correctIndex: 1
-    explanation: "Begründungsziele brauchen antizipierte Argumentationsmuster, nicht nur Endresultate."
+    explanation: "Bei Begründungszielen liegt die Mathematik *im Argument*, nicht im Ergebnis. Ohne antizipierte Argumentationsmuster moderierst du die Diskussion blind."
 
 ---
 

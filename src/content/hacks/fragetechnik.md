@@ -6,27 +6,27 @@ tags:
   - Fragen
 order: 8
 quiz:
-  - question: Warum ist die Frage „Alles verstanden?“ oft zu schwach?
+  - question: Warum bleibt die Frage „Alles verstanden?“ diagnostisch unbrauchbar?
     options:
-      - Weil sie selten zu überprüfbaren Begründungen oder Denkwegen führt.
-      - Weil sie den Unterricht zeitlich zu stark verlangsamt.
-      - Weil sie nur in kleinen Lerngruppen sinnvoll ist.
+      - "Sie produziert Selbsteinschätzung — und diese korreliert schwach mit dem tatsächlichen Verständnis, besonders bei Unsicheren."
+      - "Sie unterbricht den Stundenfluss zu lange und lässt die Klasse abkühlen."
+      - "Sie ist nur für homogene Lerngruppen geeignet, weil sonst die Antworten zu unterschiedlich ausfallen."
     correctIndex: 0
-    explanation: "Wirksame Fragen erzeugen sichtbares Denken, nicht nur Zustimmung."
-  - question: Welche Anschlussfrage fördert Transfer nach einer richtigen Lösung?
+    explanation: "Wer wenig versteht, weiß oft nicht, dass es so ist. Das ist kein Faulheits- oder Zeitproblem, sondern ein Selbstdiagnose-Effekt."
+  - question: Welche Anschlussfrage prüft, ob das Prinzip übertragen werden kann?
     options:
-      - „Wer hatte noch dasselbe Ergebnis?“
-      - "Welche Aufgabe würde mit derselben Idee funktionieren und wo müsstest du anpassen?"
-      - „Wie schnell hast du die Lösung gefunden?“
+      - "Wer hatte am Ende auch dieses Ergebnis?"
+      - "Welche andere Aufgabe würdest du mit derselben Idee lösen — und wo müsstest du etwas ändern?"
+      - "Welcher Schritt hat dich am meisten Zeit gekostet?"
     correctIndex: 1
-    explanation: "Transferfragen prüfen, ob Prinzipien verstanden und nicht nur Fälle erkannt wurden."
-  - question: "Fallbeispiel: Nach einer richtigen Antwort wird es still. Welche Anschlussfrage fördert Denken?"
+    explanation: "Bestätigungsfragen produzieren Konsens, Tempofragen liefern Anekdoten. Übertragungsfragen testen, ob das Prinzip wirklich abstrahiert wurde."
+  - question: "Nach einer richtigen Schülerantwort wird es still. Welche Anschlussfrage erzeugt Denken statt Pause?"
     options:
-      - "Wer hat dasselbe Ergebnis?"
-      - "Unter welcher Bedingung würde dein Lösungsweg nicht mehr funktionieren?"
-      - "Wie schnell warst du fertig?"
+      - "Wer ist denselben Weg gegangen wie sie?"
+      - "Unter welcher Bedingung würde genau dieser Weg nicht mehr funktionieren?"
+      - "Findet das auch jemand schwer, oder bin ich nur schnell?"
     correctIndex: 1
-    explanation: "Kontrafragen und Bedingungen vertiefen Verständnis statt bloßer Bestätigung."
+    explanation: "Konsensfragen schließen die Diskussion. Stimmungsfragen schieben sie aufs Soziale ab. Eine Bedingungsfrage zwingt die Klasse, das Verfahren in seinen Grenzen zu prüfen."
 
 ---
 

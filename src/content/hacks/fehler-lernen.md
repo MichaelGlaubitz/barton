@@ -1,4 +1,4 @@
----
+﻿---
 title: Fehler als Lernmaterial
 summary: Fehleranalysen verbessern Verständnis, wenn sie sachlich, sicher und diagnostisch genutzt werden.
 tags:
@@ -6,27 +6,27 @@ tags:
   - Feedback
 order: 7
 quiz:
-  - question: Warum ist die Arbeit mit Fehlvorstellungen didaktisch wertvoll?
+  - question: Worin liegt der didaktische Wert der Arbeit mit Fehlvorstellungen?
     options:
-      - Sie zeigt, welche Denkmodelle hinter Antworten stehen und wo Begriffe unscharf sind.
-      - Sie erhöht vor allem die Korrekturgeschwindigkeit durch standardisierte Fehlertabellen.
-      - Sie hilft hauptsächlich, Klassenarbeitsaufgaben ähnlich zu trainieren.
+      - "Sie macht das implizite Denkmodell hinter einer falschen Antwort sichtbar — und damit überhaupt erst korrigierbar."
+      - "Sie beschleunigt die Korrektur, weil Lehrkräfte typische Muster schneller einsortieren können."
+      - "Sie liefert das Material, an dem klassische Klausurfehler eingeübt und vermieden werden können."
     correctIndex: 0
-    explanation: "Fehler offenbaren Denkwege und ermöglichen gezielte begriffliche Klärung."
-  - question: Welche Praxis unterstützt eine sichere Fehlerkultur am besten?
+    explanation: "Fehler sind nicht „falsche Endprodukte“, sondern *Spuren eines Denkmodells*. Ohne Zugriff auf dieses Modell wirkt jede Korrektur auf der falschen Ebene."
+  - question: Was schützt eine produktive Fehlerkultur am ehesten?
     options:
-      - Fehler direkt personalisieren, damit Verantwortlichkeit klar sichtbar wird.
-      - Anonymisierte Fehlbeispiele gemeinsam analysieren und alternative Begründungen entwickeln.
-      - Fehler erst am Ende der Einheit sammeln, damit der Ablauf nicht unterbrochen wird.
+      - "Fehler offen den Verursachenden zuordnen — Verantwortung schafft Lerneffekt."
+      - "Anonymisierte typische Fehler gemeinsam analysieren und auf das Denkmodell dahinter zurückführen."
+      - "Fehler erst nach der Einheit sammeln und besprechen, damit der Stundenfluss nicht unterbrochen wird."
     correctIndex: 1
-    explanation: "Anonyme, sachliche Analyse hält die Lernatmosphäre sicher und produktiv."
-  - question: "Fallbeispiel: Viele machen denselben Denkfehler bei Vorzeichen. Wie nutzt du das lernwirksam?"
+    explanation: "Personalisierung erzeugt Vermeidung statt Lernen. Verzögerung trennt Fehler von der Situation, in der sie wirklich zu klären wären."
+  - question: "In den Heften taucht systematisch derselbe Vorzeichenfehler auf. Welcher Umgang ist am lernwirksamsten?"
     options:
-      - "Fehler nur individuell markieren und ohne Besprechung zurückgeben."
-      - "Anonymisierte Fehlstrategie im Plenum analysieren und korrekte Regel ableiten lassen."
-      - "Die Aufgabe überspringen, um Frustration zu vermeiden."
+      - "Den Fehler in jedem Heft markieren und ohne Besprechung zurückgeben — die Markierung spricht für sich."
+      - "Die anonymisierte Fehlstrategie groß im Plenum zeigen und die Klasse die korrekte Regel daraus rekonstruieren lassen."
+      - "Eine ähnliche Aufgabe vorgeben mit dem Hinweis, diesmal besonders auf das Vorzeichen zu achten."
     correctIndex: 1
-    explanation: "Gemeinsame Analyse macht Fehlvorstellungen sichtbar und korrigierbar."
+    explanation: "Markierung ohne Besprechung wiederholt nur den Befund. Aufmerksamkeitssteigerung („pass mehr auf“) ändert das Modell nicht. Erst die offene Rekonstruktion macht das Denken hinter dem Fehler sichtbar."
 
 ---
 

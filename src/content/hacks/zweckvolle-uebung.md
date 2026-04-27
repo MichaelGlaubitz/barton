@@ -1,4 +1,4 @@
----
+﻿---
 title: Zweckvolle Übung statt Mengenbingen
 summary: Übung wirkt stärker, wenn sie auf ein klares Ziel und konkretes Feedback ausgerichtet ist.
 tags:
@@ -8,25 +8,25 @@ order: 6
 quiz:
   - question: Woran erkennt man „purposeful practice“?
     options:
-      - Hohe Aufgabenzahl bei konstantem Schwierigkeitsgrad.
-      - Klarer Fokus, Rückmeldung zu Fehlern und passende Anpassung der nächsten Aufgaben.
-      - Möglichst prüfungsnahe Aufgaben in jedem Übungsblock.
+      - "An der hohen Aufgabenzahl bei konstantem Schwierigkeitsgrad — Routine entsteht durch Wiederholung."
+      - "An klarem Fokus, Rückmeldung zu Fehlern und gezielter Anpassung der nächsten Aufgaben."
+      - "An möglichst prüfungsnahen Aufgaben in jedem Übungsblock — so übt man, was zählt."
     correctIndex: 1
-    explanation: "Zweckvolle Übung verbindet Zielklarheit, Feedback und adaptive Schwierigkeit."
-  - question: Welche Unterrichtsentscheidung passt dazu?
+    explanation: "Hohe Aufgabenzahl auf gleichem Niveau erzeugt Tempo, aber kein Verständnis. Prüfungsnähe macht Aufgaben repräsentativ, nicht aber lernwirksam."
+  - question: Welche Unterrichtsentscheidung passt zu purposeful practice?
     options:
-      - Nach jedem Aufgabenblock typische Fehler kurz clustern und gezielt nachsteuern.
-      - Einheitliche Aufgabenserien für alle, unabhängig vom Fehlerprofil.
-      - Vor allem Zeit auf Bearbeitungstempo statt auf Fehlerursachen legen.
+      - "Nach jedem Aufgabenblock typische Fehler kurz clustern und gezielt nachsteuern."
+      - "Einheitliche Aufgabenserien für alle — Fairness ist eine Voraussetzung guten Übens."
+      - "Den Schwerpunkt auf Bearbeitungstempo legen — wer schneller wird, hat verstanden."
     correctIndex: 0
-    explanation: "Diagnose und passendes Nachsteuern machen Übung wirksam."
-  - question: "Fallbeispiel: Nach 20 Aufgaben bleiben dieselben Fehler bestehen. Was passt zu purposeful practice?"
+    explanation: "Einheitlichkeit klingt fair, ignoriert aber das jeweilige Fehlerprofil. Tempo ist Symptom, nicht Ziel: Schneller falsch wird man auch durch viel Übung."
+  - question: "Nach 20 Aufgaben bleiben dieselben Fehler bestehen. Was passt zu purposeful practice?"
     options:
-      - "Weitere 20 ähnliche Aufgaben ohne Unterbrechung geben."
+      - "Weitere 20 ähnliche Aufgaben ohne Unterbrechung — irgendwann sitzt es."
       - "Fehlertyp kurz auswerten und die nächsten Aufgaben gezielt darauf zuschneiden."
-      - "Die Übungsphase beenden und erst nächste Woche weitermachen."
+      - "Die Übungsphase beenden und erst in der nächsten Stunde weitermachen — Pause hilft."
     correctIndex: 1
-    explanation: "Gezielte Nachsteuerung ist wirksamer als reine Mengensteigerung."
+    explanation: "Mehr vom Gleichen verfestigt eher den Fehler, als ihn aufzulösen. Eine Pause ohne Diagnose verlagert das Problem nur auf den nächsten Termin."
 
 ---
 

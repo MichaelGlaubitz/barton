@@ -1,4 +1,4 @@
----
+﻿---
 title: Abruf üben statt nur „wiederholen“
 summary: Kurze Abrufphasen stärken das Langzeitgedächtnis wirksamer als reines Wiederlesen.
 tags:
@@ -6,27 +6,27 @@ tags:
   - Üben
 order: 1
 quiz:
-  - question: Was charakterisiert „Abruf“ (Retrieval) im Unterricht am besten?
+  - question: Was unterscheidet Abruf vom bloßen Wiederholen?
     options:
-      - Lernende bearbeiten zusätzliche Aufgaben mit offenem Heft, damit sie schneller korrekt rechnen.
-      - Lernende holen sich Information aktiv aus dem Gedächtnis, z. B. mit Heft zu und kurzen Abruffragen.
-      - Die Lehrkraft fasst den Stoff erneut zusammen, damit alle denselben Wissensstand hören.
+      - "Lernende lesen den Hefteintrag noch einmal konzentriert durch und markieren wichtige Stellen."
+      - "Lernende rekonstruieren Inhalte ohne Vorlage aus dem Gedächtnis und prüfen erst danach am Heft."
+      - "Die Lehrkraft fasst den Stoff strukturiert zusammen, sodass alle ihn synchron präsent haben."
     correctIndex: 1
-    explanation: "Abruf heißt aktives Erinnern. Genau das stärkt den späteren Zugriff auf Wissen."
-  - question: Welche Umsetzung passt am besten zu wirksamem Abruftraining?
+    explanation: "Wiederlesen fühlt sich vertraut an, hinterlässt aber wenig — die Anstrengung des aktiven Rekonstruierens ist der Wirkmechanismus."
+  - question: Welche Routine stärkt die Behaltensleistung am verlässlichsten?
     options:
-      - Direkt vor Klassenarbeiten eine längere Wiederholungseinheit mit Lösungen an der Tafel.
-      - Zu Stundenbeginn zwei Minuten Abruf zu älteren Inhalten, regelmäßig über mehrere Wochen.
-      - Erst üben, wenn sich niemand mehr meldet, damit keine Frustration entsteht.
+      - "Eine konzentrierte Wiederholungsstunde unmittelbar vor der Klassenarbeit."
+      - "Zwei Minuten Abruf zum Stoff der Vorwoche zu jedem Stundenbeginn — ohne Note."
+      - "Spontane Abrufe nur dann, wenn die Klasse besonders fit wirkt."
     correctIndex: 1
-    explanation: "Kurze, häufige Abrufe über Zeit verteilt sind wirksamer als einmaliges Intensiv-Wiederholen."
-  - question: "Fallbeispiel: In Klasse 8 starten viele unruhig in die Stunde. Welche Maßnahme passt am besten zum Abrufüben?"
+    explanation: "Kurz, regelmäßig, niedrigschwellig schlägt selten und intensiv. Bündelung kurz vor der Arbeit erzeugt Vertrautheit, aber wenig Langzeitwirkung."
+  - question: "Klasse 8 startet unkonzentriert. Welcher Einstieg nutzt Abruf am besten?"
     options:
-      - "Eine 10-Minuten-Zusammenfassung an der Tafel, damit alle wieder im Thema sind."
-      - "Drei kurze Heft-zu-Fragen zu letzter Woche, dann sofortige Partnerabstimmung."
-      - "Direkt neue Aufgaben ohne Rückgriff, um Zeit zu sparen."
+      - "Eine ruhige Tafel-Übersicht zum letzten Thema, damit alle inhaltlich wieder synchron sind."
+      - "Drei Heft-zu-Fragen zur Vorwoche, einzeln notieren, dann zwei Minuten Partnerabgleich."
+      - "Sofort die neue Aufgabe austeilen — Wiederholung kostet zu viel Zeit."
     correctIndex: 1
-    explanation: "Kurze, aktive Abrufphasen stabilisieren Wissen und fokussieren den Start."
+    explanation: "Reaktivierung durch Lehrkraft fühlt sich strukturiert an, lässt die Klasse aber passiv. Erst durchs eigene Erinnern entsteht der wirksame Reiz."
 
 ---
 
