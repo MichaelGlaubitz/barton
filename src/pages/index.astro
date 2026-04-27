@@ -125,6 +125,12 @@ const totalHacks = hacks.length;
 const totalFields = functionGroups.filter((g) =>
 	g.ids.some((id) => hacksById.has(id)),
 ).length;
+const featuredIds = [
+	'mini-whiteboards',
+	'vertikal-wechselnde-flaechen',
+	'monitoring-chart-diskussion',
+];
+const featuredHacks = featuredIds.map((id) => hacksById.get(id)).filter(Boolean);
 ---
 
 <BaseLayout title="Mathechismus.de — Mathematikunterricht">
@@ -155,6 +161,29 @@ const totalFields = functionGroups.filter((g) =>
 				<strong>{sourceCounts.btc}</strong>
 				<span>aus Liljedahl (BTC)</span>
 			</div>
+		</div>
+	</section>
+
+	<section class="spotlight" aria-labelledby="spotlight-title">
+		<div class="spotlight__copy">
+			<p class="hero__kicker">Schnell reinfinden</p>
+			<h2 id="spotlight-title">Drei Hacks, die sofort anders aussehen.</h2>
+			<p>
+				Weniger Theorie lesen, mehr Unterricht sehen: Diese Einstiege verändern sichtbar,
+				wie Lernende denken, zeigen, korrigieren und diskutieren.
+			</p>
+		</div>
+		<div class="spotlight__cards">
+			{
+				featuredHacks.map((h, i) => (
+					<a class="spotlight-card" href={`${base}hack/${h.id}/`}>
+						<span class="spotlight-card__num">{String(i + 1).padStart(2, '0')}</span>
+						<span class="spotlight-card__emoji" aria-hidden="true">{hackEmoji(h.id)}</span>
+						<strong>{h.data.title}</strong>
+						<small>{h.data.tags.slice(0, 2).join(' · ')}</small>
+					</a>
+				))
+			}
 		</div>
 	</section>
 
@@ -218,6 +247,7 @@ const totalFields = functionGroups.filter((g) =>
 										.toLowerCase()}
 								>
 									<span class="hack-card__emoji-slot" aria-hidden="true">{hackEmoji(h.id)}</span>
+									<span class="hack-card__meta">{h.data.tags[0]} · Hack</span>
 									<h3>{h.data.title}</h3>
 									<p>{h.data.summary}</p>
 									<div class="tags">
