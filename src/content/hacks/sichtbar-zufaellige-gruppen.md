@@ -72,4 +72,4 @@ Faire, flüssige Gruppen **ohne** endlose Streitgespräche „mit wem ich arbeit
 
 ## Quelle (Hintergrund)
 
-Liljedahl, P. (2016). *Building Thinking Classrooms …* (u. a. Zusammenfassung zu *visibly random groups*, vgl. Liljedahl 2014). **Paraphrasiert**; privater HTML-Export.
+Liljedahl, P. (2016). *Building Thinking Classrooms …* (u. a. Zusammenfassung zu *visibly random groups*, vgl. Liljedahl 2014). **Paraphrasiert**; keine wörtliche Wiedergabe.

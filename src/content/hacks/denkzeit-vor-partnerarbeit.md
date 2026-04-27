@@ -72,4 +72,4 @@ Mehr **echte** Vielfalt in der Erarbeitung → mehr Material für **Selecting** 
 
 ## Quelle (Hintergrund)
 
-Smith, M. S., & Stein, M. K. (2018). *5 Practices …* (2nd ed., Kap. 9 „Lesson 3“). **Paraphrasiert**; Auszug aus privatem HTML-Export.
+Smith, M. S., & Stein, M. K. (2018). *5 Practices …* (2nd ed., Kap. 9 „Lesson 3“). **Paraphrasiert**; keine wörtliche Wiedergabe.

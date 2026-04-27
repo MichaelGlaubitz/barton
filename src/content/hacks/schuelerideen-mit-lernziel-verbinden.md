@@ -73,4 +73,4 @@ Lernende erleben nicht nur „meine Lösung“, sondern **Struktur**: *Das* ist 
 
 ## Quelle (Hintergrund)
 
-Smith, M. S., & Stein, M. K. (2018). *5 Practices …* (2nd ed., Kap. 5 zu Connecting). **Paraphrasiert**; inhaltlich u. a. aus privatem HTML-Export.
+Smith, M. S., & Stein, M. K. (2018). *5 Practices …* (2nd ed., Kap. 5 zu Connecting). **Paraphrasiert**; keine wörtliche Wiedergabe.

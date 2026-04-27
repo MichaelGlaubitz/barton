@@ -73,4 +73,4 @@ Die gleichen drei Ideen in **anderer Reihenfolge** erzeugen ein anderes Verstän
 
 ## Quelle (Hintergrund)
 
-Smith, M. S., & Stein, M. K. (2018). *5 Practices …* (2nd ed., Kap. 5 zu Sequencing). **Paraphrasiert**; inhaltlich u. a. aus privatem HTML-Export.
+Smith, M. S., & Stein, M. K. (2018). *5 Practices …* (2nd ed., Kap. 5 zu Sequencing). **Paraphrasiert**; keine wörtliche Wiedergabe.

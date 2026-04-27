@@ -72,4 +72,4 @@ Sichtbare, gemeinsame Arbeit **mobilisiert Wissen** in der Gruppe und macht **Fo
 
 ## Quelle (Hintergrund)
 
-Liljedahl, P. (2016). *Building Thinking Classrooms …* (Studien zu Oberflächen, Stehen, Vertikalität). **Paraphrasiert**; privater HTML-Export.
+Liljedahl, P. (2016). *Building Thinking Classrooms …* (Studien zu Oberflächen, Stehen, Vertikalität). **Paraphrasiert**; keine wörtliche Wiedergabe.

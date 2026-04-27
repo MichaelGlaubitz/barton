@@ -73,4 +73,4 @@ Wenn **alle** kurz etwas sagen, bleibt wenig Zeit für **Zusammenhänge**. Gezie
 
 ## Quelle (Hintergrund)
 
-Smith, M. S., & Stein, M. K. (2018). *5 Practices …* (2nd ed., Kap. 5 zu Selecting). **Paraphrasiert**; inhaltlich u. a. aus privatem HTML-Export.
+Smith, M. S., & Stein, M. K. (2018). *5 Practices …* (2nd ed., Kap. 5 zu Selecting). **Paraphrasiert**; keine wörtliche Wiedergabe.
