@@ -37,7 +37,7 @@ quiz:
 
 ## Was ist das?
 
-Aus den „Lessons Learned“ der Five Practices: Wenn Lernende am Ende einer Arbeitsphase oder mit **Vertiefungsfragen** in die Weiterarbeit geschickt werden, solltest du **nachfassen**, welche Fortschritte entstanden sind. Das hält die **Verantwortung** für mathematisches Denken lebendig und verbindet **Plenum / Frage** mit dem ** weiteren Verlauf** der Sequenz.
+Wenn du eine **Vertiefungs- oder Hausaufgabe** gibst — sei es im Plenum als „Denkt bis nächste Stunde nach …“, sei es eine offene Frage am Phasen-Ende — schaffst du dir **bewusst einen festen Ankerpunkt**, an dem du sie wieder **aufgreifst**: in der nächsten Stunde, mit zwei Minuten Plenum, einer Mini-Abstimmung oder einer Tafelnotiz. Ohne diesen Anker zerfasern Vertiefungsfragen schnell zu „Rhetorik“, die Lernende mit der Zeit nicht mehr ernst nehmen — mit Anker werden sie zu einem **verbindlichen Teil der Lernreise**.
 
 ## Warum ist das gut?
 

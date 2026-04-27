@@ -37,7 +37,7 @@ Die **Erarbeitungsphase** ist keine Pause vor dem Plenum, sondern die **Datenlag
 
 ## Was ist das?
 
-Während die Lernenden an einer sinnvollen Aufgabe arbeiten, gehst du **systematisch** (nicht zufällig) durch die Klasse: Du hörst kurz zu, siehst dir Darstellungen an, stellst **wenige, präzise** Zwischenfragen — nicht um alles zu korrigieren, sondern um **zu wissen, was im Raum ist**. Im Framework der Five Practices entspricht das der Idee des **Monitorings** von Schülerarbeit. Monitoring wirkt **weniger überwältigend**, wenn du vorher mögliche Lösungswege durchdacht hast: Erwartbare Strategien fallen dir schneller auf, und du kannst Kopf und Zeit für **unerwartete** — aber mathematisch interessante — Spuren freihalten.
+Während die Klasse arbeitet, gehst du **nicht zufällig** von Tisch zu Tisch, sondern **gezielt** mit zwei Fragen im Kopf: *Welche Lösungswege sehe ich? Welche eignen sich später fürs Plenum?* Du hörst kurz zu, schaust dir Darstellungen an, stellst **wenige, präzise** Zwischenfragen — du **korrigierst nicht alles**, sondern **sammelst** Material. Das wird viel leichter, wenn du dir vorher die wahrscheinlichen Lösungswege überlegt hast: Erwartetes erkennst du in Sekunden und behältst Kopf und Zeit für **unerwartete, mathematisch interessante** Spuren.
 
 ## Warum ist das gut?
 

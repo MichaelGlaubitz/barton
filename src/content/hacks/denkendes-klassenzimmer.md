@@ -7,7 +7,7 @@ tags:
   - Problemorientierung
 order: 30
 quiz:
-  - question: "Was kennzeichnet ein „denkendes Klassenzimmer“ im Sinne von Liljedahls Forschungslinie?"
+  - question: "Was kennzeichnet ein „denkendes Klassenzimmer“?"
     options:
       - "Ein Unterricht, in dem Denken nicht nur erlaubt ist, sondern regelmäßig ausgelöst und von der Lehrkraft erwartet wird — auch im gemeinsamen Arbeiten."
       - "Ein Raum ohne Aufgaben, damit niemand unter Druck steht."
@@ -20,7 +20,7 @@ quiz:
       - "Weil Mathematik ohne Stimmung nicht geht."
       - "Weil Gruppenarbeit immer unfair ist."
     correctIndex: 0
-    explanation: "Normen und Gewohnheiten („studenting“) müssen aktiv umgangen werden, nicht nur beschwichtigt werden."
+    explanation: "Normen und Gewohnheiten müssen aktiv unterlaufen werden, nicht nur beschwichtigt."
   - question: "Fallbeispiel: Lernende warten auf die „richtige“ Erklärung der Lehrkraft. Was ist eine passende Richtung?"
     options:
       - "Noch mehr Erklären am Plenum."
@@ -37,7 +37,7 @@ quiz:
 
 ## Was ist das?
 
-Aus der Forschung zu **Building Thinking Classrooms** (BTC): Ein denkendes Klassenzimmer ist ein Raum, der **nicht nur** verständnisvoll für Mathematik ist, sondern **Gelegenheit zum Denken schafft** — für Einzelne und für die Gruppe beim **Aktivitäten und Diskutieren**. Die Lehrkraft **fördert** Denken und **erwartet** es (implizit und explizit). Das Kapitel ordnet sich u. a. in Arbeit zu mathematischem Denken, Klassenraumnormen und Aktivität ein und sucht **handhabbare** Praktiken, die typische „Mitmach- ohne-Denken“-Muster durchbrechen.
+Ein **denkendes Klassenzimmer** ist nicht „freundlicher Unterricht plus Mathe“, sondern ein Raum, in dem **mathematisches Denken regelmäßig ausgelöst** wird. Lernende **probieren, begründen, vergleichen**, statt nur einer Erklärung der Lehrkraft zu folgen oder ein Schema abzuspulen. Die Lehrkraft **erwartet** dieses Denken — sichtbar im Plenum, hörbar in Gruppen, lesbar an Whiteboards — und gestaltet **Aufgaben, Sozialform und Raum** so, dass es wahrscheinlicher wird. Es ist ein **Zielbild**, das die anderen Hacks bündelt: anspruchsvolle Aufgaben, vertikale Flächen, sichtbar zufällige Gruppen, präzise Fragen — all das wird erst sinnvoll, wenn klar ist, **was sichtbar werden soll**.
 
 ## Warum ist das gut?
 

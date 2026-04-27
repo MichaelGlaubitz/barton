@@ -7,13 +7,13 @@ tags:
   - Problemorientierung
 order: 31
 quiz:
-  - question: "Warum war in Liljedahls Forschungsnarrativ „nur sehr schwere Aha-Aufgaben“ am Anfang oft zu grob?"
+  - question: "Warum sind „nur sehr schwere Aha-Aufgaben“ als Einstieg in Problemlösen oft zu grob?"
     options:
-      - "Weil zuerst überhaupt wieder echte Problemlöse-Erfahrungen in der Klasse etabliert werden mussten — bevor extrem illuminationssuche Aufgaben sinnvoll sind."
+      - "Weil zuerst überhaupt wieder echte Problemlöse-Erfahrungen in der Klasse aufgebaut werden müssen — bevor extrem schwierige Illuminationsaufgaben sinnvoll sind."
       - "Weil schwere Aufgaben illegal sind."
       - "Weil Schüler keine Aufgaben mögen."
     correctIndex: 0
-    explanation: "Der Einstieg zielte auf Engagement in Problemlösen, nicht sofort auf den perfekten Aha-Moment."
+    explanation: "Der Einstieg zielt auf Engagement im Problemlösen, nicht sofort auf den perfekten Aha-Moment."
   - question: "Was ist ein Merkmal einer denk-anstoßenden Problemaufgabe?"
     options:
       - "Der komplette Rechenweg steht schon in der Aufgabenstellung."
@@ -37,7 +37,7 @@ quiz:
 
 ## Was ist das?
 
-Im beschriebenen Forschungsweg stand zuerst **Problemlösen im Unterricht** im Mittelpunkt: nicht sofort die „perfekte“ Illuminationsaufgabe, sondern **Erfolge beim Bearbeiten anspruchsvoller Problemaufgaben**. Wo schon **etwas Problemlösekultur** existierte, fielen Einstiege leichter; wo **nur vorgeführte Beispiele und Arbeitsblätter** dominierten, klappte der Übergang schlechter. Für ein denkendes Klassenzimmer brauchst du **Aufgaben**, die Sinnstiftung, Strategiewahl oder Begründung erfordern — nicht nur Wiederholung.
+Eine **Problemaufgabe** ist eine Aufgabe, deren Lösungsweg sich **nicht** aus der Aufgabenstellung selbst ergibt — Lernende müssen die Situation **verstehen**, eine **Strategie wählen** und ihren Weg **begründen**. Sie hat oft **mehrere Zugänge**, eine **Begründungslücke** oder lädt zu **Vergleichen** ein („Welcher Tarif lohnt sich — und warum?“, „Welche Brüche lassen sich zu ¾ vereinfachen?“). Verfahrensaufgaben wie „kürze diese zehn Brüche“ haben ihren Platz im Übungsteil — aber sie liefern wenig Stoff für ein Plenum, in dem es etwas zu **diskutieren** gibt. Wo Lernende vorher fast nur mit Musterlösungen und Arbeitsblättern gearbeitet haben, fällt der Einstieg in echte Problemaufgaben spürbar schwerer; dann lohnt es, mit **zugänglichen** Problemen anzufangen und Schritt für Schritt anspruchsvoller zu werden — nicht sofort die schwerste Olympiadeaufgabe.
 
 ## Warum ist das gut?
 

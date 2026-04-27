@@ -13,15 +13,15 @@ quiz:
       - "Weil Permanentmarker schöner sind."
       - "Weil vertikale Flächen immer kleiner sind."
     correctIndex: 0
-    explanation: "Wechselhaftigkeit senkt die Angst vor dem ersten Strich — zentral in den beschriebenen Messungen."
-  - question: "Warum schneiden **vertikale** Flächen in den Studien oft besser ab als **horizontale** Whiteboards auf dem Tisch?"
+    explanation: "Wechselhaftigkeit senkt die Angst vor dem ersten Strich — entscheidend für den schnellen Einstieg ins Mathematisieren."
+  - question: "Warum schneiden **vertikale** Flächen in der Praxis oft besser ab als **horizontale** Whiteboards auf dem Tisch?"
     options:
       - "Weil sitzend am Tisch weiterhin Anonymität und „Ausweichen“ möglich ist — stehend an der Wand ist die Arbeit für alle sichtbarer."
       - "Weil horizontal mathematisch falsch ist."
       - "Weil Tische zu hoch sind."
     correctIndex: 0
-    explanation: "Körperhaltung und Sichtbarkeit hängen mit Beteiligung zusammen."
-  - question: "Fallbeispiel: Flipchart mit Filzstift — alle reden lange, aber niemand schreibt. Was passt zur Forschungsbeobachtung?"
+    explanation: "Sichtbarkeit und Körperhaltung beeinflussen, wer wirklich mitarbeitet."
+  - question: "Fallbeispiel: Flipchart mit Filzstift — alle reden lange, aber niemand schreibt. Was ist die wahrscheinlichste Ursache?"
     options:
       - "Permanente Spuren erhöhen die Schwelle zum ersten Aufschreiben; wechselnde Oberflächen wären hier hilfreicher."
       - "Filzstifte sind immer schuld."
@@ -37,7 +37,7 @@ quiz:
 
 ## Was ist das?
 
-Im Kapitel wird die Bewegung von **Sitzarbeit am Platz** zu **stehender Arbeit** und zu **Whiteboards/Tafeln** beschrieben — und experimentell verglichen mit Flipchart-Papier, kleinen Boards auf dem Tisch usw. **Vertikale, nicht-permanente Oberflächen** (VNPS-Idee) erwiesen sich in den berichteten Studienkontexten als besonders wirksam: Lernende beginnen **schneller** mit mathematischen Notationen, diskutieren **eher**, nehmen **aktiver** teil. **Nicht-Permanenz** erleichtert das **Wegwischen** und damit **riskantes Probieren**; **Vertikale** und **Stehen** reduzieren „Verstecken“ im Vergleich zu sitzender Arbeit selbst am horizontalen Board.
+Lernende arbeiten **stehend** an **vertikalen, leicht löschbaren Flächen** — Whiteboards, Kreidetafeln, beschreibbare Wandfolien — statt sitzend am Heft oder auf einem Flipchart-Bogen, der bleibt. Drei Hebel wirken zusammen: **Vertikalität** macht jede Spur für die ganze Gruppe sichtbar, **Stehen** erschwert das Verstecken hinter dem Mitschüler, und die **Wegwischbarkeit** senkt die Hemmschwelle, einen ersten — vielleicht falschen — Strich zu setzen. Schon ein kurzer Wechsel von „Heft auf“ zu „an die Wand“ ändert oft, wer in der Gruppe schreibt, redet und mitdenkt.
 
 ## Warum ist das gut?
 

@@ -20,7 +20,7 @@ quiz:
       - "Lernende müssen die Situation verstehen und einen eigenen Kurs wählen — mehrere tragfähige Wege sind denkbar."
       - "Es gibt genau eine Zeile Platz für die Antwort."
     correctIndex: 1
-    explanation: "Offene, anspruchsvolle Aufgaben fördern Argumentation und Vergleich — zentral im Five-Practices-Ansatz."
+    explanation: "Offene, anspruchsvolle Aufgaben fördern Argumentation und Vergleich — zentral für mathematisch reiche Gespräche."
   - question: "Fallbeispiel: Im Plenum sollen nur vorgelesen werden, wie jede Gruppe „vereinfacht hat“. Was fehlt meist?"
     options:
       - "Mathematische Zusammenhänge, Vergleich von Wegen und explizite Ideen zum Lernziel."
@@ -37,7 +37,7 @@ quiz:
 
 ## Was ist das?
 
-Eine Orientierung aus den „Lessons Learned“ der Five Practices: **Hoch anspruchvolle, kognitiv fordernde Aufgaben** sind eine **notwendige Bedingung** für produktive Unterrichtsgespräche. Solche Aufgaben laden zu **Begründen, Problemlösen und mehreren Zugängen** ein — oft ohne dass ein einziger Lösungsweg in der Formulierung vorgegeben ist. **Reine Verfahrensaufgaben** haben ihren Platz im Curriculum, liefern aber selten den Stoff für eine Diskussion, in der verschiedene Ideen **verglichen und verknüpft** werden.
+Eine **kognitiv anspruchsvolle Aufgabe** ist die Voraussetzung für ein produktives Plenum — nicht ein gut moderiertes Gespräch. Solche Aufgaben verlangen **Begründen, Strategiewahl, Vergleichen** oder lassen **mehrere tragfähige Wege** zu; oft steht der Lösungsweg eben **nicht** schon in der Formulierung. Reine Verfahrensaufgaben („wende Schema X auf zwölf Fälle an“) gehören in den Übungsteil — im Plenum produzieren sie höchstens eine Liste identischer Rechnungen. Erst wenn unterschiedliche Wege, Darstellungen und Konflikte im Raum sind, lohnt sich eine Diskussion, in der Lernende mathematische Verbindungen herstellen, die sie behalten.
 
 ## Warum ist das gut?
 

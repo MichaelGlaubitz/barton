@@ -7,9 +7,9 @@ tags:
   - Monitoring
 order: 28
 quiz:
-  - question: "Wozu dient ein Monitoring-Chart in der Five-Practices-Logik?"
+  - question: "Wozu dient ein Monitoring-Chart bei zielgerichteter Plenumsplanung?"
     options:
-      - "Um während der Arbeitsphase schnell zu erfassen, welche Lösungswege wo vorkommen — als Grundlage für Selecting und Sequencing."
+      - "Um während der Arbeitsphase schnell zu erfassen, welche Lösungswege wo vorkommen — als Grundlage für Auswahl und Reihenfolge im Plenum."
       - "Um Noten für Gruppenarbeit zu vergeben."
       - "Um Elternbriefe zu schreiben."
     correctIndex: 0
@@ -37,7 +37,7 @@ quiz:
 
 ## Was ist das?
 
-Ein **Monitoring-Chart** ist eine übersichtliche Matrix: In den **Spalten** oder **Zeilen** stehen die **Strategien oder Darstellungen**, die du vorher erwartest (aus dem Anticipating); während der Erarbeitung trägst du ein, **welche Gruppe oder welche Lernperson** welche Spur zeigt — oft nur mit **Strichen oder Kürzeln**. Im Begleitmaterial zu den Five Practices wird es als **praktisches Werkzeug** für die Orchestrierung produktiver Diskussionen hervorgehoben.
+Ein **Monitoring-Chart** ist eine kleine, übersichtliche Matrix, die du **vor** der Stunde anlegst: In den **Spalten** stehen die **Strategien oder Darstellungen**, die du erwartest (algebraisch, zeichnerisch, Zahlbeispiel, typischer Fehler …) — in den **Zeilen** die Gruppen oder Lernenden. Während des Rundgangs durch die Erarbeitungsphase trägst du nur **ein Häkchen oder Kürzel** ein, wo etwas auftaucht. So entsteht in wenigen Minuten eine **Landkarte** der Klasse: Wer hat welchen Weg, wo sind Stolperstellen, wer hat etwas, das ins Plenum gehört? Im Plenum brauchst du dann nicht mehr suchen — du **wählst aus** und entscheidest die **Reihenfolge**.
 
 ## Warum ist das gut?
 

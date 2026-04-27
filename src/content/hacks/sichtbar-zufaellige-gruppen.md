@@ -7,21 +7,21 @@ tags:
   - Kooperation
 order: 33
 quiz:
-  - question: "Was war in der beschriebenen Forschung der Unterschied zwischen „Zufallsgruppen hinter dem Vorhang“ und **sichtbar** zufälligen Gruppen?"
+  - question: "Worin liegt der Unterschied zwischen „Zufallsgruppen hinter dem Vorhang“ und **sichtbar** zufälligen Gruppen?"
     options:
-      - "Ohne sichtbares Ziehlosen vermuteten Lernende oft trotzdem eine versteckte Lehrkraft-Agenda — Verhalten änderte sich kaum."
+      - "Ohne sichtbares Ziehen vermuten Lernende oft trotzdem eine versteckte Lehrkraft-Agenda — das Verhalten ändert sich kaum."
       - "Es gibt keinen Unterschied."
-      - "Sichtbares Zufallsprinzip war verboten."
+      - "Sichtbares Zufallsprinzip ist verboten."
     correctIndex: 0
-    explanation: "Transparenz des Zufallsprinzips war entscheidend für Vertrauen und neue Kooperationsmuster."
-  - question: "Welche Häufigkeit wird im Kapitel u. a. für weiterführende Schulstufen genannt?"
+    explanation: "Transparenz des Zufallsprinzips ist entscheidend für Vertrauen und neue Kooperationsmuster."
+  - question: "Welche Häufigkeit ist auf weiterführenden Stufen sinnvoll, damit der Effekt sich entfaltet?"
     options:
       - "Einmal im Schuljahr."
       - "In der Regel **jede** Unterrichtsstunde neu gruppieren (sichtbar zufällig)."
       - "Nur an Prüfungstagen."
     correctIndex: 1
-    explanation: "Regelmäßiges Neugruppieren war Teil der beobachteten Intervention."
-  - question: "Welche Wirkung wird nach wenigen Wochen typischerweise beobachtet (Zusammenfassung der Kernaussagen)?"
+    explanation: "Regelmäßiges Neugruppieren gehört zum Kern dieses Hacks — sonst kehren alte Muster zurück."
+  - question: "Welche Wirkung lässt sich nach wenigen Wochen typischerweise beobachten?"
     options:
       - "Lernende arbeiten eher in **jeder** Zuteilung mit, soziale Barrieren können abnehmen, Wissensaustausch zwischen Gruppen kann zunehmen."
       - "Alle werden sofort Mathe-Olympiasieger."
@@ -37,7 +37,7 @@ quiz:
 
 ## Was ist das?
 
-Das Kapitel beschreibt das Problem: **strategische** Gruppen der Lehrkraft und **freiwillige** Freundesgruppen der Lernenden verfolgen oft **unterschiedliche Ziele** — das schwächt Gruppenarbeit. Reine **Randomisierung ohne Sichtbarkeit** half wenig, weil dennoch eine „versteckte Agenda“ vermutet wurde. **Sichtbar zufällige** Gruppenbildung (z. B. öffentlich Lostern, mischen) und **hohe Frequenz** (im Text u. a. täglich in weiterführenden Schulen) führten in den berichteten Settings zu spürbaren Veränderungen: Lernende wurden **zustimmender** gegenüber jeder Zuteilung, **soziale Barrieren** nahmen ab, **Wissen bewegte sich** stärker zwischen Gruppen, die **Abhängigkeit von der Lehrkraft als alleinige Antwortinstanz** kann sinken, **Engagement** steigt — Effekte wurden u. a. in Fallstudien und Interviews gestützt.
+Du bildest **vor allen Augen** zufällige Gruppen — z. B. mit gemischten Karten, einem Generator am Beamer oder einem Lostopf — und das **regelmäßig**, im Idealfall jede Stunde. Klingt klein, ist aber wirksam: **Strategische** Gruppen der Lehrkraft und **freiwillige** Cliquen der Lernenden verfolgen oft sehr unterschiedliche Ziele, was Gruppenarbeit erschöpft. **Heimlicher** Zufall hilft kaum, weil Lernende einer „versteckten Lehrkraft-Agenda“ misstrauen. Ist der Zufall **sichtbar** und **regelmäßig**, fallen mit der Zeit Vorbehalte gegen die Zuteilung, soziale Schranken werden durchlässiger, Wissen bewegt sich zwischen Gruppen — und das Dauer-„Aber ich will mit X arbeiten!“ verliert seine Macht.
 
 ## Warum ist das gut?
 
