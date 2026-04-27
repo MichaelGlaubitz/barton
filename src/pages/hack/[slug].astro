@@ -20,15 +20,16 @@ const base = import.meta.env.BASE_URL;
 
 <BaseLayout title={`${entry.data.title} — Mathechismus.de`} description={entry.data.summary}>
 	<article class="prose">
-		<p>
+		<p class="hack-back">
 			<a href={`${base}`}>← Alle Hacks</a>
 		</p>
+		<p class="hack-eyebrow">Hack · Mathechismus</p>
 		<div class="hack-detail-header">
 			<span class="hack-detail-header__emoji" aria-hidden="true">{hackEmoji(entry.id)}</span>
 			<h1>{entry.data.title}</h1>
+			<p class="hack-detail-header__lead">{entry.data.summary}</p>
 		</div>
-		<p class="lead">{entry.data.summary}</p>
-		<div class="tags" style="margin-bottom: 1.5rem;">
+		<div class="tags">
 			{entry.data.tags.map((t) => (
 				<span class="tag">{t}</span>
 			))}

@@ -96,32 +96,56 @@ const hacksById = new Map(hacks.map((hack) => [hack.id, hack]));
 ---
 
 <BaseLayout title="Mathechismus.de — Mathematikunterricht">
-	<h1>Mathechismus.de</h1>
-	<p class="lead">
-		Wirksame Hacks für besseren Matheunterricht. Kein Geschwurbel, sondern kognitionspsychologisch fundiert, im Unterrichtsalltag erprobt und sofort umsetzbar.
-	</p>
+	<section class="hero">
+		<p class="hero__kicker">Mathechismus · Pädagogische Hacks</p>
+		<h1>Mathematik, <span class="accent">die ankommt.</span></h1>
+		<p class="hero__lead">
+			Kurze, wirksame Ideen für besseren Matheunterricht — kognitionspsychologisch fundiert, im Alltag erprobt, sofort umsetzbar. Kein Geschwurbel.
+		</p>
+		<div class="hero__stats" aria-label="Übersicht">
+			<div>
+				<strong>{hacks.length}</strong>
+				<span>Hacks im Katalog</span>
+			</div>
+			<div>
+				<strong>{functionGroups.length}</strong>
+				<span>Themenfelder</span>
+			</div>
+			<div>
+				<strong>2</strong>
+				<span>Buchquellen verarbeitet</span>
+			</div>
+		</div>
+	</section>
+
 	<div class="hack-catalog" data-hack-catalog>
-		<div class="filter-bar" role="toolbar" aria-label="Hacks nach Hauptfunktion filtern">
-			<button type="button" class="filter-chip is-active" data-filter="all" aria-pressed="true">
-				Alle
-			</button>
-			{
-				functionGroups.map((g) => (
-					<button type="button" class="filter-chip" data-filter={g.key} aria-pressed="false">
-						{g.chipLabel}
-					</button>
-				))
-			}
+		<div class="filter-shell">
+			<div class="filter-bar" role="toolbar" aria-label="Hacks nach Hauptfunktion filtern">
+				<button type="button" class="filter-chip is-active" data-filter="all" aria-pressed="true">
+					Alle
+				</button>
+				{
+					functionGroups.map((g) => (
+						<button type="button" class="filter-chip" data-filter={g.key} aria-pressed="false">
+							{g.chipLabel}
+						</button>
+					))
+				}
+			</div>
 		</div>
 		{
-			functionGroups.map((group) => {
+			functionGroups.map((group, gi) => {
 				const groupedHacks = group.ids
 					.map((id) => hacksById.get(id))
 					.filter(Boolean);
 				if (groupedHacks.length === 0) return null;
+				const num = String(gi + 1).padStart(2, '0');
 				return (
 					<section class="function-group" data-group={group.key}>
-						<h2>{group.title}</h2>
+						<div class="function-group__head">
+							<span class="function-group__num" aria-hidden="true">{num}</span>
+							<h2>{group.title}</h2>
+						</div>
 						<p class="function-group__desc">{group.description}</p>
 						<div class="hack-grid">
 							{groupedHacks.map((h) => (
@@ -169,7 +193,4 @@ const hacksById = new Map(hacks.map((hack) => [hack.id, hack]));
 			});
 		})();
 	</script>
-	<footer class="site-footer">
-		Inhalte dienen der Unterrichtsplanung; keine Rechts- oder Verlagsempfehlung für Drittquellen.
-	</footer>
 </BaseLayout>
