@@ -467,6 +467,51 @@ a:hover {
 	letter-spacing: 0.02em;
 }
 
+.litanei {
+	margin: 1.25rem 0;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 0.15rem 0;
+}
+
+.litanei dt {
+	margin-top: 0.85rem;
+	padding-left: 2rem;
+	text-indent: -2rem;
+}
+
+.litanei dd {
+	margin: 0 0 0 2rem;
+	padding-left: 2rem;
+	text-indent: -2rem;
+	color: var(--muted);
+	font-style: italic;
+}
+
+.litanei dt:first-child {
+	margin-top: 0;
+}
+
+.litanei__role {
+	display: inline-block;
+	min-width: 1.4rem;
+	margin-right: 0.4rem;
+	font-weight: 700;
+	font-style: normal;
+	color: var(--accent);
+	font-variant: small-caps;
+}
+
+.litanei dd .litanei__role {
+	color: var(--accent2);
+}
+
+.litanei__intro,
+.litanei__pivot {
+	margin: 1.1rem 0 0.5rem;
+	color: var(--muted);
+}
+
 .quiz {
 	margin-top: 2.5rem;
 	padding: 1.5rem;
