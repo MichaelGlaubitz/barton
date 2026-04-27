@@ -1,0 +1,99 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+	title="Bekenntnis und Vaterunser — Mathechismus.de"
+	description="Satirisches Glaubensbekenntnis und Vaterunser des Mathematikunterrichts — Bonus zur Polemik."
+>
+	<article class="gebote">
+		<header class="gebote__head">
+			<p class="gebote__kicker">Bonus · Liturgie</p>
+			<h1>Bekenntnis und Vaterunser</h1>
+			<p class="gebote__sub">Im Anschluss an <a href={`${import.meta.env.BASE_URL}gebote/`}>die zehn Gebote</a> — zu sprechen im Lehrerzimmer, sotto voce, vor der dritten Doppelstunde.</p>
+		</header>
+
+		<section class="credo" aria-labelledby="credo-title">
+			<header class="credo__head">
+				<p class="gebote__kicker">I · Bekenntnis</p>
+				<h2 id="credo-title">Das Bekenntnis von Mathechismus</h2>
+			</header>
+
+			<div class="credo__body">
+				<p>
+					Ich glaube an den <strong>Lernerfolg</strong>, den Allmächtigen,<br />
+					Schöpfer von Können und Klarheit,<br />
+					Vater aller verstandenen Verfahren.
+				</p>
+
+				<p>
+					Und an das <strong>Üben</strong>, sein eingeborenes Kind, unsern Anker,<br />
+					empfangen durch direkte Instruktion,<br />
+					geboren aus dem gelösten Beispiel,<br />
+					gelitten unter Reformpapieren,<br />
+					gekreuzigt zwischen Stationenlauf und Gallery Walk,<br />
+					gestorben am Padlet und begraben unter Erklärvideos.<br />
+					Hinabgestiegen in das Reich der Erkundungsphasen.<br />
+					Am dritten Schultag wieder auferstanden von den Modetrends,<br />
+					aufgefahren in den Himmel der Automatisierung,<br />
+					sitzend zur Rechten der Kognitionswissenschaft,<br />
+					von wo es wiederkommen wird, zu richten<br />
+					die „reichhaltigen offenen Aufgaben“ und die „dialogische Aufgabenkultur“.
+				</p>
+
+				<p>
+					Ich glaube an den <strong>Heiligen Abruf</strong>,<br />
+					an eine heilige, übende Klassengemeinschaft,<br />
+					an die Gemeinschaft der gelösten Beispiele,<br />
+					an Vergebung der Rechenfehler,<br />
+					an Auferstehung des Vorwissens<br />
+					und an ein gut strukturiertes Leben in der Mathematik.
+				</p>
+
+				<p class="credo__amen">— Sprich: <em>Q. e. d.</em></p>
+			</div>
+		</section>
+
+		<section class="credo" aria-labelledby="pater-title">
+			<header class="credo__head">
+				<p class="gebote__kicker">II · Anrufung</p>
+				<h2 id="pater-title">Das Vaterunser des Mathematikunterrichts</h2>
+			</header>
+
+			<div class="credo__body">
+				<p>
+					Unser <strong>Üben</strong>, das du bist im Stundenplan,<br />
+					geheiligt werde dein Verfahren.<br />
+					Dein Lernerfolg komme,<br />
+					dein Wille geschehe — in der Klarheit, wie im Plenum.
+				</p>
+
+				<p>
+					Unser tägliches <strong>gelöstes Beispiel</strong> gib uns heute,<br />
+					und vergib uns unsere Verständnislücken,<br />
+					wie auch wir denen vergeben, die uns „kompetenzorientiert“ lehrten.<br />
+					Und führe uns nicht in die Versuchung des Gallery Walks,<br />
+					sondern erlöse uns von dem Padlet.
+				</p>
+
+				<p>
+					Denn dein ist das Verfahren<br />
+					und das Können und die Klarheit<br />
+					in Ewigkeit.
+				</p>
+
+				<p class="credo__amen">— Sprich: <em>Q. e. d.</em></p>
+			</div>
+		</section>
+
+		<p class="gebote__schluss">
+			<em>Hinweis.</em> Bekenntnis und Vaterunser sind nicht zur tatsächlichen Andacht gedacht. Wer sie laut spricht, riskiert die Liebe seines Fachseminars. Wer sie still mitdenkt, riskiert nichts — außer, dass die nächste Stunde besser wird.
+		</p>
+
+		<p class="gebote__back">
+			<a href={`${import.meta.env.BASE_URL}gebote/`}>← Zurück zu den Geboten</a>
+			<span aria-hidden="true"> · </span>
+			<a href={import.meta.env.BASE_URL}>Hack-Katalog</a>
+		</p>
+	</article>
+</BaseLayout>
