@@ -1,0 +1,143 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { hackEmoji } from '../lib/hackCardIcons';
+import { getCollection } from 'astro:content';
+
+const hacks = (await getCollection('hacks')).sort(
+	(a, b) => (a.data.order ?? 999) - (b.data.order ?? 999),
+);
+const base = import.meta.env.BASE_URL;
+
+const functionGroups = [
+	{
+		key: 'wissen',
+		chipLabel: 'Wissen',
+		title: 'Wissen sichern und abrufbar machen',
+		description: 'Hacks für Erinnerung, Wiederkehr und langfristiges Behalten.',
+		ids: ['abruf-ueben', 'zeitlicher-abstand', 'vorwissen-diagnose', 'exit-tickets'],
+	},
+	{
+		key: 'verstehen',
+		chipLabel: 'Verstehen',
+		title: 'Verstehen aufbauen und transferieren',
+		description: 'Hacks für Konzeptaufbau, Vergleich und flexibles Anwenden.',
+		ids: [
+			'geloestes-beispiel',
+			'beispielfamilien',
+			'repraesentationen-wechseln',
+			'vergleichsaufgaben',
+			'aufgaben-stufen-oeffnen',
+			'themen-vermischen',
+		],
+	},
+	{
+		key: 'ueben',
+		chipLabel: 'Üben',
+		title: 'Üben wirksamer steuern',
+		description: 'Hacks für bessere Aufgabenwahl, Rückmeldung und Selbstkontrolle.',
+		ids: ['zweckvolle-uebung', 'feedback-handlungsnah', 'leitfragen-selbstkontrolle'],
+	},
+	{
+		key: 'diagnose',
+		chipLabel: 'Diagnose',
+		title: 'Diagnose und Unterrichtsentscheidungen',
+		description: 'Hacks, mit denen du Unterricht in Echtzeit adaptierst.',
+		ids: ['hinge-questions', 'mini-whiteboards'],
+	},
+	{
+		key: 'fehler-denken',
+		chipLabel: 'Fehler & Denken',
+		title: 'Fehlerkultur und mathematisches Denken',
+		description: 'Hacks für produktive Fehlerarbeit und hochwertige Diskussionen.',
+		ids: ['fehler-lernen', 'fehler-vorhersagen', 'fragetechnik', 'sprachsensibel-erklaeren'],
+	},
+	{
+		key: 'entlastung',
+		chipLabel: 'Entlastung',
+		title: 'Kognitive Entlastung',
+		description: 'Hacks, die unnötige Belastung reduzieren und Denkraum schaffen.',
+		ids: ['kognitive-last'],
+	},
+];
+
+const hacksById = new Map(hacks.map((hack) => [hack.id, hack]));
+---
+
+<BaseLayout title="Mathechismus.de — Mathematikunterricht">
+	<h1>Mathechismus.de</h1>
+	<p class="lead">
+		Wirksame Hacks für besseren Matheunterricht. Kein Geschwurbel, sondern kognitionspsychologisch fundiert, im Unterrichtsalltag erprobt und sofort umsetzbar.
+	</p>
+	<div class="hack-catalog" data-hack-catalog>
+		<div class="filter-bar" role="toolbar" aria-label="Hacks nach Hauptfunktion filtern">
+			<button type="button" class="filter-chip is-active" data-filter="all" aria-pressed="true">
+				Alle
+			</button>
+			{
+				functionGroups.map((g) => (
+					<button type="button" class="filter-chip" data-filter={g.key} aria-pressed="false">
+						{g.chipLabel}
+					</button>
+				))
+			}
+		</div>
+		{
+			functionGroups.map((group) => {
+				const groupedHacks = group.ids
+					.map((id) => hacksById.get(id))
+					.filter(Boolean);
+				if (groupedHacks.length === 0) return null;
+				return (
+					<section class="function-group" data-group={group.key}>
+						<h2>{group.title}</h2>
+						<p class="function-group__desc">{group.description}</p>
+						<div class="hack-grid">
+							{groupedHacks.map((h) => (
+								<a class="hack-card" href={`${base}hack/${h.id}/`}>
+									<span class="hack-card__emoji-slot" aria-hidden="true">{hackEmoji(h.id)}</span>
+									<h3>{h.data.title}</h3>
+									<p>{h.data.summary}</p>
+									<div class="tags">
+										{h.data.tags.map((t) => (
+											<span class="tag">{t}</span>
+										))}
+									</div>
+								</a>
+							))}
+						</div>
+					</section>
+				);
+			})
+		}
+	</div>
+	<script>
+		(function () {
+			const root = document.querySelector('[data-hack-catalog]');
+			if (!root) return;
+			const sections = root.querySelectorAll('.function-group');
+			const chips = root.querySelectorAll('.filter-chip');
+
+			function setActive(chip) {
+				chips.forEach((c) => {
+					const on = c === chip;
+					c.classList.toggle('is-active', on);
+					c.setAttribute('aria-pressed', on ? 'true' : 'false');
+				});
+			}
+
+			chips.forEach((chip) => {
+				chip.addEventListener('click', () => {
+					const filter = chip.dataset.filter ?? 'all';
+					setActive(chip);
+					sections.forEach((sec) => {
+						const show = filter === 'all' || sec.dataset.group === filter;
+						sec.hidden = !show;
+					});
+				});
+			});
+		})();
+	</script>
+	<footer class="site-footer">
+		Inhalte dienen der Unterrichtsplanung; keine Rechts- oder Verlagsempfehlung für Drittquellen.
+	</footer>
+</BaseLayout>

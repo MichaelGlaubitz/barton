@@ -1,0 +1,128 @@
+---
+export interface QuizQuestion {
+	question: string;
+	options: string[];
+	correctIndex: number;
+	explanation: string;
+}
+
+interface Props {
+	questions: QuizQuestion[];
+	quizId: string;
+}
+
+const { questions, quizId } = Astro.props;
+if (!questions?.length) return null;
+
+const rootId = `hack-quiz-root-${quizId}`;
+const questionsJson = JSON.stringify(questions);
+---
+
+<section
+	class="quiz"
+	aria-labelledby={`quiz-heading-${quizId}`}
+	id={rootId}
+	data-hack-quiz
+	data-quiz-id={quizId}
+	data-questions={questionsJson}
+>
+	<h2 id={`quiz-heading-${quizId}`}>Mini-Quiz</h2>
+	{
+		questions.map((q, qi) => (
+			<div class="quiz-question" data-quiz-question={qi}>
+				<p>{q.question}</p>
+				<div class="quiz-options" role="radiogroup" aria-labelledby={`q-${quizId}-${qi}-label`}>
+					<span id={`q-${quizId}-${qi}-label`} class="visually-hidden">
+						Frage {qi + 1}
+					</span>
+					{q.options.map((opt, oi) => (
+						<label>
+							<input type="radio" name={`q-${quizId}-${qi}`} value={oi} />
+							<span>{opt}</span>
+						</label>
+					))}
+				</div>
+				<div class="quiz-actions">
+					<button type="button" class="btn" data-check={`${quizId}-${qi}`}>
+						Antwort prüfen
+					</button>
+					<button type="button" class="btn btn--ghost" data-reset={`${quizId}-${qi}`}>
+						Zurücksetzen
+					</button>
+				</div>
+				<div class="quiz-feedback" data-feedback={`${quizId}-${qi}`} hidden />
+			</div>
+		))
+	}
+</section>
+
+<style is:global>
+	.visually-hidden {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		padding: 0;
+		margin: -1px;
+		overflow: hidden;
+		clip: rect(0, 0, 0, 0);
+		white-space: nowrap;
+		border: 0;
+	}
+</style>
+
+<script>
+	function initOne(root: HTMLElement) {
+		const quizId = root.getAttribute('data-quiz-id');
+		const questionsJson = root.getAttribute('data-questions');
+		if (!quizId || !questionsJson) return;
+
+		type Q = { correctIndex: number; explanation: string };
+		let questions: Q[];
+		try {
+			questions = JSON.parse(questionsJson) as Q[];
+		} catch {
+			return;
+		}
+
+		questions.forEach((q, qi) => {
+			const key = `${quizId}-${qi}`;
+			const checkBtn = root.querySelector<HTMLButtonElement>(`[data-check="${key}"]`);
+			const resetBtn = root.querySelector<HTMLButtonElement>(`[data-reset="${key}"]`);
+			const feedback = root.querySelector<HTMLDivElement>(`[data-feedback="${key}"]`);
+			const radios = root.querySelectorAll<HTMLInputElement>(`input[name="q-${quizId}-${qi}"]`);
+
+			checkBtn?.addEventListener('click', () => {
+				if (!feedback) return;
+				const selected = [...radios].find((r) => r.checked);
+				if (!selected) {
+					feedback.hidden = false;
+					feedback.className = 'quiz-feedback quiz-feedback--bad';
+					feedback.textContent = 'Bitte eine Antwort auswählen.';
+					return;
+				}
+				const idx = parseInt(selected.value, 10);
+				const ok = idx === q.correctIndex;
+				feedback.hidden = false;
+				feedback.className = ok ? 'quiz-feedback quiz-feedback--ok' : 'quiz-feedback quiz-feedback--bad';
+				feedback.textContent = ok ? `Stimmt. ${q.explanation}` : `Noch nicht passend. ${q.explanation}`;
+			});
+
+			resetBtn?.addEventListener('click', () => {
+				radios.forEach((r) => {
+					r.checked = false;
+				});
+				if (feedback) {
+					feedback.hidden = true;
+					feedback.textContent = '';
+					feedback.className = 'quiz-feedback';
+				}
+			});
+		});
+	}
+
+	function initAll() {
+		document.querySelectorAll<HTMLElement>('[data-hack-quiz]').forEach(initOne);
+	}
+
+	initAll();
+</script>

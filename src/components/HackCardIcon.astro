@@ -1,0 +1,15 @@
+---
+import { hackCardIconMarkup } from '../lib/hackCardIcons';
+
+interface Props {
+	hackId: string;
+	/** Karten auf der Startseite vs. Kopfzeile auf der Detailseite */
+	variant?: 'card' | 'detail';
+}
+
+const { hackId, variant = 'card' } = Astro.props;
+const iconHtml = hackCardIconMarkup(hackId);
+const wrapperClass = variant === 'detail' ? 'hack-detail-header__icon' : 'hack-card__icon-slot';
+---
+
+<span class={wrapperClass} aria-hidden="true" set:html={iconHtml} />

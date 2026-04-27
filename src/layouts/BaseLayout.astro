@@ -1,0 +1,75 @@
+---
+import '../styles/global.css';
+import 'katex/dist/katex.min.css';
+
+interface Props {
+	title: string;
+	description?: string;
+}
+
+const { title, description = 'Mathechismus.de: kurze, wirksame Ideen für den Mathematikunterricht — mit Mini-Quiz.' } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).href;
+---
+
+<!doctype html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8" />
+		<script is:inline>
+			(() => {
+				const stored = localStorage.getItem('theme');
+				const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+				const theme = stored === 'light' || stored === 'dark' ? stored : prefersLight ? 'light' : 'dark';
+				document.documentElement.setAttribute('data-theme', theme);
+			})();
+		</script>
+		<link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}favicon.svg`} />
+		<link rel="icon" href={`${import.meta.env.BASE_URL}favicon.ico`} />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content={description} />
+		<link rel="canonical" href={canonical} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<header class="site-header">
+			<div class="site-header__inner">
+				<p class="site-title"><a href={import.meta.env.BASE_URL}>Mathechismus.de</a></p>
+				<nav class="site-nav" aria-label="Hauptnavigation">
+					<a href={import.meta.env.BASE_URL}>Alle Beiträge</a>
+					<button type="button" class="theme-toggle" data-theme-toggle aria-label="Dunkles Farbschema aktivieren">
+						<span aria-hidden="true" data-theme-toggle-icon>🌙</span>
+					</button>
+				</nav>
+			</div>
+		</header>
+		<main class="site-main">
+			<slot />
+		</main>
+		<script is:inline>
+			(() => {
+				const button = document.querySelector('[data-theme-toggle]');
+				if (!(button instanceof HTMLButtonElement)) return;
+
+				const icon = button.querySelector('[data-theme-toggle-icon]');
+				const apply = (theme) => {
+					document.documentElement.setAttribute('data-theme', theme);
+					localStorage.setItem('theme', theme);
+					if (icon) icon.textContent = theme === 'light' ? '☀️' : '🌙';
+					button.setAttribute(
+						'aria-label',
+						theme === 'light' ? 'Dunkles Farbschema aktivieren' : 'Helles Farbschema aktivieren'
+					);
+				};
+
+				const current = document.documentElement.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
+				apply(current);
+
+				button.addEventListener('click', () => {
+					const next = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+					apply(next);
+				});
+			})();
+		</script>
+	</body>
+</html>
