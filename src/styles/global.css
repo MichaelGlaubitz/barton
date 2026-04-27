@@ -901,6 +901,12 @@ hr {
 	margin: 0;
 }
 
+.site-footer__legal {
+	margin-top: 0.65rem;
+	font-size: 0.82rem;
+	opacity: 0.92;
+}
+
 .site-footer a {
 	color: var(--muted);
 	text-decoration: none;
@@ -1058,6 +1064,35 @@ hr {
 
 .credo__body p:last-child {
 	margin-bottom: 0;
+}
+
+.legal-doc h2 {
+	font-size: 1.12rem;
+	font-weight: 600;
+	margin: 1.85rem 0 0.55rem;
+	color: var(--text);
+	font-family: var(--font-display);
+}
+
+.legal-doc h2:first-of-type {
+	margin-top: 0;
+}
+
+.legal-doc ul {
+	margin: 0 0 1.1rem;
+	padding-left: 1.35rem;
+}
+
+.legal-doc li {
+	margin: 0.35rem 0;
+}
+
+.legal-doc code {
+	font-size: 0.9em;
+	padding: 0.1em 0.35em;
+	border-radius: var(--radius-sm, 4px);
+	background: var(--surface2);
+	color: var(--text);
 }
 
 .credo__body strong {

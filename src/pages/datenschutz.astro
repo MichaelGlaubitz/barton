@@ -1,0 +1,148 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const base = import.meta.env.BASE_URL;
+const contactEmail = (import.meta.env.PUBLIC_CONTACT_EMAIL as string | undefined)?.trim();
+---
+
+<BaseLayout
+	title="Datenschutz — Mathechismus.de"
+	description="Datenschutzerklärung für Mathechismus.de (GitHub Pages, Theme-Speicherung, optional Giscus)."
+>
+	<article class="gebote">
+		<header class="gebote__head">
+			<p class="gebote__kicker">Rechtliches</p>
+			<h1>Datenschutzerklärung</h1>
+			<p class="gebote__sub">Stand: 27. April 2026</p>
+		</header>
+
+		<div class="credo__body legal-doc">
+			<h2>1. Verantwortlicher</h2>
+			<p>
+				Verantwortlich für die Datenverarbeitung im Sinne der Datenschutz-Grundverordnung (DSGVO) ist:
+			</p>
+			<p>
+				Michael Glaubitz<br />
+				Bassbergstraße 110–112<br />
+				31787 Hameln<br />
+				Deutschland
+			</p>
+			{
+				contactEmail ? (
+					<p>
+						E-Mail: <a href={`mailto:${contactEmail}`}>{contactEmail}</a>
+					</p>
+				) : (
+					<p>
+						Kontakt (elektronisch): über die{' '}
+						<a href="https://github.com/MichaelGlaubitz/barton/issues">Issue-Funktion</a> im
+						GitHub-Repository dieser Website oder postalisch an die oben genannte Anschrift.
+					</p>
+				)
+			}
+
+			<h2>2. Hosting (GitHub Pages)</h2>
+			<p>
+				Diese Website wird auf der Infrastruktur <strong>GitHub Pages</strong> bereitgestellt
+				(Betreiber: GitHub, Inc., Teil der Microsoft Corporation, USA). Wenn Sie die Seite aufrufen,
+				werden technisch erforderliche Informationen verarbeitet (z. B. IP-Adresse, Datum und Uhrzeit
+				des Abrufs, übertragene Datenmenge, Browsertyp). Details finden Sie in der Datenschutzerklärung
+				von GitHub/Microsoft:
+			</p>
+			<ul>
+				<li>
+					<a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement"
+						rel="noopener noreferrer">GitHub Privacy Statement</a
+					>
+				</li>
+				<li>
+					<a href="https://privacy.microsoft.com/de-de/privacystatement" rel="noopener noreferrer"
+						>Microsoft-Datenschutzerklärung</a
+					>
+				</li>
+			</ul>
+			<p>
+				Soweit Daten in die USA übermittelt werden, stützt sich die Übermittlung auf die
+				Standardvertragsklauseln der EU-Kommission und/oder andere von der EU-Kommission anerkannte
+				Garantien im Sinne von Art. 46 DSGVO (vgl. Angaben der Anbieter).
+			</p>
+			<p>
+				Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer sicheren und
+				zuverlässigen Bereitstellung dieser Website).
+			</p>
+
+			<h2>3. Aufruf der Website (rein statisches Angebot)</h2>
+			<p>
+				Die Seiten sind überwiegend <strong>statisch</strong> ausgeliefert. Es werden keine
+				eigenen Formulare zur Erfassung personenbezogener Daten betrieben und keine
+				<strong>Analyse- oder Marketing-Tools</strong> (z. B. Google Analytics) eingesetzt.
+			</p>
+
+			<h2>4. Darstellung (Schriftarten, Mathematik-Darstellung)</h2>
+			<p>
+				Schriftarten werden aus dem Build der Website mitgeliefert (lokale Einbindung über
+				<code>@fontsource</code>, keine Schriftartenauslieferung durch Google Fonts o. Ä.). Formeln
+				können mit <strong>KaTeX</strong> dargestellt werden; die dafür nötigen Dateien werden ebenfalls
+				von diesem Webauftritt ausgeliefert, nicht von einem separaten Tracking-Dienst.
+			</p>
+			<p>Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an lesbarer Darstellung).</p>
+
+			<h2>5. Speicherung des Farbschemas (Theme) im Browser</h2>
+			<p>
+				Die Auswahl des hellen oder dunklen Farbschemas wird in Ihrem Browser im
+				<strong>localStorage</strong> gespeichert (<code>theme</code>), damit Ihre Einstellung beim
+				nächsten Besuch erhalten bleibt. Es werden dabei keine personenbezogenen Profile erstellt.
+			</p>
+			<p>Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an nutzerfreundlicher Bedienung).</p>
+
+			<h2>6. Kommentarfunktion (Giscus, optional)</h2>
+			<p>
+				Auf einzelnen Seiten kann eine Diskussion über <strong>Giscus</strong> eingebunden sein
+				(Kommentare auf Basis von GitHub Discussions). Giscus wird nur geladen, wenn die Funktion im
+				Betrieb der Website konfiguriert ist. In diesem Fall können beim Laden und Nutzen der
+				Kommentarfunktion Daten an <strong>GitHub</strong> übermittelt werden (z. B. zur Anzeige und
+				Speicherung von Beiträgen, ggf. GitHub-Konto). Maßgeblich sind die Datenschutzhinweise von
+				GitHub und ggf. die Einstellungen Ihres GitHub-Kontos.
+			</p>
+			<p>
+				Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer optionalen
+				Diskussionsfunktion); soweit Sie selbst Inhalte veröffentlichen, kann Art. 6 Abs. 1 lit. b bzw.
+				lit. a DSGVO einschlägig sein.
+			</p>
+
+			<h2>7. Ihre Rechte</h2>
+			<p>Sie haben — soweit die gesetzlichen Voraussetzungen erfüllt sind — insbesondere:</p>
+			<ul>
+				<li>Recht auf Auskunft (Art. 15 DSGVO)</li>
+				<li>Recht auf Berichtigung (Art. 16 DSGVO)</li>
+				<li>Recht auf Löschung (Art. 17 DSGVO)</li>
+				<li>Recht auf Einschränkung der Verarbeitung (Art. 18 DSGVO)</li>
+				<li>Recht auf Datenübertragbarkeit (Art. 20 DSGVO)</li>
+				<li>
+					Recht, der Verarbeitung zu widersprechen, die auf Art. 6 Abs. 1 lit. f DSGVO beruht (Art. 21
+					DSGVO)
+				</li>
+				<li>Recht, erteilte Einwilligungen mit Wirkung für die Zukunft zu widerrufen (Art. 7 Abs. 3 DSGVO)</li>
+			</ul>
+			<p>
+				Sie haben zudem das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren (Art. 77
+				DSGVO). Zuständig ist u. a. die für Ihren Wohnort zuständige Behörde. Für Niedersachsen
+				erreichen Sie die Landesbeauftragte für den Datenschutz Niedersachsen (LfD) unter den auf{' '}
+				<a href="https://www.lfd.niedersachsen.de/" rel="noopener noreferrer">www.lfd.niedersachsen.de</a>{' '}
+				veröffentlichten Kontaktdaten.
+			</p>
+
+			<h2>8. Änderungen</h2>
+			<p>
+				Wenn sich an dieser Website technische Funktionen oder Rechtslagen ändern, kann diese
+				Erklärung angepasst werden. Es gilt jeweils die auf dieser Seite veröffentlichte Fassung.
+			</p>
+		</div>
+
+		<p class="gebote__back">
+			<a href={`${base}impressum/`}>← Impressum</a>
+			<span aria-hidden="true"> · </span>
+			<a href={base}>Hack-Katalog</a>
+		</p>
+	</article>
+</BaseLayout>
