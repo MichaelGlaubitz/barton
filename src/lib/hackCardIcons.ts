@@ -62,6 +62,14 @@ const byHackId: Record<string, string> = {
 	'vertikal-wechselnde-flaechen': withIconClass(viewColumns),
 	'sichtbar-zufaellige-gruppen': withIconClass(rectangleGroup),
 	'btc-stufe-eins-kleine-brueche': withIconClass(bolt),
+	'front-load-beteiligung': withIconClass(chatBubbleLeftRight),
+	'wartezeit-verlaengern': withIconClass(clock),
+	'acht-von-zehn': withIconClass(magnifyingGlass),
+	'niemals-aufrunden': withIconClass(scale),
+	'ich-weiss-nicht-produktiv': withIconClass(chatBubbleLeftRight),
+	'selbsterklaerung-impuls': withIconClass(key),
+	'vergessenskurve-zeigen': withIconClass(clock),
+	'whole-class-feedback': withIconClass(clipboardDocumentList),
 };
 
 const emojiByHackId: Record<string, string> = {
@@ -99,6 +107,14 @@ const emojiByHackId: Record<string, string> = {
 	'vertikal-wechselnde-flaechen': '⬆️',
 	'sichtbar-zufaellige-gruppen': '🎲',
 	'btc-stufe-eins-kleine-brueche': '🪜',
+	'front-load-beteiligung': '📣',
+	'wartezeit-verlaengern': '⏳',
+	'acht-von-zehn': '🙋',
+	'niemals-aufrunden': '🎯',
+	'ich-weiss-nicht-produktiv': '🚪',
+	'selbsterklaerung-impuls': '🗝️',
+	'vergessenskurve-zeigen': '📉',
+	'whole-class-feedback': '🗂️',
 };
 
 export function hackCardIconMarkup(hackId: string): string {
