@@ -106,6 +106,7 @@ html {
 body {
 	margin: 0;
 	min-height: 100vh;
+	position: relative;
 	font-family: var(--font-body);
 	font-feature-settings: 'cv11', 'ss01', 'ss03';
 	font-optical-sizing: auto;
@@ -114,9 +115,34 @@ body {
 	line-height: 1.65;
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
+}
+
+body::before {
+	content: '';
+	position: fixed;
+	inset: -10%;
+	z-index: -1;
+	pointer-events: none;
 	background-image: var(--gradient-aurora);
-	background-attachment: fixed;
 	background-repeat: no-repeat;
+	will-change: transform, opacity;
+	animation: aurora-drift 32s ease-in-out infinite;
+}
+
+@keyframes aurora-drift {
+	0%,
+	100% {
+		transform: translate3d(0, 0, 0) scale(1);
+		opacity: 1;
+	}
+	33% {
+		transform: translate3d(2%, -1.2%, 0) scale(1.04);
+		opacity: 0.92;
+	}
+	66% {
+		transform: translate3d(-1.5%, 1%, 0) scale(0.98);
+		opacity: 0.96;
+	}
 }
 
 ::selection {
@@ -422,6 +448,111 @@ hr {
 	background: color-mix(in srgb, var(--accent) 14%, transparent);
 	color: var(--accent);
 	font-weight: 600;
+}
+
+.search-wrap {
+	margin-top: 0.85rem;
+}
+
+.search-field {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 0.55rem 0.9rem;
+	border-radius: var(--radius-pill);
+	border: 1px solid var(--surface2);
+	background: color-mix(in srgb, var(--surface) 70%, transparent);
+	transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.search-field:focus-within {
+	border-color: var(--accent);
+	box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 20%, transparent);
+}
+
+.search-field__icon {
+	font-size: 1.1rem;
+	color: var(--muted);
+	line-height: 1;
+}
+
+.search-field input {
+	flex: 1;
+	min-width: 0;
+	font: inherit;
+	font-size: 0.95rem;
+	background: transparent;
+	color: var(--text);
+	border: 0;
+	outline: 0;
+	padding: 0;
+}
+
+.search-field input::placeholder {
+	color: var(--muted-2);
+}
+
+.search-field input::-webkit-search-cancel-button {
+	display: none;
+}
+
+.search-field__clear {
+	font: inherit;
+	cursor: pointer;
+	width: 1.6rem;
+	height: 1.6rem;
+	border-radius: 999px;
+	border: 0;
+	background: var(--surface2);
+	color: var(--muted);
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 1rem;
+	line-height: 1;
+	padding: 0;
+}
+
+.search-field__clear:hover {
+	background: var(--surface3);
+	color: var(--text);
+}
+
+.search-result {
+	margin: 0.65rem 0 0;
+	font-size: 0.85rem;
+	color: var(--muted);
+}
+
+.empty-state {
+	margin: 4rem 0;
+	text-align: center;
+	color: var(--muted);
+	font-style: italic;
+	font-family: var(--font-display);
+	font-size: 1.1rem;
+}
+
+/* Reading progress bar (hack detail) */
+.reading-progress {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 3px;
+	z-index: 60;
+	background: transparent;
+	pointer-events: none;
+}
+
+.reading-progress__bar {
+	height: 100%;
+	width: 100%;
+	background: linear-gradient(90deg, var(--accent), var(--accent2));
+	transform: scaleX(0);
+	transform-origin: 0 50%;
+	transition: transform 0.08s linear;
+	box-shadow: 0 0 12px color-mix(in srgb, var(--accent) 45%, transparent);
 }
 
 /* ============================================================

@@ -19,7 +19,10 @@ const base = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout title={`${entry.data.title} — Mathechismus.de`} description={entry.data.summary}>
-	<article class="prose">
+	<div class="reading-progress" data-reading-progress aria-hidden="true">
+		<div class="reading-progress__bar" data-reading-progress-bar></div>
+	</div>
+	<article class="prose" data-prose-article>
 		<p class="hack-back">
 			<a href={`${base}`}>← Alle Hacks</a>
 		</p>
@@ -40,4 +43,34 @@ const base = import.meta.env.BASE_URL;
 		)}
 		<Giscus />
 	</article>
+	<script>
+		(function () {
+			const article = document.querySelector<HTMLElement>('[data-prose-article]');
+			const bar = document.querySelector<HTMLElement>('[data-reading-progress-bar]');
+			if (!article || !bar) return;
+			let ticking = false;
+
+			function update() {
+				ticking = false;
+				const rect = article.getBoundingClientRect();
+				const total = Math.max(1, rect.height - window.innerHeight);
+				const scrolled = Math.min(total, Math.max(0, -rect.top));
+				const progress = Math.min(1, Math.max(0, scrolled / total));
+				bar.style.transform = `scaleX(${progress})`;
+			}
+
+			window.addEventListener(
+				'scroll',
+				() => {
+					if (!ticking) {
+						requestAnimationFrame(update);
+						ticking = true;
+					}
+				},
+				{ passive: true },
+			);
+			window.addEventListener('resize', update);
+			update();
+		})();
+	</script>
 </BaseLayout>
