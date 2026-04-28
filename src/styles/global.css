@@ -20,7 +20,7 @@
 	--muted-2: #8b9daf;
 	--accent: #82d4fc;
 	--accent-strong: #b8e8ff;
-	--accent2: #7ee8b8;
+	--accent2: #adf7d4;
 	--accent3: #e4c88a;
 	--danger: #ff9b9b;
 	--gradient-aurora: radial-gradient(
@@ -28,7 +28,7 @@
 			rgba(130, 212, 252, 0.26),
 			transparent 60%
 		),
-		radial-gradient(ellipse 70% 60% at 95% 5%, rgba(126, 232, 184, 0.18), transparent 65%),
+		radial-gradient(ellipse 70% 60% at 95% 5%, rgba(173, 247, 212, 0.24), transparent 65%),
 		radial-gradient(ellipse 100% 80% at 50% 110%, rgba(228, 200, 138, 0.12), transparent 70%);
 
 	/* Type */
