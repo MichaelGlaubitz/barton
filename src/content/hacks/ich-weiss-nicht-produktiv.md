@@ -85,4 +85,4 @@ Du hältst zwei Botschaften gleichzeitig hoch: **Niemand muss alles können** �
 
 ## Quelle (Hintergrund)
 
-Praxisidee aus C. Bartons *Tips for Teachers*, Kap. 5 (Tipp 36); Variante 3 von Dylan Wiliam, Variante 4/5/6 nach Doug Lemovs *Teach Like a Champion*. **Paraphrasiert**; keine wörtliche Wiedergabe.
+Praxisidee aus C. Bartons *Tips for Teachers*, Kap. 5 (Tipp 36); Variante 3 von Dylan Wiliam, Variante 4/5/6 nach Doug Lemovs *Teach Like a Champion*.

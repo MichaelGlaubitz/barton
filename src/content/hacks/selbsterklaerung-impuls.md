@@ -91,4 +91,4 @@ Selbsterklärungs-Impulse erzeugen Transfer, nicht nur Wiedererkennen. Sie versc
 
 ## Quelle (Hintergrund)
 
-Praxisidee aus C. Bartons *Tips for Teachers*, Kap. 8 (Tipp 64); Selbsterklärungs-Forschung u. a. M. Chi, A. Renkl, B. Rittle-Johnson. **Paraphrasiert**; keine wörtliche Wiedergabe.
+Praxisidee aus C. Bartons *Tips for Teachers*, Kap. 8 (Tipp 64); Selbsterklärungs-Forschung u. a. M. Chi, A. Renkl, B. Rittle-Johnson.

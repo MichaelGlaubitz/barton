@@ -74,4 +74,4 @@ Ohne Monitoring wählst du im Plenum oft die **Schnellsten** oder **Lautesten**.
 
 ## Quelle (Hintergrund)
 
-Smith, M. S., & Stein, M. K. (2018). *5 Practices …* (2nd ed., Kap. zu Monitoring). **Paraphrasiert**; keine wörtliche Wiedergabe.
+Smith, M. S., & Stein, M. K. (2018). *5 Practices …* (2nd ed., Kap. zu Monitoring).

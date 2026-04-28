@@ -72,4 +72,4 @@ Du musst nicht den ganzen Unterricht reformieren, um ins **denkende Klassenzimme
 
 ## Quelle (Hintergrund)
 
-Liljedahl, P. (2016). *Building Thinking Classrooms …* (Stufen, „stage one“, breite Wirksamkeit in beschriebenen Studienkontexten). **Paraphrasiert**; keine wörtliche Wiedergabe.
+Liljedahl, P. (2016). *Building Thinking Classrooms …* (Stufen, „stage one“, breite Wirksamkeit in beschriebenen Studienkontexten).

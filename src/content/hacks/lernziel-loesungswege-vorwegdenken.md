@@ -75,4 +75,4 @@ Im Plenum willst du nicht zufällige Beiträge sammeln, sondern **zum Ziel führ
 
 ## Quelle (Hintergrund)
 
-Smith, M. S., & Stein, M. K. (2018). *5 Practices for Orchestrating Productive Mathematics Discussions* (2nd ed.). NCTM — Konzept **Anticipating**; inhaltlich **paraphrasiert** nach der Publikation; keine wörtliche Wiedergabe.
+Smith, M. S., & Stein, M. K. (2018). *5 Practices for Orchestrating Productive Mathematics Discussions* (2nd ed.). NCTM — Konzept **Anticipating**.

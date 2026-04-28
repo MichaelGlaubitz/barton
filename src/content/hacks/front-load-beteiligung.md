@@ -73,4 +73,4 @@ Die Aufmerksamkeit der Klasse springt unweigerlich zum Inhalt der Frage. Wer die
 
 ## Quelle (Hintergrund)
 
-Praxisidee aus C. Bartons *Tips for Teachers*, Kap. 3 zur Beteiligungsform; ursprünglich beschrieben von Adam Boxer. **Paraphrasiert**; keine wörtliche Wiedergabe.
+Praxisidee aus C. Bartons *Tips for Teachers*, Kap. 3 zur Beteiligungsform; ursprünglich beschrieben von Adam Boxer.

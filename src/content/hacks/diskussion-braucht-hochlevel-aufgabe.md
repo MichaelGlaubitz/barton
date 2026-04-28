@@ -72,4 +72,4 @@ Du planst weniger „Diskussion um der Diskussion willen“, sondern **sichtbare
 
 ## Quelle (Hintergrund)
 
-Smith, M. S., & Stein, M. K. (2018). *5 Practices …* (2nd ed., Kap. 9 „Lesson 1“ u. a. zu Aufgabenqualität und Diskussion). **Paraphrasiert**; keine wörtliche Wiedergabe.
+Smith, M. S., & Stein, M. K. (2018). *5 Practices …* (2nd ed., Kap. 9 „Lesson 1“ u. a. zu Aufgabenqualität und Diskussion).

@@ -76,4 +76,4 @@ Lernende, die sonst nicht zu Wort kommen, beteiligen sich häufiger. Die Antwort
 
 ## Quelle (Hintergrund)
 
-Praxisidee aus C. Bartons *Tips for Teachers*, Kap. 4 zu Wartezeiten; basiert auf der Forschung von M. B. Rowe (*Wait Time*). **Paraphrasiert**; keine wörtliche Wiedergabe.
+Praxisidee aus C. Bartons *Tips for Teachers*, Kap. 4 zu Wartezeiten; basiert auf der Forschung von M. B. Rowe (*Wait Time*).

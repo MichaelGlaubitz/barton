@@ -73,4 +73,4 @@ Du verschiebst die Schwelle, sich zu äußern, von „ich kann es nicht" zu „i
 
 ## Quelle (Hintergrund)
 
-Praxisidee aus C. Bartons *Tips for Teachers*, Kap. 4 (Tipp 31, im Original Tom Sherrington zugeschrieben). **Paraphrasiert**; keine wörtliche Wiedergabe.
+Praxisidee aus C. Bartons *Tips for Teachers*, Kap. 4 (Tipp 31, im Original Tom Sherrington zugeschrieben).

@@ -72,4 +72,4 @@ Ohne klares Bild vom Ziel **„sichtbares mathematisches Denken“** bleiben Ein
 
 ## Quelle (Hintergrund)
 
-Liljedahl, P. (2016). *Building Thinking Classrooms: Conditions for Problem-Solving* (Forschungskapitel). **Paraphrasiert**; keine wörtliche Wiedergabe.
+Liljedahl, P. (2016). *Building Thinking Classrooms: Conditions for Problem-Solving* (Forschungskapitel).

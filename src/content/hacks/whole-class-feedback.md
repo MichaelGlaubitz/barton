@@ -90,4 +90,4 @@ Der Korrekturaufwand sinkt drastisch. Gleichzeitig steigt die Tiefe: ein verbrei
 
 ## Quelle (Hintergrund)
 
-Praxisidee aus C. Bartons *Tips for Teachers*, Kap. 11 (Tipp 96); inspiriert u. a. von D. Christodoulou und A. Boxer. **Paraphrasiert**; keine wörtliche Wiedergabe.
+Praxisidee aus C. Bartons *Tips for Teachers*, Kap. 11 (Tipp 96); inspiriert u. a. von D. Christodoulou und A. Boxer.

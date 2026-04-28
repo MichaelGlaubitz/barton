@@ -75,4 +75,4 @@ Wer Aufrunden vermeidet, hält den Anspruch hoch, ohne hart zu wirken. Stattdess
 
 ## Quelle (Hintergrund)
 
-Praxisidee aus C. Bartons *Tips for Teachers*, Kap. 5 (Tipp 35); zentral bei Doug Lemovs *Teach Like a Champion*. **Paraphrasiert**; keine wörtliche Wiedergabe.
+Praxisidee aus C. Bartons *Tips for Teachers*, Kap. 5 (Tipp 35); zentral bei Doug Lemovs *Teach Like a Champion*.

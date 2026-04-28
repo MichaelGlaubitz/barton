@@ -72,4 +72,4 @@ Ohne Follow-up lernen Lernende: **Rhetorische** Aufgaben zählen nicht. Mit Foll
 
 ## Quelle (Hintergrund)
 
-Smith, M. S., & Stein, M. K. (2018). *5 Practices …* (2nd ed., Kap. 9 „Lesson 5“). **Paraphrasiert**; keine wörtliche Wiedergabe.
+Smith, M. S., & Stein, M. K. (2018). *5 Practices …* (2nd ed., Kap. 9 „Lesson 5“).

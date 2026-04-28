@@ -72,4 +72,4 @@ Du vergisst unter Zeitdruck nicht, **wo** welche Idee lag; du siehst auf einen B
 
 ## Quelle (Hintergrund)
 
-Smith, M. S., & Stein, M. K. (2018). *5 Practices …* (2nd ed., Kap. 9 „Lesson 6“; Anhänge zu Monitoring-Charts). **Paraphrasiert**; keine wörtliche Wiedergabe.
+Smith, M. S., & Stein, M. K. (2018). *5 Practices …* (2nd ed., Kap. 9 „Lesson 6“; Anhänge zu Monitoring-Charts).

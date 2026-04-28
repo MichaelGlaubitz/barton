@@ -72,4 +72,4 @@ Problemorientierte Aufgaben sind der **Treibstoff** für Gruppenarbeit an Fläch
 
 ## Quelle (Hintergrund)
 
-Liljedahl, P. (2016). *Building Thinking Classrooms …* (Problem-Solving-Fokus im Kapitel). **Paraphrasiert**; keine wörtliche Wiedergabe.
+Liljedahl, P. (2016). *Building Thinking Classrooms …* (Problem-Solving-Fokus im Kapitel).

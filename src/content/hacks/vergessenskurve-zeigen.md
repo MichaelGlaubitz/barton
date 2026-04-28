@@ -80,4 +80,4 @@ Du verschiebst die Begründung für Routineelemente vom Lehrer („weil ich es s
 
 ## Quelle (Hintergrund)
 
-Praxisidee aus C. Bartons *Tips for Teachers*, Kap. 10 (Tipp 76); Forschungs­hintergrund u. a. R. & E. Bjork (Storage- und Retrieval-Strength). **Paraphrasiert**; keine wörtliche Wiedergabe.
+Praxisidee aus C. Bartons *Tips for Teachers*, Kap. 10 (Tipp 76); Forschungs­hintergrund u. a. R. & E. Bjork (Storage- und Retrieval-Strength).
