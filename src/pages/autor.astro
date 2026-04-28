@@ -1,0 +1,54 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import '@fontsource/unifrakturmaguntia';
+
+const base = import.meta.env.BASE_URL;
+const portraitSrc = `${base}images/autor-michael-glaubitz.png`;
+---
+
+<BaseLayout
+	title="Dr. Michael Glaubitz — Über den Autor — Mathechismus.de"
+	description="Wer steckt hinter Mathechismus.de? Porträt und Kurzvorstellung von Dr. Michael Glaubitz."
+	ogImage={portraitSrc}
+>
+	<article class="autor-page">
+		<div class="autor-page__ambient" aria-hidden="true"></div>
+
+		<header class="autor-page__head">
+			<p class="autor-page__kicker">Über diese Seite</p>
+			<h1 class="autor-page__title-fraktur">Dr. Michael Glaubitz</h1>
+			<p class="autor-page__subtitle-fraktur">Kleiner und großer Mathechismus</p>
+		</header>
+
+		<figure class="autor-page__figure">
+			<img
+				src={portraitSrc}
+				width="571"
+				height="1024"
+				sizes="(max-width: 480px) 92vw, 380px"
+				loading="eager"
+				decoding="async"
+				fetchpriority="high"
+				class="autor-page__img"
+				alt="Stilisiertes historisches Porträt von Dr. Michael Glaubitz in dunklem Gewand mit breitem weißen Kragen, ein Buch haltend; darüber der Name und darunter der Schriftzug Kleiner und großer Mathechismus in gebrochener Schrift, vor unscharfem Kirchenfenster-Hintergrund."
+			/>
+			<figcaption class="autor-page__caption">
+				Ein Augenzwinkern an Katechismus und Reformation — übertragen auf kurze, wirksame Ideen für den Mathematikunterricht.
+			</figcaption>
+		</figure>
+
+		<div class="autor-page__body">
+			<p class="autor-page__lead">
+				Hinter <strong>Mathechismus.de</strong> steht <strong>Dr. Michael Glaubitz</strong>. Die Hacks, Texte und Übungsimpulse auf dieser Seite entstehen aus Unterrichtserfahrung und einem
+				Hang zur klaren Sprache: erst greifbar machen, dann verfeinern — ohne Didaktik aus der Luft.
+			</p>
+			<p>
+				Was Sie hier lesen, ist bewusst knapp gehalten. Woanders gibt es dicke Handreichungen; hier soll ein Satz genügen, der in der nächsten Stunde hilft. Wer dieselbe Skepsis gegenüber
+				modischen Etiketten teilt, die auch die <a href={`${base}thesen/`}>9,5 Thesen</a> formulieren, ist willkommen — ob Kollegin, Kollege oder Studierende:r auf dem Weg ins Referendariat.
+			</p>
+			<p class="autor-page__more">
+				Weiter zu den <a href={`${base}gebote/`}>zehn Geboten</a>, den <a href={`${base}thesen/`}>9,5 Thesen</a> oder <a href={base}>zurück zum Hack-Katalog</a>.
+			</p>
+		</div>
+	</article>
+</BaseLayout>
