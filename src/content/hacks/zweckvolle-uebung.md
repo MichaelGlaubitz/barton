@@ -24,9 +24,9 @@ quiz:
     options:
       - "Weitere 20 ähnliche Aufgaben ohne Unterbrechung — irgendwann sitzt es."
       - "Fehlertyp kurz auswerten und die nächsten Aufgaben gezielt darauf zuschneiden."
-      - "Die Übungsphase beenden und erst in der nächsten Stunde weitermachen — Pause hilft."
+      - "Die Musterlösung an die Tafel bringen und gemeinsam mit der korrekten Variante vergleichen lassen."
     correctIndex: 1
-    explanation: "Mehr vom Gleichen verfestigt eher den Fehler, als ihn aufzulösen. Eine Pause ohne Diagnose verlagert das Problem nur auf den nächsten Termin."
+    explanation: "Mehr vom Gleichen verfestigt eher den Fehler, als ihn aufzulösen. Ein Vergleich mit der Musterlösung adressiert das Endprodukt, nicht das Fehlermuster — typische Fehlannahmen bleiben dabei oft unsichtbar. Erst eine kurze Diagnose und passgenaue Folgeaufgaben unterbrechen das Muster."
 
 ---
 

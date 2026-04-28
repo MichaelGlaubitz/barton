@@ -16,11 +16,11 @@ quiz:
     explanation: "Das Chart ist ein Steuerwerkzeug für die Diskussion — kein Beleg- und kein Bewertungsbogen. Wer es zur Doku einsetzt, verliert es als Planungshilfe."
   - question: "Welche Achsen tragen ein wirksames Monitoring-Chart?"
     options:
-      - "Eine Liste aller Namen der Klasse, abgehakt nach Anwesenheit."
+      - "Aufgabe für Aufgabe ein Häkchen, ob die jeweilige Gruppe fertig ist — so siehst du den Bearbeitungsstand."
       - "Die zuvor antizipierten Strategien als eine Achse, die Gruppen oder Lernenden als andere — Häkchen oder kurzer Code beim Rundgang."
       - "Aufgabenstellung und Lösungszeit, um Effizienzunterschiede sichtbar zu machen."
     correctIndex: 1
-    explanation: "Anwesenheit oder Tempo sagen nichts über mathematische Substanz. Erst die Kreuztabelle Strategie × Person/Gruppe macht das Chart zur Landkarte."
+    explanation: 'Reine „Fertig"-Häkchen und Tempo sagen nichts über mathematische Substanz — sie reproduzieren nur das, was du beim Einsammeln ohnehin merkst. Erst die Kreuztabelle Strategie × Person/Gruppe macht das Chart zur Landkarte.'
   - question: "Du hast drei Wege antizipiert, in der Klasse taucht spontan ein vierter auf. Wie gehst du damit um?"
     options:
       - "Den vierten ignorieren — er steht nicht im Chart und stört die geplante Diskussion."

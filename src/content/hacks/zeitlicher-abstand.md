@@ -17,9 +17,9 @@ quiz:
     options:
       - "Nach Kapitelabschluss zügig nur neue Inhalte bearbeiten, um den Stoffplan zu halten."
       - "In den nächsten Wochen regelmäßig kurze Rückgriffe auf frühere Themen einbauen."
-      - "Alte Inhalte als freiwillige Zusatzblätter zur Verfügung stellen — wer übt, profitiert."
+      - "Vor jedem neuen Kapitel die Vorgängerinhalte in einer kompakten Wiederholungsstunde sichern."
     correctIndex: 1
-    explanation: "Stoffplan-Disziplin opfert Behaltenswirkung dem Tempo. Freiwillige Angebote erreichen vor allem die ohnehin Stabilen — Spacing wirkt nur, wenn es alle trifft."
+    explanation: "Stoffplan-Disziplin opfert Behaltenswirkung dem Tempo. Eine kompakte Wiederholungsstunde fühlt sich gründlich an, bündelt aber gerade den Effekt, den Spacing zerlegt: kleine, verteilte Anstrengungen wirken stärker als ein einmaliges Reaktivieren."
   - question: "Ein Thema wurde vor drei Wochen abgeschlossen. Was ist jetzt die beste Spacing-Entscheidung?"
     options:
       - "Das Thema erst direkt vor der Klassenarbeit wieder aufnehmen, damit es bis dahin frisch ist."

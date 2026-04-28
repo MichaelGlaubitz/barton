@@ -24,9 +24,9 @@ quiz:
     options:
       - "Eine ruhige Tafel-Übersicht zum letzten Thema, damit alle inhaltlich wieder synchron sind."
       - "Drei Heft-zu-Fragen zur Vorwoche, einzeln notieren, dann zwei Minuten Partnerabgleich."
-      - "Sofort die neue Aufgabe austeilen — Wiederholung kostet zu viel Zeit."
+      - 'Eine offene Frage in die Runde — „Was wisst ihr noch von letzter Woche?" — und sammeln, was zurückkommt.'
     correctIndex: 1
-    explanation: "Reaktivierung durch Lehrkraft fühlt sich strukturiert an, lässt die Klasse aber passiv. Erst durchs eigene Erinnern entsteht der wirksame Reiz."
+    explanation: "Reaktivierung durch Lehrkraft fühlt sich strukturiert an, lässt die Klasse aber passiv. Eine offene Plenumsfrage produziert Beiträge der gewohnten Vielredner — die anderen bleiben außen. Erst die Heft-zu-Fragen mobilisieren wirklich alle Köpfe."
 
 ---
 

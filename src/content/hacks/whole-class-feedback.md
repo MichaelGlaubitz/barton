@@ -10,11 +10,11 @@ order: 42
 quiz:
   - question: Was unterscheidet Whole-Class-Feedback substantiell vom üblichen Einzelfeedback unter jeder Schülerarbeit?
     options:
-      - "Der Korrekturaufwand wird auf die Schüler verlagert, sie korrigieren sich gegenseitig."
+      - "Es ersetzt schriftliche Kommentare durch eine ausführliche mündliche Rückmeldung pro Lernperson im Einzelgespräch."
       - "Die Lehrkraft sammelt **Trends** über alle Arbeiten — welche Aufgabe ist gehäuft geknickt? — und behandelt diese im Plenum, statt jede Person einzeln schriftlich anzusprechen."
-      - "Es gibt überhaupt keine Korrektur mehr; die Klasse vergleicht nur untereinander."
+      - "Statt zu korrigieren tauschen die Lernenden ihre Hefte und kommentieren sich gegenseitig nach festen Kriterien."
     correctIndex: 1
-    explanation: "Der Kern ist die Verschiebung von Mikro-Rückmeldungen am Rand des Heftes hin zu Makro-Mustern, die im Plenum bearbeitet werden. Aufwand sinkt, Wirkung steigt — wenn die Trends sauber identifiziert sind."
+    explanation: "Einzelgespräche sind nochmal aufwendiger als Randkommentare — der Umfangs-Hebel kippt damit nicht. Peer-Feedback verschiebt zwar die Last, ersetzt aber die fachliche Diagnose der Lehrkraft nicht. Der Kern ist die Verschiebung von Mikro-Rückmeldungen am Rand des Heftes hin zu Makro-Mustern, die im Plenum bearbeitet werden."
   - question: Warum ist es klug, die Arbeiten **vor** dem Whole-Class-Feedback **nicht** zurückzugeben?
     options:
       - "Sonst geht beim Verteilen Unterrichtszeit verloren."

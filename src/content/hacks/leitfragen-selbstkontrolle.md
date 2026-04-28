@@ -15,11 +15,11 @@ quiz:
     explanation: "Leitfragen ersetzen keine Korrektur und sind für leichte Aufgaben überdimensioniert. Ihr Platz ist dort, wo eine inhaltliche Entscheidung im Lösungsweg über Erfolg und Scheitern entscheidet."
   - question: Welche Formulierung ist als Leitfrage besonders tragfähig?
     options:
-      - "Bin ich mit der Aufgabe fertig?"
+      - "Habe ich richtig gerechnet?"
       - "Welche Annahme habe ich hier gemacht — und passt sie zu Voraussetzungen und Definitionsmenge?"
-      - "Habe ich alle Zeilen ordentlich abgesetzt?"
+      - "Sieht meine Lösung ungefähr so aus wie die der anderen am Tisch?"
     correctIndex: 1
-    explanation: "Fertigkeitsfragen prüfen den Status, Form-Fragen die Optik. Eine Leitfrage muss den fachlich kritischen Schritt treffen — sonst ist sie nur Routine."
+    explanation: 'Die Frage „Richtig gerechnet?" prüft das Endprodukt, nicht den kritischen Schritt — Lernende beantworten sich das mit „ja" und gehen weiter. Der Tischabgleich verlagert die Kontrolle aus dem eigenen Denken hinaus. Die Annahmenfrage trifft genau die Stelle, an der Fehler entstehen.'
   - question: "Lernende verlieren immer wieder Lösungen oder erhalten Scheinlösungen, weil sie unbemerkt Annahmen treffen. Was hilft am ehesten?"
     options:
       - "Den Appell „arbeitet sorgfältiger“ am Anfang der Stunde verstärken."

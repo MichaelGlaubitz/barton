@@ -9,10 +9,10 @@ quiz:
   - question: Was ist der didaktische Kerngewinn von Mini-Whiteboards?
     options:
       - "Alle Lernenden antworten zur selben Zeit — Diagnose erfasst die Klasse, nicht nur die Schnellsten."
-      - "Die Lehrkraft braucht weniger inhaltliche Vorbereitung, weil Whiteboards die Aufgabe ersetzen."
-      - "Sie eignen sich besonders für Abschriften von Tafelbildern, die so synchron erfolgen können."
+      - "Lernende, die sich nie melden, werden zur Antwort gezwungen und überwinden so ihre Schweige-Gewohnheit."
+      - "Die Tafelseite spart Platz, weil die schriftliche Auswertung ins Heft entfällt."
     correctIndex: 0
-    explanation: "Mini-Whiteboards sind ein Diagnoseinstrument, kein Aufwandsreduzierer und kein Ersatz für die Tafel. Der Effekt liegt in der Gleichzeitigkeit der Antworten."
+    explanation: "Es geht nicht um Zwang gegen Einzelne — wer sich nie meldet, schreibt auch auf dem Whiteboard ungern, wenn keine Antwort-Norm steht. Und der Hack ist kein Tafel-Ersatz. Der Effekt liegt strukturell in der Gleichzeitigkeit aller Antworten."
   - question: Wie setzt du Mini-Whiteboards am wirksamsten ein?
     options:
       - "Nur das Endergebnis zeigen lassen — das spart Zeit und gibt einen klaren Überblick."

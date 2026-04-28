@@ -24,9 +24,9 @@ quiz:
     options:
       - "Wer ist denselben Weg gegangen wie sie?"
       - "Unter welcher Bedingung würde genau dieser Weg nicht mehr funktionieren?"
-      - "Findet das auch jemand schwer, oder bin ich nur schnell?"
+      - "Kann das jemand mit eigenen Worten nochmal zusammenfassen?"
     correctIndex: 1
-    explanation: "Konsensfragen schließen die Diskussion. Stimmungsfragen schieben sie aufs Soziale ab. Eine Bedingungsfrage zwingt die Klasse, das Verfahren in seinen Grenzen zu prüfen."
+    explanation: "Konsensfragen schließen die Diskussion. Eine Wiederholung mit eigenen Worten klingt aktiv, prüft aber nur, wer zugehört hat — die Mathematik bleibt unangetastet. Eine Bedingungsfrage zwingt die Klasse, das Verfahren in seinen Grenzen zu prüfen."
 
 ---
 

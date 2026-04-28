@@ -8,11 +8,11 @@ order: 12
 quiz:
   - question: Was ist die Hauptfunktion eines Exit-Tickets?
     options:
-      - "Anwesenheitskontrolle am Stundenende — wer abgibt, war beteiligt."
+      - 'Eine kurze Selbstreflexion der Lernenden — „Was habe ich heute gelernt?" — die ihre Metakognition stärkt.'
       - "Schnelle Lernstandsdiagnose, die direkt in die Planung der nächsten Stunde einfließt."
-      - "Selbsteinschätzung der Lernenden, ohne Auswertung durch die Lehrkraft."
+      - "Eine kleine Lernkontrolle am Stundenende, deren Punkte in die Mitarbeitsnote einfließen."
     correctIndex: 1
-    explanation: "Exit-Tickets sind kein Beleg, sondern ein Steuerungsinstrument. Wenn die Antworten nicht in den nächsten Einstieg fließen, war es nur Papier."
+    explanation: "Selbstreflexionen liefern Stimmung, aber kaum Hinweise auf konkrete Lücken. Sobald Punkte vergeben werden, kippt die Antwort in Selbstschutz statt ehrlicher Diagnose. Exit-Tickets wirken erst, wenn die Antworten den nächsten Einstieg gestalten — sonst bleibt es Papier."
   - question: Welches Format ist am wirksamsten?
     options:
       - "Eine Skala 1–5, wie sicher sich die Klasse fühlt — schnell auswertbar, anonym vergleichbar."
