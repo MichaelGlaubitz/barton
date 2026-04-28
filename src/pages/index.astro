@@ -360,7 +360,7 @@ const featuredHacks = featuredIds.map((id) => hacksById.get(id)).filter(Boolean)
 											.toLowerCase()}
 									>
 										<span class="hack-card__emoji-slot" aria-hidden="true">{hackEmoji(h.id)}</span>
-										<span class="hack-card__meta">{phaseLabelByKey[phase]} · {h.data.tags[0]} · Hack</span>
+										<span class="hack-card__meta">{phaseLabelByKey[phase]} · {h.data.tags[0]}</span>
 										<h3>{h.data.title}</h3>
 										<p>{h.data.summary}</p>
 										<div class="tags">
