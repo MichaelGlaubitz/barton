@@ -37,7 +37,7 @@ const ogUrl = new URL(
 					const n = parseInt(fsRaw, 10);
 					if (Number.isFinite(n)) scale = Math.min(135, Math.max(80, n));
 				}
-				document.documentElement.style.fontSize = `${scale}%`;
+				document.documentElement.style.setProperty('--font-scale-pct', String(scale));
 			})();
 		</script>
 		<link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}favicon.svg`} />
@@ -129,7 +129,7 @@ const ogUrl = new URL(
 					range.addEventListener('input', () => {
 						const n = parseInt(range.value, 10);
 						if (Number.isFinite(n)) {
-							document.documentElement.style.fontSize = `${n}%`;
+							document.documentElement.style.setProperty('--font-scale-pct', String(n));
 							localStorage.setItem('fontScale', String(n));
 							range.setAttribute('aria-valuenow', String(n));
 							if (out) out.textContent = `${n}%`;
