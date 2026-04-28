@@ -71,4 +71,4 @@ Lernende erkennen, warum ein Fehler entsteht und wie man ihn vermeidet. Das baut
 
 ## Quelle (Hintergrund)
 
-Misconception-Forschung und Fehlerdidaktik, kompakt bei Barton (Paraphrase).
+Misconception-Forschung und Fehlerdidaktik, kompakt bei Barton.

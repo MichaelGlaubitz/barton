@@ -71,4 +71,4 @@ So arbeiten Lernende bewusster und prüfen genauer. Das stärkt Selbstkontrolle.
 
 ## Quelle (Hintergrund)
 
-Metakognitive Strategien und Fehlerdiagnose (Paraphrase).
+Metakognitive Strategien und Fehlerdiagnose.

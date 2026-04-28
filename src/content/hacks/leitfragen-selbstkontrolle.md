@@ -73,4 +73,4 @@ Fehler werden früher erkannt. Das macht Lernende sicherer und unabhängiger.
 
 ## Quelle (Hintergrund)
 
-Metakognition und selbstreguliertes Lernen (Paraphrase).
+Metakognition und selbstreguliertes Lernen.

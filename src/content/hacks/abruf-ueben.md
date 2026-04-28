@@ -73,4 +73,4 @@ Aktiver Abruf stärkt das Behalten. Du siehst früh, was sitzt und was noch fehl
 
 ## Quelle (Hintergrund)
 
-Ansätze aus der Retrieval-Practice-Forschung; didaktisch knapp gefasst in C. Barton (Paraphrase).
+Ansätze aus der Retrieval-Practice-Forschung; didaktisch knapp gefasst in C. Barton.

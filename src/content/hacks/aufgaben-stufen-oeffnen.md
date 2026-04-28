@@ -71,4 +71,4 @@ Die Klasse bekommt Struktur am Anfang und Spielraum am Ende. Das senkt Überford
 
 ## Quelle (Hintergrund)
 
-Scaffolding und Fading in der Unterrichtspraxis (Paraphrase).
+Scaffolding und Fading in der Unterrichtspraxis.

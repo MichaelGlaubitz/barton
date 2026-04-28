@@ -73,4 +73,4 @@ So entsteht echtes Strukturverständnis statt reines Nachmachen von Mustern.
 
 ## Quelle (Hintergrund)
 
-Variation Theory und Beispielgestaltung in der Mathematikdidaktik (Paraphrase).
+Variation Theory und Beispielgestaltung in der Mathematikdidaktik.

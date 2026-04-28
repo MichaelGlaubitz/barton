@@ -71,4 +71,4 @@ Lernende können sich auf das Wesentliche konzentrieren. Das verbessert Verstän
 
 ## Quelle (Hintergrund)
 
-Cognitive-Load-Ansatz in didaktischer Praxis, u. a. bei Barton (Paraphrase).
+Cognitive-Load-Ansatz in didaktischer Praxis, u. a. bei Barton.

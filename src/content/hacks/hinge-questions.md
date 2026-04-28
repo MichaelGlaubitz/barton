@@ -73,4 +73,4 @@ Du erkennst Fehlvorstellungen sofort und kannst den Kurs direkt anpassen. Das sp
 
 ## Quelle (Hintergrund)
 
-Formative Unterrichtssteuerung über hinge points (Paraphrase).
+Formative Unterrichtssteuerung über hinge points.

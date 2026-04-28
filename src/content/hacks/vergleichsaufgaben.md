@@ -73,4 +73,4 @@ Vergleiche schärfen den Blick für Struktur statt Oberfläche. Das stärkt trag
 
 ## Quelle (Hintergrund)
 
-Vergleich als Lernstrategie in der Didaktik (Paraphrase).
+Vergleich als Lernstrategie in der Didaktik.

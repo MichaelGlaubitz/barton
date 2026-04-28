@@ -73,4 +73,4 @@ So hörst du nicht nur richtige Ergebnisse, sondern auch gute Begründungen. Das
 
 ## Quelle (Hintergrund)
 
-Dialog- und Fragetechnik in der Mathematikdidaktik, u. a. bei Barton (Paraphrase).
+Dialog- und Fragetechnik in der Mathematikdidaktik, u. a. bei Barton.

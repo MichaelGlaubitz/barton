@@ -73,4 +73,4 @@ So entsteht flexibles Verständnis statt Schema-Anwendung. Beziehungen werden kl
 
 ## Quelle (Hintergrund)
 
-Mehrfachrepräsentation und Konzeptlernen in der Mathematikdidaktik (Paraphrase).
+Mehrfachrepräsentation und Konzeptlernen in der Mathematikdidaktik.

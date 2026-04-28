@@ -71,4 +71,4 @@ Wissen bleibt länger verfügbar. Lernende vergessen weniger zwischen den Themen
 
 ## Quelle (Hintergrund)
 
-Spacing-Forschung und Vergessenskurven, praxisnah aufbereitet bei Barton (Paraphrase).
+Spacing-Forschung und Vergessenskurven, praxisnah aufbereitet bei Barton.

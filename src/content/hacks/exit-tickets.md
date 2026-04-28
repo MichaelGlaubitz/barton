@@ -73,4 +73,4 @@ Du unterrichtest mit frischen Informationen statt nach Gefühl. So passt der nä
 
 ## Quelle (Hintergrund)
 
-Formative Assessment und Unterrichtszyklus (Paraphrase).
+Formative Assessment und Unterrichtszyklus.

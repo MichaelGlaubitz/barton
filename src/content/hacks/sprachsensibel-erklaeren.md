@@ -73,4 +73,4 @@ Präzise Sprache verbessert Begründungen und reduziert Missverständnisse. So s
 
 ## Quelle (Hintergrund)
 
-Sprachbildung in fachlichem Lernen (Paraphrase).
+Sprachbildung in fachlichem Lernen.

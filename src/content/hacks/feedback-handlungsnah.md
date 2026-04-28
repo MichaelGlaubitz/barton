@@ -73,4 +73,4 @@ Klare nächste Schritte führen schneller zu besseren Lösungen. So wird Feedbac
 
 ## Quelle (Hintergrund)
 
-Feedback-Forschung für lernwirksame Rückmeldung (Paraphrase).
+Feedback-Forschung für lernwirksame Rückmeldung.

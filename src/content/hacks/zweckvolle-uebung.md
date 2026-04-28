@@ -71,4 +71,4 @@ Lernende arbeiten nicht nur mehr, sondern besser. Fehler werden früh korrigiert
 
 ## Quelle (Hintergrund)
 
-Purposeful-Practice-Gedanke, praxisbezogen bei Barton (Paraphrase).
+Purposeful-Practice-Gedanke, praxisbezogen bei Barton.

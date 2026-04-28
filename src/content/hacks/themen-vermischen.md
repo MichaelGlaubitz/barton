@@ -71,4 +71,4 @@ So lernen sie Auswahl statt Routine. Das hilft besonders in neuen Situationen.
 
 ## Quelle (Hintergrund)
 
-Interleaving-Forschung im Übungsdesign, u. a. bei Barton zusammengefasst (Paraphrase).
+Interleaving-Forschung im Übungsdesign, u. a. bei Barton zusammengefasst.

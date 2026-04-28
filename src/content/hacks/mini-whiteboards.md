@@ -73,4 +73,4 @@ So arbeiten alle mit, nicht nur die Schnellsten. Du bekommst sofort ein realisti
 
 ## Quelle (Hintergrund)
 
-Formative Klasseninteraktion und schnelle Sichtbarkeit von Antworten (Paraphrase).
+Formative Klasseninteraktion und schnelle Sichtbarkeit von Antworten.

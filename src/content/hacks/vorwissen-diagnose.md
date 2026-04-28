@@ -71,4 +71,4 @@ Du unterrichtest passgenauer und verlierst weniger Zeit durch Nachreparatur. Ler
 
 ## Quelle (Hintergrund)
 
-Diagnostische Unterrichtssteuerung in kognitiv orientierter Didaktik (Paraphrase).
+Diagnostische Unterrichtssteuerung in kognitiv orientierter Didaktik.

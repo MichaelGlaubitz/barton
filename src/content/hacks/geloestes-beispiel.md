@@ -71,4 +71,4 @@ Der Einstieg wird klarer und Fehler sinken. Lernende verstehen nicht nur den Sch
 
 ## Quelle (Hintergrund)
 
-Worked-example-Ansatz und Cognitive Load Theory, praxisnah bei Barton (Paraphrase).
+Worked-example-Ansatz und Cognitive Load Theory, praxisnah bei Barton.
