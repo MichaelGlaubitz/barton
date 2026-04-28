@@ -274,14 +274,19 @@ const featuredHacks = featuredIds.map((id) => hacksById.get(id)).filter(Boolean)
 			</div>
 			<div class="phase-bar" role="toolbar" aria-label="Hacks nach Unterrichtsphase filtern">
 				<span class="phase-bar__label">Unterrichtsphase:</span>
-				<button type="button" class="filter-chip is-active" data-phase-filter="all" aria-pressed="true">
+				<button
+					type="button"
+					class="filter-chip phase-chip is-active"
+					data-phase-filter="all"
+					aria-pressed="true"
+				>
 					Alle
 				</button>
 				{
 					phaseMeta.map((phase) => (
 						<button
 							type="button"
-							class="filter-chip"
+							class="filter-chip phase-chip"
 							data-phase-filter={phase.key}
 							aria-pressed="false"
 						>
@@ -458,6 +463,10 @@ const featuredHacks = featuredIds.map((id) => hacksById.get(id)).filter(Boolean)
 					c.setAttribute('aria-pressed', on ? 'true' : 'false');
 				});
 				activePhase = chip.dataset.phaseFilter ?? 'all';
+				// Wenn die Unterrichtsphase gewechselt wird, bleibt der Hauptfilter auf "Alle",
+				// damit wirklich nur nach der gewählten Phase gefiltert wird.
+				const allChip = chips.find((c) => c.dataset.filter === 'all');
+				if (allChip) setActive(allChip);
 				applyFilters();
 			}
 

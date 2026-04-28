@@ -580,8 +580,24 @@ hr {
 	font-size: 0.8rem;
 	font-weight: 600;
 	letter-spacing: 0.02em;
-	color: var(--muted);
+	color: #2f7d32;
 	margin-right: 0.25rem;
+}
+
+.phase-chip {
+	border-color: color-mix(in srgb, #2f7d32 35%, var(--surface2));
+	color: color-mix(in srgb, #2f7d32 80%, var(--text-soft));
+}
+
+.phase-chip:hover {
+	border-color: #2f7d32;
+	color: #2f7d32;
+}
+
+.phase-chip.is-active {
+	border-color: #2f7d32;
+	background: color-mix(in srgb, #2f7d32 15%, transparent);
+	color: #2f7d32;
 }
 
 .search-field {
