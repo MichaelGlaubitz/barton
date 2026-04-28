@@ -27,20 +27,20 @@ quiz:
       - "Mehr Hausaufgaben zum Thema, damit Beteiligung über schriftliche Kontrolle ergänzt wird."
     correctIndex: 1
     explanation: "Gezieltes Aufrufen erzeugt Druck, aber keine breitere Beteiligung. Mehr Hausaufgaben verschieben das Problem nach außen. Synchrones Antworten ist der einzige strukturelle Eingriff in das Meldemuster."
-  - question: "Warum Brettchen beim »Fertig« oft gesichtet nach unten leicht über der Tischkante halten lassen?"
+  - question: "Warum Brettchen beim »Fertig« oft mit der Schrift nach unten leicht über der Tischkante halten lassen?"
     options:
-      - "Damit die Lehrkraft von hinten sofort sieht, wer noch schreibt — Stifte liegen nicht kippelig auf dem Brett, und Nachbarblicken fällt schwerer."
+      - "Damit die Lehrkraft von vorne sieht, wer noch schreibt — Stifte liegen nicht kippelig auf dem Brett, und nebenan wird weniger mitgeschaut."
       - "Damit die Lernenden ihre Antwort vor sich selbst verstecken und später doch umschreiben können."
       - "Damit die Oberfläche abkühlt und die Tinte besser haftet."
     correctIndex: 0
-    explanation: "Sichtbar »bereit ohne Spoiler«, weniger Stift-Geklapper und weniger unnötiges Vergleichen mit dem Nebensitz. Zum Enthüllen hebt man ohnehin wieder — oft wird sogar ein kurzer Abstand zwischen Frage und »Jetzt hover!« genutzt, damit Langsamere nicht von schnell Hovern Stress bekommen."
+    explanation: "Sichtbar »bereit ohne Spoiler«, weniger Stift-Geklapper und weniger unnötiges Vergleichen mit dem Nebensitz. Zum Enthüllen hebt man ohnehin wieder — oft wird sogar ein kurzer Abstand zwischen Frage und »Jetzt hover!« genutzt, damit Langsamere nicht durch schnelles Hovern gestresst werden."
   - question: "Was ist der Kernfehler, wenn Mini-Whiteboards nur wie Schmierzettel genutzt werden, aber nie alle gleichzeitig zeigen?"
     options:
       - "Dann fehlt genau der Effekt der Massenbeteiligung — man sieht nicht auf einen Blick, was die Klasse denkt."
       - "Dann schreiben die Lernenden zu klein und die Oberfläche reicht nicht."
       - "Dann funktionieren die Stifte wegen falscher Lagerung nicht."
     correctIndex: 0
-    explanation: "Schreiben und Umtreiben auf dem Brett kann helfen — aber der diagnostische und beteiligungsstarke Moment ist das gemeinsame, synchrone Zeigen. Ohne diesen Schritt bleibt der Hauptgewinn aus."
+    explanation: "Schreiben und wieder Wegwischen auf dem Brett kann helfen — aber der diagnostische und beteiligungsstarke Moment ist das gemeinsame, synchrone Zeigen. Ohne diesen Schritt bleibt der Hauptgewinn aus."
 
 ---
 
@@ -58,7 +58,7 @@ So arbeiten alle mit, nicht nur die Schnellsten. Du bekommst ein realistisches B
 
 ## Wie geht das im Unterricht?
 
-- **So gehst du vor:** Stelle eine kurze Frage, klare Zeitanweisung, dann **alle zeigen gleichzeitig** — und ordnet typische Antworten gemeinsam ein.
+- **So gehst du vor:** Stelle eine kurze Frage, klare Zeitanweisung, dann **alle zeigen gleichzeitig** — und ordnest typische Antworten gemeinsam ein.
 - **Achte dabei auf:** Kurze Aufgaben und eindeutige Erwartungen (z. B. groß schreiben, nur Endergebnis oder nur nächster Schritt).
 - **Prüfe am Ende:** Welche Fehler oder Denkwege häufig vorliegen und was du direkt klären solltest.
 
@@ -92,7 +92,7 @@ Bei Aufgaben, die **länger als eine knappe Minute** brauchen, während der Arbe
 
 ### Bereitsein ohne „Stift ablegen“-Chaos
 
-Statt nur „Stifte hinlegen“: **Brett mit der Schrift nach unten leicht über der Tischekante halten** („hover“), sobald die Antwort steht. So sieh du von vorne besser, wer noch denkt; Stifte kippeln nicht vom Brett; Nachbarinnen sehen nicht aus Versehen mit. Lautlos geht oft mit **Pausenkombination**: erst kurz Denkzeit, **dann** das Hover-Kommando — damit niemand sich „überholt“ fühlt.
+Statt nur „Stifte hinlegen“: **Brett mit der Schrift nach unten leicht über der Tischkante halten** („hover“), sobald die Antwort steht. So siehst du von vorne besser, wer noch denkt; Stifte kippeln nicht vom Brett; **Nachbarinnen und Nachbarn können die Antwort nicht so leicht von der Seite mitlesen.** Lautlos geht oft mit **Pausenkombination**: erst kurz Denkzeit, **dann** das Hover-Kommando — damit niemand sich „überholt“ fühlt.
 
 ### Zeigen in Portionen — z. B. von hinten
 
@@ -100,11 +100,11 @@ Statt alle 30 Bretter auf einmal: **zuerst eine Reihe oder Gruppe**, klare Anwei
 
 ### Blick zuerst auf sorgenvolle oder schwächere Antworten
 
-Wenn du nicht alles gleichzeitig erfassen kannst: deine **Aufmerksamkeit gezielt** dorthin legen, wo die Lösung **Am ehesten kippt** — ohne laut zu sagen, dass du nur dort hinschaust. So bekommst du oft ein **realistisches Minimum** an Klassenverständnis.
+Wenn du nicht alles gleichzeitig erfassen kannst: deine **Aufmerksamkeit gezielt** dorthin legen, wo die Lösung **am ehesten kippt** — ohne laut zu sagen, dass du nur dort hinschaust. So bekommst du oft ein **realistisches Minimum** an Klassenverständnis.
 
 ### Leere Bretter ernst nehmen
 
-Ein **leeres Brett** kann Faulheit, Erschöpfung oder **echtes Nichtwissen** sein. Fair ist: diese Lernenden **zuerst** kurz einbinden („Was fehlt dir noch?“). Wenn klar ist, dass Leer nicht durchkommt, nimmt **zufälliges Nichtmitmachen** ab — und du signalisierst: Mitdenken ist normalerwartet. **„Weiß ich nicht“** ist Gesprächsbeginn, nicht Gesprächsende.
+Ein **leeres Brett** kann Faulheit, Erschöpfung oder **echtes Nichtwissen** sein. Fair ist: diese Lernenden **zuerst** kurz einbinden („Was fehlt dir noch?“). Wenn klar ist, dass Leer nicht durchkommt, nimmt **zufälliges Nichtmitmachen** ab — und du signalisierst: Mitdenken ist normal erwartet. **„Ich weiß nicht.“** ist Gesprächsbeginn, nicht Gesprächsende.
 
 ### Arbeitsschritte im Plenum zeigen
 
@@ -120,11 +120,11 @@ Wenn du **exakt** Großschreiben, Markieren des Endergebnisses oder Zweiteilung 
 
 ### Häufig und mit Routine — nicht nur am Referatstag
 
-Je öfter Mini-Whiteboards **mit denselben, geübten Erwartungen** genutzt werden, desto routineierter wird es. Seltenes „Show-Boarden“ lädt eher zum **Gekritzel** ein; regelmäßiges, sachliches Nutzen macht das Brett zum normalen Werkzeug. **Üben macht dauerhaft** — was oft geübt wird, verfestigt sich.
+Je öfter Mini-Whiteboards **mit denselben, geübten Erwartungen** genutzt werden, desto **selbstverständlicher** wird der Ablauf. Seltenes „Show-Boarden“ lädt eher zum **Gekritzel** ein; regelmäßiges, sachliches Nutzen macht das Brett zum normalen Werkzeug. **Üben macht dauerhaft** — was oft geübt wird, verfestigt sich.
 
 ### Partnerarbeit schärfen
 
-Kurz **allein** auf dem Brett note oder skizzieren, **dann** mit der Nachbarin abstimmen — gibt der Diskussion einen Angelpunkt und entlastet das Gedächtnis. Bretter können **getauscht**, ausradiert, angereichert werden — oft leichter als im Heft nach dem Motto „nur Reinschreiben, wenn es stimmt“.
+Kurz **allein** auf dem Brett **notieren** oder skizzieren, **dann** mit der Nachbarin abstimmen — das gibt der Diskussion einen Angelpunkt und entlastet das Gedächtnis. Bretter können **getauscht**, ausradiert, angereichert werden — oft leichter als im Heft nach dem Motto „nur reinschreiben, wenn es stimmt“.
 
 ### Zusammenspiel mit Heftarbeit
 
@@ -134,7 +134,7 @@ Bei **längerer Übungsphase im Heft**: Endantworten der Zwischenfragen **zusät
 
 ### Unsichere Lernende und Heft
 
-Manche trauen sich **nichts Falsches ins Heft** zu schreiben. Übergangslösung: zuerst auf dem **Mini-Board** ausprobieren und vergleichen, **erst dann** die gereinigte Lösung ins Heft — bis eine Fehler-tolerantere Kultur sitzt.
+Manche trauen sich **nichts Falsches ins Heft** zu schreiben. Übergangslösung: zuerst auf dem **Mini-Board** ausprobieren und vergleichen, **erst dann** die gereinigte Lösung ins Heft — bis eine **fehlertolerantere** Kultur sitzt.
 
 ### Wofür Mini-Whiteboards **nicht** gedacht sind
 
@@ -172,4 +172,4 @@ Wenn intern **„Nachweis im Heft“** stark gewichtet wird: sachlich klären, *
 
 ## Quelle (Hintergrund)
 
-Formative Klasseninteraktion, hohe Beteiligungsquote („mass participation“) und die systematische Nutzung kleiner Whiteboards — diskutiert u. a. in der englischsprachigen Unterrichtsliteratur und in begleitenden Materialien zum Themenfeld (z. B. Übersichten und Gespräche zu **Tip 12** auf [tipsforteachers.co.uk](https://tipsforteachers.co.uk/tip12)). Diese Seite fasst die Ideen **eigenständig** auf Deutsch zusammen.
+Die Anregungen zur hohen Beteiligungsquote („mass participation“) und zur systematischen Nutzung von Mini-Whiteboards entstammen vor allem dem Buch **Tips for Teachers** (u. a. das Kapitel zu Mini-Whiteboards / **Tip 12**). Ergänzend gibt es Material auf [tipsforteachers.co.uk/tip12](https://tipsforteachers.co.uk/tip12). Diese Seite fasst die Ideen **eigenständig** auf Deutsch zusammen und übernimmt keinen Originalwortlaut.
