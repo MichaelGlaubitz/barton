@@ -1,5 +1,5 @@
 ---
-title: Neue Routine zuerst mit leichter Mathe starten
+title: Neue Routine zuerst mit leichter Mathematik starten
 summary: Senke beim Start einer Routine die fachliche Schwierigkeit, damit die Klasse die Abläufe wirklich lernt.
 tags:
   - Diagnose
