@@ -16,6 +16,13 @@ interface FunctionGroup {
 	ids: string[];
 }
 
+type LessonPhase = 'einstieg' | 'erarbeitung' | 'sicherung' | 'vertiefung' | 'reflexion';
+
+interface PhaseMeta {
+	key: LessonPhase;
+	label: string;
+}
+
 const functionGroups: FunctionGroup[] = [
 	{
 		key: 'wissen',
@@ -122,6 +129,73 @@ const functionGroups: FunctionGroup[] = [
 
 const hacksById = new Map(hacks.map((hack) => [hack.id, hack]));
 
+const phaseMeta: PhaseMeta[] = [
+	{ key: 'einstieg', label: 'Einstieg' },
+	{ key: 'erarbeitung', label: 'Erarbeitung' },
+	{ key: 'sicherung', label: 'Sicherung' },
+	{ key: 'vertiefung', label: 'Vertiefung' },
+	{ key: 'reflexion', label: 'Reflexion des Gelernten' },
+];
+
+const phaseByHackId: Record<string, LessonPhase> = {
+	'abruf-ueben': 'einstieg',
+	'zeitlicher-abstand': 'sicherung',
+	'vorwissen-diagnose': 'einstieg',
+	'exit-tickets': 'sicherung',
+	'vergessenskurve-zeigen': 'reflexion',
+	'geloestes-beispiel': 'erarbeitung',
+	'beispielfamilien': 'erarbeitung',
+	'repraesentationen-wechseln': 'erarbeitung',
+	'vergleichsaufgaben': 'vertiefung',
+	'aufgaben-stufen-oeffnen': 'vertiefung',
+	'themen-vermischen': 'sicherung',
+	'selbsterklaerung-impuls': 'erarbeitung',
+	'zweckvolle-uebung': 'vertiefung',
+	'feedback-handlungsnah': 'reflexion',
+	'leitfragen-selbstkontrolle': 'reflexion',
+	'whole-class-feedback': 'sicherung',
+	'hinge-questions': 'einstieg',
+	'mini-whiteboards': 'erarbeitung',
+	'wartezeit-verlaengern': 'erarbeitung',
+	'acht-von-zehn': 'sicherung',
+	'diskussion-braucht-hochlevel-aufgabe': 'vertiefung',
+	'denkzeit-vor-partnerarbeit': 'erarbeitung',
+	'lernziel-loesungswege-vorwegdenken': 'erarbeitung',
+	'arbeitsphasen-zielgerichtet-beobachten': 'erarbeitung',
+	'monitoring-chart-diskussion': 'sicherung',
+	'beitraege-fuers-plenum-auswaehlen': 'sicherung',
+	'praesentationen-sequenzieren': 'sicherung',
+	'schuelerideen-mit-lernziel-verbinden': 'vertiefung',
+	'vertiefungsfragen-nachfassen': 'vertiefung',
+	'front-load-beteiligung': 'einstieg',
+	'denkendes-klassenzimmer': 'erarbeitung',
+	'problemaufgaben-denken-zwingen': 'vertiefung',
+	'vertikal-wechselnde-flaechen': 'erarbeitung',
+	'sichtbar-zufaellige-gruppen': 'erarbeitung',
+	'btc-stufe-eins-kleine-brueche': 'einstieg',
+	'fehler-lernen': 'reflexion',
+	'fehler-vorhersagen': 'reflexion',
+	'fragetechnik': 'erarbeitung',
+	'sprachsensibel-erklaeren': 'erarbeitung',
+	'kognitive-last': 'erarbeitung',
+	'niemals-aufrunden': 'reflexion',
+	'ich-weiss-nicht-produktiv': 'reflexion',
+};
+
+const phaseLabelByKey = Object.fromEntries(
+	phaseMeta.map((phase) => [phase.key, phase.label]),
+) as Record<LessonPhase, string>;
+
+const unassignedPhaseIds = hacks
+	.map((hack) => hack.id)
+	.filter((id) => !(id in phaseByHackId));
+
+if (unassignedPhaseIds.length > 0) {
+	throw new Error(
+		`Fehlende Unterrichtsphasen-Zuordnung für: ${unassignedPhaseIds.join(', ')}`,
+	);
+}
+
 const totalHacks = hacks.length;
 const totalFields = functionGroups.filter((g) =>
 	g.ids.some((id) => hacksById.has(id)),
@@ -198,6 +272,24 @@ const featuredHacks = featuredIds.map((id) => hacksById.get(id)).filter(Boolean)
 					))
 				}
 			</div>
+			<div class="phase-bar" role="toolbar" aria-label="Hacks nach Unterrichtsphase filtern">
+				<span class="phase-bar__label">Unterrichtsphase:</span>
+				<button type="button" class="filter-chip is-active" data-phase-filter="all" aria-pressed="true">
+					Alle
+				</button>
+				{
+					phaseMeta.map((phase) => (
+						<button
+							type="button"
+							class="filter-chip"
+							data-phase-filter={phase.key}
+							aria-pressed="false"
+						>
+							{phase.label}
+						</button>
+					))
+				}
+			</div>
 			<div class="search-wrap">
 				<label class="search-field">
 					<span class="search-field__icon" aria-hidden="true">⌕</span>
@@ -230,30 +322,34 @@ const featuredHacks = featuredIds.map((id) => hacksById.get(id)).filter(Boolean)
 						</div>
 						<p class="function-group__desc">{group.description}</p>
 						<div class="hack-grid">
-							{groupedHacks.map((h) => (
-								<a
-									class="hack-card"
-									href={`${base}hack/${h.id}/`}
-									data-hack-card
-									data-search={[
-										h.data.title,
-										h.data.summary,
-										...h.data.tags,
-									]
-										.join(' ')
-										.toLowerCase()}
-								>
-									<span class="hack-card__emoji-slot" aria-hidden="true">{hackEmoji(h.id)}</span>
-									<span class="hack-card__meta">{h.data.tags[0]} · Hack</span>
-									<h3>{h.data.title}</h3>
-									<p>{h.data.summary}</p>
-									<div class="tags">
-										{h.data.tags.map((t) => (
-											<span class="tag">{t}</span>
-										))}
-									</div>
-								</a>
-							))}
+							{groupedHacks.map((h) => {
+								const phase = phaseByHackId[h.id];
+								return (
+									<a
+										class="hack-card"
+										href={`${base}hack/${h.id}/`}
+										data-hack-card
+										data-phase={phase}
+										data-search={[
+											h.data.title,
+											h.data.summary,
+											...h.data.tags,
+										]
+											.join(' ')
+											.toLowerCase()}
+									>
+										<span class="hack-card__emoji-slot" aria-hidden="true">{hackEmoji(h.id)}</span>
+										<span class="hack-card__meta">{phaseLabelByKey[phase]} · {h.data.tags[0]} · Hack</span>
+										<h3>{h.data.title}</h3>
+										<p>{h.data.summary}</p>
+										<div class="tags">
+											{h.data.tags.map((t) => (
+												<span class="tag">{t}</span>
+											))}
+										</div>
+									</a>
+								);
+							})}
 						</div>
 					</section>
 				);
@@ -271,12 +367,16 @@ const featuredHacks = featuredIds.map((id) => hacksById.get(id)).filter(Boolean)
 				root.querySelectorAll<HTMLElement>('.function-group'),
 			);
 			const chips = Array.from(root.querySelectorAll<HTMLButtonElement>('.filter-chip'));
+			const phaseChips = Array.from(
+				root.querySelectorAll<HTMLButtonElement>('[data-phase-filter]'),
+			);
 			const searchInput = root.querySelector<HTMLInputElement>('[data-hack-search]');
 			const clearBtn = root.querySelector<HTMLButtonElement>('[data-hack-search-clear]');
 			const resultEl = root.querySelector<HTMLElement>('[data-hack-search-result]');
 			const emptyEl = root.querySelector<HTMLElement>('[data-empty-state]');
 
 			let activeFilter = 'all';
+			let activePhase = 'all';
 			let searchQuery = '';
 
 			function normalize(text: string) {
@@ -300,6 +400,12 @@ const featuredHacks = featuredIds.map((id) => hacksById.get(id)).filter(Boolean)
 					const cards = sec.querySelectorAll<HTMLElement>('[data-hack-card]');
 					let visibleInSection = 0;
 					cards.forEach((card) => {
+						const matchesPhase =
+							activePhase === 'all' || card.dataset.phase === activePhase;
+						if (!matchesPhase) {
+							card.hidden = true;
+							return;
+						}
 						if (!q) {
 							card.hidden = false;
 							visibleInSection++;
@@ -341,7 +447,22 @@ const featuredHacks = featuredIds.map((id) => hacksById.get(id)).filter(Boolean)
 			}
 
 			chips.forEach((chip) => {
+				if (chip.hasAttribute('data-phase-filter')) return;
 				chip.addEventListener('click', () => setActive(chip));
+			});
+
+			function setActivePhase(chip: HTMLButtonElement) {
+				phaseChips.forEach((c) => {
+					const on = c === chip;
+					c.classList.toggle('is-active', on);
+					c.setAttribute('aria-pressed', on ? 'true' : 'false');
+				});
+				activePhase = chip.dataset.phaseFilter ?? 'all';
+				applyFilters();
+			}
+
+			phaseChips.forEach((chip) => {
+				chip.addEventListener('click', () => setActivePhase(chip));
 			});
 
 			searchInput?.addEventListener('input', () => {

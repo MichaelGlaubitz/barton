@@ -568,6 +568,22 @@ hr {
 	margin-top: 0.85rem;
 }
 
+.phase-bar {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.4rem;
+	margin-top: 0.55rem;
+}
+
+.phase-bar__label {
+	font-size: 0.8rem;
+	font-weight: 600;
+	letter-spacing: 0.02em;
+	color: var(--muted);
+	margin-right: 0.25rem;
+}
+
 .search-field {
 	display: flex;
 	align-items: center;
