@@ -172,4 +172,4 @@ Wenn intern **„Nachweis im Heft“** stark gewichtet wird: sachlich klären, *
 
 ## Quelle (Hintergrund)
 
-Die Anregungen zur hohen Beteiligungsquote („mass participation“) und zur systematischen Nutzung von Mini-Whiteboards entstammen vor allem dem Buch **Tips for Teachers** (u. a. das Kapitel zu Mini-Whiteboards / **Tip 12**). Ergänzend gibt es Material auf [tipsforteachers.co.uk/tip12](https://tipsforteachers.co.uk/tip12). Diese Seite fasst die Ideen **eigenständig** auf Deutsch zusammen und übernimmt keinen Originalwortlaut.
+Die Anregungen zur hohen Beteiligungsquote („mass participation“) und zur systematischen Nutzung von Mini-Whiteboards entstammen vor allem dem Buch **Tips for Teachers** (u. a. das Kapitel zu Mini-Whiteboards / **Tip 12**). Diese Seite fasst die Ideen **eigenständig** auf Deutsch zusammen und übernimmt keinen Originalwortlaut.
