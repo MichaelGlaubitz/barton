@@ -312,9 +312,9 @@ hr {
 }
 
 .lead {
-	font-family: var(--font-display);
+	font-family: var(--font-body);
 	font-style: italic;
-	font-weight: 380;
+	font-weight: 450;
 	font-size: 1.18rem;
 	line-height: 1.55;
 	color: var(--text-soft);
@@ -371,9 +371,9 @@ hr {
 	font-size: 1.18rem;
 	line-height: 1.55;
 	color: var(--text-soft);
-	font-family: var(--font-display);
+	font-family: var(--font-body);
 	font-style: italic;
-	font-weight: 380;
+	font-weight: 450;
 	max-width: 36rem;
 }
 
@@ -965,9 +965,9 @@ hr {
 .hack-detail-header__lead {
 	grid-column: 1 / -1;
 	margin: 1.1rem 0 0;
-	font-family: var(--font-display);
+	font-family: var(--font-body);
 	font-style: italic;
-	font-weight: 380;
+	font-weight: 450;
 	font-size: 1.18rem;
 	line-height: 1.5;
 	color: var(--text-soft);
