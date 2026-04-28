@@ -1194,6 +1194,21 @@ hr {
 	font-weight: 600;
 }
 
+/* Thesen: arabische Nummer wie in Thesis-Drucken; die 10. „9,5.“ */
+.gebote__list.thesen__list li::before {
+	content: counter(gebot) '.';
+	font-size: 1.05rem;
+}
+
+.gebote__list.thesen__list li:nth-child(10)::before {
+	content: '9,5.';
+}
+
+.gebote__list.thesen__list li.thesen__teil {
+	font-size: 0.98rem;
+	color: var(--text-soft);
+}
+
 .gebote__back {
 	text-align: center;
 	margin-top: 2.5rem;

@@ -1,0 +1,77 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+	title="Die 9,5 Thesen — Mathechismus.de"
+	description="Disputationsartige Thesen: für Klarheit, Üben und Lernerfolg — eine kleine Luther-Nachahmung zum Mathematikunterricht."
+>
+	<article class="gebote">
+		<header class="gebote__head">
+			<p class="gebote__kicker">Bonus · Disputation</p>
+			<h1>Die 9,5 Thesen</h1>
+			<p class="gebote__sub">
+				Eine fingerzeigareife Nachahmung der Wittenberger Thesen — allerdings mit kleiner Schrittlogik und ohne Tür.
+			</p>
+		</header>
+
+		<p class="gebote__vorrede">
+			Aus Liebe zur Klarheit und aus dem Verlangen, unterrichtlichen Irrtum zu klären, werden hier einige Punkte zur Diskussion gestellt. Wer sie ernst nimmt, darf sie gern widerlegen — mit
+			Belegen aus der Stunde, nicht aus der Methodenbeilage.
+		</p>
+
+		<ol class="gebote__list thesen__list">
+			<li>
+				Wenn gesagt wird, der Unterricht müsse vor allem „kompetenzorientiert“ sein, so wird damit bisweilen gemeint, man dürfe den Lernenden nichts Konkretes und Schrittweises beibringen —
+				das widerspricht jedem greifbaren Lernerfolg, den man noch mit Handschlag begreifen kann.
+			</li>
+			<li>
+				Es ist ein Irrtum, Üben und Verstehen zu scheiden, als wären sie Feinde. Richtig ist: Ohne Üben verfliegt das Verstandene; ohne Verstehen bleibt Üben blind — und beides ohne
+				klares Ziel bleibt mühsam.
+			</li>
+			<li>
+				Direkte Instruktion und angeleitetes Entdecken schließen sich nicht aus. Wer sie zur unversöhnlichen Gegnerschaft erklärt, erfindet eine Schlacht, die in keinem realen Klassenzimmer
+				so stattgefunden hat.
+			</li>
+			<li>
+				Das gelöste Beispiel ist kein „Verbot fürs Denken“, sondern eines der verlässlichsten Hilfsmittel gegen das Vergessen. Das zu verschweigen ist keine Liberalität, sondern schlechte
+				Fürsorge.
+			</li>
+			<li>
+				Modeworte wie „Lernlandschaft“, „Mathekonferenz“ oder „dialogische Aufgabenkultur“ ersetzen kein einziges erklärtes Verfahren und kein gezieltes Üben — Gott sei Dank auch nicht.
+			</li>
+			<li>
+				Die Kognitionswissenschaft lehrt keinen „angloamerikanischen Behaviorismus“, sondern fragt dem Gedächtnis und der Aufmerksamkeit nach. Sie mit Wortwahl zu erledigen, nützt den
+				Lernenden nicht.
+			</li>
+			<li>
+				Wer die Zeit der Klasse endlos „erkundet“, ohne dass am Ende klar wird, was neu gelernt wurde, nimmt den Schülern die Ruhe, die sie brauchen, um später sicher zu rechnen.
+			</li>
+			<li>
+				Ein Stationenlauf, ein Gallery Walk oder ein Padlet sind keine Heilslehren, sondern Mittel unter vielen; wenn das Mittel zum Selbstzweck wird, wird aus Hilfe Ballast.
+			</li>
+			<li>
+				Darum gilt: Lasst uns wieder deutlich sagen, was ein Kind können soll — und dann gezielt hinarbeiten, statt mit Aktivität einen Lernerfolg vorzutäuschen, den niemand messen darf,
+				aus Angst vor „Mechanisierung“.
+			</li>
+			<li class="thesen__teil">
+				Oder kürzer: Wer am Ende der Stunde vor allem müde ist, aber kaum befähigt, hat predigt — aber nicht unterrichtet. (Die halbe These steht dem Widerspruch offen; das ist Absicht.)
+			</li>
+		</ol>
+
+		<p class="gebote__schluss">
+			<em>Schlussformel.</em> Diese Thesen sind kein historisches Dokument, kein Kirchenstreit und kein Lehrplan; sie sind ein Spiegel, leicht verzerrt zum Spaß. Wenn sie jemand an die
+			richtige Tür nageln möchte, bitte die Kork-Pinnwand nehmen — die Kirchentür bleibt außen vor.
+		</p>
+
+		<p class="gebote__more">
+			Verwandt: <a href={`${import.meta.env.BASE_URL}gebote/`}>Die zehn Gebote</a>
+			<span aria-hidden="true"> · </span>
+			<a href={`${import.meta.env.BASE_URL}credo/`}>Bekenntnis &amp; Vaterunser</a>
+		</p>
+
+		<p class="gebote__back">
+			<a href={import.meta.env.BASE_URL}>← Zurück zum Hack-Katalog</a>
+		</p>
+	</article>
+</BaseLayout>
