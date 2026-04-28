@@ -176,7 +176,7 @@ h1,
 h2,
 h3,
 h4 {
-	font-family: var(--font-display);
+	font-family: var(--font-body);
 	font-weight: 540;
 	font-optical-sizing: auto;
 	letter-spacing: -0.012em;
@@ -237,7 +237,7 @@ hr {
 }
 
 .site-title {
-	font-family: var(--font-display);
+	font-family: var(--font-body);
 	font-size: 1.18rem;
 	font-weight: 540;
 	letter-spacing: -0.02em;
@@ -357,7 +357,6 @@ hr {
 	letter-spacing: -0.028em;
 	font-weight: 420;
 	margin: 0;
-	font-variation-settings: 'opsz' 144, 'SOFT' 50;
 }
 
 .hero h1 .accent {
@@ -1251,7 +1250,6 @@ hr {
 	font-weight: 600;
 	margin: 1.85rem 0 0.55rem;
 	color: var(--text);
-	font-family: var(--font-display);
 }
 
 .legal-doc h2:first-of-type {
