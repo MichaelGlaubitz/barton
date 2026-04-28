@@ -417,6 +417,10 @@ hr {
 	isolation: isolate;
 }
 
+.spotlight[hidden] {
+	display: none !important;
+}
+
 .spotlight::after {
 	content: '';
 	position: absolute;
@@ -478,6 +482,10 @@ hr {
 	border-color: var(--accent);
 	box-shadow: var(--shadow-glow);
 	color: var(--text);
+}
+
+.spotlight-card[hidden] {
+	display: none !important;
 }
 
 .spotlight-card__num {
@@ -738,6 +746,10 @@ hr {
 	font-size: 1rem;
 }
 
+.function-group[hidden] {
+	display: none !important;
+}
+
 .hack-grid {
 	display: grid;
 	gap: 1.25rem;
@@ -793,6 +805,10 @@ hr {
 
 .hack-card:hover::before {
 	opacity: 1;
+}
+
+.hack-card[hidden] {
+	display: none !important;
 }
 
 .hack-card__emoji-slot {

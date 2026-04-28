@@ -214,7 +214,7 @@ const featuredHacks = featuredIds.map((id) => hacksById.get(id)).filter(Boolean)
 
 <BaseLayout title="Mathechismus.de — Mathematikunterricht">
 	<section class="hero">
-		<p class="hero__kicker">Mathechismus · Pädagogische Hacks</p>
+		<p class="hero__kicker">Mathechismus · Wirksame Hacks für guten Matheunterricht</p>
 		<h1>Mathematik, <span class="accent">die ankommt.</span></h1>
 		<p class="hero__lead">
 			Kurze, wirksame Ideen für besseren Matheunterricht — kognitionspsychologisch fundiert, im Alltag erprobt, sofort umsetzbar. Kein Geschwurbel.
@@ -238,7 +238,7 @@ const featuredHacks = featuredIds.map((id) => hacksById.get(id)).filter(Boolean)
 	<section class="spotlight" aria-labelledby="spotlight-title" data-spotlight-section>
 		<div class="spotlight__copy">
 			<p class="hero__kicker">Schnell reinfinden</p>
-			<h2 id="spotlight-title">Drei Hacks, die sofort anders aussehen.</h2>
+			<h2 id="spotlight-title">Drei Hacks, die sofort wirken.</h2>
 			<p>
 				Weniger Theorie lesen, mehr Unterricht sehen: Diese Einstiege verändern sichtbar,
 				wie Lernende denken, zeigen, korrigieren und diskutieren.
@@ -408,11 +408,16 @@ const featuredHacks = featuredIds.map((id) => hacksById.get(id)).filter(Boolean)
 			let activePhase = 'all';
 			let searchQuery = '';
 
+			/** Diakritika nach NFD entfernen — ohne \p{Diacritic} (ältere WebViews / strikte parser) */
 			function normalize(text: string) {
-				return text
-					.toLowerCase()
-					.normalize('NFD')
-					.replace(/\p{Diacritic}/gu, '');
+				try {
+					return text
+						.toLowerCase()
+						.normalize('NFD')
+						.replace(/[\u0300-\u036f]/g, '');
+				} catch {
+					return text.toLowerCase();
+				}
 			}
 
 			function applyFilters() {
@@ -421,8 +426,9 @@ const featuredHacks = featuredIds.map((id) => hacksById.get(id)).filter(Boolean)
 
 				let visibleSpotlight = 0;
 				spotlightCards.forEach((card) => {
+					const cardPhase = card.getAttribute('data-phase') ?? '';
 					const matchesPhase =
-						activePhase === 'all' || card.dataset.phase === activePhase;
+						activePhase === 'all' || cardPhase === activePhase;
 					if (!matchesPhase) {
 						card.hidden = true;
 						return;
@@ -444,7 +450,8 @@ const featuredHacks = featuredIds.map((id) => hacksById.get(id)).filter(Boolean)
 
 				sections.forEach((sec) => {
 					const matchesFilter =
-						activeFilter === 'all' || sec.dataset.group === activeFilter;
+						activeFilter === 'all' ||
+						sec.getAttribute('data-group') === activeFilter;
 					if (!matchesFilter) {
 						sec.hidden = true;
 						return;
@@ -452,8 +459,9 @@ const featuredHacks = featuredIds.map((id) => hacksById.get(id)).filter(Boolean)
 					const cards = sec.querySelectorAll<HTMLElement>('[data-hack-card]');
 					let visibleInSection = 0;
 					cards.forEach((card) => {
+						const cardPhase = card.getAttribute('data-phase') ?? '';
 						const matchesPhase =
-							activePhase === 'all' || card.dataset.phase === activePhase;
+							activePhase === 'all' || cardPhase === activePhase;
 						if (!matchesPhase) {
 							card.hidden = true;
 							return;
@@ -494,7 +502,7 @@ const featuredHacks = featuredIds.map((id) => hacksById.get(id)).filter(Boolean)
 					c.classList.toggle('is-active', on);
 					c.setAttribute('aria-pressed', on ? 'true' : 'false');
 				});
-				activeFilter = chip.dataset.filter ?? 'all';
+				activeFilter = chip.getAttribute('data-filter') ?? 'all';
 				applyFilters();
 			}
 
@@ -508,9 +516,9 @@ const featuredHacks = featuredIds.map((id) => hacksById.get(id)).filter(Boolean)
 					c.classList.toggle('is-active', on);
 					c.setAttribute('aria-pressed', on ? 'true' : 'false');
 				});
-				activePhase = chip.dataset.phaseFilter ?? 'all';
+				activePhase = chip.getAttribute('data-phase-filter') ?? 'all';
 				// Hauptfilter auf „Alle“: Phasenfilter soll alle Themenfelder durchsuchen.
-				const allMain = mainChips.find((c) => c.dataset.filter === 'all');
+				const allMain = mainChips.find((c) => c.getAttribute('data-filter') === 'all');
 				if (allMain) {
 					mainChips.forEach((c) => {
 						const on = c === allMain;
