@@ -1,6 +1,8 @@
 @import '@fontsource-variable/inter';
 @import '@fontsource-variable/fraunces';
+@import '@fontsource/eb-garamond/400.css';
 @import '@fontsource/eb-garamond/400-italic.css';
+@import '@fontsource/eb-garamond/500-italic.css';
 
 /* ============================================================
    Design tokens
@@ -34,8 +36,9 @@
 	--font-display: 'Fraunces Variable', 'Iowan Old Style', 'Palatino Linotype', Palatino,
 		'Book Antiqua', Georgia, serif;
 	/* Serif-Kursiv im Garamond-Stil (echte Italic, nicht geneigte Upright) */
-	--font-italic-serif: 'EB Garamond', Garamond, 'Palatino Linotype', Palatino, Georgia,
+	--font-serif-garamond: 'EB Garamond', Garamond, 'Palatino Linotype', Palatino, Georgia,
 		'Times New Roman', serif;
+	--font-italic-serif: var(--font-serif-garamond);
 	--font-mono: ui-monospace, SFMono-Regular, 'JetBrains Mono', Menlo, Consolas, monospace;
 
 	/* Layout */
@@ -358,18 +361,17 @@ hr {
 .hero h1 {
 	font-size: clamp(2.4rem, 1.4rem + 4vw, 4rem);
 	line-height: 1.02;
-	letter-spacing: -0.028em;
-	font-weight: 420;
+	letter-spacing: -0.02em;
+	font-weight: 400;
+	font-style: normal;
+	font-family: var(--font-serif-garamond);
 	margin: 0;
-	font-variation-settings: 'opsz' 144, 'SOFT' 50;
 }
 
 .hero h1 .accent {
 	color: var(--accent);
-	font-family: var(--font-italic-serif);
 	font-style: italic;
-	font-weight: 400;
-	font-variation-settings: normal;
+	font-weight: 500;
 }
 
 .hero__lead {
