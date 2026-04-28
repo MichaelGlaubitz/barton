@@ -1420,6 +1420,178 @@ hr {
 	color: var(--text-soft);
 }
 
+/* ============================================================
+   Thesen — Aufmachung wie Spotlicht/Karten (Dark & Light)
+   ============================================================ */
+.gebote--thesen {
+	position: relative;
+	isolation: isolate;
+	overflow: hidden;
+	border-radius: var(--radius-lg);
+	padding: clamp(1rem, 2vw, 1.65rem) clamp(0.25rem, 1vw, 0.75rem) clamp(0.25rem, 1vw, 0.5rem);
+	margin-block: -0.25rem;
+}
+
+.gebote--thesen::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	z-index: 0;
+	border-radius: inherit;
+	pointer-events: none;
+	background:
+		radial-gradient(ellipse 85% 45% at 50% -15%, rgba(130, 212, 252, 0.09), transparent 58%),
+		radial-gradient(ellipse 38% 90% at 8% 40%, rgba(130, 212, 252, 0.045), transparent 50%),
+		radial-gradient(ellipse 42% 85% at 94% 50%, rgba(130, 212, 252, 0.038), transparent 48%),
+		radial-gradient(ellipse 70% 55% at 50% 108%, rgba(0, 0, 0, 0.45), transparent 58%);
+}
+
+:root[data-theme='light'] .gebote--thesen::before {
+	background:
+		radial-gradient(ellipse 85% 42% at 50% -12%, rgba(29, 111, 184, 0.085), transparent 58%),
+		radial-gradient(ellipse 36% 88% at 6% 38%, rgba(29, 111, 184, 0.045), transparent 50%),
+		radial-gradient(ellipse 40% 82% at 96% 48%, rgba(29, 111, 184, 0.038), transparent 48%),
+		radial-gradient(ellipse 75% 50% at 50% 105%, rgba(180, 195, 215, 0.22), transparent 62%);
+}
+
+.gebote--thesen > header,
+.gebote--thesen > p,
+.gebote--thesen > ol {
+	position: relative;
+	z-index: 1;
+}
+
+.gebote--thesen .gebote__head {
+	margin-bottom: 2rem;
+}
+
+.gebote--thesen .gebote__kicker {
+	color: color-mix(in srgb, var(--muted) 65%, var(--accent));
+	letter-spacing: 0.24em;
+}
+
+.gebote--thesen .gebote__head h1 {
+	font-style: normal;
+	font-weight: 500;
+	font-size: clamp(1.85rem, 1.2rem + 2vw, 2.65rem);
+	line-height: 1.14;
+	text-wrap: balance;
+	text-shadow: 0 1px 28px rgba(0, 0, 0, 0.25);
+}
+
+:root[data-theme='light'] .gebote--thesen .gebote__head h1 {
+	text-shadow: none;
+	color: var(--text);
+}
+
+.gebote--thesen .gebote__vorrede,
+.gebote--thesen .gebote__schluss {
+	-webkit-backdrop-filter: blur(12px);
+	backdrop-filter: blur(12px);
+	border-radius: var(--radius);
+	border-color: color-mix(in srgb, var(--accent) 22%, var(--surface2));
+	background: color-mix(in srgb, var(--surface) 88%, transparent);
+	box-shadow:
+		inset 0 1px 0 rgba(255, 255, 255, 0.055),
+		0 6px 28px rgba(0, 0, 0, 0.28);
+	margin-inline: 0;
+	padding-inline: clamp(1.15rem, 2vw, 1.55rem);
+}
+
+.gebote--thesen .gebote__vorrede {
+	margin-bottom: 2rem;
+}
+
+.gebote--thesen .gebote__schluss {
+	margin-top: 1.85rem;
+}
+
+:root[data-theme='light'] .gebote--thesen .gebote__vorrede,
+:root[data-theme='light'] .gebote--thesen .gebote__schluss {
+	background: color-mix(in srgb, #ffffff 93%, var(--accent));
+	border-color: color-mix(in srgb, var(--accent) 32%, var(--surface2));
+	box-shadow:
+		inset 0 1px 0 rgba(255, 255, 255, 0.92),
+		0 2px 14px rgba(20, 35, 55, 0.06),
+		0 12px 40px rgba(20, 35, 55, 0.045);
+	color: var(--text-soft);
+}
+
+.gebote--thesen .gebote__list {
+	gap: 1.15rem;
+	margin-block: 0 2.35rem;
+}
+
+.gebote--thesen .gebote__list li {
+	font-family: var(--font-body);
+	font-size: 0.97rem;
+	font-weight: 450;
+	line-height: 1.72;
+	letter-spacing: 0.01em;
+	padding: 1.15rem 1.35rem 1.2rem 4.15rem;
+	background: color-mix(in srgb, var(--surface) 93%, #040608);
+	border-color: color-mix(in srgb, var(--accent) 16%, var(--surface2));
+	box-shadow:
+		inset 0 1px 0 rgba(255, 255, 255, 0.045),
+		0 4px 16px rgba(0, 0, 0, 0.32);
+}
+
+.gebote--thesen .gebote__list li:hover {
+	border-color: color-mix(in srgb, var(--accent) 42%, var(--surface2));
+	box-shadow:
+		inset 0 1px 0 rgba(255, 255, 255, 0.06),
+		0 0 0 1px color-mix(in srgb, var(--accent) 28%, transparent),
+		var(--shadow-1);
+}
+
+.gebote--thesen .gebote__list.thesen__list li::before {
+	color: var(--accent-strong);
+	font-weight: 600;
+	top: 1rem;
+	left: 1rem;
+	min-width: 2.55rem;
+	text-shadow: 0 0 22px rgba(130, 212, 252, 0.32);
+}
+
+:root[data-theme='light'] .gebote--thesen .gebote__list.thesen__list li::before {
+	color: var(--accent);
+	text-shadow: none;
+}
+
+.gebote--thesen .gebote__list.thesen__list li:nth-child(10)::before {
+	text-shadow: 0 0 22px rgba(130, 212, 252, 0.32);
+}
+
+:root[data-theme='light'] .gebote--thesen .gebote__list.thesen__list li:nth-child(10)::before {
+	text-shadow: none;
+}
+
+.gebote--thesen .gebote__list.thesen__list li.thesen__teil {
+	font-family: var(--font-body);
+	color: color-mix(in srgb, var(--text-soft) 94%, var(--muted));
+	border-style: solid;
+	border-color: color-mix(in srgb, var(--accent) 26%, var(--surface2));
+}
+
+:root[data-theme='light'] .gebote--thesen .gebote__list.thesen__list li.thesen__teil {
+	color: var(--text-soft);
+}
+
+:root[data-theme='light'] .gebote--thesen .gebote__list li {
+	background: color-mix(in srgb, #ffffff 96%, var(--surface2));
+	color: var(--text);
+	border-color: color-mix(in srgb, var(--accent) 18%, var(--surface2));
+	box-shadow:
+		0 1px 2px rgba(20, 35, 55, 0.05),
+		0 10px 32px rgba(20, 35, 55, 0.055);
+}
+
+:root[data-theme='light'] .gebote--thesen .gebote__list li:hover {
+	box-shadow:
+		0 2px 4px rgba(20, 35, 55, 0.06),
+		0 14px 36px rgba(20, 35, 55, 0.07);
+}
+
 .gebote__back {
 	text-align: center;
 	margin-top: 2.5rem;
