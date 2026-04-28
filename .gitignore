@@ -23,5 +23,7 @@ pnpm-debug.log*
 # jetbrains setting folder
 .idea/
 
-# Lokale Quellen (Buch-Exporte, Volltexte) — nur lokal, nicht im öffentlichen Repo
-/sources/
+# Quellen: Standard alles unter sources/ ignorieren; eine Ausnahme für die Barton-TXT (Cloud-Agent / Slack).
+# Größere Dateien (PDF/HTML etc.) absichtlich nicht versionieren — bei Bedarf hier weitere !-Ausnahmen oder Pfade ergänzen.
+sources/*
+!sources/Tips For Teachers - Barton.txt
