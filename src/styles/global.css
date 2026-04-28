@@ -360,9 +360,11 @@ hr {
 }
 
 .hero h1 .accent {
+	display: inline-block;
 	color: var(--accent);
 	font-style: italic;
 	font-weight: 380;
+	white-space: nowrap;
 }
 
 .hero__lead {
