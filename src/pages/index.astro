@@ -235,7 +235,7 @@ const featuredHacks = featuredIds.map((id) => hacksById.get(id)).filter(Boolean)
 		</div>
 	</section>
 
-	<section class="spotlight" aria-labelledby="spotlight-title">
+	<section class="spotlight" aria-labelledby="spotlight-title" data-spotlight-section>
 		<div class="spotlight__copy">
 			<p class="hero__kicker">Schnell reinfinden</p>
 			<h2 id="spotlight-title">Drei Hacks, die sofort anders aussehen.</h2>
@@ -246,14 +246,30 @@ const featuredHacks = featuredIds.map((id) => hacksById.get(id)).filter(Boolean)
 		</div>
 		<div class="spotlight__cards">
 			{
-				featuredHacks.map((h, i) => (
-					<a class="spotlight-card" href={`${base}hack/${h.id}/`}>
-						<span class="spotlight-card__num">{String(i + 1).padStart(2, '0')}</span>
-						<span class="spotlight-card__emoji" aria-hidden="true">{hackEmoji(h.id)}</span>
-						<strong>{h.data.title}</strong>
-						<small>{h.data.tags.slice(0, 2).join(' · ')}</small>
-					</a>
-				))
+				featuredHacks.map((h, i) => {
+					const phase = phaseByHackId[h.id];
+					return (
+						<a
+							class="spotlight-card"
+							href={`${base}hack/${h.id}/`}
+							data-spotlight-card
+							data-phase={phase}
+							data-search={[
+								h.data.title,
+								h.data.summary,
+								...h.data.tags,
+								phaseLabelByKey[phase],
+							]
+								.join(' ')
+								.toLowerCase()}
+						>
+							<span class="spotlight-card__num">{String(i + 1).padStart(2, '0')}</span>
+							<span class="spotlight-card__emoji" aria-hidden="true">{hackEmoji(h.id)}</span>
+							<strong>{h.data.title}</strong>
+							<small>{h.data.tags.slice(0, 2).join(' · ')}</small>
+						</a>
+					);
+				})
 			}
 		</div>
 	</section>
@@ -361,7 +377,7 @@ const featuredHacks = featuredIds.map((id) => hacksById.get(id)).filter(Boolean)
 			})
 		}
 		<p class="empty-state" data-empty-state hidden>
-			Keine Hacks gefunden. Versuch's mit anderen Stichworten oder leere die Suche.
+			Keine Hacks gefunden. Passe die Filter, die Unterrichtsphase oder die Suche an.
 		</p>
 	</div>
 	<script>
@@ -371,10 +387,18 @@ const featuredHacks = featuredIds.map((id) => hacksById.get(id)).filter(Boolean)
 			const sections = Array.from(
 				root.querySelectorAll<HTMLElement>('.function-group'),
 			);
-			const chips = Array.from(root.querySelectorAll<HTMLButtonElement>('.filter-chip'));
-			const phaseChips = Array.from(
-				root.querySelectorAll<HTMLButtonElement>('[data-phase-filter]'),
+			const mainChips = Array.from(
+				root.querySelectorAll<HTMLButtonElement>('.filter-bar [data-filter]'),
 			);
+			const phaseChips = Array.from(
+				root.querySelectorAll<HTMLButtonElement>('.phase-bar [data-phase-filter]'),
+			);
+			const spotlightSection = document.querySelector<HTMLElement>('[data-spotlight-section]');
+			const spotlightCards = spotlightSection
+				? Array.from(
+						spotlightSection.querySelectorAll<HTMLElement>('[data-spotlight-card]'),
+					)
+				: [];
 			const searchInput = root.querySelector<HTMLInputElement>('[data-hack-search]');
 			const clearBtn = root.querySelector<HTMLButtonElement>('[data-hack-search-clear]');
 			const resultEl = root.querySelector<HTMLElement>('[data-hack-search-result]');
@@ -394,6 +418,29 @@ const featuredHacks = featuredIds.map((id) => hacksById.get(id)).filter(Boolean)
 			function applyFilters() {
 				const q = normalize(searchQuery.trim());
 				let totalVisible = 0;
+
+				let visibleSpotlight = 0;
+				spotlightCards.forEach((card) => {
+					const matchesPhase =
+						activePhase === 'all' || card.dataset.phase === activePhase;
+					if (!matchesPhase) {
+						card.hidden = true;
+						return;
+					}
+					if (!q) {
+						card.hidden = false;
+						visibleSpotlight++;
+						return;
+					}
+					const haystack = normalize(card.getAttribute('data-search') ?? '');
+					const isMatch = haystack.includes(q);
+					card.hidden = !isMatch;
+					if (isMatch) visibleSpotlight++;
+				});
+				if (spotlightSection) {
+					spotlightSection.hidden = spotlightCards.length > 0 && visibleSpotlight === 0;
+				}
+				totalVisible += visibleSpotlight;
 
 				sections.forEach((sec) => {
 					const matchesFilter =
@@ -437,12 +484,12 @@ const featuredHacks = featuredIds.map((id) => hacksById.get(id)).filter(Boolean)
 						resultEl.textContent = '';
 					}
 				}
-				if (emptyEl) emptyEl.hidden = !(q && totalVisible === 0);
+				if (emptyEl) emptyEl.hidden = totalVisible !== 0;
 				if (clearBtn) clearBtn.hidden = !q;
 			}
 
-			function setActive(chip: HTMLButtonElement) {
-				chips.forEach((c) => {
+			function setActiveMain(chip: HTMLButtonElement) {
+				mainChips.forEach((c) => {
 					const on = c === chip;
 					c.classList.toggle('is-active', on);
 					c.setAttribute('aria-pressed', on ? 'true' : 'false');
@@ -451,9 +498,8 @@ const featuredHacks = featuredIds.map((id) => hacksById.get(id)).filter(Boolean)
 				applyFilters();
 			}
 
-			chips.forEach((chip) => {
-				if (chip.hasAttribute('data-phase-filter')) return;
-				chip.addEventListener('click', () => setActive(chip));
+			mainChips.forEach((chip) => {
+				chip.addEventListener('click', () => setActiveMain(chip));
 			});
 
 			function setActivePhase(chip: HTMLButtonElement) {
@@ -463,10 +509,16 @@ const featuredHacks = featuredIds.map((id) => hacksById.get(id)).filter(Boolean)
 					c.setAttribute('aria-pressed', on ? 'true' : 'false');
 				});
 				activePhase = chip.dataset.phaseFilter ?? 'all';
-				// Wenn die Unterrichtsphase gewechselt wird, bleibt der Hauptfilter auf "Alle",
-				// damit wirklich nur nach der gewählten Phase gefiltert wird.
-				const allChip = chips.find((c) => c.dataset.filter === 'all');
-				if (allChip) setActive(allChip);
+				// Hauptfilter auf „Alle“: Phasenfilter soll alle Themenfelder durchsuchen.
+				const allMain = mainChips.find((c) => c.dataset.filter === 'all');
+				if (allMain) {
+					mainChips.forEach((c) => {
+						const on = c === allMain;
+						c.classList.toggle('is-active', on);
+						c.setAttribute('aria-pressed', on ? 'true' : 'false');
+					});
+					activeFilter = 'all';
+				}
 				applyFilters();
 			}
 
@@ -501,6 +553,8 @@ const featuredHacks = featuredIds.map((id) => hacksById.get(id)).filter(Boolean)
 					searchInput?.focus();
 				}
 			});
+
+			applyFilters();
 		})();
 	</script>
 </BaseLayout>
