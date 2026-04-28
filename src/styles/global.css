@@ -1,8 +1,5 @@
 @import '@fontsource-variable/inter';
 @import '@fontsource-variable/fraunces';
-@import '@fontsource/eb-garamond/400.css';
-@import '@fontsource/eb-garamond/400-italic.css';
-@import '@fontsource/eb-garamond/500-italic.css';
 
 /* ============================================================
    Design tokens
@@ -35,10 +32,6 @@
 	--font-body: 'Inter Variable', system-ui, 'Segoe UI', Roboto, Ubuntu, sans-serif;
 	--font-display: 'Fraunces Variable', 'Iowan Old Style', 'Palatino Linotype', Palatino,
 		'Book Antiqua', Georgia, serif;
-	/* Serif-Kursiv im Garamond-Stil (echte Italic, nicht geneigte Upright) */
-	--font-serif-garamond: 'EB Garamond', Garamond, 'Palatino Linotype', Palatino, Georgia,
-		'Times New Roman', serif;
-	--font-italic-serif: var(--font-serif-garamond);
 	--font-mono: ui-monospace, SFMono-Regular, 'JetBrains Mono', Menlo, Consolas, monospace;
 
 	/* Layout */
@@ -319,9 +312,9 @@ hr {
 }
 
 .lead {
-	font-family: var(--font-italic-serif);
+	font-family: var(--font-display);
 	font-style: italic;
-	font-weight: 400;
+	font-weight: 380;
 	font-size: 1.18rem;
 	line-height: 1.55;
 	color: var(--text-soft);
@@ -361,17 +354,16 @@ hr {
 .hero h1 {
 	font-size: clamp(2.4rem, 1.4rem + 4vw, 4rem);
 	line-height: 1.02;
-	letter-spacing: -0.02em;
-	font-weight: 400;
-	font-style: normal;
-	font-family: var(--font-serif-garamond);
+	letter-spacing: -0.028em;
+	font-weight: 420;
 	margin: 0;
+	font-variation-settings: 'opsz' 144, 'SOFT' 50;
 }
 
 .hero h1 .accent {
 	color: var(--accent);
 	font-style: italic;
-	font-weight: 500;
+	font-weight: 380;
 }
 
 .hero__lead {
@@ -379,9 +371,9 @@ hr {
 	font-size: 1.18rem;
 	line-height: 1.55;
 	color: var(--text-soft);
-	font-family: var(--font-italic-serif);
+	font-family: var(--font-display);
 	font-style: italic;
-	font-weight: 400;
+	font-weight: 380;
 	max-width: 36rem;
 }
 
@@ -973,9 +965,9 @@ hr {
 .hack-detail-header__lead {
 	grid-column: 1 / -1;
 	margin: 1.1rem 0 0;
-	font-family: var(--font-italic-serif);
+	font-family: var(--font-display);
 	font-style: italic;
-	font-weight: 400;
+	font-weight: 380;
 	font-size: 1.18rem;
 	line-height: 1.5;
 	color: var(--text-soft);

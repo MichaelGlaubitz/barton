@@ -15,7 +15,6 @@
   "dependencies": {
     "@fontsource-variable/fraunces": "^5.2.9",
     "@fontsource-variable/inter": "^5.2.8",
-    "@fontsource/eb-garamond": "^5.2.7",
     "astro": "^6.1.9",
     "heroicons": "^2.2.0"
   },
