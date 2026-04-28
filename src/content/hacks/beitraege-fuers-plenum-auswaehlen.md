@@ -9,17 +9,17 @@ order: 23
 quiz:
   - question: Wonach solltest du primär entscheiden, wer im Plenum vorstellt?
     options:
-      - "Nach der mathematischen Tragfähigkeit der Idee für das Lernziel — bewusst, nicht über Meldegeschwindigkeit."
       - "Nach Reihenfolge der Meldungen — wer zuerst da ist, kommt zuerst dran."
+      - "Nach der mathematischen Tragfähigkeit der Idee für das Lernziel — bewusst, nicht über Meldegeschwindigkeit."
       - "Nach Beteiligungsstatistik — diejenigen, die in den letzten Stunden noch nicht dran waren."
-    correctIndex: 0
+    correctIndex: 1
     explanation: "Wer Beteiligungsfairness über Lernziel-Logik stellt, baut ein Plenum, in dem ankommt, was zufällig in der Auswahlrunde war — nicht, was die Klasse mathematisch weiterbringt."
   - question: "Warum kann eine bewusst gewählte unvollständige oder nicht ganz fertige Lösung das Plenum stärken?"
     options:
-      - "Sie macht typische Stolperstellen sichtbar und erzeugt einen echten Begründungsbedarf."
       - "Sie spart Zeit, weil weniger geschrieben werden muss als bei einer vollständigen Lösung."
       - "Sie ersetzt das Üben — Lernende müssen die Lösung dann ohnehin selbst zu Ende führen."
-    correctIndex: 0
+      - "Sie macht typische Stolperstellen sichtbar und erzeugt einen echten Begründungsbedarf."
+    correctIndex: 2
     explanation: "Produktive Diskussion entsteht an der Bruchstelle, nicht am fertigen Ergebnis. Eine vollständige Lösung lädt zum Bewundern ein, eine unvollständige zum Mitdenken."
   - question: "Drei Gruppen haben denselben Lösungsweg richtig gerechnet. Was ist meist die beste Wahl fürs Plenum?"
     options:

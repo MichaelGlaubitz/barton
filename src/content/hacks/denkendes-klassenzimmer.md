@@ -9,17 +9,17 @@ order: 30
 quiz:
   - question: "Was kennzeichnet ein denkendes Klassenzimmer im engen Sinn?"
     options:
-      - "Ein Raum, in dem mathematisches Denken regelmäßig ausgelöst, von der Lehrkraft erwartet und für alle sichtbar gemacht wird."
       - "Ein Raum, in dem Aufgaben weitgehend selbst gewählt werden und niemand zu konkreten Inhalten gedrängt wird."
       - "Ein Raum, in dem die Lehrkraft das Erklären reduziert und stattdessen Lernende untereinander erklären lässt."
-    correctIndex: 0
+      - "Ein Raum, in dem mathematisches Denken regelmäßig ausgelöst, von der Lehrkraft erwartet und für alle sichtbar gemacht wird."
+    correctIndex: 2
     explanation: "Wahlfreiheit und Schüler-Schüler-Erklärungen sind Symptome, nicht das Konzept. Der Kern ist die *Erwartung*, dass Denken sichtbar passiert — auch im gemeinsamen Arbeiten."
   - question: "Warum reicht eine entspannte, freundliche Atmosphäre allein meist nicht aus?"
     options:
-      - "Weil bestehende Unterrichtsroutinen unter freundlicher Atmosphäre einfach weiterlaufen — Denken wird nicht erzwungen, nur erlaubt."
       - "Weil Lernende heute härtere Reize brauchen, um überhaupt zu reagieren."
+      - "Weil bestehende Unterrichtsroutinen unter freundlicher Atmosphäre einfach weiterlaufen — Denken wird nicht erzwungen, nur erlaubt."
       - "Weil Mathematik in entspannter Atmosphäre seltener als ernsthaftes Fach wahrgenommen wird."
-    correctIndex: 0
+    correctIndex: 1
     explanation: "Es geht nicht um Härte oder Image, sondern um Strukturen: Gewohnheiten produzieren Verhalten, sympathische Stimmung verändert keine Gewohnheit."
   - question: "Lernende warten ohne Eigeninitiative auf die richtige Erklärung der Lehrkraft. Was ist die richtige Bewegung?"
     options:

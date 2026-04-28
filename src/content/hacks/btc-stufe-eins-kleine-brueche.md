@@ -9,24 +9,24 @@ order: 34
 quiz:
   - question: "Was bedeutet „Stufe eins“ in diesem Sinn?"
     options:
-      - "Ein kleines Bündel leicht einführbarer Praktiken, das gezielt jene Klassenraum-Normen unterläuft, die Denken und Kooperation sonst blockieren."
       - "Eine Methode nur für Anfangsklassen — ältere Jahrgänge brauchen aufwendigere Verfahren."
+      - "Ein kleines Bündel leicht einführbarer Praktiken, das gezielt jene Klassenraum-Normen unterläuft, die Denken und Kooperation sonst blockieren."
       - "Eine Stufe, in der die Aufgaben einfacher sind als im regulären Unterricht — Niveau wird später wieder angehoben."
-    correctIndex: 0
+    correctIndex: 1
     explanation: "„Stufe eins“ meint die Einstiegs-Schicht eines Reformprozesses, nicht eine Schulstufe oder ein Anspruchsniveau."
   - question: "Warum setzt der Ansatz gezielt **gegen** etablierte Routinen an, statt sie behutsam zu ergänzen?"
     options:
-      - "Weil bestehende Routinen genau die Phänomene erzeugen, die du verändern willst — sanftes Anbauen lässt sie ungestört weiterlaufen."
       - "Weil neue Methoden grundsätzlich nur durch Provokation ankommen."
       - "Weil die alten Routinen falsch waren — alles, was vorher funktionierte, gehört abgeschafft."
-    correctIndex: 0
+      - "Weil bestehende Routinen genau die Phänomene erzeugen, die du verändern willst — sanftes Anbauen lässt sie ungestört weiterlaufen."
+    correctIndex: 2
     explanation: "Es geht nicht um Provokation um ihrer selbst willen, sondern um eine Diagnose: Wer Mitdenken ergänzen will, ohne Erklärroutinen zu unterbrechen, bekommt die Routinen plus etwas Lärm."
   - question: "Nach wenigen Wochen Stufe eins fragen Lehrkräfte nach „mehr“ — andere Aufgaben, andere Fragen. Wie ist das einzuordnen?"
     options:
-      - "Erwarteter Folgeeffekt — Erfolgserlebnisse auf Stufe eins erzeugen Interesse an den tieferen Elementen."
       - "Warnsignal — die Lehrkraft hat Stufe eins nicht ernst genommen und überspringt zu schnell."
+      - "Erwarteter Folgeeffekt — Erfolgserlebnisse auf Stufe eins erzeugen Interesse an den tieferen Elementen."
       - "Nebenwirkung ohne Bedeutung — der Effekt der Stufe eins ist schon ausgereizt."
-    correctIndex: 0
+    correctIndex: 1
     explanation: "Die Bewegung „mehr wollen“ ist kein Planungsfehler, sondern der eigentlich gesuchte Sog. Die Stufe ist Sprungbrett, nicht Plateau."
 
 ---

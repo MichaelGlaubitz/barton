@@ -9,10 +9,10 @@ order: 26
 quiz:
   - question: "Warum tragen reine Verfahrensaufgaben („rechne nach Schema X“) ein mathematisch reiches Plenum selten?"
     options:
-      - "Weil das Verfahren vorgegeben ist und damit kaum Raum für Strategievergleich oder Begründung bleibt."
       - "Weil sie für den Klassendurchschnitt zu schwer sind und die Diskussion deshalb stockt."
+      - "Weil das Verfahren vorgegeben ist und damit kaum Raum für Strategievergleich oder Begründung bleibt."
       - "Weil das Plenum vor allem an mündlichen Aufgaben funktioniert, nicht an gerechneten."
-    correctIndex: 0
+    correctIndex: 1
     explanation: "Verfahrensaufgaben sind nicht zu schwer — sie sind didaktisch zu eng. Wenn alle dasselbe tun, gibt es nur Reihenfolge zu diskutieren, keine Mathematik."
   - question: "Welches Merkmal lässt eine Aufgabe verschiedene Lösungswege zu?"
     options:
@@ -23,10 +23,10 @@ quiz:
     explanation: "Offenheit liegt nicht im Antwortformat, sondern in der Modellierungs- und Strategiefreiheit auf dem Weg dorthin."
   - question: "Im Plenum berichtet jede Gruppe der Reihe nach, wie sie „vereinfacht hat“. Was fehlt diesem Plenum strukturell?"
     options:
-      - "Mathematische Verknüpfung — Wege werden nebeneinandergestellt, aber nicht zueinander in Beziehung gesetzt."
       - "Bessere Visualisierung — die Wege gehören farbig markiert, nicht nur erzählt."
+      - "Mathematische Verknüpfung — Wege werden nebeneinandergestellt, aber nicht zueinander in Beziehung gesetzt."
       - "Mehr Beteiligung — wenn alle Gruppen vortragen, ist das Plenum vollständig."
-    correctIndex: 0
+    correctIndex: 1
     explanation: "Vortragsreihe ≠ Diskussion. Solange das Plenum nur eine Aufzählung ist, fehlt der eigentliche Lerngewinn: das Vergleichen und Verbinden."
 
 ---
