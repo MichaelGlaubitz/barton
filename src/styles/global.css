@@ -327,6 +327,8 @@ hr {
 .hero {
 	padding: 1.5rem 0 1.25rem;
 	max-width: var(--maxw);
+	margin-inline: auto;
+	text-align: center;
 }
 
 .hero__kicker {
@@ -365,7 +367,7 @@ hr {
 }
 
 .hero__lead {
-	margin: 1.25rem 0 0;
+	margin: 1.25rem auto 0;
 	font-size: 1.18rem;
 	line-height: 1.55;
 	color: var(--text-soft);
@@ -378,12 +380,18 @@ hr {
 .hero__stats {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 	gap: 1.5rem 2rem;
 	margin: 1.5rem 0 0;
 	padding: 1rem 0 0;
 	border-top: 1px solid var(--surface2);
 	font-size: 0.9rem;
 	color: var(--muted);
+}
+
+.hero__stats > div {
+	text-align: center;
+	min-width: 7.5rem;
 }
 
 .hero__stats strong {
