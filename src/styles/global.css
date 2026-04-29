@@ -2302,7 +2302,7 @@ hr {
 	border-color: color-mix(in srgb, var(--accent) 15%, var(--surface2));
 }
 
-.autor-page__lead {
+.autor-page__body p.autor-page__lead {
 	font-family: var(--font-display);
 	font-size: 1.08rem;
 	line-height: 1.62;
@@ -2333,8 +2333,6 @@ hr {
 }
 
 .autor-page__more {
-	font-size: 0.95rem;
-	color: var(--muted);
 	padding-top: 0.35rem;
 	border-top: 1px solid var(--surface2);
 	margin-top: 1.15rem !important;
