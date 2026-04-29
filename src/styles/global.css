@@ -329,7 +329,7 @@ hr {
 .hero-shell {
 	position: relative;
 	width: 100vw;
-	max-width: 100%;
+	max-width: none;
 	margin-left: calc(50% - 50vw);
 	margin-right: calc(50% - 50vw);
 	margin-bottom: 2rem;
