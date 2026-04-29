@@ -13,6 +13,19 @@ const {
 	description = 'Mathechismus.de: kurze, wirksame Ideen für den Mathematikunterricht — mit Mini-Quiz.',
 	ogImage,
 } = Astro.props;
+
+const base = import.meta.env.BASE_URL;
+/** Alle festen Seiten — gleiche Einträge in Header und Footer */
+const siteNavLinks = [
+	{ href: base, label: 'Alle Beiträge' },
+	{ href: `${base}autor/`, label: 'Autor' },
+	{ href: `${base}gebote/`, label: 'Die 10 Gebote für guten Unterricht' },
+	{ href: `${base}gebote-kompetenzorientiert/`, label: '10 Gebote · Kompetenz (Satire)' },
+	{ href: `${base}thesen/`, label: 'Die 9,5 Thesen' },
+	{ href: `${base}impressum/`, label: 'Impressum' },
+	{ href: `${base}datenschutz/`, label: 'Datenschutz' },
+] as const;
+
 const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).href;
 const ogUrl = new URL(
 	ogImage ?? `${import.meta.env.BASE_URL}og-image.png`,
@@ -56,10 +69,13 @@ const ogUrl = new URL(
 	<body>
 		<header class="site-header">
 			<div class="site-header__inner">
-				<p class="site-title"><a href={import.meta.env.BASE_URL}>Mathechismus.de</a></p>
+				<p class="site-title"><a href={base}>Mathechismus.de</a></p>
 				<nav class="site-nav" aria-label="Hauptnavigation">
-					<a href={import.meta.env.BASE_URL}>Alle Beiträge</a>
-					<a href={`${import.meta.env.BASE_URL}autor/`}>Autor</a>
+					{
+						siteNavLinks.map(({ href, label }) => (
+							<a href={href}>{label}</a>
+						))
+					}
 					<button type="button" class="theme-toggle" data-theme-toggle aria-label="Dunkles Farbschema aktivieren">
 						<span aria-hidden="true" data-theme-toggle-icon>🌙</span>
 					</button>
@@ -69,22 +85,13 @@ const ogUrl = new URL(
 		<main class="site-main">
 			<slot />
 			<footer class="site-footer">
-				<p>
-					<a href={`${import.meta.env.BASE_URL}gebote/`}>Die zehn Gebote</a>
-					<span aria-hidden="true"> · </span>
-					<a href={`${import.meta.env.BASE_URL}gebote-kompetenzorientiert/`}>Gebote · Kompetenz (Satire)</a>
-					<span aria-hidden="true"> · </span>
-					<a href={`${import.meta.env.BASE_URL}thesen/`}>Die 9,5 Thesen</a>
-					<span aria-hidden="true"> · </span>
-					<a href={`${import.meta.env.BASE_URL}autor/`}>Über den Autor</a>
-					<span aria-hidden="true"> · </span>
-					<a href={import.meta.env.BASE_URL}>Alle Beiträge</a>
-				</p>
-				<p class="site-footer__legal">
-					<a href={`${import.meta.env.BASE_URL}impressum/`}>Impressum</a>
-					<span aria-hidden="true"> · </span>
-					<a href={`${import.meta.env.BASE_URL}datenschutz/`}>Datenschutz</a>
-				</p>
+				<nav class="site-footer__nav site-nav" aria-label="Alle Seiten">
+					{
+						siteNavLinks.map(({ href, label }) => (
+							<a href={href}>{label}</a>
+						))
+					}
+				</nav>
 			</footer>
 		</main>
 		<script is:inline>

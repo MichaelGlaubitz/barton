@@ -1497,6 +1497,13 @@ hr {
 	margin: 0;
 }
 
+.site-footer__nav.site-nav {
+	justify-content: center;
+	flex-wrap: wrap;
+	row-gap: 0.45rem;
+	column-gap: 0.85rem;
+}
+
 .site-footer__legal {
 	margin-top: 0.65rem;
 	font-size: 0.82rem;
