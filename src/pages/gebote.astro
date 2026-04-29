@@ -1,17 +1,37 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+
+const base = import.meta.env.BASE_URL;
+const geboteHeroSrc = `${base}images/gebote-steinplatten.png`;
 ---
 
 <BaseLayout
 	title="Die zehn Gebote für den Mathematikunterricht — Mathechismus.de"
 	description="Eine humorvolle Polemik in Gebot-Form: gegen praxisferne Mathematikdidaktik, für Lernerfolg."
+	ogImage={geboteHeroSrc}
 >
-	<article class="gebote">
+	<article class="gebote gebote--gebote">
 		<header class="gebote__head">
 			<p class="gebote__kicker">Bonus · Polemik</p>
 			<h1>Die zehn Gebote für den Mathematikunterricht</h1>
 			<p class="gebote__sub">Eine humorvolle Polemik gegen praxisferne Mathematikdidaktik.</p>
 		</header>
+
+		<figure class="gebote-hero">
+			<img
+				src={geboteHeroSrc}
+				width="1024"
+				height="571"
+				sizes="(max-width: 720px) 92vw, min(52rem, 94vw)"
+				loading="eager"
+				decoding="async"
+				class="gebote-hero__img"
+				alt="Stilisierte Darstellung: Figur mit langem Bart und Brille in antik anmutender Gewandung, zwei steinerne Gesetzestafeln mit hebräisch anmutender Schrift haltend, vor bergiger Landschaft und dramatisch beleuchtetem Himmel."
+			/>
+			<figcaption class="gebote-hero__caption">
+				Zehn Gebote — verkündet mit allem Ernst der Tradition und einem Funkeln im Auge.
+			</figcaption>
+		</figure>
 
 		<p class="gebote__vorrede">
 			Höret, Lehrkräfte des deutschen Sprachraums, die Gebote — auf dass eure Klassen nicht in der Wüste der „offenen Lernumgebungen“ verdursten, ehe sie einen Bruch kürzen können.

@@ -1457,7 +1457,11 @@ hr {
 .gebote--thesen > header,
 .gebote--thesen > figure,
 .gebote--thesen > p,
-.gebote--thesen > ol {
+.gebote--thesen > ol,
+.gebote--gebote > header,
+.gebote--gebote > figure,
+.gebote--gebote > p,
+.gebote--gebote > ol {
 	position: relative;
 	z-index: 1;
 }
@@ -1466,7 +1470,8 @@ hr {
 	margin-bottom: 2rem;
 }
 
-.gebote--thesen .thesen-hero {
+.gebote--thesen .thesen-hero,
+.gebote--gebote .gebote-hero {
 	margin: -0.35rem auto 1.85rem;
 	max-width: min(100%, 52rem);
 	padding: 0;
@@ -1478,21 +1483,24 @@ hr {
 		inset 0 1px 0 rgba(255, 255, 255, 0.05);
 }
 
-:root[data-theme='light'] .gebote--thesen .thesen-hero {
+:root[data-theme='light'] .gebote--thesen .thesen-hero,
+:root[data-theme='light'] .gebote--gebote .gebote-hero {
 	border-color: color-mix(in srgb, var(--accent) 28%, var(--surface2));
 	box-shadow:
 		0 2px 8px rgba(20, 35, 55, 0.07),
 		0 14px 36px rgba(20, 35, 55, 0.06);
 }
 
-.gebote--thesen .thesen-hero__img {
+.gebote--thesen .thesen-hero__img,
+.gebote--gebote .gebote-hero__img {
 	display: block;
 	width: 100%;
 	height: auto;
 	vertical-align: middle;
 }
 
-.gebote--thesen .thesen-hero__caption {
+.gebote--thesen .thesen-hero__caption,
+.gebote--gebote .gebote-hero__caption {
 	margin: 0.65rem 0 0;
 	padding: 0 0.35rem;
 	font-family: var(--font-display);
