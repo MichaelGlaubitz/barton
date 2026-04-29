@@ -1310,7 +1310,7 @@ hr {
 }
 
 /* ============================================================
-   Gebote / Credo / Litanei
+   Gebote / Rechtstexte (Impressum & Datenschutz)
    ============================================================ */
 .gebote {
 	max-width: 46rem;
@@ -1461,11 +1461,7 @@ hr {
 .gebote--gebote > header,
 .gebote--gebote > figure,
 .gebote--gebote > p,
-.gebote--gebote > ol,
-.gebote--credo > header,
-.gebote--credo > figure,
-.gebote--credo > section,
-.gebote--credo > p {
+.gebote--gebote > ol {
 	position: relative;
 	z-index: 1;
 }
@@ -1475,8 +1471,7 @@ hr {
 }
 
 .gebote--thesen .thesen-hero,
-.gebote--gebote .gebote-hero,
-.gebote--credo .credo-hero {
+.gebote--gebote .gebote-hero {
 	margin: -0.35rem auto 1.85rem;
 	max-width: min(100%, 52rem);
 	padding: 0;
@@ -1489,8 +1484,7 @@ hr {
 }
 
 :root[data-theme='light'] .gebote--thesen .thesen-hero,
-:root[data-theme='light'] .gebote--gebote .gebote-hero,
-:root[data-theme='light'] .gebote--credo .credo-hero {
+:root[data-theme='light'] .gebote--gebote .gebote-hero {
 	border-color: color-mix(in srgb, var(--accent) 28%, var(--surface2));
 	box-shadow:
 		0 2px 8px rgba(20, 35, 55, 0.07),
@@ -1498,8 +1492,7 @@ hr {
 }
 
 .gebote--thesen .thesen-hero__img,
-.gebote--gebote .gebote-hero__img,
-.gebote--credo .credo-hero__img {
+.gebote--gebote .gebote-hero__img {
 	display: block;
 	width: 100%;
 	height: auto;
@@ -1507,8 +1500,7 @@ hr {
 }
 
 .gebote--thesen .thesen-hero__caption,
-.gebote--gebote .gebote-hero__caption,
-.gebote--credo .credo-hero__caption {
+.gebote--gebote .gebote-hero__caption {
 	margin: 0.65rem 0 0;
 	padding: 0 0.35rem;
 	font-family: var(--font-display);
@@ -1659,29 +1651,7 @@ hr {
 	font-size: 0.95rem;
 }
 
-.credo {
-	margin: 3rem 0 1rem;
-	padding: 2rem 1.75rem;
-	background: color-mix(in srgb, var(--surface) 92%, transparent);
-	border: 1px solid var(--surface2);
-	border-radius: var(--radius-lg);
-	border-left: 4px solid var(--accent);
-	box-shadow: var(--shadow-1);
-}
-
-.credo__head {
-	text-align: center;
-	margin-bottom: 1.5rem;
-}
-
-.credo__head h2 {
-	margin: 0 0 0.4rem;
-	font-size: clamp(1.35rem, 1.1rem + 1vw, 1.8rem);
-	font-weight: 440;
-	font-style: italic;
-	line-height: 1.15;
-}
-
+/* Fließtext für Impressum/Datenschutz (ohne Credo-Seite) */
 .credo__body {
 	font-family: var(--font-display);
 	font-weight: 380;
@@ -1731,59 +1701,6 @@ hr {
 .credo__body strong {
 	color: var(--text);
 	font-weight: 540;
-}
-
-.credo__amen {
-	text-align: center;
-	color: var(--muted);
-	margin-top: 1.5rem !important;
-	font-size: 0.95rem;
-	letter-spacing: 0.02em;
-}
-
-.litanei {
-	margin: 1.25rem 0;
-	display: grid;
-	grid-template-columns: 1fr;
-	gap: 0.15rem 0;
-}
-
-.litanei dt {
-	margin-top: 0.85rem;
-	padding-left: 2rem;
-	text-indent: -2rem;
-}
-
-.litanei dd {
-	margin: 0 0 0 2rem;
-	padding-left: 2rem;
-	text-indent: -2rem;
-	color: var(--muted);
-	font-style: italic;
-}
-
-.litanei dt:first-child {
-	margin-top: 0;
-}
-
-.litanei__role {
-	display: inline-block;
-	min-width: 1.4rem;
-	margin-right: 0.4rem;
-	font-weight: 700;
-	font-style: normal;
-	color: var(--accent);
-	font-variant: small-caps;
-}
-
-.litanei dd .litanei__role {
-	color: var(--accent2);
-}
-
-.litanei__intro,
-.litanei__pivot {
-	margin: 1.1rem 0 0.5rem;
-	color: var(--muted);
 }
 
 /* ============================================================
