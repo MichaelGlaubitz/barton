@@ -632,11 +632,12 @@ hr {
 	z-index: 1;
 	display: grid;
 	grid-template-columns: minmax(0, 14.25rem) minmax(0, 1fr);
-	gap: clamp(1.35rem, 4vw, 2.75rem);
-	align-items: center;
-	max-width: 52rem;
+	gap: clamp(1.5rem, 4.5vw, 3rem);
+	align-items: stretch;
+	width: 100%;
+	max-width: min(var(--maxw-wide), 100%);
 	margin: 0 auto;
-	padding: 0 0.15rem;
+	padding: 0;
 	text-align: left;
 }
 
@@ -645,6 +646,7 @@ hr {
 	padding: 0;
 	max-width: 14.25rem;
 	justify-self: center;
+	align-self: start;
 }
 
 .hero-book__cover {
@@ -669,8 +671,32 @@ hr {
 	min-width: 0;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-between;
 	align-self: stretch;
+	gap: clamp(0.75rem, 2vw, 1.25rem);
+}
+
+.hero-book__title-block {
+	flex: 1 1 auto;
+	display: flex;
+	align-items: center;
+	min-height: 0;
+}
+
+.hero-book__subtitle {
+	margin: 0;
+	padding: 0;
+	font-family: var(--font-body);
+	font-size: clamp(1rem, min(3.25cqi + 0.25rem, 1.55rem), 1.55rem);
+	font-weight: 580;
+	line-height: 1.35;
+	letter-spacing: 0.01em;
+	color: rgba(200, 212, 228, 0.98);
+	max-width: none;
+}
+
+:root[data-theme='light'] .hero-book__subtitle {
+	color: rgba(38, 52, 68, 0.92);
 }
 
 .hero-book__byline {
@@ -689,10 +715,11 @@ hr {
 
 .hero-book__manifest {
 	margin: 0;
+	width: 100%;
 	font-family: var(--font-display);
 	font-weight: 550;
 	font-optical-sizing: auto;
-	font-size: clamp(2.35rem, min(18cqi - 0.5rem, 12vw), 5.25rem);
+	font-size: clamp(2.35rem, min(20cqi - 0.5rem, 12vw), 5.5rem);
 	line-height: 1.05;
 	letter-spacing: -0.025em;
 	font-variant-numeric: proportional-nums;
@@ -727,6 +754,7 @@ hr {
 		grid-template-columns: 1fr;
 		text-align: center;
 		max-width: 22rem;
+		align-items: center;
 	}
 
 	.hero-book__figure {
@@ -735,11 +763,25 @@ hr {
 
 	.hero-book__text {
 		padding: 0 0.25rem;
+		justify-content: flex-start;
+		align-items: center;
+		width: 100%;
+	}
+
+	.hero-book__title-block {
+		flex: 0 1 auto;
+		justify-content: center;
+		width: 100%;
 	}
 
 	.hero-book__byline {
 		font-size: 0.64rem;
 		letter-spacing: 0.16em;
+	}
+
+	.hero-book__subtitle {
+		font-size: clamp(0.98rem, 3.8vw + 0.35rem, 1.2rem);
+		max-width: 20rem;
 	}
 
 	.hero-book__manifest {
