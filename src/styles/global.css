@@ -38,7 +38,7 @@
 	--maxw: 44rem;
 	--maxw-wide: 64rem;
 	/* Hero (Startseite): Buchzeile + Stat-Karten gleiche Innenbreite */
-	--hero-inner-max: 42rem;
+	--hero-inner-max: 48rem;
 
 	/* Radii */
 	--radius-sm: 8px;
@@ -729,7 +729,6 @@ hr {
 	text-shadow:
 		0 2px 18px rgba(0, 0, 0, 0.65),
 		0 0 40px rgba(200, 175, 120, 0.12);
-	text-wrap: balance;
 }
 
 :root[data-theme='light'] .hero-book__manifest {
