@@ -37,6 +37,8 @@
 	/* Layout */
 	--maxw: 44rem;
 	--maxw-wide: 64rem;
+	/* Hero (Startseite): Buchzeile + Stat-Karten gleiche Innenbreite */
+	--hero-inner-max: 42rem;
 
 	/* Radii */
 	--radius-sm: 8px;
@@ -327,9 +329,9 @@ hr {
 .hero-shell {
 	position: relative;
 	width: 100vw;
-	max-width: 100vw;
-	left: 50%;
-	transform: translateX(-50%);
+	max-width: 100%;
+	margin-left: calc(50% - 50vw);
+	margin-right: calc(50% - 50vw);
 	margin-bottom: 2rem;
 	padding: clamp(2.35rem, 5.5vw, 3.75rem) clamp(1.1rem, 3vw, 1.75rem) clamp(2.5rem, 4.5vw, 3.25rem);
 	border-radius: 0 0 var(--radius-lg) var(--radius-lg);
@@ -524,7 +526,7 @@ hr {
 	display: grid;
 	grid-template-columns: repeat(3, minmax(0, 1fr));
 	gap: 1rem;
-	max-width: 42rem;
+	max-width: var(--hero-inner-max);
 	margin: 2rem auto 0;
 	padding: 0;
 	list-style: none;
@@ -635,7 +637,7 @@ hr {
 	gap: clamp(1.5rem, 4.5vw, 3rem);
 	align-items: stretch;
 	width: 100%;
-	max-width: min(var(--maxw-wide), 100%);
+	max-width: min(var(--hero-inner-max), 100%);
 	margin: 0 auto;
 	padding: 0;
 	text-align: left;
