@@ -1,16 +1,36 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+
+const base = import.meta.env.BASE_URL;
+const thesenHeroSrc = `${base}images/thesen-tuer.png`;
 ---
 
 <BaseLayout
 	title="Die 9,5 Thesen gegen den didaktischen Leerlauf — Mathechismus.de"
 	description="Neun Thesen und eine halbe gegen pädagogischen Leerlauf — polemisch und pointiert, mit Blick auf den echten Schulalltag statt Seminarprospekt."
+	ogImage={thesenHeroSrc}
 >
 	<article class="gebote gebote--thesen">
 		<header class="gebote__head">
 			<p class="gebote__kicker">Bonus · Disputation</p>
 			<h1>Die 9,5 Thesen gegen den didaktischen Leerlauf im Unterricht</h1>
 		</header>
+
+		<figure class="thesen-hero">
+			<img
+				src={thesenHeroSrc}
+				width="1024"
+				height="571"
+				sizes="(max-width: 720px) 92vw, min(52rem, 94vw)"
+				loading="eager"
+				decoding="async"
+				class="thesen-hero__img"
+				alt="Mann in historischer Kleidung mit weißem Kragen schlägt ein mit »Thesen« betiteltes Schriftstück an eine große hölzerne Kirchentür; historischer Platz mit Fachwerk im Hintergrund."
+			/>
+			<figcaption class="thesen-hero__caption">
+				Wittenberger Tradition — nur eben für die Pinnwand neben der Kaffeemaschine.
+			</figcaption>
+		</figure>
 
 		<p class="gebote__vorrede">
 			Aus Liebe zur Klarheit und um pädagogische Nebelkerzen endlich auszutreten, werden hier einige Punkte zur Diskussion gestellt. Wer sie widerlegen möchte, bringe Erde aus dem echten
