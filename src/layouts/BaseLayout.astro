@@ -70,18 +70,44 @@ const ogUrl = new URL(
 		<header class="site-header">
 			<div class="site-header__inner">
 				<p class="site-title"><a href={base}>Mathechismus.de</a></p>
-				<nav class="site-nav" aria-label="Hauptnavigation">
-					{
-						siteNavLinks.map(({ href, label }) => (
-							<a href={href}>{label}</a>
-						))
-					}
+				<div class="site-header__tools">
 					<button type="button" class="theme-toggle" data-theme-toggle aria-label="Dunkles Farbschema aktivieren">
 						<span aria-hidden="true" data-theme-toggle-icon>🌙</span>
 					</button>
-				</nav>
+					<button
+						type="button"
+						class="site-nav-burger"
+						data-site-nav-burger
+						aria-expanded="false"
+						aria-controls="site-nav-panel"
+						aria-label="Menü öffnen"
+					>
+						<span class="site-nav-burger__lines" aria-hidden="true">
+							<span></span>
+							<span></span>
+							<span></span>
+						</span>
+					</button>
+				</div>
 			</div>
 		</header>
+		<div id="site-nav-panel" class="site-nav-panel" hidden data-site-nav-panel>
+			<div class="site-nav-panel__backdrop" data-site-nav-close role="presentation"></div>
+			<div class="site-nav-panel__sheet" role="dialog" aria-modal="true" aria-label="Hauptnavigation">
+				<button type="button" class="site-nav-panel__close" data-site-nav-close aria-label="Menü schließen">
+					<span aria-hidden="true">×</span>
+				</button>
+				<nav class="site-nav-panel__nav">
+					{
+						siteNavLinks.map(({ href, label }) => (
+							<a href={href} class="site-nav-panel__link">
+								{label}
+							</a>
+						))
+					}
+				</nav>
+			</div>
+		</div>
 		<main class="site-main">
 			<slot />
 			<footer class="site-footer">
@@ -116,6 +142,49 @@ const ogUrl = new URL(
 				button.addEventListener('click', () => {
 					const next = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
 					applyTheme(next);
+				});
+			})();
+
+			(() => {
+				const panel = document.querySelector('[data-site-nav-panel]');
+				const burger = document.querySelector('[data-site-nav-burger]');
+				if (!(panel instanceof HTMLElement) || !(burger instanceof HTMLButtonElement)) return;
+
+				const closeEls = panel.querySelectorAll('[data-site-nav-close]');
+				const links = panel.querySelectorAll('.site-nav-panel__link[href]');
+
+				function openMenu() {
+					panel.hidden = false;
+					burger.setAttribute('aria-expanded', 'true');
+					burger.setAttribute('aria-label', 'Menü schließen');
+					burger.classList.add('site-nav-burger--open');
+					document.body.style.overflow = 'hidden';
+				}
+
+				function closeMenu() {
+					panel.hidden = true;
+					burger.setAttribute('aria-expanded', 'false');
+					burger.setAttribute('aria-label', 'Menü öffnen');
+					burger.classList.remove('site-nav-burger--open');
+					document.body.style.overflow = '';
+				}
+
+				function toggleMenu() {
+					if (panel.hidden) openMenu();
+					else closeMenu();
+				}
+
+				burger.addEventListener('click', toggleMenu);
+				closeEls.forEach((el) => {
+					el.addEventListener('click', closeMenu);
+				});
+				links.forEach((a) => a.addEventListener('click', closeMenu));
+
+				document.addEventListener('keydown', (e) => {
+					if (e.key === 'Escape' && !panel.hidden) {
+						closeMenu();
+						burger.focus();
+					}
 				});
 			})();
 		</script>
