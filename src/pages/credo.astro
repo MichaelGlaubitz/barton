@@ -1,17 +1,37 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+
+const base = import.meta.env.BASE_URL;
+const credoHeroSrc = `${base}images/credo-kanzel.png`;
 ---
 
 <BaseLayout
 	title="Bekenntnis, Vaterunser & Litanei — Mathechismus.de"
 	description="Satirisches Glaubensbekenntnis, Vaterunser und Litanei der Methodenmoden — Bonus zur Polemik."
+	ogImage={credoHeroSrc}
 >
-	<article class="gebote">
+	<article class="gebote gebote--credo">
 		<header class="gebote__head">
 			<p class="gebote__kicker">Bonus · Liturgie</p>
 			<h1>Bekenntnis, Vaterunser &amp; Litanei</h1>
 			<p class="gebote__sub">Im Anschluss an <a href={`${import.meta.env.BASE_URL}gebote/`}>die zehn Gebote</a> und die <a href={`${import.meta.env.BASE_URL}thesen/`}>9,5 Thesen</a> — zu sprechen im Lehrerzimmer, sotto voce, vor der dritten Doppelstunde.</p>
 		</header>
+
+		<figure class="credo-hero">
+			<img
+				src={credoHeroSrc}
+				width="1024"
+				height="571"
+				sizes="(max-width: 720px) 92vw, min(52rem, 94vw)"
+				loading="eager"
+				decoding="async"
+				class="credo-hero__img"
+				alt="Predigt von einer hohen Kanzel in einer gotischen Kathedrale: Prediger in schwarzer Robe mit großem weißem Kragen, erhobene Hand, aufgeschlagenes Buch auf dem Lesepult; Gemeinde auf den Bänken, Licht durch farbige Bleiglasfenster."
+			/>
+			<figcaption class="credo-hero__caption">
+				Liturgie verlangt keine echte Kathedrale — wohl aber eine Kanzel, von der man hinunter bis zur Aufgabe sieht.
+			</figcaption>
+		</figure>
 
 		<section class="credo" aria-labelledby="credo-title">
 			<header class="credo__head">
