@@ -1,0 +1,52 @@
+---
+import '@fontsource/unifrakturmaguntia';
+
+interface Props {
+	totalHacks: number;
+	totalFields: number;
+	totalQuizQuestions: number;
+	coverSrc: string;
+}
+
+const { totalHacks, totalFields, totalQuizQuestions, coverSrc } = Astro.props;
+---
+
+<div class="hero-shell hero-shell--book">
+	<div class="hero-book">
+		<figure class="hero-book__figure">
+			<img
+				src={coverSrc}
+				width="559"
+				height="1024"
+				class="hero-book__cover"
+				loading="eager"
+				decoding="async"
+				fetchpriority="high"
+				sizes="(max-width: 640px) 72vw, 14rem"
+				alt="Buchcover-Stil: Dr. Michael Glaubitz mit weißem Kragen und Buch; Schriftzug Kleiner und großer Mathechismus in gebrochener Schrift auf schwarzem Grund."
+			/>
+		</figure>
+		<div class="hero-book__text">
+			<p class="hero-book__byline">Der Große und Kleine Mathechismus des Dr. Michael Glaubitz</p>
+			<h1 id="hero-title" class="hero-book__manifest">
+				<span class="hero-book__manifest-line">Wider den Lug und Trug</span>
+				<span class="hero-book__manifest-line">der deutschen Didaktik</span>
+			</h1>
+		</div>
+	</div>
+	<div class="hero__stats hero-book__stats" role="list" aria-label="Übersicht">
+		<div class="hero__stat-card" role="listitem">
+			<strong class="hero__stat-num">{totalHacks}</strong>
+			<span class="hero__stat-label">Hacks im Katalog</span>
+		</div>
+		<div class="hero__stat-card" role="listitem">
+			<strong class="hero__stat-num">{totalFields}</strong>
+			<span class="hero__stat-label">Themenfelder</span>
+		</div>
+		<div class="hero__stat-card" role="listitem">
+			<strong class="hero__stat-num">{totalQuizQuestions}</strong>
+			<span class="hero__stat-label">Quizfragen zum Selbstcheck</span>
+		</div>
+	</div>
+	<span class="hero-shell__sparkle" aria-hidden="true">✦</span>
+</div>

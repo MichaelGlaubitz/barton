@@ -595,6 +595,157 @@ hr {
 	opacity: 0.55;
 }
 
+/* ─ Variante „Buchcover“ (Startseite) ───────────────────────── */
+.hero-shell.hero-shell--book {
+	background:
+		radial-gradient(ellipse 48% 44% at 18% 38%, rgba(190, 155, 95, 0.07), transparent 58%),
+		radial-gradient(ellipse 58% 48% at 82% 22%, rgba(130, 212, 252, 0.14), transparent 56%),
+		radial-gradient(ellipse 80% 55% at 50% 92%, rgba(15, 20, 28, 0.82), transparent 62%),
+		linear-gradient(168deg, #070910 0%, #121926 44%, #080c12 100%);
+	border-color: color-mix(in srgb, rgba(212, 190, 140, 0.35), rgba(130, 212, 252, 0.22));
+}
+
+:root[data-theme='light'] .hero-shell.hero-shell--book {
+	background:
+		radial-gradient(ellipse 50% 42% at 16% 36%, rgba(180, 150, 90, 0.09), transparent 56%),
+		radial-gradient(ellipse 58% 48% at 85% 24%, rgba(29, 111, 184, 0.09), transparent 55%),
+		radial-gradient(ellipse 82% 52% at 50% 90%, rgba(225, 230, 240, 0.95), transparent 62%),
+		linear-gradient(172deg, #f3eee6 0%, #e8eef8 48%, #f8fafc 100%);
+	border-color: color-mix(in srgb, var(--accent) 22%, rgba(190, 165, 120, 0.35));
+}
+
+.hero-shell.hero-shell--book::after {
+	opacity: 0.55;
+	background-image:
+		radial-gradient(ellipse 38% 44% at 28% 50%, rgba(110, 150, 195, 0.075), transparent 58%),
+		radial-gradient(ellipse 26% 30% at 22% 44%, rgba(95, 135, 175, 0.055), transparent 54%);
+}
+
+:root[data-theme='light'] .hero-shell.hero-shell--book::after {
+	opacity: 0.38;
+}
+
+.hero-book {
+	position: relative;
+	z-index: 1;
+	display: grid;
+	grid-template-columns: minmax(0, 14.25rem) minmax(0, 1fr);
+	gap: clamp(1.35rem, 4vw, 2.75rem);
+	align-items: center;
+	max-width: 52rem;
+	margin: 0 auto;
+	padding: 0 0.15rem;
+	text-align: left;
+}
+
+.hero-book__figure {
+	margin: 0;
+	padding: 0;
+	max-width: 14.25rem;
+	justify-self: center;
+}
+
+.hero-book__cover {
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: var(--radius-sm);
+	box-shadow:
+		0 6px 24px rgba(0, 0, 0, 0.55),
+		0 0 0 1px rgba(255, 255, 255, 0.07),
+		inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+:root[data-theme='light'] .hero-book__cover {
+	box-shadow:
+		0 4px 16px rgba(20, 35, 55, 0.14),
+		0 0 0 1px rgba(20, 35, 55, 0.06),
+		inset 0 1px 0 rgba(255, 255, 255, 0.85);
+}
+
+.hero-book__text {
+	min-width: 0;
+}
+
+.hero-book__byline {
+	margin: 0 0 0.85rem;
+	font-family: var(--font-body);
+	font-size: 0.68rem;
+	font-weight: 600;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	color: rgba(188, 198, 218, 0.92);
+}
+
+:root[data-theme='light'] .hero-book__byline {
+	color: rgba(52, 72, 94, 0.82);
+}
+
+.hero-book__manifest {
+	margin: 0;
+	font-family: 'UnifrakturMaguntia', 'Old English Text MT', 'Times New Roman', serif;
+	font-weight: 400;
+	font-size: clamp(1.45rem, 0.95rem + 2.4vw, 2.35rem);
+	line-height: 1.18;
+	letter-spacing: 0.02em;
+	color: #f4efe6;
+	text-shadow:
+		0 2px 18px rgba(0, 0, 0, 0.65),
+		0 0 40px rgba(200, 175, 120, 0.12);
+}
+
+:root[data-theme='light'] .hero-book__manifest {
+	color: #15212e;
+	text-shadow: 0 1px 12px rgba(20, 35, 55, 0.06);
+}
+
+.hero-book__manifest-line {
+	display: block;
+}
+
+.hero-book__manifest-line:last-child {
+	margin-top: 0.12em;
+}
+
+.hero-shell.hero-shell--book .hero-book__stats {
+	margin-top: clamp(1.75rem, 4vw, 2.35rem);
+	position: relative;
+	z-index: 1;
+}
+
+@media (max-width: 640px) {
+	.hero-book {
+		grid-template-columns: 1fr;
+		text-align: center;
+		max-width: 22rem;
+	}
+
+	.hero-book__figure {
+		max-width: min(13rem, 72vw);
+	}
+
+	.hero-book__text {
+		padding: 0 0.25rem;
+	}
+
+	.hero-book__byline {
+		font-size: 0.64rem;
+		letter-spacing: 0.16em;
+	}
+
+	.hero-book__manifest {
+		font-size: clamp(1.25rem, 0.85rem + 2vw, 1.85rem);
+	}
+
+	.hero-book__manifest-line {
+		display: block;
+	}
+
+	.hero-book__manifest-line:last-child {
+		margin-top: 0.2em;
+	}
+}
+
 /* Hero-Kicker außerhalb des dunklen Bands (Spotlight etc.) */
 .hero__kicker {
 	display: inline-flex;

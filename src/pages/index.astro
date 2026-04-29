@@ -1,5 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroBookCover from '../components/HeroBookCover.astro';
+import HeroLegacy from '../components/HeroLegacy.astro';
 import { hackEmoji } from '../lib/hackCardIcons';
 import { getCollection } from 'astro:content';
 
@@ -7,6 +9,10 @@ const hacks = (await getCollection('hacks')).sort(
 	(a, b) => (a.data.order ?? 999) - (b.data.order ?? 999),
 );
 const base = import.meta.env.BASE_URL;
+
+/** Startseiten-Hero: `'book'` = Buchcover + Manifest · `'legacy'` = klassisches Hero (`HeroLegacy.astro`). */
+const HERO_VARIANT: 'book' | 'legacy' = 'book';
+const heroCoverSrc = `${base}images/autor-michael-glaubitz.png`;
 
 interface FunctionGroup {
 	key: string;
@@ -234,37 +240,22 @@ const featuredHacks = featuredIds.map((id) => hacksById.get(id)).filter(Boolean)
 ---
 
 <BaseLayout title="Mathechismus.de — Mathematikunterricht">
-	<div class="hero-shell">
-		<section class="hero" aria-labelledby="hero-title">
-			<p class="hero__kicker">Der Große und Kleine Mathechismus des Dr. Michael Glaubitz</p>
-			<h1 id="hero-title" class="hero__title">
-				<span class="hero__title-line1">Matheunterricht,</span><br aria-hidden="true" />
-				<span class="hero__title-line2">
-					der <em class="hero__accent-word">ankommt</em>.
-				</span>
-			</h1>
-			<p class="hero__lead">
-				<span class="hero__lead-line">Wirksame Hacks.</span>
-				<span class="hero__lead-line">Von Lehrern für Lehrer.</span>
-				<span class="hero__lead-line">Ohne Geschwurbel.</span>
-			</p>
-			<div class="hero__stats" role="list" aria-label="Übersicht">
-				<div class="hero__stat-card" role="listitem">
-					<strong class="hero__stat-num">{totalHacks}</strong>
-					<span class="hero__stat-label">Hacks im Katalog</span>
-				</div>
-				<div class="hero__stat-card" role="listitem">
-					<strong class="hero__stat-num">{totalFields}</strong>
-					<span class="hero__stat-label">Themenfelder</span>
-				</div>
-				<div class="hero__stat-card" role="listitem">
-					<strong class="hero__stat-num">{totalQuizQuestions}</strong>
-					<span class="hero__stat-label">Quizfragen zum Selbstcheck</span>
-				</div>
-			</div>
-		</section>
-		<span class="hero-shell__sparkle" aria-hidden="true">✦</span>
-	</div>
+	{
+		HERO_VARIANT === 'book' ? (
+			<HeroBookCover
+				totalHacks={totalHacks}
+				totalFields={totalFields}
+				totalQuizQuestions={totalQuizQuestions}
+				coverSrc={heroCoverSrc}
+			/>
+		) : (
+			<HeroLegacy
+				totalHacks={totalHacks}
+				totalFields={totalFields}
+				totalQuizQuestions={totalQuizQuestions}
+			/>
+		)
+	}
 
 	<section class="spotlight" aria-labelledby="spotlight-title" data-spotlight-section>
 		<div class="spotlight__copy">
