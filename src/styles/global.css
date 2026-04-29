@@ -626,6 +626,8 @@ hr {
 }
 
 .hero-book {
+	container-type: inline-size;
+	container-name: hero-book;
 	position: relative;
 	z-index: 1;
 	display: grid;
@@ -665,6 +667,10 @@ hr {
 
 .hero-book__text {
 	min-width: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-self: stretch;
 }
 
 .hero-book__byline {
@@ -683,15 +689,18 @@ hr {
 
 .hero-book__manifest {
 	margin: 0;
-	font-family: 'UnifrakturMaguntia', 'Old English Text MT', 'Times New Roman', serif;
-	font-weight: 400;
-	font-size: clamp(1.45rem, 0.95rem + 2.4vw, 2.35rem);
-	line-height: 1.18;
-	letter-spacing: 0.02em;
+	font-family: var(--font-display);
+	font-weight: 550;
+	font-optical-sizing: auto;
+	font-size: clamp(2.35rem, min(18cqi - 0.5rem, 12vw), 5.25rem);
+	line-height: 1.05;
+	letter-spacing: -0.025em;
+	font-variant-numeric: proportional-nums;
 	color: #f4efe6;
 	text-shadow:
 		0 2px 18px rgba(0, 0, 0, 0.65),
 		0 0 40px rgba(200, 175, 120, 0.12);
+	text-wrap: balance;
 }
 
 :root[data-theme='light'] .hero-book__manifest {
@@ -704,7 +713,7 @@ hr {
 }
 
 .hero-book__manifest-line:last-child {
-	margin-top: 0.12em;
+	margin-top: 0.08em;
 }
 
 .hero-shell.hero-shell--book .hero-book__stats {
@@ -734,7 +743,8 @@ hr {
 	}
 
 	.hero-book__manifest {
-		font-size: clamp(1.25rem, 0.85rem + 2vw, 1.85rem);
+		font-size: clamp(1.65rem, 9vw + 0.5rem, 2.65rem);
+		line-height: 1.08;
 	}
 
 	.hero-book__manifest-line {
@@ -742,7 +752,7 @@ hr {
 	}
 
 	.hero-book__manifest-line:last-child {
-		margin-top: 0.2em;
+		margin-top: 0.12em;
 	}
 }
 
