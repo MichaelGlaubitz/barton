@@ -1,100 +1,24 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+export const prerender = true;
 
 const base = import.meta.env.BASE_URL;
-const geboteHeroSrc = `${base}images/gebote-steinplatten.png`;
+const target = `${base}10-gegenboten/`;
+const canonicalHref =
+	Astro.site != null ? new URL(target, Astro.site.origin).href : undefined;
 ---
 
-<BaseLayout
-	title="10 Gegenboten für kompetenzorientierten Unterricht (Satire) — Mathechismus.de"
-	description="Satirische 10 Gegenboten — Gegenentwurf zu den 10 Geboten für guten Unterricht, Polemik gegen überzogene Kompetenzorientierung."
-	ogImage={geboteHeroSrc}
->
-	<article class="gebote gebote--gebote">
-		<header class="gebote__head">
-			<p class="gebote__kicker">Gegenentwurf · Satire</p>
-			<h1>10 Gegenboten für kompetenzorientierten Unterricht</h1>
-			<p class="gebote__sub">
-				Ein ironisches Pendant zu den <a href={`${base}gebote/`}>10 Geboten für guten Unterricht</a>.
-			</p>
-		</header>
-
-		<figure class="gebote-hero">
-			<img
-				src={geboteHeroSrc}
-				width="1024"
-				height="571"
-				sizes="(max-width: 720px) 92vw, min(52rem, 94vw)"
-				loading="eager"
-				decoding="async"
-				class="gebote-hero__img"
-				alt="Stilisierte Darstellung: Figur mit langem Bart und Brille in antik anmutender Gewandung, zwei steinerne Gesetzestafeln mit hebräisch anmutender Schrift haltend, vor bergiger Landschaft und dramatisch beleuchtetem Himmel."
-			/>
-			<figcaption class="gebote-hero__caption">
-				10 Gegenboten — in zweiter, rein satirischer Lesart.
-			</figcaption>
-		</figure>
-
-		<p class="gebote__vorrede">
-			Die 10 Gegenboten des kompetenzorientierten Unterrichts
+<!doctype html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Weiterleitung — Mathechismus.de</title>
+		{canonicalHref && <link rel="canonical" href={canonicalHref} />}
+		<meta http-equiv="refresh" content={`0;url=${target}`} />
+	</head>
+	<body>
+		<p>
+			Diese Seite hat eine neue Adresse. <a href={target}>Weiter zu den 10 Gegenboten für kompetenzorientierten Unterricht</a>.
 		</p>
-
-		<ol class="gebote__list">
-			<li>
-				<strong>Du sollst keine Inhalte haben neben der Kompetenz.</strong>
-				Wissen ist Ballast und veraltet schneller als die Tinte auf dem Lehrplan. Lehre nicht das „Was“, sondern nur das „Wie“. Es ist völlig unerheblich, ob ein Schüler die Mitternachtsformel kennt, solange er kompetent erklären kann, warum er sich weigert, sie anzuwenden.
-			</li>
-			<li>
-				<strong>Du sollst den Namen des Lehrers nicht missbrauchen.</strong>
-				Nenne dich niemals „Lehrer“ oder gar „Autorität“. Du bist ein Lernbegleiter, ein Facilitator oder ein moderierender Coach am Spielfeldrand. Wenn du doch einmal etwas erklärst, tue dies nur unter Tränen und mit dem Hinweis, dass die Schüler sich das Wissen eigentlich selbst hätten konstruieren sollen.
-			</li>
-			<li>
-				<strong>Du sollst den Methodentag heiligen.</strong>
-				Die Methode ist das Ziel, der Inhalt nur der lästige Vorwand. Ein Gallery-Walk über leere Plakate ist wertvoller als eine tiefgründige Herleitung an der Tafel. Wenn die Schüler am Ende der Stunde nicht mindestens drei verschiedene Kooperationsformen angewendet haben, war die Stunde verloren — egal, ob gerechnet wurde.
-			</li>
-			<li>
-				<strong>Ehre den Operator und die Anforderungsbereiche.</strong>
-				Du sollst nicht einfach „rechnen“ lassen. Nutze ausschließlich die heiligen Operatoren der Kultusministerkonferenz. Wer „löse“ sagt, ist ein Ketzer; wer „beurteile die Relevanz der Lösung im Hinblick auf eine nachhaltige Gesellschaftsentwicklung“ schreibt, wird mit Bestnoten in Anforderungsbereich III belohnt.
-			</li>
-			<li>
-				<strong>Du sollst nicht dozieren.</strong>
-				Frontalunterricht ist die Todsünde der Moderne. Selbst wenn du eine komplexe physikalische Theorie in fünf Minuten klären könntest, musst du die Schüler stattdessen drei Wochen lang in einer „Lernlandkarte“ danach suchen lassen. Der Weg ist das Ziel, auch wenn er im Kreis führt.
-			</li>
-			<li>
-				<strong>Du sollst die Lebenswelt künstlich aufblähen.</strong>
-				Konstruiere absurde Sachzusammenhänge, um die Reinheit der Mathematik zu maskieren. Niemand berechnet einfach ein Volumen; stattdessen berechnen wir die Füllmenge eines hypothetischen, öko-zertifizierten Smoothie-Bechers in Form eines hyperbolischen Paraboloids, um die „Anschlussfähigkeit“ zu wahren.
-			</li>
-			<li>
-				<strong>Du sollst die Differenzierung bis zur Selbstaufgabe treiben.</strong>
-				Erstelle für jede Klasse 30 verschiedene Arbeitsblätter in 12 Schwierigkeitsstufen, inklusive einer Version in Leichter Sprache und einer für Linkshänder. Dass am Ende alle das gleiche Minimalziel erreichen, spielt keine Rolle — Hauptsache, die „Abholung am individuellen Lernstand“ wurde dokumentiert.
-			</li>
-			<li>
-				<strong>Du sollst nicht korrigieren, sondern Feedback geben.</strong>
-				Ein roter Strich ist ein Gewaltakt. Nutze stattdessen kompetenzorientierte Rückmeldebögen mit mindestens 24 Kriterien. Schreibe nicht „Falsch“, sondern: „In deiner individuellen Konstruktion der mathematischen Realität hast du einen kreativen Pfad gewählt, der noch nicht ganz mit der gängigen Konvention korreliert.“
-			</li>
-			<li>
-				<strong>Du sollst den Output über den Verstand stellen.</strong>
-				Was nicht messbar ist, existiert nicht. Wenn ein Schüler durch Raten die richtige Multiple-Choice-Antwort ankreuzt, hat er die Kompetenz erworben. Der tiefere mathematische Durchdringungsprozess ist eine nicht-evidenzbasierte Privatangelegenheit und daher zu vernachlässigen.
-			</li>
-			<li>
-				<strong>Du sollst das Fachliche der Sozialkompetenz opfern.</strong>
-				Es ist wichtiger, dass die Gruppe harmonisch über das Problem diskutiert hat, als dass das Problem gelöst wurde. Ein falsches Ergebnis in einem perfekten Team-Plakat ist einer korrekten Einzelarbeit jederzeit vorzuziehen. Gemeinsam irren ist besser als einsam wissen.
-			</li>
-		</ol>
-
-		<p class="gebote__schluss">
-			<em>Hinweis.</em> Dieser Text ist durchgehend satirisch gemeint — als spitzer Gegenpol zu den ernst gemeinten
-			<a href={`${base}gebote/`}>10 Geboten für guten Unterricht</a>.
-		</p>
-
-		<p class="gebote__more">
-			Weiter zu den <a href={`${base}thesen/`}>9,5 Thesen</a>.
-		</p>
-
-		<p class="gebote__back">
-			<a href={`${base}gebote/`}>← Zu den 10 Geboten für guten Unterricht</a>
-			<span aria-hidden="true"> · </span>
-			<a href={base}>Zum Hack-Katalog</a>
-		</p>
-	</article>
-</BaseLayout>
+	</body>
+</html>
