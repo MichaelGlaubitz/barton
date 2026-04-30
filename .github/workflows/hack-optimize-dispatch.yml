@@ -1,0 +1,214 @@
+name: Hack Optimize Dispatch
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "Quelle des Slugs"
+        required: true
+        default: "next"
+        type: choice
+        options:
+          - next
+          - slug
+      slug:
+        description: "Nur bei mode=slug: konkreter Hack-Slug (z. B. abruf-ueben)"
+        required: false
+        default: ""
+        type: string
+      commit:
+        description: "Soll die Automation commit+push ausfuehren?"
+        required: true
+        default: true
+        type: boolean
+      dry_run:
+        description: "Nur pruefen, nichts committen"
+        required: true
+        default: false
+        type: boolean
+
+permissions:
+  contents: read
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Preconditions
+        shell: bash
+        env:
+          AUTOMATION_WEBHOOK_URL: ${{ secrets.AUTOMATION_WEBHOOK_URL }}
+          AUTOMATION_TOKEN: ${{ secrets.AUTOMATION_TOKEN }}
+        run: |
+          set -euo pipefail
+
+          if [[ -z "${AUTOMATION_WEBHOOK_URL:-}" ]]; then
+            echo "AUTOMATION_WEBHOOK_URL fehlt als Repository-Secret."
+            {
+              echo "## Hack Optimize Dispatch"
+              echo
+              echo "❌ **Konfiguration fehlt:** \`AUTOMATION_WEBHOOK_URL\`"
+              echo
+              echo "Bitte unter **Repo Settings -> Secrets and variables -> Actions** setzen."
+            } >> "$GITHUB_STEP_SUMMARY"
+            exit 2
+          fi
+
+          if [[ -z "${AUTOMATION_TOKEN:-}" ]]; then
+            echo "AUTOMATION_TOKEN fehlt als Repository-Secret."
+            {
+              echo "## Hack Optimize Dispatch"
+              echo
+              echo "❌ **Konfiguration fehlt:** \`AUTOMATION_TOKEN\`"
+              echo
+              echo "Bitte unter **Repo Settings -> Secrets and variables -> Actions** setzen."
+            } >> "$GITHUB_STEP_SUMMARY"
+            exit 2
+          fi
+
+      - name: Dispatch to automation bridge
+        id: dispatch
+        shell: bash
+        env:
+          AUTOMATION_WEBHOOK_URL: ${{ secrets.AUTOMATION_WEBHOOK_URL }}
+          AUTOMATION_TOKEN: ${{ secrets.AUTOMATION_TOKEN }}
+          INPUT_MODE: ${{ inputs.mode }}
+          INPUT_SLUG: ${{ inputs.slug }}
+          INPUT_COMMIT: ${{ inputs.commit }}
+          INPUT_DRY_RUN: ${{ inputs.dry_run }}
+          REPO: ${{ github.repository }}
+          BRANCH: ${{ github.ref_name }}
+          TRIGGERED_BY: ${{ github.actor }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          set -euo pipefail
+
+          payload=$(python - <<'PY'
+import json, os
+data = {
+  "repo": os.environ["REPO"],
+  "branch": os.environ["BRANCH"],
+  "triggeredBy": os.environ["TRIGGERED_BY"],
+  "runUrl": os.environ["RUN_URL"],
+  "mode": os.environ["INPUT_MODE"],
+  "slug": os.environ["INPUT_SLUG"],
+  "commit": os.environ["INPUT_COMMIT"] == "true",
+  "dryRun": os.environ["INPUT_DRY_RUN"] == "true"
+}
+print(json.dumps(data, separators=(",", ":")))
+PY
+)
+
+          echo "Dispatch payload: ${payload}"
+
+          http_status=$(curl -sS -o response.json -w "%{http_code}" \
+            -X POST "${AUTOMATION_WEBHOOK_URL}" \
+            -H "Content-Type: application/json" \
+            -H "X-Automation-Token: ${AUTOMATION_TOKEN}" \
+            --data "${payload}")
+
+          echo "HTTP status: ${http_status}"
+
+          if [[ "${http_status}" -lt 200 || "${http_status}" -ge 300 ]]; then
+            echo "Bridge-Request fehlgeschlagen."
+            echo "Antwort:"
+            cat response.json || true
+            {
+              echo "## Hack Optimize Dispatch"
+              echo
+              echo "❌ **Dispatch fehlgeschlagen** (HTTP ${http_status})"
+              echo
+              echo '```json'
+              cat response.json || true
+              echo
+              echo '```'
+            } >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
+
+          python - <<'PY'
+import json
+with open("response.json", "r", encoding="utf-8") as f:
+    data = json.load(f)
+required = ["status", "message"]
+for key in required:
+    if key not in data:
+        raise SystemExit(f"Antwortfeld fehlt: {key}")
+print("status=" + str(data.get("status", "")))
+print("message=" + str(data.get("message", "")))
+print("slug=" + str(data.get("slug", "")))
+print("runId=" + str(data.get("runId", "")))
+print("commitSha=" + str(data.get("commitSha", "")))
+PY
+
+          status=$(python - <<'PY'
+import json
+print(json.load(open("response.json", "r", encoding="utf-8")).get("status", ""))
+PY
+)
+          message=$(python - <<'PY'
+import json
+print(json.load(open("response.json", "r", encoding="utf-8")).get("message", ""))
+PY
+)
+          slug=$(python - <<'PY'
+import json
+print(json.load(open("response.json", "r", encoding="utf-8")).get("slug", ""))
+PY
+)
+          run_id=$(python - <<'PY'
+import json
+print(json.load(open("response.json", "r", encoding="utf-8")).get("runId", ""))
+PY
+)
+          commit_sha=$(python - <<'PY'
+import json
+print(json.load(open("response.json", "r", encoding="utf-8")).get("commitSha", ""))
+PY
+)
+
+          echo "status=${status}" >> "$GITHUB_OUTPUT"
+          echo "message=${message}" >> "$GITHUB_OUTPUT"
+          echo "slug=${slug}" >> "$GITHUB_OUTPUT"
+          echo "run_id=${run_id}" >> "$GITHUB_OUTPUT"
+          echo "commit_sha=${commit_sha}" >> "$GITHUB_OUTPUT"
+
+      - name: Summary
+        shell: bash
+        run: |
+          set -euo pipefail
+          status="${{ steps.dispatch.outputs.status }}"
+          message="${{ steps.dispatch.outputs.message }}"
+          slug="${{ steps.dispatch.outputs.slug }}"
+          run_id="${{ steps.dispatch.outputs.run_id }}"
+          commit_sha="${{ steps.dispatch.outputs.commit_sha }}"
+
+          {
+            echo "## Hack Optimize Dispatch"
+            echo
+            echo "- Trigger: \`${{ github.actor }}\`"
+            echo "- Mode: \`${{ inputs.mode }}\`"
+            echo "- Dry Run: \`${{ inputs.dry_run }}\`"
+            echo "- Commit gewuenscht: \`${{ inputs.commit }}\`"
+            echo
+            if [[ "${status}" == "queued" || "${status}" == "started" || "${status}" == "ok" ]]; then
+              echo "✅ **Bridge-Antwort:** ${message}"
+            else
+              echo "⚠️ **Bridge-Antwort:** ${message}"
+            fi
+            if [[ -n "${slug}" ]]; then
+              echo "- Ziel-Slug: \`${slug}\`"
+            fi
+            if [[ -n "${run_id}" ]]; then
+              echo "- Automation-Run-ID: \`${run_id}\`"
+            fi
+            if [[ -n "${commit_sha}" ]]; then
+              echo "- Commit: \`${commit_sha}\`"
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Fail job when bridge reports failure
+        if: ${{ !contains(fromJson('["queued","started","ok"]'), steps.dispatch.outputs.status) }}
+        run: |
+          echo "Bridge meldet Fehlerstatus: ${{ steps.dispatch.outputs.status }}"
+          exit 1
