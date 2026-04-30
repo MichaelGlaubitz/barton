@@ -1,6 +1,6 @@
 ﻿---
 title: Abruf üben statt nur „wiederholen“
-summary: Kurze Abrufphasen stärken das Langzeitgedächtnis wirksamer als reines Wiederlesen.
+summary: Kurze, geplante Abrufphasen sichern Wissen nachhaltiger als Wiederlesen und zeigen früh, was wirklich sitzt.
 tags:
   - Gedächtnis
   - Üben
@@ -32,37 +32,39 @@ quiz:
 
 ## Kernaussage
 
-Kurze Abrufphasen zu Beginn machen Wissen schneller verfügbar.
+Aktiver Abruf macht Wissen belastbarer verfügbar als passives Wiederlesen.
 
 ## Was ist das?
 
-Beim Abrufüben holen Lernende Wissen aktiv aus dem Gedächtnis, statt nur zu lesen. Du startest mit wenigen kurzen Fragen und besprichst danach typische Lücken.
+Beim Abrufüben rekonstruieren Lernende Inhalte ohne Vorlage aus dem Gedächtnis und prüfen erst danach am Heft oder an der Lösung. Der Kern ist nicht „noch mal durchgehen“, sondern ein kurzer, klar strukturierter Denkzugriff: erst erinnern, dann vergleichen, dann gezielt korrigieren.
 
 ## Warum ist das gut?
 
-Aktiver Abruf stärkt das Behalten. Du siehst früh, was sitzt und was noch fehlt.
+Abruf erzeugt die produktive Anstrengung, die Langzeitlernen braucht. Gleichzeitig trennt er Vertrautheit von tatsächlichem Können: Du siehst rasch, welche Verfahren wirklich verfügbar sind und wo Nachsteuern nötig ist.
 
 ## Wie geht das im Unterricht?
 
-- **So gehst du vor:** Starte die Stunde mit zwei bis vier kurzen Abruffragen zum letzten Inhalt.
-- **Achte dabei auf:** Kurze Bearbeitungszeit und klare Fragen, damit alle mitkommen.
-- **Prüfe am Ende:** Welche Lücken oft auftreten und was du direkt klären musst.
+- **So gehst du vor:** Starte mit zwei bis vier kurzen Fragen zu Inhalten der letzten Stunden: zuerst individuell beantworten lassen, erst danach gemeinsam auflösen.
+- **Achte dabei auf:** Heft zu in der Abrufphase, knappe Bearbeitungszeit (z. B. 2-4 Minuten), anschließende kurze Korrektur statt langer Vollbesprechung.
+- **Prüfe am Ende:** Welche Fehlmuster sich häufen und welche eine sofortige Klärung im Plenum brauchen.
 
 ## Beispiele aus dem Unterricht
 
-1. **Lineare Gleichungen:** Heft zu, Partnerin nennt eine Gleichung wie $3x - 7 = 8$ — ohne Nachschlagen: Welche erste Umformung ist sinnvoll und warum?
-2. **Satz des Pythagoras:** Skizze mit rechtwinkligem Dreieck an die Tafel, Maße verdecken — kurz mündlich: Welche Seite ist die Hypotenuse und wie erkennt man das am Kontext?
-3. **Potenzgesetze:** Drei sehr kurze Aufgaben am Karton (nur Ergebnis schreiben), dann erst im Plenum die Regeln benennen, die dahinterstehen.
+1. **Lineare Gleichungen:** Heft zu, zwei Gleichungen wie $3x - 7 = 8$ und $5x + 4 = 19$; notiere den ersten sinnvollen Umformungsschritt und begründe ihn in einem Satz.
+2. **Satz des Pythagoras:** Drei Mini-Skizzen, jeweils markieren: Welche Seite ist die Hypotenuse? Danach nur die strittigen Fälle kurz klären.
+3. **Potenzgesetze:** Drei Ein-Zeilen-Aufgaben (z. B. $a^3 \cdot a^4$, $(b^5)^2$, $c^7 : c^2$), erst Ergebnis notieren, dann verwendetes Gesetz benennen.
 
 ## Was kann eine Lehrkraft dabei falsch machen?
 
-- Die Lehrkraft nutzt Abruf vor allem als Noteninstrument statt als kurze, angstfreie Lernroutine.
-- Die Lehrkraft klärt nach dem Abruf nicht gezielt, welche Lücken sofort aufgegriffen werden müssen.
+- Die Lehrkraft macht aus Abruf eine verdeckte Leistungskontrolle; dann sichern Lernende eher ihr Gesicht als ihr Wissen.
+- Die Lehrkraft gibt während der Abrufphase Hinweise oder Lösungen vor und nimmt damit den eigentlichen Denkabruf weg.
+- Die Lehrkraft sammelt Antworten, ohne typische Fehlerbilder sichtbar zu machen und nachzusteuern.
 
 ## Was kann in der Praxis schiefgehen?
 
-- Im Ablauf werden Abrufphasen zu lang und fressen Lernzeit für den neuen Stoff.
-- Im Ablauf bleiben Lücken stehen, weil die Ergebnisse nicht kurz ausgewertet werden.
+- Abrufphasen werden zu lang und kippen in Wiederholungsunterricht statt in knappe Diagnose.
+- Nur wenige Lautstarke antworten im Plenum, während der Rest passiv bleibt.
+- Die Ergebnisse versanden ohne Konsequenz; dadurch sinkt die Verbindlichkeit der Routine.
 
 ## Querverweise
 
@@ -73,4 +75,4 @@ Aktiver Abruf stärkt das Behalten. Du siehst früh, was sitzt und was noch fehl
 
 ## Quelle (Hintergrund)
 
-Ansätze aus der Retrieval-Practice-Forschung; didaktisch knapp gefasst in C. Barton.
+Ansätze aus der Retrieval-Practice-Forschung, praxisnah gebündelt bei Craig Barton.
