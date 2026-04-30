@@ -1,0 +1,6 @@
+name = "barton-automation-bridge"
+main = "src/worker.js"
+compatibility_date = "2026-04-30"
+
+[observability]
+enabled = true

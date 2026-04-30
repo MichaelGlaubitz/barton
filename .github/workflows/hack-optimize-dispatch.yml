@@ -101,7 +101,12 @@ PY
 
           echo "Dispatch payload: ${payload}"
 
+          # Kurze Timeouts, damit der Job bei DNS/Netzwerk nicht ewig hängt (Mobile-UI wirkt sonst "leer")
           http_status=$(curl -sS -o response.json -w "%{http_code}" \
+            --connect-timeout 10 \
+            --max-time 30 \
+            --retry 2 \
+            --retry-delay 1 \
             -X POST "${AUTOMATION_WEBHOOK_URL}" \
             -H "Content-Type: application/json" \
             -H "X-Automation-Token: ${AUTOMATION_TOKEN}" \
