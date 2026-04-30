@@ -41,28 +41,12 @@ jobs:
           AUTOMATION_TOKEN: ${{ secrets.AUTOMATION_TOKEN }}
         run: |
           set -euo pipefail
-
           if [[ -z "${AUTOMATION_WEBHOOK_URL:-}" ]]; then
-            echo "AUTOMATION_WEBHOOK_URL fehlt als Repository-Secret."
-            {
-              echo "## Hack Optimize Dispatch"
-              echo
-              echo "❌ **Konfiguration fehlt:** \`AUTOMATION_WEBHOOK_URL\`"
-              echo
-              echo "Bitte unter **Repo Settings -> Secrets and variables -> Actions** setzen."
-            } >> "$GITHUB_STEP_SUMMARY"
+            echo "❌ Secret AUTOMATION_WEBHOOK_URL fehlt." >> "$GITHUB_STEP_SUMMARY"
             exit 2
           fi
-
           if [[ -z "${AUTOMATION_TOKEN:-}" ]]; then
-            echo "AUTOMATION_TOKEN fehlt als Repository-Secret."
-            {
-              echo "## Hack Optimize Dispatch"
-              echo
-              echo "❌ **Konfiguration fehlt:** \`AUTOMATION_TOKEN\`"
-              echo
-              echo "Bitte unter **Repo Settings -> Secrets and variables -> Actions** setzen."
-            } >> "$GITHUB_STEP_SUMMARY"
+            echo "❌ Secret AUTOMATION_TOKEN fehlt." >> "$GITHUB_STEP_SUMMARY"
             exit 2
           fi
 
@@ -83,25 +67,9 @@ jobs:
         run: |
           set -euo pipefail
 
-          payload=$(python - <<'PY'
-import json, os
-data = {
-  "repo": os.environ["REPO"],
-  "branch": os.environ["BRANCH"],
-  "triggeredBy": os.environ["TRIGGERED_BY"],
-  "runUrl": os.environ["RUN_URL"],
-  "mode": os.environ["INPUT_MODE"],
-  "slug": os.environ["INPUT_SLUG"],
-  "commit": os.environ["INPUT_COMMIT"] == "true",
-  "dryRun": os.environ["INPUT_DRY_RUN"] == "true"
-}
-print(json.dumps(data, separators=(",", ":")))
-PY
-)
-
+          payload=$(python -c "import json,os; print(json.dumps({'repo':os.environ['REPO'],'branch':os.environ['BRANCH'],'triggeredBy':os.environ['TRIGGERED_BY'],'runUrl':os.environ['RUN_URL'],'mode':os.environ['INPUT_MODE'],'slug':os.environ['INPUT_SLUG'],'commit':os.environ['INPUT_COMMIT']=='true','dryRun':os.environ['INPUT_DRY_RUN']=='true'},separators=(',',':')))")
           echo "Dispatch payload: ${payload}"
 
-          # Kurze Timeouts, damit der Job bei DNS/Netzwerk nicht ewig hängt (Mobile-UI wirkt sonst "leer")
           http_status=$(curl -sS -o response.json -w "%{http_code}" \
             --connect-timeout 10 \
             --max-time 30 \
@@ -113,130 +81,105 @@ PY
             --data "${payload}")
 
           echo "HTTP status: ${http_status}"
-
           if [[ "${http_status}" -lt 200 || "${http_status}" -ge 300 ]]; then
-            echo "Bridge-Request fehlgeschlagen."
-            echo "Antwort:"
-            cat response.json || true
-            {
-              echo "## Hack Optimize Dispatch"
-              echo
-              echo "❌ **Dispatch fehlgeschlagen** (HTTP ${http_status})"
-              echo
-              echo '```json'
-              cat response.json || true
-              echo
-              echo '```'
-            } >> "$GITHUB_STEP_SUMMARY"
+            echo "❌ Dispatch fehlgeschlagen (HTTP ${http_status})." >> "$GITHUB_STEP_SUMMARY"
+            echo "```json" >> "$GITHUB_STEP_SUMMARY"
+            cat response.json >> "$GITHUB_STEP_SUMMARY" || true
+            echo "" >> "$GITHUB_STEP_SUMMARY"
+            echo "```" >> "$GITHUB_STEP_SUMMARY"
             exit 1
           fi
 
           python - <<'PY'
-import json
-import os
-from pathlib import Path
+          import json
+          import os
+          from pathlib import Path
 
-summary_path = os.environ.get("GITHUB_STEP_SUMMARY")
-output_path = os.environ.get("GITHUB_OUTPUT")
+          out = Path(os.environ["GITHUB_OUTPUT"])
+          summary = Path(os.environ["GITHUB_STEP_SUMMARY"])
+          raw = Path("response.json").read_text(encoding="utf-8", errors="replace").strip()
 
-path = Path("response.json")
-raw = path.read_text(encoding="utf-8", errors="replace").strip()
+          if not raw:
+              with summary.open("a", encoding="utf-8") as f:
+                  f.write("❌ Bridge-Antwort ist leer.\n")
+              raise SystemExit(1)
 
-def write_summary(title: str, body: str) -> None:
-    if not summary_path:
-        return
-    with open(summary_path, "a", encoding="utf-8") as handle:
-        handle.write(title + "\n\n")
-        handle.write(body + "\n")
+          try:
+              data = json.loads(raw)
+          except json.JSONDecodeError as exc:
+              with summary.open("a", encoding="utf-8") as f:
+                  f.write("❌ Bridge-Antwort ist kein gueltiges JSON.\n\n")
+                  f.write(f"Fehler: {exc}\n\n")
+                  f.write("```text\n")
+                  f.write(raw[:1200] + "\n")
+                  f.write("```\n")
+              raise SystemExit(1)
 
-def fail(message: str) -> None:
-    preview = raw[:1200].replace("\r", " ") if raw else ""
-    write_summary(
-        "## Hack Optimize Dispatch",
-        "❌ **Bridge-Antwort ungueltig**\n\n"
-        + message
-        + "\n\n```text\n"
-        + preview
-        + "\n```\n",
-    )
-    raise SystemExit(1)
+          if not isinstance(data, dict):
+              with summary.open("a", encoding="utf-8") as f:
+                  f.write("❌ Bridge-Antwort muss ein JSON-Objekt sein.\n")
+              raise SystemExit(1)
 
-if not raw:
-    fail("Leere Antwort vom Bridge-Endpoint.")
+          status = str(data.get("status", ""))
+          message = str(data.get("message", ""))
+          slug = str(data.get("slug", ""))
+          run_id = str(data.get("runId", ""))
+          commit_sha = str(data.get("commitSha", ""))
 
-try:
-    data = json.loads(raw)
-except json.JSONDecodeError as exc:
-    fail(f"Antwort ist kein gueltiges JSON ({exc}).")
+          if not status or not message:
+              with summary.open("a", encoding="utf-8") as f:
+                  f.write("❌ Pflichtfelder status/message fehlen.\n")
+                  f.write("```json\n")
+                  f.write(json.dumps(data, ensure_ascii=False, indent=2) + "\n")
+                  f.write("```\n")
+              raise SystemExit(1)
 
-if not isinstance(data, dict):
-    fail("Antwort-JSON muss ein Objekt sein.")
+          with out.open("a", encoding="utf-8") as f:
+              f.write(f"status={status}\n")
+              f.write(f"message={message}\n")
+              f.write(f"slug={slug}\n")
+              f.write(f"run_id={run_id}\n")
+              f.write(f"commit_sha={commit_sha}\n")
 
-for key in ("status", "message"):
-    if key not in data:
-        fail(f"Pflichtfeld fehlt: {key}")
-
-status = str(data.get("status", ""))
-message = str(data.get("message", ""))
-slug = str(data.get("slug", ""))
-run_id = str(data.get("runId", ""))
-commit_sha = str(data.get("commitSha", ""))
-
-if output_path:
-    with open(output_path, "a", encoding="utf-8") as handle:
-        handle.write(f"status={status}\n")
-        handle.write(f"message={message}\n")
-        handle.write(f"slug={slug}\n")
-        handle.write(f"run_id={run_id}\n")
-        handle.write(f"commit_sha={commit_sha}\n")
-
-write_summary(
-    "## Hack Optimize Dispatch",
-    "✅ **Bridge-Antwort gelesen**\n\n"
-    + f"- status: `{status}`\n"
-    + f"- message: {message}\n"
-    + (f"- slug: `{slug}`\n" if slug else "")
-    + (f"- runId: `{run_id}`\n" if run_id else "")
-    + (f"- commitSha: `{commit_sha}`\n" if commit_sha else ""),
-)
-PY
+          with summary.open("a", encoding="utf-8") as f:
+              f.write("## Hack Optimize Dispatch\n\n")
+              f.write(f"✅ Bridge-Antwort gelesen\n\n- status: `{status}`\n- message: {message}\n")
+              if slug:
+                  f.write(f"- slug: `{slug}`\n")
+              if run_id:
+                  f.write(f"- runId: `{run_id}`\n")
+              if commit_sha:
+                  f.write(f"- commitSha: `{commit_sha}`\n")
+          PY
 
       - name: Summary
         shell: bash
         run: |
           set -euo pipefail
-          status="${{ steps.dispatch.outputs.status }}"
-          message="${{ steps.dispatch.outputs.message }}"
-          slug="${{ steps.dispatch.outputs.slug }}"
-          run_id="${{ steps.dispatch.outputs.run_id }}"
-          commit_sha="${{ steps.dispatch.outputs.commit_sha }}"
-
           {
-            echo "## Hack Optimize Dispatch"
-            echo
-            echo "- Trigger: \`${{ github.actor }}\`"
+            echo "### Trigger"
+            echo "- Actor: \`${{ github.actor }}\`"
             echo "- Mode: \`${{ inputs.mode }}\`"
             echo "- Dry Run: \`${{ inputs.dry_run }}\`"
             echo "- Commit gewuenscht: \`${{ inputs.commit }}\`"
             echo
-            if [[ "${status}" == "queued" || "${status}" == "started" || "${status}" == "ok" ]]; then
-              echo "✅ **Bridge-Antwort:** ${message}"
-            else
-              echo "⚠️ **Bridge-Antwort:** ${message}"
+            echo "### Ergebnis"
+            echo "- Status: \`${{ steps.dispatch.outputs.status }}\`"
+            echo "- Nachricht: ${{ steps.dispatch.outputs.message }}"
+            if [[ -n "${{ steps.dispatch.outputs.slug }}" ]]; then
+              echo "- Ziel-Slug: \`${{ steps.dispatch.outputs.slug }}\`"
             fi
-            if [[ -n "${slug}" ]]; then
-              echo "- Ziel-Slug: \`${slug}\`"
+            if [[ -n "${{ steps.dispatch.outputs.run_id }}" ]]; then
+              echo "- Automation-Run-ID: \`${{ steps.dispatch.outputs.run_id }}\`"
             fi
-            if [[ -n "${run_id}" ]]; then
-              echo "- Automation-Run-ID: \`${run_id}\`"
-            fi
-            if [[ -n "${commit_sha}" ]]; then
-              echo "- Commit: \`${commit_sha}\`"
+            if [[ -n "${{ steps.dispatch.outputs.commit_sha }}" ]]; then
+              echo "- Commit: \`${{ steps.dispatch.outputs.commit_sha }}\`"
             fi
           } >> "$GITHUB_STEP_SUMMARY"
 
-      - name: Fail job when bridge reports failure
+      - name: Fail when bridge reports failure
         if: ${{ !contains(fromJson('["queued","started","ok"]'), steps.dispatch.outputs.status) }}
         run: |
           echo "Bridge meldet Fehlerstatus: ${{ steps.dispatch.outputs.status }}"
           exit 1
+
