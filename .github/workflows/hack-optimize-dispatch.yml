@@ -133,50 +133,73 @@ PY
 
           python - <<'PY'
 import json
-with open("response.json", "r", encoding="utf-8") as f:
-    data = json.load(f)
-required = ["status", "message"]
-for key in required:
+import os
+from pathlib import Path
+
+summary_path = os.environ.get("GITHUB_STEP_SUMMARY")
+output_path = os.environ.get("GITHUB_OUTPUT")
+
+path = Path("response.json")
+raw = path.read_text(encoding="utf-8", errors="replace").strip()
+
+def write_summary(title: str, body: str) -> None:
+    if not summary_path:
+        return
+    with open(summary_path, "a", encoding="utf-8") as handle:
+        handle.write(title + "\n\n")
+        handle.write(body + "\n")
+
+def fail(message: str) -> None:
+    preview = raw[:1200].replace("\r", " ") if raw else ""
+    write_summary(
+        "## Hack Optimize Dispatch",
+        "❌ **Bridge-Antwort ungueltig**\n\n"
+        + message
+        + "\n\n```text\n"
+        + preview
+        + "\n```\n",
+    )
+    raise SystemExit(1)
+
+if not raw:
+    fail("Leere Antwort vom Bridge-Endpoint.")
+
+try:
+    data = json.loads(raw)
+except json.JSONDecodeError as exc:
+    fail(f"Antwort ist kein gueltiges JSON ({exc}).")
+
+if not isinstance(data, dict):
+    fail("Antwort-JSON muss ein Objekt sein.")
+
+for key in ("status", "message"):
     if key not in data:
-        raise SystemExit(f"Antwortfeld fehlt: {key}")
-print("status=" + str(data.get("status", "")))
-print("message=" + str(data.get("message", "")))
-print("slug=" + str(data.get("slug", "")))
-print("runId=" + str(data.get("runId", "")))
-print("commitSha=" + str(data.get("commitSha", "")))
-PY
+        fail(f"Pflichtfeld fehlt: {key}")
 
-          status=$(python - <<'PY'
-import json
-print(json.load(open("response.json", "r", encoding="utf-8")).get("status", ""))
-PY
-)
-          message=$(python - <<'PY'
-import json
-print(json.load(open("response.json", "r", encoding="utf-8")).get("message", ""))
-PY
-)
-          slug=$(python - <<'PY'
-import json
-print(json.load(open("response.json", "r", encoding="utf-8")).get("slug", ""))
-PY
-)
-          run_id=$(python - <<'PY'
-import json
-print(json.load(open("response.json", "r", encoding="utf-8")).get("runId", ""))
-PY
-)
-          commit_sha=$(python - <<'PY'
-import json
-print(json.load(open("response.json", "r", encoding="utf-8")).get("commitSha", ""))
-PY
-)
+status = str(data.get("status", ""))
+message = str(data.get("message", ""))
+slug = str(data.get("slug", ""))
+run_id = str(data.get("runId", ""))
+commit_sha = str(data.get("commitSha", ""))
 
-          echo "status=${status}" >> "$GITHUB_OUTPUT"
-          echo "message=${message}" >> "$GITHUB_OUTPUT"
-          echo "slug=${slug}" >> "$GITHUB_OUTPUT"
-          echo "run_id=${run_id}" >> "$GITHUB_OUTPUT"
-          echo "commit_sha=${commit_sha}" >> "$GITHUB_OUTPUT"
+if output_path:
+    with open(output_path, "a", encoding="utf-8") as handle:
+        handle.write(f"status={status}\n")
+        handle.write(f"message={message}\n")
+        handle.write(f"slug={slug}\n")
+        handle.write(f"run_id={run_id}\n")
+        handle.write(f"commit_sha={commit_sha}\n")
+
+write_summary(
+    "## Hack Optimize Dispatch",
+    "✅ **Bridge-Antwort gelesen**\n\n"
+    + f"- status: `{status}`\n"
+    + f"- message: {message}\n"
+    + (f"- slug: `{slug}`\n" if slug else "")
+    + (f"- runId: `{run_id}`\n" if run_id else "")
+    + (f"- commitSha: `{commit_sha}`\n" if commit_sha else ""),
+)
+PY
 
       - name: Summary
         shell: bash
