@@ -81,6 +81,9 @@ jobs:
             --data "${payload}")
 
           echo "HTTP status: ${http_status}"
+          echo "Bridge response body:"
+          cat response.json || true
+          echo ""
           if [[ "${http_status}" -lt 200 || "${http_status}" -ge 300 ]]; then
             echo "❌ Dispatch fehlgeschlagen (HTTP ${http_status})." >> "$GITHUB_STEP_SUMMARY"
             echo "```json" >> "$GITHUB_STEP_SUMMARY"
