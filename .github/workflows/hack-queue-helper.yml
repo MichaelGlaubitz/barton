@@ -1,0 +1,99 @@
+name: Hack Queue Helper
+
+on:
+  workflow_dispatch:
+    inputs:
+      task:
+        description: "Welche Aktion soll laufen?"
+        required: true
+        default: "next"
+        type: choice
+        options:
+          - next
+          - validate
+          - build
+
+permissions:
+  contents: read
+
+jobs:
+  helper:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: "24"
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      - name: Run selected task
+        shell: bash
+        run: |
+          set -euo pipefail
+          task="${{ github.event.inputs.task }}"
+          echo "Task: ${task}"
+
+          if [[ "${task}" == "next" ]]; then
+            set +e
+            next_slug=$(npm run -s hack:next 2>&1)
+            exit_code=$?
+            set -e
+
+            if [[ ${exit_code} -eq 0 ]]; then
+              echo "Naechster Hack: ${next_slug}"
+              {
+                echo "## Hack Queue Helper"
+                echo
+                echo "- Task: \`${task}\`"
+                echo "- Naechster Hack: \`${next_slug}\`"
+              } >> "$GITHUB_STEP_SUMMARY"
+              exit 0
+            fi
+
+            if [[ ${exit_code} -eq 1 ]]; then
+              echo "Queue ist leer."
+              {
+                echo "## Hack Queue Helper"
+                echo
+                echo "- Task: \`${task}\`"
+                echo "- Ergebnis: Keine offenen Hacks in der Queue."
+              } >> "$GITHUB_STEP_SUMMARY"
+              exit 0
+            fi
+
+            echo "Fehler bei hack:next"
+            echo "${next_slug}"
+            exit ${exit_code}
+          fi
+
+          if [[ "${task}" == "validate" ]]; then
+            npm run hacks:validate
+            {
+              echo "## Hack Queue Helper"
+              echo
+              echo "- Task: \`${task}\`"
+              echo "- Ergebnis: Validierung erfolgreich."
+            } >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+
+          if [[ "${task}" == "build" ]]; then
+            npm run hacks:validate
+            npm run build
+            {
+              echo "## Hack Queue Helper"
+              echo
+              echo "- Task: \`${task}\`"
+              echo "- Ergebnis: Validierung + Build erfolgreich."
+            } >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+
+          echo "Unbekannte Task: ${task}"
+          exit 2
