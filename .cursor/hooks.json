@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "hooks": {
+    "preToolUse": [
+      {
+        "command": "node .cursor/hooks/warn-multi-hack-edits.mjs",
+        "failClosed": false
+      }
+    ]
+  }
+}
