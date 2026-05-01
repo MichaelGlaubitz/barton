@@ -1,6 +1,6 @@
 ---
 title: Was meint „denkendes Klassenzimmer“?
-summary: "Ein Raum, in dem nicht nur „mitgerechnet“ wird: Denken wird erwartet, sichtbar und gemeinsam möglich gemacht."
+summary: "Ein Raum, in dem nicht nur mitgerechnet wird: Denken wird erwartet, sichtbar gemacht und gemeinsam möglich — statt nur zuzuhören und abzuschreiben."
 tags:
   - Thinking Classroom
   - Kultur
@@ -10,38 +10,38 @@ quiz:
   - question: "Was kennzeichnet ein denkendes Klassenzimmer im engen Sinn?"
     options:
       - "Ein Raum, in dem Aufgaben weitgehend selbst gewählt werden und niemand zu konkreten Inhalten gedrängt wird."
-      - "Ein Raum, in dem die Lehrkraft das Erklären reduziert und stattdessen Lernende untereinander erklären lässt."
+      - "Ein Raum, in dem die Lehrkraft das Erklären reduziert und Lernende vor allem einander erklären lassen."
       - "Ein Raum, in dem mathematisches Denken regelmäßig ausgelöst, von der Lehrkraft erwartet und für alle sichtbar gemacht wird."
     correctIndex: 2
-    explanation: "Wahlfreiheit und Schüler-Schüler-Erklärungen sind Symptome, nicht das Konzept. Der Kern ist die *Erwartung*, dass Denken sichtbar passiert — auch im gemeinsamen Arbeiten."
+    explanation: "Wahlfreiheit und Schüler-Schüler-Erklärungen können dazugehören, sind aber nicht der Kern. Entscheidend ist die Erwartung sichtbaren Denkens — auch im gemeinsamen Arbeiten — nicht nur freundliches Zuhören."
   - question: "Warum reicht eine entspannte, freundliche Atmosphäre allein meist nicht aus?"
     options:
       - "Weil Lernende heute härtere Reize brauchen, um überhaupt zu reagieren."
       - "Weil bestehende Unterrichtsroutinen unter freundlicher Atmosphäre einfach weiterlaufen — Denken wird nicht erzwungen, nur erlaubt."
       - "Weil Mathematik in entspannter Atmosphäre seltener als ernsthaftes Fach wahrgenommen wird."
     correctIndex: 1
-    explanation: "Es geht nicht um Härte oder Image, sondern um Strukturen: Gewohnheiten produzieren Verhalten, sympathische Stimmung verändert keine Gewohnheit."
+    explanation: "Es geht nicht um Härte oder Image, sondern um Gewohnheiten: Sympathische Stimmung ändert selten die Abfolge aus Warten, Abschreiben und Erklärerwartung — dafür braucht es andere Bedingungen."
   - question: "Lernende warten ohne Eigeninitiative auf die richtige Erklärung der Lehrkraft. Was ist die richtige Bewegung?"
     options:
       - "Erklärungen straffer, klarer und didaktisch besser strukturieren — dann werden Lernende selbstständiger."
       - "Aufgaben, Sozialform und Sichtbarkeit so verändern, dass Probieren, Begründen und Vergleichen den Erklärsog ersetzen."
       - "Schwierige Aufgaben reduzieren — weniger Anspruch ergibt mehr Eigeninitiative."
     correctIndex: 1
-    explanation: "Bessere Erklärungen verstärken die Erklärerwartung. Der Hebel liegt nicht im Erklären, sondern in den Bedingungen, unter denen Erklären überhaupt nicht zuerst kommt."
+    explanation: "Bessere Erklärungen verstärken oft genau die Erklärerwartung. Der Hebel liegt in den Bedingungen: zuerst sichtbares Probieren und Vergleichen, nicht zuerst die fertige Darstellung der Lehrkraft."
 
 ---
 
 ## Kernaussage
 
-**Denken passiert nicht von allein** — du gestaltest Bedingungen, unter denen es wahrscheinlicher wird.
+**Denken passiert nicht von allein** — du gestaltest Bedingungen, unter denen sichtbares mathematisches Denken wahrscheinlicher wird.
 
 ## Was ist das?
 
-Ein **denkendes Klassenzimmer** ist nicht „freundlicher Unterricht plus Mathe“, sondern ein Raum, in dem **mathematisches Denken regelmäßig ausgelöst** wird. Lernende **probieren, begründen, vergleichen**, statt nur einer Erklärung der Lehrkraft zu folgen oder ein Schema abzuspulen. Die Lehrkraft **erwartet** dieses Denken — sichtbar im Plenum, hörbar in Gruppen, lesbar an Whiteboards — und gestaltet **Aufgaben, Sozialform und Raum** so, dass es wahrscheinlicher wird. Es ist ein **Zielbild**, das die anderen Hacks bündelt: anspruchsvolle Aufgaben, vertikale Flächen, sichtbar zufällige Gruppen, präzise Fragen — all das wird erst sinnvoll, wenn klar ist, **was sichtbar werden soll**.
+Ein **denkendes Klassenzimmer** ist nicht „freundlicher Unterricht plus Mathe“, sondern ein Raum, in dem **mathematisches Denken regelmäßig ausgelöst** wird. Lernende **probieren, begründen, vergleichen** — statt nur einer Erklärung der Lehrkraft zu folgen oder ein Schema abzuspulen. Die Lehrkraft **erwartet** dieses Denken: **sichtbar** im Plenum, **hörbar** in Gruppen, **lesbar** an Whiteboards — und gestaltet **Aufgaben, Sozialform und Raum** so, dass es wahrscheinlicher wird. Es ist ein **Zielbild**, das die anderen Hacks bündelt: anspruchsvolle Aufgaben, vertikale Flächen, sichtbar zufällige Gruppen, präzise Fragen — all das wird erst kohärent, wenn klar ist, **was sichtbar werden soll** (z. B. zwei legitime Wege, eine Begründung, ein Vergleich).
 
 ## Warum ist das gut?
 
-Ohne klares Bild vom Ziel **„sichtbares mathematisches Denken“** bleiben Einzelmaßnahmen beliebig. Mit dem BTC-Rahmen kannst du **kohärent** mehrere Bausteine kombinieren (Aufgabe, Fläche, Gruppen …).
+Ohne klares Bild vom Ziel **sichtbares mathematisches Denken** bleiben Einzelmaßnahmen beliebig: man verbessert Atmosphäre oder Material, ohne dass sich die **Tätigkeit** der Lernenden ändert. Mit dem BTC-Rahmen kannst du **mehrere Bausteine** (Aufgabe, Fläche, Gruppen …) so kombinieren, dass sie dieselbe Erwartung tragen — nicht nebeneinanderherlaufen.
 
 ## Wie geht das im Unterricht?
 
@@ -51,18 +51,19 @@ Ohne klares Bild vom Ziel **„sichtbares mathematisches Denken“** bleiben Ein
 
 ## Beispiele aus dem Unterricht
 
-1. **Zielbild sichtbar:** „Heute sehen wir **mindestens zwei** verschiedene legitime Wege zur Aufgabe X.“
-2. **Norm benennen:** „Wenn ihr wartet, bis ich es sage, stoppen wir kurz — ihr probiert erst …“
-3. **Reflexion:** Zwei Minuten: „Wo habt **ihr** heute wirklich nachgedacht — nicht nur gerechnet?“
+1. **Zielbild sichtbar:** „Heute sehen wir **mindestens zwei** verschiedene legitime Wege zur Aufgabe X — nicht nur das Endergebnis.“
+2. **Norm benennen:** „Wenn ihr wartet, bis ich es sage, stoppen wir kurz: **erst** probieren, **dann** vergleichen wir.“
+3. **Reflexion:** Zwei Minuten: „Wo habt **ihr** heute wirklich nachgedacht — nicht nur gerechnet oder abgeschrieben?“
 
 ## Was kann eine Lehrkraft dabei falsch machen?
 
-- **Schlagworte** ohne Änderung von Aufgaben und Ablauf.
-- **Perfektion** erwarten — BTC entsteht **iterativ** aus Versuch und Anpassung.
+- **Schlagworte** (Thinking Classroom, sichtbares Denken) ohne Änderung von Aufgaben und Ablauf.
+- **Perfektion** vom ersten Tag an erwarten — BTC entsteht **iterativ** aus Versuch, Beobachtung und kleiner Anpassung.
+- Nur die **Lehrkraft** sichtbar denken lassen — während Lernende zuhören und mitzeichnen.
 
 ## Was kann in der Praxis schiefgehen?
 
-- Widerstand der Klasse in den **ersten** Wochen — Routinen brauchen Zeit.
+- Widerstand oder Zurückhaltung in den **ersten** Wochen — neue Routinen brauchen Zeit und Wiederholung.
 
 ## Querverweise
 
