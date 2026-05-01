@@ -47,6 +47,6 @@
   { "slug": "vorwissen-diagnose", "status": "done" },
   { "slug": "wartezeit-verlaengern", "status": "done" },
   { "slug": "whole-class-feedback", "status": "done" },
-  { "slug": "zeitlicher-abstand", "status": "pending" },
+  { "slug": "zeitlicher-abstand", "status": "done" },
   { "slug": "zweckvolle-uebung", "status": "pending" }
 ]
