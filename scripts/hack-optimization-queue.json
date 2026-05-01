@@ -12,7 +12,7 @@
   { "slug": "exit-tickets", "status": "done" },
   { "slug": "feedback-handlungsnah", "status": "done" },
   { "slug": "fehler-lernen", "status": "done" },
-  { "slug": "fehler-vorhersagen", "status": "pending" },
+  { "slug": "fehler-vorhersagen", "status": "done" },
   { "slug": "fragetechnik", "status": "pending" },
   { "slug": "front-load-beteiligung", "status": "pending" },
   { "slug": "geloestes-beispiel", "status": "pending" },
