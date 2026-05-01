@@ -6,7 +6,7 @@ tags:
   - Routinen
 order: 45
 quiz:
-  - question: Warum ist Vormachen beim Einführen einer Routine wirksamer als nur mündliche Erklärung?
+  - question: Warum wirkt Vormachen beim Einführen einer Routine meist stärker als nur mündliche Erklärung?
     options:
       - Weil Lernende an einem konkreten Beispiel sehen, wie der Schritt praktisch aussieht — nicht nur die Regel hören.
       - Weil man dadurch keine Fragen aus der Klasse mehr beantworten muss.

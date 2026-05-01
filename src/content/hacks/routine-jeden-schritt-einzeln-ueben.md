@@ -1,6 +1,6 @@
 ---
 title: Jeden Routinen-Schritt separat einüben
-summary: Übe neue Abläufe schrittweise und wiederholt, bis jede Phase verlässlich klappt — erst dann die Kette verlängern.
+summary: Festige jeden Teil eines neuen Ablaufs einzeln mit kurzen Übungen und Wiederholung, bevor du die nächste Phase einführst.
 tags:
   - Diagnose
   - Routinen
@@ -12,7 +12,7 @@ quiz:
       - "Jeden Schritt einzeln üben und erst bei Sicherheit erweitern."
       - "Nur die schnellsten Lernenden üben lassen, damit Tempo bleibt."
     correctIndex: 1
-    explanation: "Gesamtablauf unter Druck und selektives Üben weniger trainieren nicht die ganze Klasse. Verlässlichkeit entsteht, wenn alle denselben Schritt sichern, bevor du erweiterst."
+    explanation: "Die erste und dritte Option unterlaufen den Aufbau. Verlässlichkeit entsteht, wenn alle den aktuellen Schritt sichern — nicht durch Gesamtdurchläufe unter Druck oder Üben nur bei wenigen."
   - question: Was tust du, wenn Schritt 1 noch nicht bei allen funktioniert?
     options:
       - "Du gehst zu Schritt 2 weiter, damit der Ablauf vollständig ist."
@@ -31,39 +31,38 @@ quiz:
 
 ## Kernaussage
 
-Routinequalität entsteht durch gezieltes, schrittweises Üben — nicht durch einmaliges Erklären und einen Durchlauf der ganzen Kette.
+Routinequalität entsteht durch **kurzes, gezieltes Üben je Schritt** — nicht durch einmaliges Erklären oder einen durchgehenden Gesamtdurchlauf, solange einzelne Phasen noch wackeln.
 
 ## Was ist das?
 
-Wenn das **Gerüst** der Routine steht (wenige benannte Schritte), trainierst du **einen Schritt nach dem anderen**: kurze Aufgabe, Beobachten, Rückmeldung, Wiederholung. Erst wenn dieser Schritt bei **der Klasse** stabil sitzt, kommt der nächste — nicht umgekehrt. Du übst also nicht nur die Idee der Routine, sondern **jede Phase als eigenes Verhalten**, bevor du sie verkettest.
+Sobald die Routine **als Gerüst** steht (wenige benannte Schritte), übst du **nur einen Schritt** zur Zeit: kurze Aufgabe, Beobachten, Rückmeldung, bei Bedarf sofort wiederholen. Erst wenn dieser Teil bei der **ganzen Klasse** stabil wirkt, kommt der nächste — nicht parallel alles vermischen.
 
 ## Warum ist das gut?
 
-So verankert sich der Ablauf im Verhalten der Klasse. Lernende wissen in jeder Phase, was gerade zählt; du bekommst interpretierbare Signale statt Mischformen aus halb ausgeführtem Schritt 1 und voreiligem Schritt 2. Die Routine wird verlässlich und entlastet später den Unterricht.
+So verankert sich der Ablauf im **sichtbaren Verhalten**. Missverständnisse und Ecken bleiben klein; du steuerst nicht dauerhaft nach, und spätere Stunden gewinnen Zeit, weil die Routine trägt.
 
 ## Wie geht das im Unterricht?
 
-- **So gehst du vor:** Ein Schritt, eine Mini-Aufgabe, Beobachten, gezieltes Feedback, Wiederholung — erst dann den nächsten Schritt anbieten.
-- **Achte dabei auf:** Nicht weiterbauen, solange der aktuelle Schritt bei allen noch wackelt; Qualität vor Tempo.
-- **Prüfe am Ende:** Ob der Schritt ohne ständiges Nachsteuern stabil bleibt, bevor du die Kette verlängerst oder den fachlichen Anspruch erhöhst.
+- **So gehst du vor:** Ein Schritt pro Übungseinheit — kurze Aufgabe, alle ausführen lassen, gezielt beobachten, knapp rückmelden, ggf. gleiche Mini-Aufgabe noch einmal mit schärferem Qualitätskriterium.
+- **Achte dabei auf:** Keine nächste Phase einziehen, solange der aktuelle Schritt bei **allen** die intendierte Handlung zeigt (nicht nur bei Schnellen oder bei «gefühlt klappt schon»).
+- **Prüfe am Ende:** Ob der Schritt in einer **folgenden** Stunde ohne Nachfragen und ohne permanentes Eingreifen der Lehrkraft läuft.
 
 ## Beispiele aus dem Unterricht
 
-1. **Schritt 1 (Denken):** Nur still rechnen und eine Begründung notieren — noch kein Zeigen, kein Plenum. Wiederhole, bis fast alle innerhalb der Zeit ein tragfähiges Ergebnis haben.
-2. **Schritt 2 (Zeigen):** Erst wenn Schritt 1 sitzt: auf Signal gleichzeitig abstimmen (Karten, Boards). Fehler sind dann noch Routinenfehler, nicht Folge übersprungenen Denkens.
-3. **Schritt 3 (Zuhören):** Eine Begründung hören, zwei fachliche Punkte notieren — erst einüben, wenn Zeigen zuverlässig gleichzeitig und lesbar passiert.
+1. **Schritt 1 — Denken:** Drei kurze Aufgaben nur «still lösen und Ergebnis festhalten»; du gehst durch die Reihen, korrigierst nur das Verhalten «erst denken, dann zeigen», noch ohne gemeinsames Zeigen.
+2. **Schritt 2 — Zeigen:** Wenn Schritt 1 sitzt: gleiches Aufgabenformat, jetzt nur «auf Signal alle gleichzeitig die Karte/Mini-Whiteboard zeigen» — bei Uneinheitlichkeiten Übungseinheit wiederholen, nicht zur Begründungsrunde springen.
+3. **Schritt 3 — Zuhören/Feinjustieren:** Erst wenn Zeigen synchron und verlässlich ist: eine kurze Begründung hören oder zwei gezielte Stimmen — alle anderen notieren zwei fachliche Punkte; bei Durcheinander zurück zu kurzem Zeigen-Üben.
 
 ## Was kann eine Lehrkraft dabei falsch machen?
 
-- Sie verwechselt „gesagt“ mit „gelernt“ und übt zu kurz oder nur einmal vormacht.
-- Sie überspringt Wiederholungen trotz sichtbarer Unsicherheit, um die Stunde „weiterzubringen“.
-- Sie kettet zu früh: Schritt 2 startet, obwohl Schritt 1 noch uneinheitlich ist — dann bricht die ganze Routine ein.
+- Sie verwechselt **gesagt** mit **geübt** und beendet die Übungsphase zu früh.
+- Sie **überspringt Wiederholungen**, obwohl noch Unsicherheit oder uneinheitliches Verhalten sichtbar ist.
+- Sie **mischt Schritte**, weil «die Zeit knapp ist» — und überfordert damit das Arbeitgedächtnis der Klasse.
 
 ## Was kann in der Praxis schiefgehen?
 
-- Einzelne Gewohnheiten (Reinrufen, Abschauen) setzen sich fest, weil nie genug Zeit für sauberes Üben einer Phase blieb.
-- Die Routine wirkt in späteren Stunden instabil und kostet Zeit, weil die Klasse nie die Einzelschritte verlässlich automatisieren durfte.
-- Schnelle Lernende prägen das Bild; die Mitte und langsamere Lernende bleiben unsicher — die Diagnose verfälscht sich.
+- **Einzelgewohnheiten** (Reinrufen, Abschauen vorzeitig) verfestigen sich, weil nie genug beim einen Schritt geübt wurde.
+- Die Routine wirkt in späteren Stunden **instabil** und **zeitfressend**, weil die Lehrkraft dauerhaft nachsteuern muss.
 
 ## Quelle (Hintergrund)
 
