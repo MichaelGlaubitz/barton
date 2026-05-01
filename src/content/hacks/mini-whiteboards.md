@@ -1,6 +1,6 @@
 ﻿---
 title: Mini-Whiteboards für alle Denkwege
-summary: Gleichzeitige Sichtbarkeit vieler Antworten erhöht Beteiligung und macht Denkstände sofort erkennbar — mit Routine, Blickführung und klaren Erwartungen noch wirksamer.
+summary: Wenn alle zur gleichen Zeit antworten und zeigen, wird sichtbar, was die Klasse wirklich denkt — nicht nur, was die Schnellsten laut sagen. Routinen zu Material, Hover und Blickführung machen das zuverlässig umsetzbar.
 tags:
   - Aktivierung
   - Diagnose
@@ -8,53 +8,53 @@ order: 14
 quiz:
   - question: Was ist der didaktische Kerngewinn von Mini-Whiteboards?
     options:
-      - "Alle Lernenden antworten zur selben Zeit — Diagnose erfasst die Klasse, nicht nur die Schnellsten."
-      - "Lernende, die sich nie melden, werden zur Antwort gezwungen und überwinden so ihre Schweige-Gewohnheit."
-      - "Die Tafelseite spart Platz, weil die schriftliche Auswertung ins Heft entfällt."
+      - Alle Lernenden antworten zur selben Zeit — die Diagnose erfasst die Klasse, nicht nur die Schnellsten.
+      - Lernende, die sich nie melden, werden zur mündlichen Antwort gedrängt und gewöhnen sich so ans Mitsprechen.
+      - Die Tafel entlastet den Platzbedarf, weil die Auswertung ins Heft wandert.
     correctIndex: 0
-    explanation: "Es geht nicht um Zwang gegen Einzelne — wer sich nie meldet, schreibt auch auf dem Whiteboard ungern, wenn keine Antwort-Norm steht. Und der Hack ist kein Tafel-Ersatz. Der Effekt liegt strukturell in der Gleichzeitigkeit aller Antworten."
+    explanation: Der Gewinn liegt in der Gleichzeitigkeit — nicht in erzwungenem Sprechen und nicht im Ersetzen der Tafel. Ohne gemeinsames Zeigen bleibt der Überblick über die ganze Gruppe aus.
   - question: Wie setzt du Mini-Whiteboards am wirksamsten ein?
     options:
-      - "Nur das Endergebnis zeigen lassen — das spart Zeit und gibt einen klaren Überblick."
-      - "Eine kurze Denkphase, dann alle gleichzeitig hochhalten — und sofort die typischen Antwortmuster gemeinsam einordnen."
-      - "Vor allem als alternatives Heft nutzen, sodass Lernende ihre Notizen größer schreiben können."
+      - Nur das Endergebnis zeigen lassen — das spart Zeit und gibt einen klaren Überblick.
+      - Kurze Denkphase, dann alle gleichzeitig hochhalten — und die typischen Antwortmuster direkt gemeinsam einordnen.
+      - Vor allem als größeres Notizfeld nutzen, damit Lernende im Heft weniger schreiben müssen.
     correctIndex: 1
-    explanation: "Wer nur Endergebnisse zeigen lässt, sieht „richtig/falsch“, aber kein Denken. Der diagnostische Wert entsteht erst in der gemeinsamen Sichtung der Muster."
-  - question: "Im Plenum melden sich seit Wochen dieselben drei Personen. Was bricht das Muster sofort?"
+    explanation: Wer nur Endergebnisse zeigen lässt, sieht oft nur richtig oder falsch, nicht den Denkweg. Der diagnostische Wert entsteht in der gemeinsamen Sichtung der Muster — inhaltlich und zeitlich nah an der Antwort.
+  - question: Im Plenum melden sich seit Wochen dieselben wenigen Personen. Welcher Eingriff verändert das Muster am ehesten strukturell?
     options:
-      - "Die Lehrkraft fragt gezielt jene auf, die sich nie melden — soziale Verpflichtung erzwingt Beteiligung."
-      - "Eine Mini-Whiteboard-Frage zur aktuellen Aufgabe — alle antworten gleichzeitig, niemand kann sich zurückziehen."
-      - "Mehr Hausaufgaben zum Thema, damit Beteiligung über schriftliche Kontrolle ergänzt wird."
+      - Gezielt Personen aufrufen, die sich selten melden — soziale Verpflichtung erhöht die Sichtbarkeit Einzelner.
+      - Eine Mini-Whiteboard-Frage zur laufenden Aufgabe — alle antworten gleichzeitig; das Melde-Rennen entfällt.
+      - Mehr Hausaufgaben zum Thema, damit Beteiligung über schriftliche Kontrolle nachgelegt wird.
     correctIndex: 1
-    explanation: "Gezieltes Aufrufen erzeugt Druck, aber keine breitere Beteiligung. Mehr Hausaufgaben verschieben das Problem nach außen. Synchrones Antworten ist der einzige strukturelle Eingriff in das Meldemuster."
-  - question: "Warum Brettchen beim »Fertig« oft mit der Schrift nach unten leicht über der Tischkante halten lassen?"
+    explanation: Gezieltes Aufrufen erzeugt Druck auf Einzelne, verschiebt aber nicht das Grundmuster lauter Schnellantworten. Mehr Hausaufgaben adressieren das Plenum nicht. Synchrones Antworten auf dem Brett ändert die Bedingung für alle gleichzeitig.
+  - question: Warum Brettchen beim Fertig oft mit der Schrift nach unten leicht über der Tischkante halten?
     options:
-      - "Damit die Lehrkraft von vorne sieht, wer noch schreibt — Stifte liegen nicht kippelig auf dem Brett, und nebenan wird weniger mitgeschaut."
-      - "Damit die Lernenden ihre Antwort vor sich selbst verstecken und später doch umschreiben können."
-      - "Damit die Oberfläche abkühlt und die Tinte besser haftet."
+      - Damit von vorne erkennbar ist, wer noch schreibt — Stifte kippeln nicht vom Brett, und zur Seite wird weniger mitgelesen.
+      - Damit die Lernenden die Antwort vor sich selbst verbergen und später umschreiben können.
+      - Damit die Oberfläche abkühlt und die Tinte besser haftet.
     correctIndex: 0
-    explanation: "Sichtbar »bereit ohne Spoiler«, weniger Stift-Geklapper und weniger unnötiges Vergleichen mit dem Nebensitz. Zum Enthüllen hebt man ohnehin wieder — oft wird sogar ein kurzer Abstand zwischen Frage und »Jetzt hover!« genutzt, damit Langsamere nicht durch schnelles Hovern gestresst werden."
-  - question: "Was ist der Kernfehler, wenn Mini-Whiteboards nur wie Schmierzettel genutzt werden, aber nie alle gleichzeitig zeigen?"
+    explanation: Es geht um sichtbar bereit ohne vorwegzunehmen, weniger Nebenplatz-Abkupfern und ruhigeres Arbeiten. Beim Zeigen hebt man ohnehin wieder; oft hilft eine kurze Pause vor dem Hover, damit Langsamere nicht unter Zeitdruck geraten.
+  - question: Was ist der Kernfehler, wenn Mini-Whiteboards nur wie Schmierzettel genutzt werden, aber nie alle gleichzeitig zeigen?
     options:
-      - "Dann fehlt genau der Effekt der Massenbeteiligung — man sieht nicht auf einen Blick, was die Klasse denkt."
-      - "Dann schreiben die Lernenden zu klein und die Oberfläche reicht nicht."
-      - "Dann funktionieren die Stifte wegen falscher Lagerung nicht."
+      - Dann fehlt der Effekt der Massenbeteiligung — auf einen Blick ist nicht sichtbar, was die Klasse denkt.
+      - Dann schreiben die Lernenden zu klein und die Oberfläche reicht nicht.
+      - Dann funktionieren die Stifte wegen falscher Lagerung nicht.
     correctIndex: 0
-    explanation: "Schreiben und wieder Wegwischen auf dem Brett kann helfen — aber der diagnostische und beteiligungsstarke Moment ist das gemeinsame, synchrone Zeigen. Ohne diesen Schritt bleibt der Hauptgewinn aus."
+    explanation: Schreiben und Wischen auf dem Brett kann helfen — der diagnostisch starke Moment ist aber das gemeinsame, synchrone Zeigen. Ohne diesen Schritt bleibt der Hauptgewinn aus.
 
 ---
 
 ## Kernaussage
 
-Wenn alle gleichzeitig antworten, siehst du schnell, was die Klasse verstanden hat. Mit Routinen zur Ausgabe, zum Zeigen und zur Blickführung wird aus dem Werkzeug ein verlässlicher Standard.
+**Gleichzeitig antworten und zeigen** — dann siehst du die Klasse, nicht nur die Schnellsten. Mit klaren Routinen zu Material, Hover und Blickführung wird das Brett zum Standard, nicht zur Sonderaktion.
 
 ## Was ist das?
 
-Mini-Whiteboards sind kleine beschreibbare Tafeln für kurze Antworten. Du stellst eine knappe Frage, alle arbeiten kurz, und beim **gemeinsamen Zeigen** werden Denk- und Fehlmuster für alle sichtbar. Sie gelten oft als besonders wirksames **Werkzeug hoher Beteiligung**: Viele antworten zugleich, nicht nur Einzelmeldende.
+Mini-Whiteboards sind kleine beschreibbare Tafeln für kurze Antworten. Du stellst eine knappe Frage, alle arbeiten kurz, und beim **gemeinsamen Hochhalten** werden Denk- und Fehlmuster für alle sichtbar. Der Unterschied zum normalen Melden im Plenum ist strukturell: **viele Antworten zur gleichen Zeit**, nicht nacheinander.
 
 ## Warum ist das gut?
 
-So arbeiten alle mit, nicht nur die Schnellsten. Du bekommst ein realistisches Bild vom Lernstand. Dass Antworten **leicht wieder wegwischen** gehen, senkt bei manchen die Hemmung, einen ersten Versuch zu wagen — im Unterschied zu „fester“ Heftschreibung.
+So arbeiten alle mit, nicht nur die Schnellsten — du siehst Streuung und typische Fehlwege. Dass Antworten **leicht wieder wegwischen** gehen, senkt bei manchen die Hemmung für einen ersten Versuch — anders als beim fest ins Heft schreiben.
 
 ## Wie geht das im Unterricht?
 
@@ -64,7 +64,7 @@ So arbeiten alle mit, nicht nur die Schnellsten. Du bekommst ein realistisches B
 
 ## Feinheiten im Einsatz
 
-Die folgenden Punkte sind **didaktische Feinarbeit** — sinnvoll, wenn Mini-Whiteboards zur festen Praxis werden sollen. Inhaltlich eigenständig formuliert, angelehnt an Erfahrungsberichte und Übersichten aus der englischsprachigen Diskussion zu hoher Beteiligung im Unterricht.
+Die folgenden Punkte sind **didaktische Feinarbeit** — besonders sinnvoll, wenn Mini-Whiteboards zur festen Praxis werden sollen. Sie fassen erprobte Ideen zur hohen Beteiligung und zur Brett-Routine zusammen, ohne einen festen Lehrplan vorzuschreiben.
 
 ### Material, Zugang und Aufwand
 
