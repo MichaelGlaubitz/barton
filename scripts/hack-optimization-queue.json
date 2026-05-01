@@ -22,21 +22,12 @@
   { "slug": "leitfragen-selbstkontrolle", "status": "done" },
   { "slug": "lernziel-loesungswege-vorwegdenken", "status": "done" },
   { "slug": "mini-whiteboards", "status": "done" },
-<<<<<<< cursor/einzelne-hack-optimierung-0861
-  { "slug": "monitoring-chart-diskussion", "status": "pending" },
-  { "slug": "niemals-ueberformen", "status": "pending" },
-  { "slug": "praesentationen-sequenzieren", "status": "pending" },
-  { "slug": "problemaufgaben-denken-zwingen", "status": "pending" },
-  { "slug": "repraesentationen-wechseln", "status": "pending" },
-  { "slug": "routine-cues-fuer-ablauf-nutzen", "status": "pending" },
-=======
   { "slug": "monitoring-chart-diskussion", "status": "done" },
   { "slug": "niemals-ueberformen", "status": "done" },
   { "slug": "praesentationen-sequenzieren", "status": "done" },
   { "slug": "problemaufgaben-denken-zwingen", "status": "done" },
   { "slug": "repraesentationen-wechseln", "status": "done" },
   { "slug": "routine-cues-fuer-ablauf-nutzen", "status": "done" },
->>>>>>> main
   { "slug": "routine-in-schritte-zerlegen", "status": "done" },
   { "slug": "routine-inhalt-zunaechst-vereinfachen", "status": "done" },
   { "slug": "routine-jeden-schritt-einzeln-ueben", "status": "done" },
