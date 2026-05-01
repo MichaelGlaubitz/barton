@@ -1,6 +1,6 @@
 ---
 title: Neue Routine mit Sinn begründen
-summary: Erkläre zu jedem Schritt den Lernnutzen in verständlicher Sprache, damit die Klasse die Routine mitträgt statt sie als bloße Regel zu erleben.
+summary: Erkläre zu jedem Schritt den Lernnutzen in verständlicher Sprache — dann tragen Lernende die Routine mit, statt sie als bloße Kontrolle zu erleben.
 tags:
   - Diagnose
   - Routinen
@@ -12,15 +12,15 @@ quiz:
       - Damit weniger Diagnosen gestellt werden müssen.
       - Damit die Klasse die Begründung auswendig lernen kann.
     correctIndex: 0
-    explanation: Begründungen schaffen Akzeptanz — die Routine wirkt als Lernhilfe, nicht als reine Kontrolle.
-  - question: Welche Begründung passt fachlich zu erst auf Signal antworten?
+    explanation: Begründungen schaffen Akzeptanz — die Routine wird als Lernhilfe statt als reine Vorgabe erlebt.
+  - question: Welche Begründung passt fachlich zu „erst auf Signal antworten“?
     options:
       - So spart die Lehrkraft das Erklären von Rechenwegen.
       - So haben alle Zeit zum Denken, bevor Antworten sichtbar werden.
       - So können schnelle Lernende früher Zusatzaufgaben beginnen.
     correctIndex: 1
-    explanation: Das Signal schützt die Denkzeit für alle und macht die gleichzeitige Abstimmung diagnostisch verwertbar.
-  - question: Welche Formulierung zeigt eine schwache Einführung ohne Buy-in?
+    explanation: Das Signal schützt die Denkzeit für alle und erhöht die Aussagekraft der Diagnose.
+  - question: Welche Aussage zeigt eine schwache Einführung ohne Buy-in?
     options:
       - Wir machen das so, damit ich sehe, wem ich wie helfen kann.
       - Wir machen das so, damit alle zuerst selbst denken.
