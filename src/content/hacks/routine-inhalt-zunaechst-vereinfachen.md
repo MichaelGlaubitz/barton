@@ -1,6 +1,6 @@
 ---
 title: Neue Routine zuerst mit leichter Mathematik starten
-summary: Senke beim Einführen einer Diagnose-Routine die fachliche Last, damit die Klasse den Ablauf stabil lernt, bevor der Anspruch steigt.
+summary: Senke beim Einführen einer Routine den fachlichen Anspruch, damit die Klasse zuerst den Ablauf stabil lernt — nicht gleichzeitig schwere Rechnung und neues Verhalten.
 tags:
   - Diagnose
   - Routinen
@@ -9,59 +9,61 @@ quiz:
   - question: Warum sollte die erste Diagnosefrage beim Einführen einer Routine eher leicht sein?
     options:
       - "Damit Aufmerksamkeit für den neuen Ablauf frei bleibt und nicht in die Rechnung wandert."
-      - "Damit leistungsstarke Lernende weniger erklären müssen und schneller weiterkommen."
-      - "Damit die Stunde kürzer wirkt und mehr Zeit für Hausaufgaben bleibt."
+      - "Damit leistungsstarke Lernende mehr erklären und den Ablauf mittragen."
+      - "Damit die Stunde schneller vorbei ist und mehr Zeit für Hausaufgaben bleibt."
     correctIndex: 0
-    explanation: "Beim Routinenstart ist die Prozesslast hoch. Leichter Inhalt hält Kapazität für Timing, Zeigen und Zuhören frei und macht den Ablauf trainierbar."
+    explanation: Beim Routinenstart ist die Prozesslast hoch. Leichter Inhalt entlastet das Arbeitsgedächtnis und macht den Ablauf lernbar, bevor du den Anspruch erhöhst.
   - question: Welche erste Aufgabe passt am besten zu diesem Ziel?
     options:
       - "Eine mehrschrittige Termumformung mit mehreren Vorzeichenwechseln."
       - "Eine einfache Klammeraufgabe mit klaren Antwortoptionen."
       - "Eine Transferaufgabe mit Begründung in zwei Darstellungen."
     correctIndex: 1
-    explanation: "Die Aufgabe soll fachlich niedrigschwellig sein, damit der Fokus auf den Routinen-Schritten liegt, nicht auf kniffliger Mathematik."
+    explanation: Die Aufgabe soll fachlich niedrigschwellig sein, damit der Fokus auf den Routinen-Schritten liegt — nicht auf kniffliger Mathematik.
   - question: Woran erkennst du, dass der fachliche Anspruch zu hoch für den Routinenstart war?
     options:
       - "Die Klasse diskutiert verschiedene elegante Lösungswege."
       - "Viele wollen Zusatzaufgaben, obwohl der Ablauf noch neu ist."
       - "Lernende vergessen wiederholt den Ablauf, weil sie mit der Aufgabe ausgelastet sind."
     correctIndex: 2
-    explanation: "Wenn der Inhalt zu viel bindet, bricht die Routinenqualität zuerst ein — sichtbar an vergessenen Signalen oder Schritten statt an sauberem Rechnen."
+    explanation: Wenn der Inhalt zu viel kognitive Last bindet, bricht die Routinenqualität zuerst ein — sichtbar an vergessenen Schritten statt an sauberen Rechenfehlern.
 ---
 
 ## Kernaussage
 
-Ist eine Routine neu, muss die Mathematik zunächst **einfacher** sein als später geplant: zuerst den Ablauf sichern, dann den fachlichen Anspruch erhöhen.
+Ist eine Routine neu, muss die Mathematik zunächst **einfacher** sein als in einer etablierten Phase: Du trainierst zuerst **den Ablauf**, nicht den Höchstanspruch.
 
 ## Was ist das?
 
-Du startest neue Diagnose-Abläufe mit **fachlich leichten** Fragen. Die Klasse übt zuerst die **Struktur**: still denken, Antwort wählen oder zeigen, Begründung vorbereiten, gezielt zuhören. Der Inhalt ist bewusst so gewählt, dass er kaum neben der Routine „mitdenken“ muss.
+Du startest neue **Diagnose-Abläufe** mit fachlich **leichten** Fragen und kurzen Aufgaben. Die Klasse übt damit zuerst die **Struktur** — etwa still denken, Antwort wählen oder zeigen, Begründung vorbereiten, gezielt zuhören — **ohne** dass schwierige Inhalte dieselbe kognitive Bahn blockieren. Schwieriger wird erst, wenn der Ablauf **verlässlich** sitzt.
 
 ## Warum ist das gut?
 
-Arbeitsspeicher und Aufmerksamkeit sind begrenzt. Liegt die fachliche Hürde niedrig, bleibt Kapazität für **Timing, Nonverbales und gemeinsame Normen**. Lernende erleben Erfolg am Ablauf, nicht nur an der Aufgabe — die Routine wirkt **hilfreich** statt **zusätzlich stressig**.
+Arbeitsgedächtnis und Aufmerksamkeit sind begrenzt. Überwiegt die **Rechenlast**, bleibt weniger Kapazität für **Timing, Signale und Rollen** in der Routine. Leichter Inhalt hält die diagnostische Aussagekraft erhalten: Du siehst, ob die Routine greift — und nicht primär, wer komplexe Sonderfälle beherrscht. Lernende erleben schneller Erfolg; die Routine wirkt **hilfreich** statt **überfordernd**.
 
 ## Wie geht das im Unterricht?
 
-- **So gehst du vor:** Plane die erste Runde mit **kurzen** Aufgaben, **klaren** Antwortformaten (z. B. Multiple Choice, zwei bis drei Whiteboard-Optionen).
-- **Achte dabei auf:** Keine zweite kognitive Hauptlast parallel (z. B. nicht gleichzeitig schwierig rechnen und ausführlich begründen), solange der Ablauf noch neu ist.
-- **Prüfe am Ende:** Ob die Klasse die **Schritte** zuverlässig einhält. Erst dann Anspruch oder Variationen erhöhen.
+- **So gehst du vor:** Wähle für die **erste Runde** sehr kurze Aufgaben mit **klaren** Antwortformaten (z. B. feste Optionen, eindeutiger Rechenschritt).
+- **Achte dabei auf:** Keine **zweite** große kognitive Hauptlast parallel (z. B. keine schwere Modellierung **und** gleichzeitig neues Abstimmverhalten).
+- **Prüfe am Ende:** Ob die Klasse die **Schritte** stabil einhält — erst dann erhöhst du den fachlichen Anspruch oder die Offenheit der Aufgaben.
 
 ## Beispiele aus dem Unterricht
 
-1. **Klammern:** Statt Vorzeichenfallen zuerst \(3(x+2)\) mit **drei** klar unterscheidbaren Ergebnissen — die Klasse trainiert **Zeigen auf Signal**, nicht Trickrechnen.
-2. **Bruchvergleich:** Zuerst eindeutige Paare wie \(\tfrac{1}{2}\) und \(\tfrac{3}{4}\); komplexere Fälle kommen erst, wenn **still entscheiden** und **gemeinsam zeigen** sitzen.
-3. **Lineare Gleichung:** Zuerst **ein** klarer Umformungsschritt; mehrstufige Gleichungen erst, wenn niemand mehr beim Übergang vom Rechnen zum Zeigen vergisst.
+1. **Klammern:** Statt Vorzeichenfallen zuerst \(3(x+2)\) mit **drei** klar getrennten Antwortoptionen; erst wenn **denken–zeigen–einordnen** flüssig läuft, kommen längere Terme.
+2. **Bruchvergleich:** Zuerst **deutliche** Paare wie \(1/2\) und \(3/4\), später erst gemischte Nenner oder Begründungspflicht in zwei Schritten.
+3. **Lineare Gleichung:** Zuerst **ein** klarer Umformungsschritt mit kontrollierbarem Ergebnis; mehrstufige Varianten und Beweislast kommen erst nach Routinen-Stabilität.
 
 ## Was kann eine Lehrkraft dabei falsch machen?
 
-- Sie testet die Routine sofort mit einer **fachlich schweren** Problemaufgabe und wundert sich über **Chaos beim Ablauf**.
-- Sie erhöht den Anspruch, **bevor** der Ablauf bei **allen** verlässlich sitzt — dann kollabiert die Routine unter der nächsten Aufgabe wieder.
+- Sie testet die Routine direkt mit einer **fachlich anspruchsvollen** Problemaufgabe — und interpretiert dann Misserfolge als Routinemangel statt als Überlast.
+- Sie erhöht den Anspruch, **bevor** der Ablauf verlässlich sitzt — dann kippt die Qualität dauerhaft ins Raten oder ins voreilige Mitmachen.
+- Sie verwechselt **Motivation** mit **Herausforderung** und meint, ohne schwere Aufgabe sei der Einstieg langweilig — dabei braucht der Start **Sicherheit im Verhalten**, nicht sofort Höchstleistung.
 
 ## Was kann in der Praxis schiefgehen?
 
-- Lernende **rufen rein** oder **schauen ab**, weil die Aufgabe den Kopf füllt — die Diagnose wird **unsauber**.
-- Die Klasse **verknüpft** die neue Routine mit **Misserfolg** oder **Widerstand** und weicht beim nächsten Mal aus den **vereinbarten Schritten** aus.
+- Lernende **rufen rein** oder **kopieren**, weil die Aufgabe zu viel bindet — der Ablauf wird nicht geübt, sondern umgangen.
+- Die Klasse **verknüpft** die neue Routine mit Misserfolg und Widerstand, weil der erste Eindruck stressig war.
+- Die Lehrkraft **steuert nach** (Zeit, Ablauf, Erklärungen), weil die Routine nicht greift — ohne den fachlichen Anspruch zu senken, bleibt das ein Dauerzustand.
 
 ## Quelle (Hintergrund)
 

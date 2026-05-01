@@ -1,6 +1,6 @@
 ﻿---
 title: Gelöstes Beispiel vor offenen Aufgaben
-summary: 'Ein kommentiertes worked example entlastet das Arbeitsgedächtnis: Lernende können sich auf Struktur, Entscheidungen und Begründungen konzentrieren, bevor Hilfen schrittweise zurückgenommen werden.'
+summary: 'Ein kommentiertes worked example entlastet das Arbeitsgedächtnis: Lernende können sich auf den Lösungsweg und die Begründungen konzentrieren, bevor Hilfen schrittweise zurückgenommen werden.'
 tags:
   - Cognitive load
   - Beispiele
@@ -8,25 +8,25 @@ order: 4
 quiz:
   - question: Worin liegt der Hauptnutzen eines gelösten Beispiels beim Einstieg?
     options:
-      - 'Kapazität im Arbeitsgedächtnis wird frei, damit Lernende Struktur und Entscheidungen im Lösungsweg erkennen und nachvollziehen können.'
-      - 'Unterrichtszeit sinkt, weil anschließend kaum noch Rückfragen zur Aufgabe nötig sind.'
-      - 'Lernende erhalten eine Vorlage, die sie in der nächsten Aufgabe möglichst wortgleich übernehmen sollen.'
+      - "Kapazität im Arbeitsgedächtnis wird frei, damit Lernende Struktur und Entscheidungen im Lösungsweg erkennen und nachvollziehen können."
+      - "Unterrichtszeit sinkt, weil anschließend kaum noch Rückfragen zur Aufgabe nötig sind."
+      - "Lernende erhalten eine Vorlage, die sie in der nächsten Aufgabe möglichst wortgleich übernehmen sollen."
     correctIndex: 0
-    explanation: 'Worked examples zielen auf kognitive Entlastung: Kapazität fließt in Verstehen und Übertragung, nicht in blindes Auswendiglernen eines Rezeptes. Weniger Fragen ist kein Ziel an sich; Übernahme ohne Verständnis wäre kontraproduktiv.'
+    explanation: "Worked examples zielen auf kognitive Entlastung: Kapazität fließt in Verstehen und Übertragung, nicht in blindes Auswendiglernen eines Rezeptes. Weniger Fragen ist kein Ziel an sich; Übernahme ohne Verständnis wäre kontraproduktiv."
   - question: Welche Abfolge ist didaktisch am tragfähigsten?
     options:
-      - 'Zuerst eine komplexe offene Aufgabe — das Musterbeispiel folgt am Ende als Korrektur.'
-      - 'Vollständiges Beispiel → Aufgabe mit Lücken (completion) → naher Transfer mit weniger Hilfe.'
-      - 'Drei vollständige Muster hintereinander — Eigenarbeit beginnt erst, wenn alle Varianten gezeigt sind.'
+      - "Zuerst eine komplexe offene Aufgabe — das Musterbeispiel folgt am Ende als Korrektur."
+      - "Vollständiges Beispiel → Aufgabe mit Lücken (completion) → naher Transfer mit weniger Hilfe."
+      - "Drei vollständige Muster hintereinander — Eigenarbeit beginnt erst, wenn alle Varianten gezeigt sind."
     correctIndex: 1
-    explanation: 'Sofort offen überlastet und frustriert. Drei vollständige Vorführungen ohne eigenes Befüllen fördert Scheinverstehen. Beispiel, dann Lücken, dann Transfer ist der empirisch gut abgesicherte Pfad.'
+    explanation: "Sofort offen überlastet und frustriert. Drei vollständige Vorführungen ohne eigenes Befüllen fördert Scheinverstehen. Beispiel, dann Lücken, dann Transfer ist der empirisch gut abgesicherte Pfad."
   - question: Eine neu eingeführte Methode löst sofort viele Nachfragen aus. Womit beginnst du am ehesten?
     options:
-      - 'Mit einer offenen Transferaufgabe — Anforderung soll Selbstständigkeit erzwingen.'
-      - 'Mit einem gelösten Beispiel und kurzen Kommentaren zu den wichtigsten Entscheidungen, danach teiloffene Aufgaben.'
-      - 'Mit der nackten Formel an der Tafel und einer Übungsserie zur schnellen Festigung.'
+      - "Mit einer offenen Transferaufgabe — Anforderung soll Selbstständigkeit erzwingen."
+      - "Mit einem gelösten Beispiel und kurzen Kommentaren zu den wichtigsten Entscheidungen, danach teiloffene Aufgaben."
+      - "Mit der nackten Formel an der Tafel und einer Übungsserie zur schnellen Festigung."
     correctIndex: 1
-    explanation: 'Anforderung ohne Anker erzeugt Blockaden statt Selbstständigkeit. Formel ohne erklärten Weg zeigt das Ergebnis, nicht die Entscheidungen. Das kommentierte Beispiel macht den Weg und das Warum sichtbar.'
+    explanation: "Anforderung ohne Anker erzeugt Blockaden statt Selbstständigkeit. Formel ohne erklärten Weg zeigt das Ergebnis, nicht die Entscheidungen. Das kommentierte Beispiel macht den Weg und das Warum sichtbar."
 
 ---
 
