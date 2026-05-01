@@ -31,39 +31,39 @@ quiz:
 
 ## Kernaussage
 
-Routinen sitzen besser, wenn Lernende den **Zweck jedes Schritts** verstehen — nicht nur die Handlung, sondern **warum** sie der Diagnose oder dem Lernen dient.
+Routinen sitzen besser, wenn Lernende zu jedem Schritt den Zweck verstehen — nicht nur die Reihenfolge.
 
 ## Was ist das?
 
-Du ergänzt zu den **wenigen, festen Schritten** einer Diagnose-Routine (typischerweise **bis zu drei** Stationen) jeweils eine **kurze Nutzenformel** in Schülersprache: nicht nur **was** gilt, sondern **wofür** der Schritt da ist — z. B. still denken für **eigenes Urteil vor dem Zeigen**, auf Signal zeigen für **faire, vergleichbare Antworten**, zuhören oder kurz begründen für **fachliche Präzisierung** statt Durcheinander.
+Du erklärst nicht nur **was** zu tun ist, sondern auch **warum** es dem Mathematiklernen dient: still denken schützt echte Denkzeit, auf Signal zeigen macht Antworten vergleichbar, zuhören beim Plenum erlaubt den Abgleich mit fachlich tragfähigen Begründungen. Die Begründung bleibt knapp, steht aber fest neben dem Schritt — wie eine Mini-Lernzielkarte pro Phase.
 
 ## Warum ist das gut?
 
-Lernende **tragen die Routine mit**, wenn sie den Sinn erkennen: weniger Widerstand, weniger halbherziges Mitmachen, **mehr zuverlässige Diagnose** — weil gezeigtes oder Gesagtes im richtigen Moment entsteht. Ohne Begründung wirken dieselben Schritte schnell wie **Kontrolle um der Kontrolle willen**; mit Begründung bleiben sie mit dem **Lernziel** verknüpft.
+Lernende erleben die Routine als Unterstützung für Aufgaben und Diagnose, nicht als Willkür. Das senkt Widerstand, erhöht die Zuverlässigkeit der Abläufe und verbessert die Qualität der Signale, die du im Unterricht wirklich interpretieren kannst.
 
 ## Wie geht das im Unterricht?
 
-- **So gehst du vor:** Führe jeden neuen Schritt mit **einem Satz Nutzen** ein — konkret zum Fachziel (z. B. Diagnose, Denkzeit, faires Zeigen), nicht als allgemeine Disziplinpredigt.
-- **Achte dabei auf:** **Gleiche Begriffe** wie auf der Tafel oder dem Plakat (Schrittname + Nutzen); keine zweite, widersprüchliche Version nebenher.
-- **Prüfe am Ende:** Ob Lernende den **Sinn der Schritte** mit eigenen Worten nennen können — nicht nur die Reihenfolge auswendig.
+- **So gehst du vor:** Formuliere zu jedem Schritt eine einzeilige Nutzenformel in Alltagssprache der Lernenden.
+- **Achte dabei auf:** Konkrete mathematische oder diagnostische Vorteile statt pauschaler Disziplin- oder Machtargumente.
+- **Prüfe am Ende:** Ob mehrere Lernende den Sinn der Schritte mit eigenen Worten wiedergeben können.
 
 ## Beispiele aus dem Unterricht
 
-1. **Diagnosefrage:** „Erst still denken — damit ich sehe, was du **wirklich** kannst, nicht was dir jemand ins Ohr flüstert.“
-2. **Abstimmung:** „Erst auf Signal zeigen — damit **niemand** durch Zuruf beeinflusst wird und die Antworten **vergleichbar** bleiben.“
-3. **Erklärung / Zuhören:** „Jetzt kurz zuhören oder begründen — damit du prüfst, ob **dein** Grund trägt und du vom Vergleich profitierst.“
+1. **Diagnosefrage:** Erst still rechnen — damit ich sehe, was du selbst sicher beherrschst, bevor wir Antworten vergleichen.
+2. **Abstimmung:** Erst auf mein Signal zeigen — damit niemand durch Zuruf oder frühes Zeigen die anderen beeinflusst und die Abstimmung fair bleibt.
+3. **Erklärung im Plenum:** Kurz zuhören und mitdenken — damit du prüfst, ob dein eigener Grund genauso trägt wie der vorgestellte Lösungsweg.
 
 ## Was kann eine Lehrkraft dabei falsch machen?
 
-- Sie liefert nur **Befehle** ohne Bezug zum Lernziel oder zur Diagnose.
-- Sie begründet **zu abstrakt** („das ist wichtig“) statt mit **konkretem Unterrichtsvorteil** in einer Zeile.
-- Sie **widerspricht** der sichtbaren Routine oder weicht dauerhaft ab — dann wirkt die Begründung unglaubwürdig.
+- Sie nennt nur Befehle (macht, zeigt, schweigt) ohne Bezug zu Lernziel oder Diagnose.
+- Sie begründet in Schulschablone statt mit einem sichtbaren Vorteil in der gerade bearbeiteten Aufgabe.
+- Sie wiederholt lange Reden, statt pro Schritt eine prägnante Nutzenzeile zu setzen.
 
 ## Was kann in der Praxis schiefgehen?
 
-- Lernende halten Regeln für **reine Kontrolle** und steigen mental oder handlungsmäßig aus.
-- Schritte werden **halbherzig** umgesetzt, weil der Nutzen unklar bleibt — die Diagnose wird **unzuverlässig**.
-- **Schnelle** oder **laute** Lernende setzen den Ton, weil der Sinn von „erst denken, dann zeigen“ nie verankert wurde.
+- Lernende lesen die Routine als reine Kontrolle und arbeiten minimal mit oder suchen Umgehungen.
+- Schritte werden halbherzig umgesetzt, weil der Nutzen unklar bleibt — dann verfälschen sich Abstimmung und Beobachtung.
+- Schnelle Lernende spielen mit, die Mitte bleibt unsicher; du überschätzt die Qualität des gemeinsamen Ablaufs.
 
 ## Quelle (Hintergrund)
 
