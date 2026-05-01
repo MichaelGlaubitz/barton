@@ -1,6 +1,6 @@
 ﻿---
 title: Rückmeldungen knapp und handlungsnah
-summary: Kurzes, präzises Feedback mit nächstem Schritt wirkt stärker als lange allgemeine Kommentare.
+summary: Kurzes, zielgenaues Feedback mit markierter Stelle und einem nächsten Schritt wirkt stärker als lange Kommentarlisten oder globale Urteile.
 tags:
   - Feedback
   - Üben
@@ -8,61 +8,61 @@ order: 18
 quiz:
   - question: Was macht Feedback im Unterricht besonders wirksam?
     options:
-      - "Möglichst viele Hinweise, damit alle Schwächen erfasst sind und nichts unbemerkt bleibt."
-      - "Wenige, präzise Hinweise mit einer markierten Stelle und einem klar formulierten nächsten Schritt."
-      - "Eine prägnante Endbewertung mit Punktzahl und kurzer Tendenz, damit Lernende ihren Stand kennen."
+      - Viele Hinweise auf einmal, damit keine Schwäche übersehen wird.
+      - Wenige, präzise Hinweise mit einer markierten Stelle und einem klar formulierten nächsten Schritt.
+      - Eine prägnante Endnote mit Punktzahl und kurzer Tendenz, damit Lernende ihren Stand kennen.
     correctIndex: 1
-    explanation: "Feedback wirkt, wenn es Handeln auslöst. Vollständigkeit überfordert, Endbewertung schließt ab — beides verhindert Bearbeitung."
+    explanation: Feedback wirkt, wenn es Handeln auslöst. Vollständigkeit überfordert, Endbewertung schließt ab — beides erschwert die Bearbeitung.
   - question: Welche Rückmeldung ist für eine Überarbeitung am hilfreichsten?
     options:
-      - "Achte beim nächsten Mal mehr auf Genauigkeit, sonst bleibt die Lösung anfällig."
-      - "Im zweiten Schritt fehlt die Begründung, warum die Wurzel positiv gewählt wird. Ergänze genau dort einen Satz."
-      - "Insgesamt solide, aber Argumentation noch ausbaufähig — schau dir das nochmal an."
+      - Achte beim nächsten Mal mehr auf Genauigkeit, sonst bleibt die Lösung anfällig.
+      - Im zweiten Schritt fehlt die Begründung, warum die Wurzel positiv gewählt wird. Ergänze genau dort einen Satz.
+      - Insgesamt solide, aber Argumentation noch ausbaufähig — schau dir das nochmal an.
     correctIndex: 1
-    explanation: "„Mehr Genauigkeit“ und „ausbaufähig“ klingen freundlich, lassen aber offen, was genau wo zu tun ist. Erst Stelle + Aktion macht Überarbeitung möglich."
-  - question: "Deine Rückmeldungen sind sachlich richtig, führen aber zu wenig Veränderung in den Überarbeitungen. Was ist der wirksamste Hebel?"
+    explanation: Formulierungen wie mehr Genauigkeit oder ausbaufähig bleiben vage. Erst Stelle plus konkrete Aktion macht Überarbeitung möglich.
+  - question: Deine Rückmeldungen sind sachlich richtig, führen aber zu wenig Veränderung in den Überarbeitungen. Was ist der wirksamste Hebel?
     options:
-      - "Mehr Beispiele pro Aufgabe geben, damit Lernende einen Vergleich haben."
-      - "An genau einer markierten Stelle eine konkrete nächste Handlung formulieren — und die Klasse den Schritt direkt ausführen lassen."
-      - "Auf rein numerische Rückmeldung umstellen, weil Texte die Lernenden überfordern."
+      - Mehr Beispiele pro Aufgabe geben, damit Lernende einen Vergleich haben.
+      - An genau einer markierten Stelle eine konkrete nächste Handlung formulieren — und die Klasse den Schritt direkt ausführen lassen.
+      - Auf rein numerische Rückmeldung umstellen, weil Texte die Lernenden überfordern.
     correctIndex: 1
-    explanation: "Wenn Feedback nicht ankommt, fehlt selten Information — meist Anschlusshandlung. Markierte Stelle plus konkreter Schritt ist der aktive Teil."
+    explanation: Wenn Feedback nicht ankommt, fehlt selten Information — meist Anschlusshandlung. Markierte Stelle plus konkreter Schritt ist der aktive Teil.
 
 ---
 
 ## Kernaussage
 
-Feedback wirkt nur dann, wenn es den nächsten Schritt klar macht.
+Feedback wirkt, wenn Lernende danach **eine** klare Handlung ausführen können — nicht wenn sie ein Urteil über ihre Leistung erhalten.
 
 ## Was ist das?
 
-Du gibst Rückmeldung nicht als Urteil, sondern als konkrete Aktion. Lernende wissen danach genau, was sie als Nächstes tun sollen.
+Du gibst Rückmeldung nicht als Bewertung, sondern als **konkrete Arbeit**: eine markierte Stelle im Produkt (Heft, Lösung, Darstellung) und **genau ein** nächster Schritt, der dort umgesetzt wird. Lernende wissen, **wo** sie ansetzen und **was** sie als Nächstes tun sollen.
 
 ## Warum ist das gut?
 
-Klare nächste Schritte führen schneller zu besseren Lösungen. So wird Feedback direkt wirksam.
+Wenige, priorisierte Hinweise senken die kognitive Last und erhöhen die Chance, dass etwas wirklich geändert wird. Handlungsnahes Feedback schließt die Lücke zwischen Diagnose und Übung — statt alles auf einmal anzusprechen und am Ende nichts zu verändern.
 
 ## Wie geht das im Unterricht?
 
-- **So gehst du vor:** Markiere eine Stelle und formuliere einen konkreten nächsten Schritt.
-- **Achte dabei auf:** Wenige, priorisierte Hinweise statt langer Kommentarliste.
-- **Prüfe am Ende:** Ob Lernende den Hinweis sichtbar in ihre Überarbeitung umsetzen.
+- **So gehst du vor:** Markiere eine Stelle und formuliere einen nächsten Schritt, den du in wenigen Minuten überprüfen kannst.
+- **Achte dabei auf:** Wenige Hinweise pro Rückgabe — lieber ein Punkt, der sitzt, als eine lange Liste.
+- **Prüfe am Ende:** Ob Lernende den Hinweis sichtbar in ihre Überarbeitung einbauen; wenn nicht, war der Schritt zu groß oder zu unklar.
 
 ## Beispiele aus dem Unterricht
 
-1. **Hausaufgabe lineare Gleichung:** Statt „Rechenweg unklar“ markierst du: „Hier fehlt der Schritt, warum du auf beiden Seiten dieselbe Zahl addieren darfst.“
-2. **Geometriebeweis:** Ein Kommentar: „Dein Argument für die Parallelität ist richtig, aber Satz XY fehlt noch als Begründung — ergänze genau diesen Satz.“
-3. **Mündliche Rückmeldung:** „Nächster Schritt: eine Aufgabe, in der nur noch der fehlende Begründungssatz trainiert wird.“
+1. **Lineare Gleichung (schriftlich):** Statt Rechenweg unklar markierst du die Zeile und schreibst: Hier fehlt der Satz, warum du auf beiden Seiten dieselbe Zahl addieren darfst — ergänze ihn.
+2. **Geometriebeweis:** Ein Kommentar: Dein Argument für die Parallelität trägt, aber Satz XY fehlt als Begründung — füge genau diesen Satz nach dem zweiten Absatz ein.
+3. **Mündlich nach Partnerarbeit:** Nicht nur loben oder korrigieren, sondern: Nächster Schritt für alle — eine Mini-Aufgabe, in der nur noch der fehlende Begründungssatz trainiert wird; danach kurz stichprobenartig prüfen.
 
 ## Was kann eine Lehrkraft dabei falsch machen?
 
-- Die Lehrkraft formuliert Feedback als Urteil statt als konkreten nächsten Arbeitsschritt.
-- Die Lehrkraft gibt zu viele Korrekturhinweise gleichzeitig.
+- Sie formuliert Feedback als Urteil (gut / noch nicht gut genug) statt als nächsten Arbeitsschritt.
+- Sie verteilt viele Korrekturhinweise gleichzeitig — dann wird typischerweise nichts zu Ende überarbeitet.
 
 ## Was kann in der Praxis schiefgehen?
 
-- Im Ablauf bleibt Feedback bei Bewertungen ohne konkrete Handlung.
-- Im Ablauf überfordern zu viele Hinweise gleichzeitig und nichts wird umgesetzt.
+- Feedback bleibt bei Bewertungen oder Tendenzen hängen, ohne dass Lernende danach noch einmal schreiben oder erklären.
+- Der nächste Schritt ist zu groß (mach die Argumentation runder) — dann wissen Lernende nicht, was zuerst zu tun ist.
 
 ## Querverweise
 
@@ -73,4 +73,4 @@ Klare nächste Schritte führen schneller zu besseren Lösungen. So wird Feedbac
 
 ## Quelle (Hintergrund)
 
-Feedback-Forschung für lernwirksame Rückmeldung.
+Formatives Feedback und Wirksamkeit handlungsnaher, aufgabenbezogener Rückmeldung (u. a. Hattie & Timperley; Überblicke zum lernwirksamen Feedback).
