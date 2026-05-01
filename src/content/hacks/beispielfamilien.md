@@ -10,7 +10,7 @@ quiz:
     options:
       - "Lernende erkennen am Vergleich, was zwischen den Aufgaben variiert und was strukturell gleich bleibt."
       - "Die Korrektur wird einfacher, weil alle Aufgaben dieselbe Lösungsform haben."
-      - "Mehrere Beispiele ersetzen das Nachdenken, weil das Muster von selbst einprägt."
+      - "Mehrere Beispiele ersetzen das Nachdenken, weil das Muster sich von selbst einprägt."
     correctIndex: 0
     explanation: "Der Effekt entsteht aus dem strukturierten Vergleich, nicht aus bloßer Wiederholung. Ohne sichtbar gemachte Unterschiede wirkt eine Familie wie eine Übungsserie ohne Konzeptgewinn."
   - question: Welche Form der Variation ist didaktisch besonders ergiebig?
