@@ -25,9 +25,11 @@ Ablauf:
 4) Den einen Hack optimieren (Inhalt, Stil, Quiz). In quiz-Strings in YAML keine eingebetteten ASCII-Doppelquotes verwenden, die den YAML-String vorzeitig beenden (sonst schlägt astro build fehl). Bei Unsicherheit lieber Formulierungen ohne innere " wählen oder Feld in saubere YAML-Quotes packen.
 5) scripts/hack-optimization-queue.json: nur den bearbeiteten slug auf done setzen.
 6) npm run hacks:validate && npm run build — beide müssen erfolgreich sein. Bei Fehler: beheben oder nicht als fertig melden.
-7) Änderungen committen; je nach Automation-Konfiguration PR öffnen oder auf den vorgegebenen Branch pushen. Commit-Message z. B.: content(hacks): <slug> optimieren; queue done
+7) GitHub (online sichtbar): Vor dem Commit ggf. npm ci ausführen, falls node_modules fehlen. Änderungen auf einem neuen Branch committen (Branch-Name z. B. automation/hack-<slug> oder cursor/hack-<slug>). Mit dem Tool „Open Pull Request“ einen Pull Request gegen main öffnen — klare Titelzeile und kurze Beschreibung (welcher Slug, was geändert). Nicht selbst auf main mergen; keinen direkten Push auf main ohne PR. Commit-Message z. B.: content(hacks): <slug> optimieren; queue done
 
 Pro Automation-Lauf genau ein Hack. Nicht mehrere Slugs in einem Lauf.
+
+Hinweis: Slack-Trigger (#hacks, Schlüsselwort) wird in der Automation-UI konfiguriert — muss nicht erneut im Prompt stehen, sofern dort schon eingestellt.
 ```
 
 ---
