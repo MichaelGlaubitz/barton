@@ -1,6 +1,6 @@
 ---
 title: Whole-Class-Feedback statt Einzelkorrektur
-summary: "Statt 28 Einzelrückmeldungen unter Aufgaben zu schreiben, wird im Plenum gemeinsam besprochen — präziser, schneller, lernwirksamer."
+summary: Statt vieler Einzelrückmeldungen am Rand sammelst du Muster über alle Arbeiten und besprichst sie im Plenum — präziser, schneller, meist lernwirksamer.
 tags:
   - Praxistipp
   - Korrektur
@@ -21,7 +21,7 @@ quiz:
       - "Wer sein Ergebnis schon kennt, hat keinen Anreiz mehr zuzuhören — wer richtig hatte, schaltet ab; wer falsch hatte, ist demotiviert. Beide hören erst aufmerksam, wenn die eigene Note noch nicht verraten ist."
       - "Aus Datenschutzgründen — die Punkte dürfen vor dem Plenum nicht offengelegt werden."
     correctIndex: 1
-    explanation: "Sobald die Klasse die Punkte sieht, ist die didaktische Fenster zu. Erst Plenum, dann Rückgabe — das ist die einfachste, wirksamste Stellschraube des ganzen Verfahrens."
+    explanation: Sobald die Klasse die Punkte sieht, ist das didaktische Fenster zu. Erst Plenum, dann Rückgabe — das ist die einfachste, wirksamste Stellschraube des ganzen Verfahrens.
   - question: "Du hast die Klassenarbeiten durchgesehen und drei Themen identifiziert, bei denen >50% gestrauchelt sind. Welche Form passt?"
     options:
       - "**Reteach-Spalte**: für jedes der drei Themen Erklärung, Modellbeispiel und eine Folgeaufgabe einplanen — das sind keine Wiederholungen, sondern Kurzlektionen."
@@ -33,36 +33,36 @@ quiz:
 
 ## Kernaussage
 
-**Schreib keine 28 individuellen Anmerkungen — finde die Trends und besprich sie im Plenum.** Whole-Class-Feedback spart Zeit und ist meist lernwirksamer als der einzelne Randkommentar, den ohnehin niemand zweimal liest.
+**Statt vieler Randkommentare: Muster über alle Arbeiten finden und im Plenum bearbeiten.** Whole-Class-Feedback spart Zeit und gibt verbreiteten Fehlern eine Mini-Lektion — statt jedem Heft dieselbe knappe Zeile zu schreiben.
 
 ## Was ist das?
 
-Statt jede Schülerarbeit einzeln schriftlich zu kommentieren, sucht die Lehrkraft **Muster über alle Arbeiten** und bespricht sie strukturiert mit der ganzen Klasse. Dazu gehören drei Bewegungen:
+Statt jede Schülerarbeit einzeln schriftlich zu kommentieren, sucht die Lehrkraft **Muster über alle Arbeiten** und bespricht sie mit der ganzen Klasse. Drei Bewegungen:
 
-1. **Sichten** — kurzer Überblick über alle Arbeiten, dann ein paar wenige genauer.
-2. **Sortieren** — zwei Spalten: *Reteach* (großes Loch, wirkliche Wiederholung nötig) und *Retrieve* (kleines Loch, kurzer Abruf reicht).
+1. **Sichten** — kurz alle Arbeiten überfliegen, dann wenige Stichproben genauer lesen.
+2. **Sortieren** — zwei Spalten: *Reteach* (großes Loch, echte Wiederholung mit Erklärung) und *Retrieve* (kleines Loch, kurzer Abruf reicht).
 3. **Besprechen** — diskutieren, modellieren, Folgeaufgabe stellen.
 
-Entscheidend: **Arbeiten erst nach dem Plenum zurückgeben.** Wer sein Ergebnis schon kennt, hört entweder ab (richtig) oder dicht (falsch).
+Entscheidend: **Arbeiten erst nach dem Plenum zurückgeben.** Wer das eigene Ergebnis schon kennt, hört oft zu wenig mit — ob aus Sicherheit oder aus Frust.
 
 ## Warum ist das gut?
 
-Der Korrekturaufwand sinkt drastisch. Gleichzeitig steigt die Tiefe: ein verbreiteter Fehler bekommt eine echte Mini-Lektion, kein Rand-Kringel. Lernende, die richtig hatten, denken durch das Modellieren tiefer; Lernende, die falsch hatten, sehen einen sauberen Lösungsweg im echten Kontext. Und: das Verfahren erzeugt automatisch Material für die nächste Klassenarbeit (Folgeaufgaben, Reteach-Themen).
+Der Korrekturaufwand sinkt stark. Zugleich wird ein häufiger Fehler zur gemeinsamen Mini-Lektion statt zu vielen gleichen Randnotizen. Wer schon sicher war, vertieft beim Modellieren; wer geirrt hat, sieht einen klaren Lösungsweg im Kontext der Aufgabe. Reteach- und Retrieve-Themen liefern zudem direkt Anknüpfungspunkte für die nächste Stunde oder Klassenarbeit.
 
 ## Wie geht das im Unterricht?
 
 ### Vorbereitung (≈ 30 Minuten für eine Klasse)
 
-- **Sichten:** Schnell durch alle Arbeiten, höchstens 30 Sekunden pro Stück, Lösungsschlüssel daneben — wo häufen sich Fehler?
-- **Vertiefen:** Drei Arbeiten genauer lesen — eine starke, eine schwache, eine im Mittel. Was siehst du dort, was im Schnelldurchgang verloren ging?
-- **Markieren:** Auf einer **leeren Kopie** der Klassenarbeit Notizen am Rand jeder Aufgabe machen — typische Fehler, kuriose Antworten, Beispielarbeiten zum Zeigen.
-- **Sortieren:** Zwei Spalten anlegen: **Reteach** (max. drei Themen, brauchen echte Wiederholung mit Erklärung und Modell) — **Retrieve** (max. fünf, brauchen nur kurzen Abruf und Folgeaufgabe).
+- **Sichten:** Alle Arbeiten rasch mit Lösungsschlüssel abgleichen — wo stapeln sich die Knickstellen?
+- **Vertiefen:** Drei Stichproben genauer lesen (stark, schwach, Mitte). Was fällt auf, was der Schnelldurchgang übersieht?
+- **Markieren:** Auf einer **leeren Kopie** der Aufgabe am Rand pro Teilaufgabe kurz festhalten — typische Fehler, zeigenswerte Beispiele.
+- **Sortieren:** **Reteach** (höchstens drei Themen: Erklärung plus Modell nötig) und **Retrieve** (höchstens fünf: kurzer Abruf plus Folgeaufgabe).
 
 ### Im Plenum
 
 - Arbeiten **nicht** zurückgeben.
-- Pro Aufgabe: **Diskussion · Modell · Folgeaufgabe.** Linke Tafelhälfte Modell, rechte Tafelhälfte Folgeaufgabe (auf Whiteboard antworten).
-- Erst dann Rückgabe — und Korrekturkarten zu den eigenen Fehlern erstellen lassen.
+- Pro Schwerpunkt: **kurz diskutieren, Modell zeigen, Folgeaufgabe** — z. B. Modell links an der Tafel, ähnliche Aufgabe rechts (Whiteboards möglich).
+- Danach Rückgabe; Lernende können eine **Korrekturkarte** zu den eigenen Fehlern anlegen.
 
 ## Beispiele aus dem Unterricht
 
@@ -75,12 +75,12 @@ Der Korrekturaufwand sinkt drastisch. Gleichzeitig steigt die Tiefe: ein verbrei
 - **Arbeiten vor dem Plenum zurückgeben.** Damit ist der wichtigste Hebel weg.
 - **Zu viele Reteach-Themen aufnehmen.** Mehr als drei sprengt die Stunde, einzelne Themen werden oberflächlich.
 - **Modell ohne Folgeaufgabe.** Ohne Folgeaufgabe weiß niemand, ob das Reteach gegriffen hat.
-- **Den Lernenden, die richtig hatten, nichts anbieten.** Eine Stretch-Aufgabe oder eine Hilfestellung für andere („Helfen ist die schwerste Aufgabe im Klassenraum") gibt dieser Gruppe etwas Wertvolles.
+- **Den Lernenden, die richtig hatten, nichts anbieten.** Stretch-Aufgabe oder gezielte Unterstützung für andere (Helfen ist anspruchsvoll) gibt dieser Gruppe einen sinnvollen Anschluss.
 
 ## Was kann in der Praxis schiefgehen?
 
 - Wer sich beim Sichten irrt, redet über die falschen Themen. Deshalb erst sichten, dann sortieren — niemals direkt mit der ersten Arbeit beginnen.
-- Wenn die Klasse das Verfahren nicht kennt, melden sich Erstklagende („mein Ergebnis ist falsch korrigiert"). Nach der Plenumsphase ankündigen: „Eventuelle Einzelfälle besprechen wir nach dem Modell, jetzt erst die gemeinsamen Punkte."
+- Wenn die Klasse das Verfahren nicht kennt, melden sich schnell Einzelfälle (z. B. vermeintlich falsch korrigiert). Vorab oder nach dem Plenum klar machen: zuerst die gemeinsamen Muster, Einzelfälle danach gezielt.
 
 ## Querverweise
 
