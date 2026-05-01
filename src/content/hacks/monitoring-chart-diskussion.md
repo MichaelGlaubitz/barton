@@ -1,6 +1,6 @@
 ---
 title: Monitoring-Chart — wer arbeitet mit welcher Idee?
-summary: Eine einfache Tabelle während der Erarbeitung zeigt, welche Strategie wo vorkommt — die beste Unterlage für Auswahl und Reihenfolge im Plenum.
+summary: Eine kleine Matrix während der Erarbeitung zeigt, welche Strategie wo auftaucht — die beste Grundlage für Auswahl und Reihenfolge im Plenum.
 tags:
   - Plenum
   - Planung
@@ -20,7 +20,7 @@ quiz:
       - "Die zuvor antizipierten Strategien als eine Achse, die Gruppen oder Lernenden als andere — Häkchen oder kurzer Code beim Rundgang."
       - "Aufgabenstellung und Lösungszeit, um Effizienzunterschiede sichtbar zu machen."
     correctIndex: 1
-    explanation: 'Reine „Fertig"-Häkchen und Tempo sagen nichts über mathematische Substanz — sie reproduzieren nur das, was du beim Einsammeln ohnehin merkst. Erst die Kreuztabelle Strategie × Person/Gruppe macht das Chart zur Landkarte.'
+    explanation: "Reine Fertig-Häkchen und Tempo-Messungen sagen wenig über mathematische Substanz — das siehst du beim Einsammeln ohnehin. Erst die Kreuztabelle Strategie × Person oder Gruppe macht das Chart zur Landkarte."
   - question: "Du hast drei Wege antizipiert, in der Klasse taucht spontan ein vierter auf. Wie gehst du damit um?"
     options:
       - "Den vierten ignorieren — er steht nicht im Chart und stört die geplante Diskussion."
@@ -33,36 +33,38 @@ quiz:
 
 ## Kernaussage
 
-**Schriftliche Übersicht** während des Rundgangs macht aus Beobachtung **Entscheidungsmaterial** fürs Plenum.
+**Schriftliche Übersicht** beim Rundgang macht aus Beobachtung **Entscheidungsmaterial** fürs Plenum.
 
 ## Was ist das?
 
-Ein **Monitoring-Chart** ist eine kleine, übersichtliche Matrix, die du **vor** der Stunde anlegst: In den **Spalten** stehen die **Strategien oder Darstellungen**, die du erwartest (algebraisch, zeichnerisch, Zahlbeispiel, typischer Fehler …) — in den **Zeilen** die Gruppen oder Lernenden. Während des Rundgangs durch die Erarbeitungsphase trägst du nur **ein Häkchen oder Kürzel** ein, wo etwas auftaucht. So entsteht in wenigen Minuten eine **Landkarte** der Klasse: Wer hat welchen Weg, wo sind Stolperstellen, wer hat etwas, das ins Plenum gehört? Im Plenum brauchst du dann nicht mehr suchen — du **wählst aus** und entscheidest die **Reihenfolge**.
+Ein **Monitoring-Chart** ist eine kleine Matrix, die du **vor** der Stunde anlegst: In den **Spalten** stehen die **Strategien oder Darstellungen**, die du erwartest (algebraisch, zeichnerisch, Zahlbeispiel, typischer Fehler …) — in den **Zeilen** die Gruppen oder Lernenden. Während des Rundgangs durch die Erarbeitungsphase trägst du nur **ein Häkchen oder ein Kürzel** ein, wo etwas auftaucht. So entsteht in wenigen Minuten eine **Landkarte**: Wer hat welchen Weg, wo sind Stolperstellen, wer bringt etwas ins Plenum ein? Im Plenum musst du nicht mehr aus dem Gedächtnis rekonstruieren — du **wählst aus** und legst die **Reihenfolge** fest.
 
 ## Warum ist das gut?
 
-Du vergisst unter Zeitdruck nicht, **wo** welche Idee lag; du siehst auf einen Blick, ob **Vielfalt** entsteht oder ob alle denselben Weg fahren. Das unterstützt **faire** und **zielorientierte** Auswahl, wer ins Plenum geht.
+Unter Zeitdruck vergisst du nicht, **wo** welche Idee lag. Du siehst auf einen Blick, ob **Vielfalt** entsteht oder ob alle denselben Weg fahren. Das unterstützt eine **faire** und **zielorientierte** Auswahl, wer ins Plenum kommt und was zuerst dran ist.
 
 ## Wie geht das im Unterricht?
 
-- **So gehst du vor:** Vor der Stunde Chart skizzieren (Papier, Whiteboard, digitale Tabelle). Beim Rundgang **nicht lange reden** — nur **ankreuzen** oder Codes setzen.
-- **Achte dabei auf:** Datenschutz und wertschätzende Nutzung — es geht um **Mathematik sichtbar machen**, nicht um Ranking.
+- **So gehst du vor:** Vor der Stunde Chart skizzieren (Papier, Whiteboard, digitale Tabelle). Beim Rundgang **kurz bleiben** — nur **ankreuzen** oder Codes setzen; längere Gespräche führen später gezielt nach der Matrix.
+- **Achte dabei auf:** Datenschutz und wertschätzende Nutzung — es geht um **Mathematik sichtbar machen**, nicht um Ranking oder Schnelligkeitsvergleiche.
 - **Prüfe am Ende:** Hat das Chart deine Entscheidung für **Reihenfolge** und **Fokus** im Plenum erleichtert?
 
 ## Beispiele aus dem Unterricht
 
-1. **Drei erwartete Wege** (algebraisch, zeichnerisch, Zahlbeispiel) × **6 Gruppen** — beim Rundgang abhaken.
-2. **Eine Spalte „Fragen / Unklar“** für Gruppen, die stecken — später entscheiden, ob ins Plenum oder kurz in der Gruppe geklärt.
-3. **Digitales Pad** mit denselben Spalten — du projizierst es nicht zwingend, nutzt es aber als Leitplanke.
+1. **Drei erwartete Wege** (algebraisch, zeichnerisch, Zahlbeispiel) × **sechs Gruppen** — beim Rundgang abhaken; nach der Phase siehst du sofort, ob zwei Gruppen denselben Fehlerweg teilen und sich das im Plenum lohnt.
+2. **Eine Spalte „Fragen / Unklar“** für Gruppen, die stecken — später entscheiden: kurz in der Gruppe klären oder als gemeinsame Stolperstelle ins Plenum.
+3. **Digitales Pad** mit denselben Spalten — du musst es nicht projizieren; es dient dir als Leitplanke beim Gehen und beim späteren Kurznotieren.
 
 ## Was kann eine Lehrkraft dabei falsch machen?
 
-- Chart **zu fein** — dann pflegst du es statt die Klasse zu sehen.
-- Chart nur **dekorativ** ausfüllen, ohne es für die **Diskussionsplanung** zu nutzen.
+- Das Chart **zu fein** gestalten — dann pflegst du die Tabelle statt die Klasse zu sehen.
+- Das Chart **dekorativ** ausfüllen und beim Plenum **nicht** danach auswählen — dann war der Aufwand umsonst.
+- **Nur Fertig-Häkchen** oder Zeiten eintragen — das sagt wenig darüber, **welche mathematische Idee** wo steckt.
 
 ## Was kann in der Praxis schiefgehen?
 
-- Zu wenig Zeit für **Rundgänge** — dann bleibt die Matrix leer.
+- Zu wenig Zeit für **Rundgänge** — dann bleibt die Matrix leer oder veraltet.
+- Spontane, produktive Wege **nicht** ergänzen — die Antizipation soll helfen, nicht die Realität ausblenden.
 
 ## Querverweise
 
