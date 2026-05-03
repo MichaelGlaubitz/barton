@@ -1824,6 +1824,7 @@ hr {
 .gebote--thesen > ol,
 .gebote--gebote > header,
 .gebote--gebote > figure,
+.gebote--gebote > .gebote-video,
 .gebote--gebote > p,
 .gebote--gebote > ol {
 	position: relative;
@@ -1853,6 +1854,43 @@ hr {
 	box-shadow:
 		0 2px 8px rgba(20, 35, 55, 0.07),
 		0 14px 36px rgba(20, 35, 55, 0.06);
+}
+
+.gebote--gebote .gebote-video {
+	margin: -0.35rem auto 1.85rem;
+	max-width: min(100%, 52rem);
+	padding: clamp(0.75rem, 2vw, 1rem);
+	border-radius: var(--radius);
+	overflow: hidden;
+	border: 1px solid color-mix(in srgb, var(--accent) 22%, var(--surface2));
+	box-shadow:
+		0 4px 20px rgba(0, 0, 0, 0.35),
+		inset 0 1px 0 rgba(255, 255, 255, 0.05);
+	background: color-mix(in srgb, var(--surface) 75%, transparent);
+}
+
+:root[data-theme='light'] .gebote--gebote .gebote-video {
+	border-color: color-mix(in srgb, var(--accent) 28%, var(--surface2));
+	box-shadow:
+		0 2px 8px rgba(20, 35, 55, 0.07),
+		0 14px 36px rgba(20, 35, 55, 0.06);
+	background: color-mix(in srgb, #ffffff 88%, var(--accent));
+}
+
+.gebote--gebote .gebote-video__intro {
+	margin: 0 0 0.75rem;
+	font-size: 0.95rem;
+	line-height: 1.45;
+	color: var(--muted);
+}
+
+.gebote--gebote .gebote-video__el {
+	display: block;
+	width: 100%;
+	height: auto;
+	vertical-align: middle;
+	border-radius: calc(var(--radius) - 4px);
+	background: #000;
 }
 
 .gebote--thesen .thesen-hero__img,

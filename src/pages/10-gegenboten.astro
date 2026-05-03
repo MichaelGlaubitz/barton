@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 const base = import.meta.env.BASE_URL;
 const geboteHeroSrc = `${base}images/gebote-steinplatten.png`;
+const gegenbotenVideoSrc = `${base}videos/10-gegenboten.mp4`;
 ---
 
 <BaseLayout
@@ -34,6 +35,21 @@ const geboteHeroSrc = `${base}images/gebote-steinplatten.png`;
 				Die 10 Gegenboten — in zweiter, rein satirischer Lesart.
 			</figcaption>
 		</figure>
+
+		<div class="gebote-video">
+			<p class="gebote-video__intro">
+				<strong>Video.</strong> Die zehn Gegenboten in Kurzform — Ton einschalten.
+			</p>
+			<video
+				class="gebote-video__el"
+				controls
+				preload="metadata"
+				playsinline
+				title="Video: Die zehn Gegenboten für kompetenzorientierten Unterricht"
+			>
+				<source src={gegenbotenVideoSrc} type="video/mp4" />
+			</video>
+		</div>
 
 		<p class="gebote__vorrede">
 			Die 10 Gegenboten des kompetenzorientierten Unterrichts
