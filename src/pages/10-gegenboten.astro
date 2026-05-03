@@ -6,6 +6,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 const base = import.meta.env.BASE_URL;
 const gegenbotenVideoSrc = `${base}videos/10-gegenboten.mp4`;
+/** Aus Quelle „Kompetenzorientierung (1).mp4“ + SRT per ffmpeg eingebrannt. */
+const kompetenzVideoSrc = `${base}videos/kompetenzorientierung-mit-untertitel.mp4`;
 
 /** Ein Satz pro Gegenbot (wie im Fließtext), Reihenfolge 1–10. */
 const gegenbotenVideoLines: string[] = [
@@ -234,6 +236,24 @@ if (srtPath) {
 				Es ist wichtiger, dass die Gruppe harmonisch über das Problem diskutiert hat, als dass das Problem gelöst wurde. Ein falsches Ergebnis in einem perfekten Team-Plakat ist einer korrekten Einzelarbeit jederzeit vorzuziehen. Gemeinsam irren ist besser als einsam wissen.
 			</li>
 		</ol>
+
+		<div class="gebote-video gebote-video--nach-liste">
+			<p class="gebote-video__intro">
+				<strong>Video.</strong> Kompetenzorientierung — die Untertitel sind ins Bild eingebrannt (kein separates
+				Track-File im Browser nötig).
+			</p>
+			<div class="gebote-video__stage">
+				<video
+					class="gebote-video__el"
+					controls
+					preload="metadata"
+					playsinline
+					title="Kompetenzorientierung (mit eingebrannten Untertiteln)"
+				>
+					<source src={kompetenzVideoSrc} type="video/mp4" />
+				</video>
+			</div>
+		</div>
 
 		<p class="gebote__schluss">
 			<em>Hinweis.</em> Dieser Text ist durchgehend satirisch gemeint — als spitzer Gegenpol zu den ernst gemeinten

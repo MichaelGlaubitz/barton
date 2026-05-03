@@ -1913,6 +1913,10 @@ hr {
 	background: #000;
 }
 
+.gebote--gebote .gebote-video--nach-liste {
+	margin-top: 2.25rem;
+}
+
 .gebote--gebote .gebote-video__overlay {
 	pointer-events: none;
 	position: absolute;
