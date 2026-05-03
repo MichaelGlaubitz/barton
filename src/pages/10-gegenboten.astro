@@ -1,4 +1,7 @@
 ---
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import BaseLayout from '../layouts/BaseLayout.astro';
 
 const base = import.meta.env.BASE_URL;
@@ -18,11 +21,70 @@ const gegenbotenVideoLines: string[] = [
 	'Du sollst das Fachliche der Sozialkompetenz opfern.',
 ];
 
-/**
- * Optional: zehn Startzeiten in Sekunden (Beginn Gegenbot 1 … 10).
- * Leeres Array = gleichmäßig über die Videodauer (Platzhalter bis du echte Zeiten einträgst).
- */
-const gegenbotenVideoCueStartsSec: number[] = [];
+function parseSrtTimestamp(t: string): number {
+	const m = t.trim().match(/^(\d{2}):(\d{2}):(\d{2}),(\d{3})$/);
+	if (!m) return NaN;
+	return (
+		Number(m[1]) * 3600 +
+		Number(m[2]) * 60 +
+		Number(m[3]) +
+		Number(m[4]) / 1000
+	);
+}
+
+const gebotsOrdinal = [
+	'erste',
+	'zweite',
+	'dritte',
+	'vierte',
+	'fünfte',
+	'sechste',
+	'siebente',
+	'achte',
+	'neunte',
+	'zehnte',
+] as const;
+
+function parseGebotStartSecFromSrt(srt: string): number[] {
+	const gebotsRe = new RegExp(
+		`Das (${gebotsOrdinal.join('|')}) Gebot:`,
+		'im',
+	);
+	const blocks = srt.trim().split(/\n\n+/);
+	const hits: { ord: (typeof gebotsOrdinal)[number]; start: number }[] = [];
+	for (const block of blocks) {
+		const lines = block.split(/\n/).map((line) => line.replace(/\r$/, ''));
+		if (lines.length < 3) continue;
+		const timeLine = lines[1];
+		if (!timeLine?.includes('-->')) continue;
+		const text = lines.slice(2).join('\n');
+		const m = text.match(gebotsRe);
+		if (!m?.[1]) continue;
+		const ord = m[1].toLowerCase() as (typeof gebotsOrdinal)[number];
+		if (!gebotsOrdinal.includes(ord)) continue;
+		const startStr = timeLine.split('-->')[0].trim();
+		const start = parseSrtTimestamp(startStr);
+		if (!Number.isFinite(start)) continue;
+		hits.push({ ord, start });
+	}
+	hits.sort(
+		(a, b) => gebotsOrdinal.indexOf(a.ord) - gebotsOrdinal.indexOf(b.ord),
+	);
+	return hits.map((h) => h.start);
+}
+
+const srtRel = path.join('public', 'videos', '10_Gegengebote_caption.srt');
+const srtCandidates = [
+	path.join(process.cwd(), srtRel),
+	path.join(process.cwd(), 'barton', srtRel),
+	path.join(path.dirname(fileURLToPath(import.meta.url)), '..', '..', srtRel),
+];
+const srtPath = srtCandidates.find((p) => fs.existsSync(p));
+let gegenbotenVideoCueStartsSec: number[] = [];
+if (srtPath) {
+	const parsed = parseGebotStartSecFromSrt(fs.readFileSync(srtPath, 'utf8'));
+	if (parsed.length === 10) gegenbotenVideoCueStartsSec = parsed;
+}
 ---
 
 <BaseLayout
@@ -90,6 +152,7 @@ const gegenbotenVideoCueStartsSec: number[] = [];
 				function indexAt(t, duration, starts) {
 					if (!Number.isFinite(duration) || duration <= 0) return 0;
 					const clamped = Math.min(Math.max(t, 0), duration - 1e-6);
+					if (clamped < starts[0]) return 0;
 					for (let i = 0; i < n; i++) {
 						const end = i < n - 1 ? starts[i + 1] : duration + 1;
 						if (clamped >= starts[i] && clamped < end) return i;
