@@ -2,14 +2,32 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 
 const base = import.meta.env.BASE_URL;
-const geboteHeroSrc = `${base}images/gebote-steinplatten.png`;
 const gegenbotenVideoSrc = `${base}videos/10-gegenboten.mp4`;
+
+/** Ein Satz pro Gegenbot (wie im Fließtext), Reihenfolge 1–10. */
+const gegenbotenVideoLines: string[] = [
+	'Du sollst keine Inhalte haben neben der Kompetenz.',
+	'Du sollst den Namen des Lehrers nicht missbrauchen.',
+	'Du sollst den Methodentag heiligen.',
+	'Ehre den Operator und die Anforderungsbereiche.',
+	'Du sollst nicht dozieren.',
+	'Du sollst die Lebenswelt künstlich aufblähen.',
+	'Du sollst die Differenzierung bis zur Selbstaufgabe treiben.',
+	'Du sollst nicht korrigieren, sondern Feedback geben.',
+	'Du sollst den Output über den Verstand stellen.',
+	'Du sollst das Fachliche der Sozialkompetenz opfern.',
+];
+
+/**
+ * Optional: zehn Startzeiten in Sekunden (Beginn Gegenbot 1 … 10).
+ * Leeres Array = gleichmäßig über die Videodauer (Platzhalter bis du echte Zeiten einträgst).
+ */
+const gegenbotenVideoCueStartsSec: number[] = [];
 ---
 
 <BaseLayout
 	title="Die 10 Gegenboten für kompetenzorientierten Unterricht (Satire) — Mathechismus.de"
 	description="Satirische 10 Gegenboten — Gegenentwurf zu den 10 Geboten für guten Unterricht, Polemik gegen überzogene Kompetenzorientierung."
-	ogImage={geboteHeroSrc}
 >
 	<article class="gebote gebote--gebote">
 		<header class="gebote__head">
@@ -20,36 +38,92 @@ const gegenbotenVideoSrc = `${base}videos/10-gegenboten.mp4`;
 			</p>
 		</header>
 
-		<figure class="gebote-hero">
-			<img
-				src={geboteHeroSrc}
-				width="1024"
-				height="571"
-				sizes="(max-width: 720px) 92vw, min(52rem, 94vw)"
-				loading="eager"
-				decoding="async"
-				class="gebote-hero__img"
-				alt="Stilisierte Darstellung: Figur mit langem Bart und Brille in antik anmutender Gewandung, zwei steinerne Gesetzestafeln mit hebräisch anmutender Schrift haltend, vor bergiger Landschaft und dramatisch beleuchtetem Himmel."
-			/>
-			<figcaption class="gebote-hero__caption">
-				Die 10 Gegenboten — in zweiter, rein satirischer Lesart.
-			</figcaption>
-		</figure>
-
 		<div class="gebote-video">
 			<p class="gebote-video__intro">
 				<strong>Video.</strong> Die zehn Gegenboten in Kurzform — Ton einschalten.
 			</p>
-			<video
-				class="gebote-video__el"
-				controls
-				preload="metadata"
-				playsinline
-				title="Video: Die zehn Gegenboten für kompetenzorientierten Unterricht"
-			>
-				<source src={gegenbotenVideoSrc} type="video/mp4" />
-			</video>
+			<p class="gebote-video__beschriftung">Die Hohepriesterin der Kompetenzorientierung</p>
+			<div class="gebote-video__stage" data-gegenboten-player>
+				<video
+					class="gebote-video__el"
+					controls
+					preload="metadata"
+					playsinline
+					title="Die Hohepriesterin der Kompetenzorientierung — Die zehn Gegenboten für kompetenzorientierten Unterricht"
+				>
+					<source src={gegenbotenVideoSrc} type="video/mp4" />
+				</video>
+				<div class="gebote-video__overlay" aria-hidden="true">
+					<p class="gebote-video__overlay-line"></p>
+					<p class="gebote-video__overlay-meta"><span class="gebote-video__overlay-num"></span></p>
+				</div>
+				<p class="gebote-video__sr" aria-live="polite"></p>
+			</div>
 		</div>
+
+		<script
+			define:vars={{
+				gegenbotenVideoLines,
+				gegenbotenVideoCueStartsSec,
+			}}
+		>
+			(function () {
+				const root = document.querySelector('[data-gegenboten-player]');
+				if (!root) return;
+				const video = root.querySelector('video');
+				const lineEl = root.querySelector('.gebote-video__overlay-line');
+				const numEl = root.querySelector('.gebote-video__overlay-num');
+				const srEl = root.querySelector('.gebote-video__sr');
+				if (!video || !lineEl || !numEl || !srEl) return;
+
+				const n = gegenbotenVideoLines.length;
+				function startsForDuration(duration) {
+					if (
+						Array.isArray(gegenbotenVideoCueStartsSec) &&
+						gegenbotenVideoCueStartsSec.length === n
+					) {
+						return gegenbotenVideoCueStartsSec.slice();
+					}
+					return Array.from({ length: n }, (_, i) => (i / n) * duration);
+				}
+
+				function indexAt(t, duration, starts) {
+					if (!Number.isFinite(duration) || duration <= 0) return 0;
+					const clamped = Math.min(Math.max(t, 0), duration - 1e-6);
+					for (let i = 0; i < n; i++) {
+						const end = i < n - 1 ? starts[i + 1] : duration + 1;
+						if (clamped >= starts[i] && clamped < end) return i;
+					}
+					return n - 1;
+				}
+
+				let lastIdx = -1;
+				function render(idx) {
+					if (idx === lastIdx) return;
+					lastIdx = idx;
+					const text = gegenbotenVideoLines[idx] ?? '';
+					lineEl.textContent = text;
+					numEl.textContent = `Gegenbot ${idx + 1} von ${n}`;
+					srEl.textContent = text ? `${text} (${idx + 1} von ${n})` : '';
+				}
+
+				function tick() {
+					const d = video.duration;
+					if (!Number.isFinite(d) || d <= 0) {
+						render(0);
+						return;
+					}
+					const starts = startsForDuration(d);
+					render(indexAt(video.currentTime, d, starts));
+				}
+
+				video.addEventListener('loadedmetadata', tick);
+				video.addEventListener('timeupdate', tick);
+				video.addEventListener('seeked', tick);
+				video.addEventListener('play', tick);
+				tick();
+			})();
+		</script>
 
 		<p class="gebote__vorrede">
 			Die 10 Gegenboten des kompetenzorientierten Unterrichts
