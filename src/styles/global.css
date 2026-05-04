@@ -1921,6 +1921,7 @@ hr {
 
 .gebote--gebote .gebote-video--nach-liste .gebote-video__stage {
 	max-width: 22rem;
+	margin-inline: auto;
 }
 
 .gebote--gebote .gebote-video--nach-liste .gebote-video__intro {
