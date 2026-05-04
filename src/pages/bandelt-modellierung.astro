@@ -1,0 +1,262 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const base = import.meta.env.BASE_URL;
+const pdfHref = `${base}downloads/Bandelt-Modellbildung-versus-Modellisieren-und-Scheinmodellierung.pdf`;
+---
+
+<BaseLayout
+	title="Bandelt: Modellbildung versus Modellisieren — Mathechismus.de"
+	description="Einordnung des Aufsatzes von Hans-Jürgen Bandelt über mathematische Modellbildung, Scheinmodellierung und die Verwechslung von Metapher und Modell im Mathematikunterricht."
+>
+	<article class="gebote gebote--bandelt">
+		<header class="gebote__head">
+			<p class="gebote__kicker">Lesetipp · Grundsatzfrage</p>
+			<h1>Modellbildung versus Modellisieren und Scheinmodellierung</h1>
+			<p class="gebote__sub">
+				Hans-Jürgen Bandelt wirft einen unbequemen Blick auf das, was im Mathematikunterricht als „Modellierung" verkauft wird — und was davon übrig bleibt, wenn man genauer hinschaut.
+			</p>
+		</header>
+
+		<section class="bandelt-intro">
+			<div class="bandelt-intro__text">
+				<h2>Worum es geht</h2>
+				<p>
+					Der Hamburger Mathematikprofessor Hans-Jürgen Bandelt unterscheidet in diesem Aufsatz
+					(GDM-Mitteilungen 99, 2015) scharf zwischen drei Dingen, die im schulischen und universitären
+					Alltag gerne durcheinandergeworfen werden:
+				</p>
+				<dl class="bandelt-begriffe">
+					<dt>Modellbildung</dt>
+					<dd>Die echte mathematische Arbeit an einem realen Problem — von Archimedes über Euler bis heute.</dd>
+					<dt>Modellisieren</dt>
+					<dd>Bandelts Kunstbegriff für das, was passiert, wenn Didaktik und Modellierung verschmelzen:
+						Man nimmt ein bekanntes mathematisches Problem, kleidet es in eine Alltagsmetapher ein
+						und deklariert das Ergebnis als „realitätsbezogene Modellierung".</dd>
+					<dt>Scheinmodellierung</dt>
+					<dd>Die schulische Endform: Abituraufgaben, bei denen das „Modellieren" darin besteht,
+						eine karnevaleske Verkleidung zu entfernen, um zur eigentlichen Rechenaufgabe zu gelangen.</dd>
+				</dl>
+			</div>
+			<aside class="bandelt-intro__aside">
+				<div class="bandelt-intro__portrait">
+					<div class="bandelt-intro__placeholder" aria-hidden="true">HJB</div>
+				</div>
+				<p class="bandelt-intro__caption">
+					<strong>Hans-Jürgen Bandelt</strong> (*1951), Professor für Kombinatorik und kombinatorische
+					Optimierung an der Universität Hamburg. Promotion 1976 in Verbandstheorie, international
+					bekannt für Arbeiten in diskreter Mathematik und Populationsgenetik (h-Index 67).
+				</p>
+			</aside>
+		</section>
+
+		<section class="bandelt-einordnung">
+			<h2>Warum dieser Text heute wichtiger ist denn je</h2>
+			<p>
+				Bandelts Kritik trifft ins Zentrum einer Debatte, die seit den 2000er-Jahren die Mathematikdidaktik
+				im deutschsprachigen Raum prägt: die Frage, ob „Kompetenzorientierung" und der allgegenwärtige
+				<em>Modellierungskreislauf</em> tatsächlich zu besserem Mathematikverständnis führen — oder ob sie
+				stattdessen die fachlichen Inhalte systematisch aushöhlen.
+			</p>
+			<p>
+				Bandelt zeigt an konkreten Beispielen — vom Chinesischen Briefträgerproblem über Südtiroler
+				Rettungshubschrauber bis zum Apfelkauf — wie das Postulat der „Realitätsnähe" paradoxerweise
+				von der Realität wegführt. Wenn die Müllabfuhr als ungerichteter Graph modelliert wird, obwohl
+				das Müllauto Einbahnstraßen beachten muss, dann wird aus einem NP-schweren Problem ein
+				NP-leichtes gemacht — nicht durch mathematische Einsicht, sondern durch Weglassen der
+				Wirklichkeit.
+			</p>
+			<p>
+				Sein Kernargument: Wer Mathematik auf ein inhaltsleeres „Modellierungsschema" reduziert,
+				erzeugt die Illusion mathematischer Tätigkeit, ohne dass dabei Mathematik stattfindet. Es fehlen
+				die Beweise. Es fehlt die Theorie. Es fehlt das Verstehen. Übrig bleibt ein „Modellierungskreislauf",
+				der sich selbstreferentiell um sich selbst dreht.
+			</p>
+
+			<h2>Was das für den Unterricht bedeutet</h2>
+			<p>
+				Bandelt plädiert nicht gegen Anwendungsaufgaben — er plädiert dafür, sie <em>ernst zu nehmen</em>.
+				Mit Thomas Jahnke: „Anwendungsaufgaben sollten die Sache ernst nehmen, die Mathematik ernst
+				nehmen und die Schüler ernst nehmen."
+			</p>
+			<p>
+				Für die Praxis heißt das: Lieber eine echte Sachaufgabe gründlich durcharbeiten — mit Theorie,
+				Beweis und Methodenkenntnis — als zehn pseudorealistische „Modellierungsaufgaben", bei denen
+				das Entkostümieren schon die halbe Arbeit ist. Der Mathechismus teilt diese Überzeugung.
+			</p>
+		</section>
+
+		<section class="bandelt-download">
+			<a class="bandelt-download__link" href={pdfHref} download>
+				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+					<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+					<polyline points="7 10 12 15 17 10"/>
+					<line x1="12" y1="15" x2="12" y2="3"/>
+				</svg>
+				<span>
+					<strong>PDF herunterladen</strong>
+					<small>Bandelt, H.-J. (2015): Modellbildung versus Modellisieren und Scheinmodellierung. GDM-Mitteilungen 99, S. 6–18.</small>
+				</span>
+			</a>
+		</section>
+
+		<p class="gebote__back">
+			<a href={`${base}10-gegenboten/`}>← Die 10 Gegenboten</a>
+			<span aria-hidden="true"> · </span>
+			<a href={`${base}gebote/`}>Die 10 Gebote</a>
+			<span aria-hidden="true"> · </span>
+			<a href={base}>Zum Hack-Katalog</a>
+		</p>
+	</article>
+</BaseLayout>
+
+<style>
+	.gebote--bandelt {
+		max-width: min(100%, 52rem);
+		margin-inline: auto;
+	}
+
+	.bandelt-intro {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 2rem;
+		margin: 1.5rem 0 2.5rem;
+	}
+
+	@media (min-width: 640px) {
+		.bandelt-intro {
+			grid-template-columns: 1fr 16rem;
+		}
+	}
+
+	.bandelt-intro__text h2 {
+		margin-top: 0;
+		font-family: var(--font-display);
+		font-size: clamp(1.1rem, 0.9rem + 1vw, 1.35rem);
+		color: var(--text);
+	}
+
+	.bandelt-intro__text p {
+		line-height: 1.65;
+		color: var(--text);
+	}
+
+	.bandelt-begriffe {
+		margin: 1rem 0;
+		padding: 0;
+	}
+
+	.bandelt-begriffe dt {
+		font-weight: 700;
+		color: var(--accent);
+		margin-top: 0.75rem;
+		font-size: 0.95rem;
+	}
+
+	.bandelt-begriffe dd {
+		margin-left: 0;
+		padding-left: 1rem;
+		border-left: 2px solid color-mix(in srgb, var(--accent) 30%, transparent);
+		color: var(--muted);
+		font-size: 0.9rem;
+		line-height: 1.55;
+	}
+
+	.bandelt-intro__aside {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 0.75rem;
+	}
+
+	.bandelt-intro__portrait {
+		width: 10rem;
+		height: 10rem;
+		border-radius: 50%;
+		overflow: hidden;
+		border: 2px solid color-mix(in srgb, var(--accent) 35%, var(--surface2));
+		background: var(--surface2);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.bandelt-intro__placeholder {
+		font-family: var(--font-display);
+		font-size: 2.2rem;
+		font-weight: 700;
+		color: color-mix(in srgb, var(--accent) 60%, var(--muted));
+		letter-spacing: 0.05em;
+		user-select: none;
+	}
+
+	.bandelt-intro__caption {
+		font-size: 0.82rem;
+		line-height: 1.5;
+		color: var(--muted);
+		text-align: center;
+		margin: 0;
+	}
+
+	.bandelt-einordnung {
+		margin: 2rem 0;
+	}
+
+	.bandelt-einordnung h2 {
+		font-family: var(--font-display);
+		font-size: clamp(1.1rem, 0.9rem + 1vw, 1.35rem);
+		color: var(--text);
+		margin: 2rem 0 0.75rem;
+	}
+
+	.bandelt-einordnung p {
+		line-height: 1.7;
+		color: var(--text);
+		margin: 0 0 1rem;
+	}
+
+	.bandelt-einordnung em {
+		font-style: italic;
+		color: var(--accent);
+	}
+
+	.bandelt-download {
+		margin: 2.5rem 0;
+	}
+
+	.bandelt-download__link {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		padding: 1rem 1.25rem;
+		border-radius: var(--radius, 14px);
+		border: 1px solid color-mix(in srgb, var(--accent) 30%, var(--surface2));
+		background: color-mix(in srgb, var(--surface) 80%, transparent);
+		color: var(--text);
+		text-decoration: none;
+		transition: border-color 0.2s, background 0.2s;
+	}
+
+	.bandelt-download__link:hover {
+		border-color: var(--accent);
+		background: color-mix(in srgb, var(--accent) 8%, var(--surface));
+	}
+
+	.bandelt-download__link svg {
+		flex-shrink: 0;
+		color: var(--accent);
+	}
+
+	.bandelt-download__link strong {
+		display: block;
+		font-size: 0.95rem;
+		margin-bottom: 0.15rem;
+	}
+
+	.bandelt-download__link small {
+		display: block;
+		font-size: 0.78rem;
+		color: var(--muted);
+		line-height: 1.4;
+	}
+</style>
