@@ -1913,6 +1913,56 @@ hr {
 	background: #000;
 }
 
+.gebote--gebote .gebote__collapse {
+	position: relative;
+}
+
+.gebote--gebote .gebote__collapse-inner {
+	max-height: 12rem;
+	overflow: hidden;
+	position: relative;
+	transition: max-height 0.4s ease;
+}
+
+.gebote--gebote .gebote__collapse-inner::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 6rem;
+	background: linear-gradient(to bottom, transparent, var(--bg));
+	pointer-events: none;
+	transition: opacity 0.4s ease;
+}
+
+.gebote--gebote .gebote__collapse.is-open .gebote__collapse-inner {
+	max-height: none;
+}
+
+.gebote--gebote .gebote__collapse.is-open .gebote__collapse-inner::after {
+	opacity: 0;
+}
+
+.gebote--gebote .gebote__collapse-toggle {
+	display: block;
+	margin: 0.75rem auto 0;
+	padding: 0.4rem 1.5rem;
+	font: inherit;
+	font-size: 0.9rem;
+	color: var(--accent);
+	background: transparent;
+	border: 1px solid var(--accent);
+	border-radius: 6px;
+	cursor: pointer;
+	transition: background 0.2s, color 0.2s;
+}
+
+.gebote--gebote .gebote__collapse-toggle:hover {
+	background: var(--accent);
+	color: #fff;
+}
+
 .gebote--gebote .gebote-video--nach-liste {
 	margin-top: 2.25rem;
 	margin-left: auto;
