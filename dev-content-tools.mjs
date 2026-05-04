@@ -9,6 +9,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { loadEnv } from 'vite';
 
 const API_MARKER = '/__admin-api';
 const EDITOR_LAST = '__admin-editor';
@@ -56,8 +57,8 @@ export function devContentToolsPlugin(projectRoot) {
 					const i = urlPath.indexOf(API_MARKER);
 					if (i === -1) return next();
 
-					const env = server.config?.env ?? {};
-					const token = String(env.ADMIN_EDIT_TOKEN ?? process.env.ADMIN_EDIT_TOKEN ?? '').trim();
+				const allEnv = loadEnv('development', projectRoot, '');
+				const token = String(allEnv.ADMIN_EDIT_TOKEN ?? process.env.ADMIN_EDIT_TOKEN ?? '').trim();
 
 					const subPath = urlPath.slice(i + API_MARKER.length) || '/';
 					const segments = subPath.split('/').filter(Boolean);

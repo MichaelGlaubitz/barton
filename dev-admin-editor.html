@@ -271,38 +271,55 @@
 					}
 				}
 
-				kindEl.addEventListener('change', () => {
-					loadList().catch((e) => setStatus(String(e.message || e), 'err'));
-				});
-				fileSelect.addEventListener('change', () => {
-					loadFile().catch((e) => setStatus(String(e.message || e), 'err'));
-				});
-				reloadBtn.addEventListener('click', () => {
-					loadFile().catch((e) => setStatus(String(e.message || e), 'err'));
-				});
-				saveBtn.addEventListener('click', saveFile);
+			let listLoaded = false;
 
-				document.addEventListener('keydown', (e) => {
-					if ((e.ctrlKey || e.metaKey) && e.key === 's') {
-						e.preventDefault();
-						saveFile();
-					}
-				});
+			function tryLoadList() {
+				if (!tokenEl.value.trim()) {
+					setStatus('Bitte zuerst Token eingeben.', 'err');
+					return;
+				}
+				listLoaded = false;
+				loadList()
+					.then(() => { listLoaded = true; })
+					.catch((e) => setStatus(String(e.message || e), 'err'));
+			}
 
-				themeBtn.addEventListener('click', () => {
-					const cur = document.documentElement.getAttribute('data-theme');
-					const next = cur === 'light' ? 'dark' : 'light';
-					document.documentElement.setAttribute('data-theme', next);
-					try {
-						localStorage.setItem('theme', next);
-					} catch (_) {}
-				});
+			tokenEl.addEventListener('change', tryLoadList);
+			tokenEl.addEventListener('keydown', (e) => {
+				if (e.key === 'Enter') tryLoadList();
+			});
+
+			kindEl.addEventListener('change', tryLoadList);
+			fileSelect.addEventListener('change', () => {
+				loadFile().catch((e) => setStatus(String(e.message || e), 'err'));
+			});
+			reloadBtn.addEventListener('click', () => {
+				if (!listLoaded) { tryLoadList(); return; }
+				loadFile().catch((e) => setStatus(String(e.message || e), 'err'));
+			});
+			saveBtn.addEventListener('click', saveFile);
+
+			document.addEventListener('keydown', (e) => {
+				if ((e.ctrlKey || e.metaKey) && e.key === 's') {
+					e.preventDefault();
+					saveFile();
+				}
+			});
+
+			themeBtn.addEventListener('click', () => {
+				const cur = document.documentElement.getAttribute('data-theme');
+				const next = cur === 'light' ? 'dark' : 'light';
+				document.documentElement.setAttribute('data-theme', next);
 				try {
-					const stored = localStorage.getItem('theme');
-					if (stored === 'light' || stored === 'dark') document.documentElement.setAttribute('data-theme', stored);
+					localStorage.setItem('theme', next);
 				} catch (_) {}
+			});
+			try {
+				const stored = localStorage.getItem('theme');
+				if (stored === 'light' || stored === 'dark') document.documentElement.setAttribute('data-theme', stored);
+			} catch (_) {}
 
-				loadList().catch((e) => setStatus(String(e.message || e), 'err'));
+			setStatus('Token eingeben und mit Enter bestätigen, um Dateiliste zu laden.');
 			})();
 		</script>
 	</body>
