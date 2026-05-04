@@ -26,6 +26,7 @@ export default defineConfig({
 	trailingSlash: 'always',
 	vite: {
 		plugins: [devContentToolsPlugin(__dirname)],
+		envPrefix: ['PUBLIC_', 'ADMIN_EDIT_'],
 	},
 	markdown: {
 		smartypants: false,

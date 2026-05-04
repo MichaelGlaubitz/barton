@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import HackQuiz from '../../components/HackQuiz.astro';
 import Giscus from '../../components/Giscus.astro';
+import InlineEditButton from '../../components/InlineEditButton.astro';
 import { hackEmoji } from '../../lib/hackCardIcons';
 import { getCollection, render } from 'astro:content';
 
@@ -42,6 +43,8 @@ const base = import.meta.env.BASE_URL;
 		)}
 		<Giscus />
 	</article>
+	<InlineEditButton slug={entry.id} />
+
 	<script>
 		(function () {
 			const article = document.querySelector<HTMLElement>('[data-prose-article]');
