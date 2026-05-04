@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 const base = import.meta.env.BASE_URL;
 const pdfHref = 'https://ojs.didaktik-der-mathematik.de/index.php/mgdm/article/download/236/234';
+const portraitSrc = `${base}images/bandelt-portrait.jpg`;
 ---
 
 <BaseLayout
@@ -40,7 +41,7 @@ const pdfHref = 'https://ojs.didaktik-der-mathematik.de/index.php/mgdm/article/d
 			</div>
 			<aside class="bandelt-intro__aside">
 				<div class="bandelt-intro__portrait">
-					<div class="bandelt-intro__placeholder" aria-hidden="true">HJB</div>
+					<img src={portraitSrc} alt="Hans-Jürgen Bandelt" width="320" height="320" loading="eager" decoding="async" class="bandelt-intro__img" />
 				</div>
 				<p class="bandelt-intro__caption">
 					<strong>Hans-Jürgen Bandelt</strong> (*1951), Professor für Kombinatorik und kombinatorische
@@ -181,13 +182,10 @@ const pdfHref = 'https://ojs.didaktik-der-mathematik.de/index.php/mgdm/article/d
 		justify-content: center;
 	}
 
-	.bandelt-intro__placeholder {
-		font-family: var(--font-display);
-		font-size: 2.2rem;
-		font-weight: 700;
-		color: color-mix(in srgb, var(--accent) 60%, var(--muted));
-		letter-spacing: 0.05em;
-		user-select: none;
+	.bandelt-intro__img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
 	}
 
 	.bandelt-intro__caption {
