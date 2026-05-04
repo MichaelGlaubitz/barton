@@ -190,11 +190,13 @@ if (srtPath) {
 			})();
 		</script>
 
-		<p class="gebote__vorrede">
-			Die 10 Gegenboten des kompetenzorientierten Unterrichts
-		</p>
+		<div class="gebote__collapse" id="geboteCollapse">
+			<div class="gebote__collapse-inner">
+				<p class="gebote__vorrede">
+					Die 10 Gegenboten des kompetenzorientierten Unterrichts
+				</p>
 
-		<ol class="gebote__list">
+				<ol class="gebote__list">
 			<li>
 				<strong>Du sollst keine Inhalte haben neben der Kompetenz.</strong>
 				Wissen ist Ballast und veraltet schneller als die Tinte auf dem Lehrplan. Lehre nicht das „Was“, sondern nur das „Wie“. Es ist völlig unerheblich, ob ein Schüler die Mitternachtsformel kennt, solange er kompetent erklären kann, warum er sich weigert, sie anzuwenden.
@@ -236,6 +238,25 @@ if (srtPath) {
 				Es ist wichtiger, dass die Gruppe harmonisch über das Problem diskutiert hat, als dass das Problem gelöst wurde. Ein falsches Ergebnis in einem perfekten Team-Plakat ist einer korrekten Einzelarbeit jederzeit vorzuziehen. Gemeinsam irren ist besser als einsam wissen.
 			</li>
 		</ol>
+			</div>
+			<button class="gebote__collapse-toggle" id="geboteCollapseBtn" type="button">
+				Weiterlesen
+			</button>
+		</div>
+
+		<script>
+			(function () {
+				const wrap = document.getElementById('geboteCollapse');
+				const btn = document.getElementById('geboteCollapseBtn');
+				if (!wrap || !btn) return;
+				let open = false;
+				btn.addEventListener('click', () => {
+					open = !open;
+					wrap.classList.toggle('is-open', open);
+					btn.textContent = open ? 'Einklappen' : 'Weiterlesen';
+				});
+			})();
+		</script>
 
 		<div class="gebote-video gebote-video--nach-liste">
 			<p class="gebote-video__intro">
