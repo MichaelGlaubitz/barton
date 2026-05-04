@@ -15,6 +15,14 @@ npm run dev
 - **`npm run setup`** legt die Datei **`.env`** an und fragt optional nach GitHub-Nutzernamen, Repo-Name und Giscus-Daten. Du kannst alles mit ENTER überspringen und später in `.env` nachbearbeiten.
 - **`npm run dev`** startet die Vorschau. Im Terminal steht die Adresse (meist **http://localhost:4321/**).
 
+### Schnell-Editor für Texte (nur lokal)
+
+1. In **`.env`** ein starkes **`ADMIN_EDIT_TOKEN`** setzen (mindestens **16 Zeichen**), Dev-Server neu starten.
+2. Im Browser **`{BASE_URL}__admin-editor`** öffnen — z. B. `http://localhost:4321/__admin-editor` oder mit Unterpfad `http://localhost:4321/barton/__admin-editor`.
+3. Token eintragen, Hack (`.md`) oder Seite (`.astro`) wählen, bearbeiten, **Speichern** (oder Strg/Cmd+S).
+
+**Hinweis:** Die API existiert nur bei `npm run dev`, nicht im statischen Build / auf GitHub Pages.
+
 Nur `.env` aus Vorlage kopieren (ohne Fragen): `npm run setup -- --silent`
 
 ## Lokal starten (kurz)

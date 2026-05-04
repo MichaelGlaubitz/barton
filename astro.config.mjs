@@ -1,8 +1,13 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { loadEnv } from 'vite';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
+import { devContentToolsPlugin } from './dev-content-tools.mjs';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 /**
  * GitHub Pages (Projekt-Site): z. B. in .env (nach `npm run setup`)
@@ -19,6 +24,9 @@ export default defineConfig({
 	...(site ? { site } : {}),
 	base: base.endsWith('/') || base === '/' ? base : `${base}/`,
 	trailingSlash: 'always',
+	vite: {
+		plugins: [devContentToolsPlugin(__dirname)],
+	},
 	markdown: {
 		smartypants: false,
 		remarkPlugins: [remarkMath],
