@@ -1,0 +1,360 @@
+---
+interface Props {
+	slug: string;
+}
+const { slug } = Astro.props;
+const base = import.meta.env.BASE_URL;
+---
+
+<div class="inline-edit-fab" data-inline-edit data-slug={slug} data-base={base}>
+	<button type="button" class="inline-edit-fab__btn" data-inline-edit-toggle aria-label="Seite bearbeiten" title="Seite bearbeiten">
+		<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+			<path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/>
+			<path d="m15 5 4 4"/>
+		</svg>
+	</button>
+</div>
+
+<div class="inline-edit-panel" data-inline-edit-panel hidden>
+	<div class="inline-edit-panel__header">
+		<span class="inline-edit-panel__title">Hack bearbeiten</span>
+		<button type="button" class="inline-edit-panel__close" data-inline-edit-close aria-label="Editor schließen">×</button>
+	</div>
+	<div class="inline-edit-panel__auth" data-inline-edit-auth>
+		<label for="inline-edit-token">Admin-Token</label>
+		<input type="password" id="inline-edit-token" data-inline-edit-token placeholder="Token eingeben…" autocomplete="off" />
+		<button type="button" class="inline-edit-panel__auth-btn" data-inline-edit-auth-btn>Entsperren</button>
+		<p class="inline-edit-panel__error" data-inline-edit-error hidden></p>
+	</div>
+	<div class="inline-edit-panel__editor" data-inline-edit-editor hidden>
+		<textarea data-inline-edit-textarea spellcheck="true"></textarea>
+		<div class="inline-edit-panel__actions">
+			<button type="button" class="inline-edit-panel__save" data-inline-edit-save>Speichern</button>
+			<span class="inline-edit-panel__status" data-inline-edit-status></span>
+		</div>
+	</div>
+</div>
+
+<style>
+	.inline-edit-fab {
+		position: fixed;
+		bottom: 1.5rem;
+		right: 1.5rem;
+		z-index: 9000;
+	}
+
+	.inline-edit-fab__btn {
+		width: 3rem;
+		height: 3rem;
+		border-radius: 50%;
+		border: none;
+		background: var(--accent, #82d4fc);
+		color: var(--bg, #05070c);
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		box-shadow: var(--shadow-1, 0 2px 12px rgba(0, 0, 0, 0.4));
+		transition: transform 0.15s ease, background 0.15s ease;
+	}
+
+	.inline-edit-fab__btn:hover {
+		transform: scale(1.1);
+		background: var(--accent-strong, #b8e8ff);
+	}
+
+	.inline-edit-panel {
+		position: fixed;
+		bottom: 5rem;
+		right: 1.5rem;
+		width: min(28rem, calc(100vw - 2rem));
+		max-height: calc(100vh - 7rem);
+		background: var(--surface, #111a26);
+		border: 1px solid var(--surface2, #1e2d3f);
+		border-radius: var(--radius, 14px);
+		box-shadow: var(--shadow-1, 0 2px 12px rgba(0, 0, 0, 0.4));
+		z-index: 9001;
+		display: flex;
+		flex-direction: column;
+		overflow: hidden;
+	}
+
+	.inline-edit-panel__header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0.75rem 1rem;
+		border-bottom: 1px solid var(--surface2, #1e2d3f);
+	}
+
+	.inline-edit-panel__title {
+		font-weight: 600;
+		color: var(--text, #f6f8fc);
+		font-size: 0.9rem;
+	}
+
+	.inline-edit-panel__close {
+		background: none;
+		border: none;
+		color: var(--muted, #a8b8cc);
+		font-size: 1.4rem;
+		cursor: pointer;
+		line-height: 1;
+		padding: 0.25rem;
+	}
+
+	.inline-edit-panel__close:hover {
+		color: var(--text, #f6f8fc);
+	}
+
+	.inline-edit-panel__auth {
+		padding: 1rem;
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+
+	.inline-edit-panel__auth label {
+		font-size: 0.8rem;
+		color: var(--muted, #a8b8cc);
+		font-weight: 500;
+	}
+
+	.inline-edit-panel__auth input {
+		padding: 0.5rem 0.75rem;
+		border: 1px solid var(--surface3, #2c3f56);
+		border-radius: var(--radius-sm, 8px);
+		background: var(--bg-soft, #0a0f18);
+		color: var(--text, #f6f8fc);
+		font-size: 0.9rem;
+	}
+
+	.inline-edit-panel__auth input:focus {
+		outline: 2px solid var(--accent, #82d4fc);
+		outline-offset: 1px;
+	}
+
+	.inline-edit-panel__auth-btn {
+		align-self: flex-start;
+		padding: 0.4rem 1rem;
+		border: none;
+		border-radius: var(--radius-sm, 8px);
+		background: var(--accent, #82d4fc);
+		color: var(--bg, #05070c);
+		font-weight: 600;
+		font-size: 0.85rem;
+		cursor: pointer;
+		transition: background 0.15s;
+	}
+
+	.inline-edit-panel__auth-btn:hover {
+		background: var(--accent-strong, #b8e8ff);
+	}
+
+	.inline-edit-panel__error {
+		color: var(--danger, #ff9b9b);
+		font-size: 0.8rem;
+		margin: 0;
+	}
+
+	.inline-edit-panel__editor {
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+		min-height: 0;
+		padding: 0.75rem 1rem 1rem;
+		gap: 0.5rem;
+	}
+
+	.inline-edit-panel__editor textarea {
+		flex: 1;
+		min-height: 16rem;
+		max-height: 50vh;
+		resize: vertical;
+		padding: 0.75rem;
+		border: 1px solid var(--surface3, #2c3f56);
+		border-radius: var(--radius-sm, 8px);
+		background: var(--bg-soft, #0a0f18);
+		color: var(--text, #f6f8fc);
+		font-family: var(--font-mono, monospace);
+		font-size: 0.82rem;
+		line-height: 1.5;
+		tab-size: 2;
+	}
+
+	.inline-edit-panel__editor textarea:focus {
+		outline: 2px solid var(--accent, #82d4fc);
+		outline-offset: 1px;
+	}
+
+	.inline-edit-panel__actions {
+		display: flex;
+		align-items: center;
+		gap: 0.75rem;
+	}
+
+	.inline-edit-panel__save {
+		padding: 0.4rem 1.2rem;
+		border: none;
+		border-radius: var(--radius-sm, 8px);
+		background: var(--accent2, #adf7d4);
+		color: var(--bg, #05070c);
+		font-weight: 600;
+		font-size: 0.85rem;
+		cursor: pointer;
+		transition: background 0.15s;
+	}
+
+	.inline-edit-panel__save:hover {
+		background: #c4fce3;
+	}
+
+	.inline-edit-panel__status {
+		font-size: 0.8rem;
+		color: var(--muted, #a8b8cc);
+	}
+</style>
+
+<script>
+	(function () {
+		const root = document.querySelector<HTMLElement>('[data-inline-edit]');
+		const panel = document.querySelector<HTMLElement>('[data-inline-edit-panel]');
+		if (!root || !panel) return;
+
+		const slug = root.dataset.slug!;
+		const base = root.dataset.base || '/';
+		const API = base.replace(/\/?$/, '/') + '__admin-api';
+
+		const toggleBtn = root.querySelector<HTMLButtonElement>('[data-inline-edit-toggle]');
+		const closeBtn = panel.querySelector<HTMLButtonElement>('[data-inline-edit-close]');
+		const authSection = panel.querySelector<HTMLElement>('[data-inline-edit-auth]');
+		const tokenInput = panel.querySelector<HTMLInputElement>('[data-inline-edit-token]');
+		const authBtn = panel.querySelector<HTMLButtonElement>('[data-inline-edit-auth-btn]');
+		const errorEl = panel.querySelector<HTMLElement>('[data-inline-edit-error]');
+		const editorSection = panel.querySelector<HTMLElement>('[data-inline-edit-editor]');
+		const textarea = panel.querySelector<HTMLTextAreaElement>('[data-inline-edit-textarea]');
+		const saveBtn = panel.querySelector<HTMLButtonElement>('[data-inline-edit-save]');
+		const statusEl = panel.querySelector<HTMLElement>('[data-inline-edit-status]');
+
+		let token = sessionStorage.getItem('__inline_edit_token') || '';
+
+		function showError(msg: string) {
+			if (errorEl) {
+				errorEl.textContent = msg;
+				errorEl.hidden = false;
+			}
+		}
+
+		function hideError() {
+			if (errorEl) errorEl.hidden = true;
+		}
+
+		function authHeaders(): Record<string, string> {
+			return token ? { Authorization: `Bearer ${token}` } : {};
+		}
+
+		async function loadContent() {
+			if (!textarea) return;
+			statusEl && (statusEl.textContent = 'Laden…');
+			try {
+				const res = await fetch(`${API}/hacks/${slug}`, { headers: authHeaders() });
+				if (!res.ok) {
+					const data = await res.json().catch(() => ({}));
+					throw new Error(data.error || `HTTP ${res.status}`);
+				}
+				const data = await res.json();
+				textarea.value = data.raw;
+				statusEl && (statusEl.textContent = '');
+			} catch (e: any) {
+				statusEl && (statusEl.textContent = '');
+				showError(e.message || 'Fehler beim Laden');
+			}
+		}
+
+		async function authenticate() {
+			hideError();
+			const t = tokenInput?.value.trim() || '';
+			if (!t || t.length < 16) {
+				showError('Token muss mindestens 16 Zeichen lang sein.');
+				return;
+			}
+			token = t;
+			try {
+				const res = await fetch(`${API}/hacks/${slug}`, { headers: { Authorization: `Bearer ${token}` } });
+				if (res.status === 401) {
+					token = '';
+					showError('Ungültiges Token.');
+					return;
+				}
+				if (!res.ok) {
+					const data = await res.json().catch(() => ({}));
+					throw new Error(data.error || `HTTP ${res.status}`);
+				}
+				sessionStorage.setItem('__inline_edit_token', token);
+				const data = await res.json();
+				if (textarea) textarea.value = data.raw;
+				if (authSection) authSection.hidden = true;
+				if (editorSection) editorSection.hidden = false;
+			} catch (e: any) {
+				token = '';
+				showError(e.message || 'Fehler bei der Authentifizierung');
+			}
+		}
+
+		async function save() {
+			if (!textarea) return;
+			const content = textarea.value;
+			if (!content.trim()) {
+				showError('Inhalt darf nicht leer sein.');
+				return;
+			}
+			hideError();
+			statusEl && (statusEl.textContent = 'Speichern…');
+			try {
+				const res = await fetch(`${API}/hacks/${slug}`, {
+					method: 'PUT',
+					headers: { ...authHeaders(), 'Content-Type': 'text/plain; charset=utf-8' },
+					body: content,
+				});
+				if (!res.ok) {
+					const data = await res.json().catch(() => ({}));
+					throw new Error(data.error || `HTTP ${res.status}`);
+				}
+				statusEl && (statusEl.textContent = '✓ Gespeichert');
+				setTimeout(() => { statusEl && (statusEl.textContent = ''); }, 3000);
+			} catch (e: any) {
+				statusEl && (statusEl.textContent = '');
+				showError(e.message || 'Fehler beim Speichern');
+			}
+		}
+
+		toggleBtn?.addEventListener('click', () => {
+			const isOpen = !panel.hidden;
+			panel.hidden = isOpen;
+			if (!isOpen && token) {
+				if (authSection) authSection.hidden = true;
+				if (editorSection) editorSection.hidden = false;
+				loadContent();
+			}
+		});
+
+		closeBtn?.addEventListener('click', () => {
+			panel.hidden = true;
+		});
+
+		authBtn?.addEventListener('click', authenticate);
+
+		tokenInput?.addEventListener('keydown', (e) => {
+			if (e.key === 'Enter') authenticate();
+		});
+
+		saveBtn?.addEventListener('click', save);
+
+		textarea?.addEventListener('keydown', (e) => {
+			if ((e.ctrlKey || e.metaKey) && e.key === 's') {
+				e.preventDefault();
+				save();
+			}
+		});
+	})();
+</script>
