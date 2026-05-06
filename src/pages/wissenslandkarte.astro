@@ -1,0 +1,531 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Wissenslandkarte der Schulmathematik – Mathechismus.de"
+  description="Interaktive Übersicht aller Schulmathematik-Themen mit Voraussetzungen und Folgethemen — domänenübergreifend, von Arithmetik bis Stochastik."
+>
+  <div class="wk-intro">
+    <p class="wk-kicker">Interaktiv · Domänenübergreifend</p>
+    <h1>Wissenslandkarte der Schulmathematik</h1>
+    <p class="lead">
+      Alle Themen mit ihren Voraussetzungen und Folgethemen auf einen Blick.
+      Größere Knoten haben mehr Erben — sie werden in mehr Folgethemen gebraucht.
+      Klicke auf einen Knoten, um die Abhängigkeiten hervorzuheben.
+    </p>
+  </div>
+</BaseLayout>
+
+<!-- Full-bleed map shell — außerhalb BaseLayout, damit site-main's max-width nicht greift -->
+<div class="wk-shell">
+  <div id="wk-controls">
+    <input id="wk-search" type="text" placeholder="Thema suchen …" autocomplete="off" />
+    <div id="wk-pills"></div>
+    <span class="wk-tip">Klick = Details · Scroll = Zoom · Ziehen = Pan · Esc = Reset</span>
+  </div>
+  <div id="wk-graph"></div>
+  <div id="wk-info">
+    <span id="wk-info-close" title="Schließen">×</span>
+    <div id="wk-info-name"></div>
+    <div id="wk-info-domain"></div>
+    <div class="wk-info-section">
+      <div class="wk-info-title">📋 Voraussetzungen (direkt)</div>
+      <div id="wk-prereqs"></div>
+    </div>
+    <div class="wk-info-section">
+      <div class="wk-info-title">🔗 Wird gebraucht von (direkt)</div>
+      <div id="wk-dependents"></div>
+    </div>
+    <div class="wk-info-section">
+      <div class="wk-info-title">📊 Wichtigkeit</div>
+      <div class="wk-bar-bg"><div class="wk-bar" id="wk-bar"></div></div>
+      <div class="wk-bar-text" id="wk-bar-text"></div>
+    </div>
+  </div>
+  <div id="wk-legend">
+    <div class="wk-legend-title">Domänen</div>
+    <hr class="wk-legend-hr" />
+    <div class="wk-legend-row"><span class="wk-dot" style="background:#3fb950"></span>Voraussetzungen</div>
+    <div class="wk-legend-row"><span class="wk-dot" style="background:#f78166"></span>Folgethemen</div>
+    <div class="wk-legend-row"><span class="wk-dot" style="background:#ffffff;border:1px solid #888"></span>Ausgewählt</div>
+  </div>
+  <div id="wk-tooltip">
+    <div id="wk-tt-name"></div>
+    <div id="wk-tt-domain"></div>
+    <div id="wk-tt-imp"></div>
+  </div>
+</div>
+
+<style is:global>
+.wk-intro { padding-bottom: 1.5rem; }
+.wk-kicker {
+  font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.09em;
+  color: var(--accent); font-weight: 540; margin: 0 0 0.55rem;
+}
+.wk-shell {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  position: relative;
+  height: 82vh;
+  min-height: 520px;
+  border-top: 1px solid var(--surface2);
+  border-bottom: 1px solid var(--surface2);
+  overflow: hidden;
+  background: var(--bg);
+  margin-bottom: 3rem;
+}
+#wk-controls {
+  position: absolute; top: 0; left: 0; right: 0; height: 52px;
+  background: color-mix(in srgb, var(--surface) 90%, transparent);
+  backdrop-filter: saturate(120%) blur(10px);
+  -webkit-backdrop-filter: saturate(120%) blur(10px);
+  border-bottom: 1px solid var(--surface2);
+  display: flex; align-items: center; padding: 0 16px; gap: 11px;
+  z-index: 20;
+}
+#wk-search {
+  width: 185px; flex-shrink: 0; padding: 5px 11px;
+  background: var(--bg); border: 1px solid var(--surface2); border-radius: 6px;
+  color: var(--text); font-size: 12.5px; font-family: var(--font-body);
+  outline: none; transition: border-color 0.15s;
+}
+#wk-search:focus { border-color: var(--accent); }
+#wk-search::placeholder { color: var(--muted-2); }
+#wk-pills { display: flex; gap: 6px; flex-wrap: nowrap; }
+.wk-pill {
+  padding: 3px 10px; border-radius: 20px; font-size: 11px;
+  font-weight: 500; cursor: pointer; border: 2px solid transparent;
+  transition: all 0.15s; white-space: nowrap; opacity: 0.42;
+  background: transparent; font-family: var(--font-body);
+}
+.wk-pill.on { opacity: 1; }
+.wk-tip { margin-left: auto; font-size: 10.5px; color: var(--muted); white-space: nowrap; flex-shrink: 0; }
+#wk-graph { position: absolute; top: 52px; left: 0; right: 0; bottom: 0; cursor: grab; }
+#wk-graph:active { cursor: grabbing; }
+#wk-info {
+  position: absolute; right: 16px; top: 68px; width: 268px;
+  background: var(--surface); border: 1px solid var(--surface2); border-radius: 12px;
+  padding: 15px; display: none; z-index: 30;
+  max-height: calc(82vh - 88px); overflow-y: auto; box-shadow: var(--shadow-2);
+}
+#wk-info.show { display: block; }
+#wk-info-close { float: right; cursor: pointer; font-size: 18px; color: var(--muted); line-height: 1; margin-top: -2px; transition: color 0.12s; }
+#wk-info-close:hover { color: var(--text); }
+#wk-info-name { font-size: 14.5px; font-weight: 700; color: var(--text); margin-bottom: 3px; margin-right: 20px; }
+#wk-info-domain { font-size: 12px; color: var(--muted); margin-bottom: 12px; }
+.wk-info-section { margin-top: 12px; }
+.wk-info-title { font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.7px; color: var(--muted); margin-bottom: 6px; font-weight: 600; }
+.wk-chip { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 11px; margin: 2px; cursor: pointer; background: var(--surface2); border: 1px solid color-mix(in srgb, var(--surface3,var(--surface2)) 80%, transparent); color: var(--text-soft); transition: filter 0.12s; font-family: var(--font-body); }
+.wk-chip:hover { filter: brightness(1.2); }
+.wk-none { font-size: 11.5px; color: var(--muted); font-style: italic; }
+.wk-bar-bg { height: 6px; border-radius: 3px; background: var(--surface2); margin-top: 6px; }
+.wk-bar { height: 6px; border-radius: 3px; width: 0%; background: linear-gradient(90deg, var(--accent), var(--accent2, #adf7d4)); transition: width 0.4s ease; }
+.wk-bar-text { font-size: 11.5px; margin-top: 4px; color: var(--muted); }
+#wk-legend { position: absolute; left: 16px; bottom: 16px; background: var(--surface); border: 1px solid var(--surface2); border-radius: 10px; padding: 11px 14px; z-index: 30; }
+.wk-legend-title { font-size: 10px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 0.6px; margin-bottom: 6px; }
+.wk-legend-row { display: flex; align-items: center; gap: 7px; margin: 3px 0; font-size: 11px; color: var(--text-soft); }
+.wk-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; }
+.wk-legend-hr { border: none; border-top: 1px solid var(--surface2); margin: 7px 0; }
+#wk-tooltip { position: absolute; pointer-events: none; background: var(--surface); border: 1px solid var(--surface2); border-radius: 8px; padding: 8px 12px; font-size: 12px; z-index: 50; display: none; max-width: 210px; box-shadow: var(--shadow-1); color: var(--text); }
+#wk-tt-name { font-weight: 600; }
+#wk-tt-domain { font-size: 11px; color: var(--muted); margin-top: 2px; }
+#wk-tt-imp { font-size: 11px; color: var(--muted-2, var(--muted)); margin-top: 3px; }
+.wk-link { fill: none; }
+.wk-node { cursor: pointer; }
+.wk-label { pointer-events: none; user-select: none; }
+</style>
+
+<script>
+import * as d3 from 'd3';
+
+const DOMAINS = {
+  grundlagen: { label: 'Grundlagen & Arithmetik', color: '#3fb950' },
+  algebra:    { label: 'Algebra',                  color: '#58a6ff' },
+  geometrie:  { label: 'Geometrie',                color: '#e3b341' },
+  analysis:   { label: 'Analysis',                 color: '#bc8cff' },
+  stochastik: { label: 'Stochastik',               color: '#f78166' },
+};
+const DC = {
+  grundlagen: { fx: 0.12, fy: 0.50 },
+  algebra:    { fx: 0.38, fy: 0.28 },
+  geometrie:  { fx: 0.38, fy: 0.72 },
+  analysis:   { fx: 0.68, fy: 0.28 },
+  stochastik: { fx: 0.68, fy: 0.72 },
+};
+
+const NODES = [
+  {id:'nat',    label:'Natürliche Zahlen',         d:'grundlagen'},
+  {id:'ganz',   label:'Ganze Zahlen',              d:'grundlagen'},
+  {id:'rat',    label:'Rationale Zahlen',          d:'grundlagen'},
+  {id:'reell',  label:'Reelle Zahlen',             d:'grundlagen'},
+  {id:'add',    label:'Addition & Subtraktion',    d:'grundlagen'},
+  {id:'mul',    label:'Multiplikation & Division', d:'grundlagen'},
+  {id:'bruch',  label:'Bruchrechnung',             d:'grundlagen'},
+  {id:'dezi',   label:'Dezimalzahlen',             d:'grundlagen'},
+  {id:'proz',   label:'Prozentrechnung',           d:'grundlagen'},
+  {id:'pot',    label:'Potenzen & Wurzeln',        d:'grundlagen'},
+  {id:'log',    label:'Logarithmen',               d:'grundlagen'},
+  {id:'prim',   label:'Teilbarkeit & Primzahlen',  d:'grundlagen'},
+  {id:'mengen', label:'Mengen & Logik',            d:'grundlagen'},
+  {id:'terme',  label:'Terme & Variablen',         d:'algebra'},
+  {id:'ling',   label:'Lineare Gleichungen',       d:'algebra'},
+  {id:'ungl',   label:'Ungleichungen',             d:'algebra'},
+  {id:'gs',     label:'Lineare Gleichungssysteme', d:'algebra'},
+  {id:'quad',   label:'Quadrat. Gleichungen',      d:'algebra'},
+  {id:'poly',   label:'Polynome',                  d:'algebra'},
+  {id:'fbeg',   label:'Funktionsbegriff',          d:'algebra'},
+  {id:'linf',   label:'Lineare Funktionen',        d:'algebra'},
+  {id:'quadf',  label:'Quadrat. Funktionen',       d:'algebra'},
+  {id:'expf',   label:'Exponentialfunktionen',     d:'algebra'},
+  {id:'logf',   label:'Logarithmusfunktionen',     d:'algebra'},
+  {id:'gbeg',   label:'Grundbegriffe Geo.',        d:'geometrie'},
+  {id:'koord',  label:'Koordinatensystem',         d:'geometrie'},
+  {id:'winkel', label:'Winkel',                    d:'geometrie'},
+  {id:'drei',   label:'Dreiecke',                  d:'geometrie'},
+  {id:'vier',   label:'Vierecke & Polygone',       d:'geometrie'},
+  {id:'kreis',  label:'Kreise',                    d:'geometrie'},
+  {id:'kongr',  label:'Kongruenzsätze',            d:'geometrie'},
+  {id:'abbildg',label:'Geometr. Abbildungen',      d:'geometrie'},
+  {id:'aehnl',  label:'Ähnlichkeit & Strahlensatz',d:'geometrie'},
+  {id:'pyth',   label:'Satz des Pythagoras',       d:'geometrie'},
+  {id:'trig',   label:'Trigonometrie',             d:'geometrie'},
+  {id:'trigf',  label:'Trigonom. Funktionen',      d:'geometrie'},
+  {id:'flae',   label:'Flächenberechnungen',       d:'geometrie'},
+  {id:'vol',    label:'Volumenberechnungen',       d:'geometrie'},
+  {id:'raum',   label:'Raumgeometrie',             d:'geometrie'},
+  {id:'angeo',  label:'Analytische Geometrie',     d:'geometrie'},
+  {id:'vekt',   label:'Vektoren',                  d:'geometrie'},
+  {id:'folg',   label:'Folgen & Reihen',           d:'analysis'},
+  {id:'grenz',  label:'Grenzwerte & Stetigkeit',   d:'analysis'},
+  {id:'diff',   label:'Differentialrechnung',      d:'analysis'},
+  {id:'integ',  label:'Integralrechnung',          d:'analysis'},
+  {id:'kurv',   label:'Kurvendiskussion',          d:'analysis'},
+  {id:'optim',  label:'Optimierungsaufgaben',      d:'analysis'},
+  {id:'dgl',    label:'Differentialgleichungen',   d:'analysis'},
+  {id:'kombi',  label:'Kombinatorik',              d:'stochastik'},
+  {id:'wahr',   label:'Wahrscheinlichkeit',        d:'stochastik'},
+  {id:'bedw',   label:'Bed. Wahrscheinlichkeit',   d:'stochastik'},
+  {id:'bayes',  label:'Satz von Bayes',            d:'stochastik'},
+  {id:'zufv',   label:'Zufallsvariablen',          d:'stochastik'},
+  {id:'erwv',   label:'Erwartungswert & Varianz',  d:'stochastik'},
+  {id:'binom',  label:'Binomialverteilung',        d:'stochastik'},
+  {id:'norm',   label:'Normalverteilung',          d:'stochastik'},
+  {id:'hypo',   label:'Hypothesentests',           d:'stochastik'},
+  {id:'stat',   label:'Beschreib. Statistik',      d:'stochastik'},
+  {id:'regr',   label:'Regression & Korrelation',  d:'stochastik'},
+];
+NODES.forEach(n => Object.assign(n, {importance: 0}));
+
+const EDGES = [
+  ['nat','ganz'],['ganz','rat'],['rat','reell'],
+  ['nat','add'],['nat','gbeg'],['nat','mengen'],['nat','prim'],['ganz','add'],
+  ['add','mul'],['mul','bruch'],['ganz','bruch'],
+  ['bruch','dezi'],['dezi','proz'],['bruch','proz'],
+  ['mul','pot'],['pot','log'],
+  ['add','terme'],['mul','terme'],['bruch','terme'],['pot','terme'],['reell','terme'],
+  ['mengen','fbeg'],
+  ['terme','ling'],['terme','ungl'],
+  ['ling','gs'],['ling','quad'],['ling','linf'],
+  ['fbeg','linf'],['fbeg','expf'],['fbeg','folg'],
+  ['quad','quadf'],['quad','poly'],
+  ['pot','expf'],['log','logf'],['expf','logf'],['linf','gs'],
+  ['reell','koord'],['gbeg','koord'],
+  ['koord','linf'],['koord','angeo'],['koord','stat'],
+  ['gbeg','winkel'],['winkel','drei'],['winkel','vier'],['gbeg','kreis'],
+  ['add','flae'],['mul','flae'],
+  ['winkel','abbildg'],['kongr','abbildg'],['drei','abbildg'],['abbildg','aehnl'],
+  ['drei','kongr'],['drei','aehnl'],['kongr','aehnl'],
+  ['drei','pyth'],['pot','pyth'],
+  ['winkel','trig'],['aehnl','trig'],['pyth','trig'],['kreis','trig'],
+  ['trig','trigf'],
+  ['drei','flae'],['vier','flae'],['kreis','flae'],['flae','vol'],
+  ['pyth','raum'],['drei','raum'],
+  ['raum','angeo'],['trig','angeo'],['gs','angeo'],
+  ['terme','angeo'],['reell','angeo'],['pyth','angeo'],
+  ['angeo','vekt'],
+  ['trigf','diff'],['flae','integ'],
+  ['linf','diff'],['quadf','diff'],['expf','diff'],['logf','diff'],['poly','diff'],
+  ['reell','grenz'],['folg','grenz'],['grenz','diff'],
+  ['diff','integ'],['diff','kurv'],['integ','kurv'],
+  ['kurv','optim'],['diff','optim'],
+  ['diff','dgl'],['integ','dgl'],['expf','dgl'],
+  ['bruch','wahr'],['proz','wahr'],['mengen','wahr'],
+  ['add','stat'],['bruch','stat'],['proz','stat'],
+  ['mul','kombi'],['prim','kombi'],
+  ['kombi','wahr'],['wahr','bedw'],['bedw','bayes'],
+  ['wahr','zufv'],['bedw','zufv'],
+  ['zufv','erwv'],['zufv','binom'],['erwv','binom'],
+  ['binom','norm'],['norm','hypo'],['binom','hypo'],['stat','hypo'],
+  ['stat','regr'],['norm','regr'],
+  ['integ','norm'],
+];
+
+// Importance
+(function() {
+  const adj = {};
+  NODES.forEach(n => (adj[n.id] = []));
+  EDGES.forEach(([s,t]) => adj[s].push(t));
+  NODES.forEach(node => {
+    const visited = new Set();
+    const queue = [node.id];
+    while (queue.length) {
+      const cur = queue.shift();
+      for (const nb of (adj[cur]||[])) { if (!visited.has(nb)) { visited.add(nb); queue.push(nb); } }
+    }
+    node.importance = visited.size;
+  });
+})();
+
+const maxImp   = Math.max(...NODES.map(n => n.importance));
+const nodeById = Object.fromEntries(NODES.map(n => [n.id, n]));
+const rScale   = d3.scaleSqrt().domain([0, maxImp]).range([8, 36]);
+
+const isLight  = () => document.documentElement.getAttribute('data-theme') === 'light';
+const cssVar   = name => getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+
+// SVG
+const container = document.getElementById('wk-graph');
+const W = container.clientWidth, H = container.clientHeight;
+const svg  = d3.select('#wk-graph').append('svg').attr('width', W).attr('height', H).style('background','transparent');
+const defs = svg.append('defs');
+
+const addMarker = (id, color) => {
+  defs.append('marker').attr('id', id).attr('viewBox','0 -4 8 8')
+    .attr('refX',8).attr('refY',0).attr('markerWidth',6).attr('markerHeight',6).attr('orient','auto')
+    .append('path').attr('d','M0,-4L8,0L0,4Z').attr('fill', color);
+};
+Object.entries(DOMAINS).forEach(([k,v]) => addMarker('wk-arr-'+k, v.color));
+addMarker('wk-arr-dim','#2a2d3a'); addMarker('wk-arr-up','#3fb950'); addMarker('wk-arr-down','#f78166');
+Object.entries(DOMAINS).forEach(([k,v]) => {
+  const f = defs.append('filter').attr('id','wk-glow-'+k);
+  f.append('feGaussianBlur').attr('stdDeviation','4').attr('result','cb');
+  const m = f.append('feMerge');
+  m.append('feMergeNode').attr('in','cb'); m.append('feMergeNode').attr('in','SourceGraphic');
+});
+
+const g = svg.append('g');
+svg.call(d3.zoom().scaleExtent([0.25,5]).on('zoom', ev => g.attr('transform', ev.transform)));
+
+const links = EDGES.map(([s,t]) => ({source:s, target:t}));
+const sim = d3.forceSimulation(NODES)
+  .force('link',    d3.forceLink(links).id(d=>d.id).distance(90).strength(0.25))
+  .force('charge',  d3.forceManyBody().strength(-320).distanceMax(500))
+  .force('center',  d3.forceCenter(W*0.44, H*0.5).strength(0.04))
+  .force('collide', d3.forceCollide(d => rScale(d.importance)+14))
+  .force('clusterX',d3.forceX(d => DC[d.d].fx*W).strength(0.10))
+  .force('clusterY',d3.forceY(d => DC[d.d].fy*H).strength(0.10))
+  .alphaDecay(0.018);
+
+const linkG  = g.append('g');
+const linkEl = linkG.selectAll('line').data(links).enter().append('line')
+  .attr('class','wk-link')
+  .attr('stroke', d => DOMAINS[nodeById[d.source]?.d]?.color || '#888')
+  .attr('stroke-width', 1.8).attr('stroke-opacity', 0.28)
+  .attr('marker-end', d => `url(#wk-arr-${nodeById[d.source]?.d || 'dim'})`);
+
+const nodeG  = g.append('g');
+const nodeEl = nodeG.selectAll('g').data(NODES).enter().append('g').attr('class','wk-node')
+  .call(d3.drag()
+    .on('start',(ev,d)=>{ if(!ev.active) sim.alphaTarget(0.3).restart(); d.fx=d.x; d.fy=d.y; })
+    .on('drag', (ev,d)=>{ d.fx=ev.x; d.fy=ev.y; })
+    .on('end',  (ev,d)=>{ if(!ev.active) sim.alphaTarget(0); d.fx=null; d.fy=null; }))
+  .on('click',     onNodeClick)
+  .on('mouseover', showTooltip)
+  .on('mousemove', moveTooltip)
+  .on('mouseout',  hideTooltip);
+
+nodeEl.append('circle')
+  .attr('r', d=>rScale(d.importance))
+  .attr('fill', d=>DOMAINS[d.d].color+'28')
+  .attr('stroke', d=>DOMAINS[d.d].color)
+  .attr('stroke-width', 2);
+
+nodeEl.each(function(d) {
+  const grp=d3.select(this), r=rScale(d.importance), fs=Math.max(7.5,Math.min(11.5,r*0.52));
+  const words=d.label.split(/\s+/);
+  if(r<11) return;
+  const txt=grp.append('text').attr('class','wk-label').attr('text-anchor','middle')
+    .attr('font-size',fs+'px').attr('fill', cssVar('--text')).attr('font-weight','500');
+  const cpl=Math.max(6,Math.floor(r*0.38)), lineH=fs*1.22;
+  const lines=[]; let cur='';
+  for(const w of words){const t=cur?cur+' '+w:w; if(t.length>cpl&&cur){lines.push(cur);cur=w;}else{cur=t;}}
+  if(cur) lines.push(cur);
+  const shown=lines.slice(0,3), totalH=shown.length*lineH, startY=-totalH/2+lineH*0.7;
+  shown.forEach((line,i)=>txt.append('tspan').attr('x',0).attr('y',startY+i*lineH).text(line));
+});
+
+sim.on('tick',()=>{
+  linkEl
+    .attr('x1',d=>d.source.x).attr('y1',d=>d.source.y)
+    .attr('x2',d=>{const dx=d.target.x-d.source.x,dy=d.target.y-d.source.y,dist=Math.hypot(dx,dy)||1;return d.target.x-dx/dist*(rScale(d.target.importance)+7);})
+    .attr('y2',d=>{const dx=d.target.x-d.source.x,dy=d.target.y-d.source.y,dist=Math.hypot(dx,dy)||1;return d.target.y-dy/dist*(rScale(d.target.importance)+7);});
+  nodeEl.attr('transform',d=>`translate(${d.x},${d.y})`);
+});
+
+function buildMaps(){
+  const succ={}, pred={};
+  NODES.forEach(n=>{succ[n.id]=[];pred[n.id]=[];});
+  links.forEach(l=>{const s=l.source?.id??l.source,t=l.target?.id??l.target;succ[s].push(t);pred[t].push(s);});
+  return {succ,pred};
+}
+let _maps=null;
+const getMaps=()=>{if(!_maps)_maps=buildMaps();return _maps;};
+setTimeout(()=>{_maps=null;},800);
+
+function bfsAll(startId,adj){
+  const visited=new Set(),queue=[startId];
+  while(queue.length){const cur=queue.shift();for(const nb of(adj[cur]||[])){if(!visited.has(nb)){visited.add(nb);queue.push(nb);}}}
+  return visited;
+}
+
+let selected=null;
+
+function onNodeClick(event,d){
+  event.stopPropagation();
+  const {succ,pred}=getMaps();
+  selected=d.id;
+  const ancestors=bfsAll(d.id,pred), descendants=bfsAll(d.id,succ);
+  const light=isLight();
+
+  nodeEl.select('circle')
+    .attr('stroke',n=>n.id===d.id?'#ffffff':ancestors.has(n.id)?'#3fb950':descendants.has(n.id)?'#f78166':DOMAINS[n.d].color)
+    .attr('stroke-width',n=>(n.id===d.id||ancestors.has(n.id)||descendants.has(n.id))?3:1.2)
+    .attr('fill',n=>{
+      if(n.id===d.id) return DOMAINS[n.d].color+'55';
+      if(ancestors.has(n.id))   return light?'#3fb95044':'#3fb95033';
+      if(descendants.has(n.id)) return light?'#f7816644':'#f7816633';
+      return DOMAINS[n.d].color+(light?'15':'10');
+    })
+    .attr('filter',n=>n.id===d.id?`url(#wk-glow-${n.d})`:null);
+
+  nodeEl.selectAll('text').attr('opacity',n=>(n.id===d.id||ancestors.has(n.id)||descendants.has(n.id))?1:0.18);
+
+  linkEl.each(function(l){
+    const s=l.source?.id??l.source,t=l.target?.id??l.target;
+    const isUp=(ancestors.has(s)||s===d.id)&&(ancestors.has(t)||t===d.id);
+    const isDn=(descendants.has(s)||s===d.id)&&(descendants.has(t)||t===d.id);
+    const active=isUp||isDn;
+    d3.select(this)
+      .attr('stroke-opacity',active?0.85:0.04)
+      .attr('stroke-width',active?2.5:1.2)
+      .attr('stroke',active?(isUp?'#3fb950':'#f78166'):(light?'#ccc':'#222'))
+      .attr('marker-end',active?(isUp?'url(#wk-arr-up)':'url(#wk-arr-down)'):'url(#wk-arr-dim)');
+  });
+  showInfoPanel(d,ancestors,descendants,pred,succ);
+}
+
+function resetHighlight(){
+  selected=null;
+  const light=isLight();
+  nodeEl.select('circle')
+    .attr('stroke',d=>DOMAINS[d.d].color).attr('stroke-width',2)
+    .attr('fill',d=>DOMAINS[d.d].color+(light?'33':'28')).attr('filter',null);
+  nodeEl.selectAll('text').attr('opacity',1);
+  linkEl
+    .attr('stroke-opacity',0.28).attr('stroke-width',1.8)
+    .attr('stroke',d=>{const s=d.source?.d??nodeById[d.source]?.d;return DOMAINS[s]?.color||'#888';})
+    .attr('marker-end',d=>{const s=d.source?.d??nodeById[d.source]?.d;return `url(#wk-arr-${s||'dim'})`;});
+  document.getElementById('wk-info').classList.remove('show');
+}
+
+svg.on('click',resetHighlight);
+document.getElementById('wk-info-close').addEventListener('click',resetHighlight);
+document.addEventListener('keydown',e=>{if(e.key==='Escape')resetHighlight();});
+
+function showInfoPanel(d,ancestors,descendants,pred,succ){
+  document.getElementById('wk-info').classList.add('show');
+  document.getElementById('wk-info-name').textContent=d.label;
+  const de=document.getElementById('wk-info-domain');
+  de.textContent='📁 '+DOMAINS[d.d].label; de.style.color=DOMAINS[d.d].color;
+  const chips=(ids,el)=>{
+    if(!ids.length){el.innerHTML='<span class="wk-none">keine</span>';return;}
+    el.innerHTML=ids.map(id=>{const nd=nodeById[id];if(!nd)return'';
+      return `<span class="wk-chip" style="color:${DOMAINS[nd.d].color}" onclick="window.__wkSel('${id}')">${nd.label}</span>`;
+    }).join('');
+  };
+  chips(pred[d.id]||[], document.getElementById('wk-prereqs'));
+  chips(succ[d.id]||[], document.getElementById('wk-dependents'));
+  const pct=maxImp>0?(d.importance/maxImp)*100:0;
+  document.getElementById('wk-bar').style.width=pct.toFixed(1)+'%';
+  document.getElementById('wk-bar-text').textContent=`${d.importance} Folgethema${d.importance!==1?'s':''} (direkt & indirekt)`;
+}
+
+window.__wkSel=(id)=>{
+  const node=nodeById[id]; if(!node) return;
+  onNodeClick({stopPropagation:()=>{}},node);
+};
+
+const tt=document.getElementById('wk-tooltip');
+function showTooltip(ev,d){
+  document.getElementById('wk-tt-name').textContent=d.label;
+  document.getElementById('wk-tt-domain').textContent=DOMAINS[d.d].label;
+  document.getElementById('wk-tt-imp').textContent=`Wichtigkeit: ${d.importance} Folgethema${d.importance!==1?'s':''}`;
+  tt.style.display='block'; moveTooltip(ev,d);
+}
+function moveTooltip(ev){
+  const shell=document.querySelector('.wk-shell').getBoundingClientRect();
+  let x=ev.clientX-shell.left+14, y=ev.clientY-shell.top-10;
+  if(x+215>shell.width)  x=ev.clientX-shell.left-220;
+  if(y+80>shell.height)  y=ev.clientY-shell.top-90;
+  tt.style.left=x+'px'; tt.style.top=y+'px';
+}
+function hideTooltip(){ tt.style.display='none'; }
+
+document.getElementById('wk-search').addEventListener('input',function(){
+  const q=this.value.toLowerCase().trim();
+  if(!q){resetHighlight();return;}
+  const light=isLight();
+  nodeEl.select('circle')
+    .attr('stroke-width',n=>n.label.toLowerCase().includes(q)?4:1)
+    .attr('fill',n=>n.label.toLowerCase().includes(q)?DOMAINS[n.d].color+'55':DOMAINS[n.d].color+(light?'12':'08'))
+    .attr('filter',n=>n.label.toLowerCase().includes(q)?`url(#wk-glow-${n.d})`:null);
+  nodeEl.selectAll('text').attr('opacity',n=>n.label.toLowerCase().includes(q)?1:0.15);
+  linkEl.attr('stroke-opacity',0.08);
+});
+
+const activeDomains=new Set(Object.keys(DOMAINS));
+const pillsDiv=document.getElementById('wk-pills');
+Object.entries(DOMAINS).forEach(([key,{label,color}])=>{
+  const btn=document.createElement('button');
+  btn.className='wk-pill on'; btn.textContent=label;
+  btn.style.color=color; btn.style.backgroundColor=color+'22';
+  btn.addEventListener('click',()=>{
+    if(activeDomains.has(key)){if(activeDomains.size===1)return;activeDomains.delete(key);btn.classList.remove('on');}
+    else{activeDomains.add(key);btn.classList.add('on');}
+    nodeEl.style('opacity',d=>activeDomains.has(d.d)?'1':'0.04');
+    linkEl.style('opacity',d=>{
+      const s=d.source?.d??nodeById[d.source]?.d,t=d.target?.d??nodeById[d.target]?.d;
+      return activeDomains.has(s)&&activeDomains.has(t)?'1':'0.03';
+    });
+  });
+  pillsDiv.appendChild(btn);
+});
+
+const legendEl=document.getElementById('wk-legend'), hr=legendEl.querySelector('.wk-legend-hr');
+Object.entries(DOMAINS).forEach(([,{label,color}])=>{
+  const row=document.createElement('div'); row.className='wk-legend-row';
+  row.innerHTML=`<span class="wk-dot" style="background:${color}"></span>${label}`;
+  legendEl.insertBefore(row,hr);
+});
+
+// Sync with site's theme toggle
+function syncTheme(){
+  const light=isLight();
+  defs.select('#wk-arr-dim path').attr('fill',light?'#bbbbbb':'#2a2d3a');
+  nodeEl.selectAll('text.wk-label').attr('fill',cssVar('--text'));
+  if(!selected) nodeEl.select('circle').attr('fill',d=>DOMAINS[d.d].color+(light?'33':'28'));
+}
+new MutationObserver(syncTheme).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
+
+// Resize
+window.addEventListener('resize',()=>{
+  const nW=container.clientWidth, nH=container.clientHeight;
+  svg.attr('width',nW).attr('height',nH);
+  sim.force('center',d3.forceCenter(nW*0.44,nH*0.5).strength(0.04))
+     .force('clusterX',d3.forceX(d=>DC[d.d].fx*nW).strength(0.10))
+     .force('clusterY',d3.forceY(d=>DC[d.d].fy*nH).strength(0.10))
+     .alpha(0.3).restart();
+});
+</script>
