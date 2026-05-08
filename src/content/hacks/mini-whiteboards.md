@@ -1,5 +1,5 @@
 ﻿---
-title: Mini-Whiteboards für alle Denkwege
+title: Mini-Whiteboards für 100 % Beteiligung
 summary: Wenn alle zur gleichen Zeit antworten und zeigen, wird sichtbar, was die Klasse wirklich denkt — nicht nur, was die Schnellsten laut sagen. Routinen zu Material, Hover und Blickführung machen das zuverlässig umsetzbar.
 tags:
   - Aktivierung
