@@ -1,70 +1,73 @@
 ---
-title: Vertikal und wechselnd an großen Flächen arbeiten
-summary: Stehend an vertikalen, leicht löschbaren Flächen arbeiten Gruppen oft freier und sichtbarer als am Heft; wechselnde Wände oder Stationen halten Ideen in Bewegung statt sie an einem Ort festzuschreiben.
+title: Vertikal und rotierend an großen Flächen arbeiten
+summary: Wenn Gruppen stehend an vertikalen, leicht löschbaren Flächen (Surfaces) arbeiten, wird Denken sichtbar. Die Folgenlosigkeit des wegwischbaren Stifts zwingt ins Handeln. Rotierende Stationen verhindern territoriales Verhalten und halten Ideen im Fluss.
 tags:
   - Thinking Classroom
   - Sozialform
   - Sichtbarkeit
 order: 32
 quiz:
-  - question: Warum erleichtert eine leicht löschbare (nicht-permanente) Oberfläche den Einstieg ins Mathematisieren?
+  - question: Warum erleichtert eine nicht-permanente Fläche (Surface) den Einstieg ins Mathematisieren?
     options:
-      - Weil Permanentmarker schwerer in der Hand liegen und das Schreiben verlangsamen.
-      - Weil ein falsch gesetzter Strich folgenlos verschwindet — die Schwelle zur ersten Notation sinkt deutlich.
-      - Weil leicht löschbare Flächen automatisch kleiner sind und damit zur Konzentration auf das Wesentliche zwingen.
+      - Weil Whiteboard-Marker flüssiger über die Wand gleiten und das Schreiben beschleunigen.
+      - Weil ein falsch gesetzter Strich folgenlos verschwindet — die Schwelle zum ersten Versuch sinkt auf null.
+      - Weil leicht löschbare Flächen automatisch kleiner sind und zur Konzentration zwingen.
     correctIndex: 1
-    explanation: Es geht weder um Stiftgewicht noch um Größe, sondern um die psychologische Folgenlosigkeit des ersten Versuchs. Genau diese Folgenlosigkeit nützt dem frühen Mathematisieren.
-  - question: Warum schneidet eine vertikale Fläche in der Praxis meist besser ab als ein horizontales Whiteboard auf dem Tisch?
+    explanation: Der entscheidende Faktor ist die psychologische Folgenlosigkeit. Die Angst vor dem „falschen Weg“ verschwindet, wenn sich Fehler spurlos korrigieren lassen.
+  - question: Warum ist eine vertikale Fläche didaktisch wirksamer als ein horizontales Whiteboard auf dem Tisch?
     options:
-      - Weil senkrechtes Schreiben ergonomisch grundsätzlich günstiger ist.
-      - Weil horizontale Flächen kleiner ausfallen und damit weniger Notation erlauben.
-      - Weil sitzend am Tisch Rückzug und Stillarbeit weiter möglich sind — stehend an der Wand wird die Arbeit für alle sichtbar.
+      - Weil senkrechtes Schreiben ergonomisch vorteilhafter für die Schulterpartie ist.
+      - Weil vertikale Flächen meist größer sind und umfangreichere Rechnungen zulassen.
+      - Weil das Sitzen am Tisch Rückzug erlaubt — stehend an der Wand wird die Arbeit und Passivität für alle sofort sichtbar.
     correctIndex: 2
-    explanation: Es ist keine Ergonomie- und keine Größenfrage, sondern eine Sichtbarkeitsfrage. Vertikalität erschwert das stille Abtauchen, das am Tisch jederzeit möglich bleibt.
-  - question: Eine Gruppe arbeitet an einem Flipchart mit Permanentmarker — alle reden, niemand schreibt. Was ist die wahrscheinlichste Ursache?
+    explanation: Vertikalität ist ein Sichtbarkeitswerkzeug. Sie zwingt zur Beteiligung und erschwert das stille Abtauchen, das am Tisch jederzeit möglich ist.
+  - question: Eine Gruppe steht an einem Flipchart mit Permanentmarker — alle diskutieren, niemand schreibt. Was ist das Problem?
     options:
-      - Die Aufgabe war zu leicht — die Klasse rechnet nebenbei im Kopf.
-      - Die Permanenz der Spur hebt die Hemmschwelle für den ersten Strich — wechselnde, löschbare Flächen wären hier hilfreicher.
-      - Die Gruppengröße ist falsch dimensioniert — kleinere Gruppen würden eher schreiben.
+      - Die Aufgabe ist zu trivial — die Lösung entsteht mental.
+      - Die Dauerhaftigkeit des Stifts blockiert den ersten Schritt — abwischbare Flächen würden diese Hemmung lösen.
+      - Die Gruppe ist zu groß — nur bei Partnerarbeit wird sofort geschrieben.
     correctIndex: 1
-    explanation: Bei zu leichten Aufgaben wäre etwas geschrieben — wenn auch knapp. Viel reden bei wenig Schreiben passt gut zur Permanenz-Hemmung; löschbare Oberflächen oder Platzwechsel senken diese Hemmung.
+    explanation: Intensive Diskussion ohne Notizen ist das klassische Symptom der „Permanenz-Hemmung“. Ein abwischbares Surface löst diesen Knoten sofort.
 ---
 
 ## Kernaussage
 
-**Wo** und **womit** gearbeitet wird — **vertikal**, **wechselnd** und **auswischbar** — steuert, ob Gruppen in Mathematik eintauchen oder sich verstecken.
+Vertikal, stehend, abwischbar: Die physische Arbeitsumgebung entscheidet, ob Gruppen aktiv mathematisch denken oder in Passivität abtauchen.
 
 ## Was ist das?
 
-Lernende arbeiten **stehend** an **vertikalen, leicht löschbaren Flächen** — Whiteboards, Kreidetafeln, beschreibbare Wandfolien — statt sitzend am Heft oder auf einem Flipchart-Bogen, der bleibt. **Wechselnde Flächen** bedeutet: nicht eine feste Gruppenwand für das ganze Jahr, sondern bewusst **andere Wände, Stationen oder Plätze**, sodass Gruppen nicht an einen Ort gekoppelt sind und Ideen sich im Raum bewegen können.
+Dieser Ansatz (bekannt als *Vertical Non-Permanent Surfaces* / VNPS) verlagert die Gruppenarbeit vom Tisch an die Wand. Lernende arbeiten **stehend** an **vertikalen, abwischbaren Flächen** (Whiteboards, Glastafeln, Folien). 
 
-Drei Hebel wirken zusammen: **Vertikalität** macht jede Spur für die ganze Gruppe sichtbar, **Stehen** erschwert das Verstecken hinter dem Mitschüler, **Wegwischbarkeit** senkt die Hemmschwelle für den ersten — vielleicht falschen — Strich. Schon ein kurzer Wechsel von Heft zu Wand ändert oft, wer schreibt, redet und mitdenkt.
+Drei Hebel wirken hier simultan:
+1. **Vertikalität:** Macht jeden Denkprozess für die Lehrkraft (360-Grad-Diagnose) und die Gruppe maximal sichtbar.
+2. **Stehen:** Verhindert physisches und mentales Verstecken.
+3. **Abwischbarkeit:** Senkt die Hemmschwelle für den ersten – potenziell falschen – Strich drastisch. 
+
+Ergänzt wird dies durch **Rotation**: Gruppen wechseln gezielt die Surfaces, um Ideen im Raum zirkulieren zu lassen und die Fixierung auf einen festen „Stammplatz“ zu brechen.
 
 ## Warum ist das gut?
 
-Sichtbare, gemeinsame Arbeit **mobilisiert Wissen** in der Gruppe. Du siehst formativ, **wer** mit welcher Idee unterwegs ist — gut kombinierbar mit Monitoring-Chart und gezieltem Plenum. Wechselnde Flächen verhindern zudem, dass dieselbe Gruppe dauerhaft dieselbe Wandfläche „belegt“ und andere sich zurückhalten.
+Es eliminiert das „Leere-Blatt-Syndrom“. Weil jeder Strich sofort korrigiert werden kann, beginnen Gruppen schneller zu arbeiten. Gleichzeitig verlierst du als Lehrkraft nie den Überblick: Ein Blick durch den Raum reicht, um zu sehen, welche Gruppe feststeckt, wer einen genialen Ansatz hat und wo eingegriffen werden muss.
 
-## Wie geht das im Unterricht?
+## Der Ablauf im Unterricht
 
-- **So gehst du vor:** Pro Gruppe eine **vertikale**, **löschbare** Fläche (Tafel, magnetisches Whiteboard, Wandfolie). Kurze Startanweisung, dann **stehen** — nicht erst, wenn alles ausdiskutiert ist. Plane **mehrere nutzbare vertikale Flächen** oder Stationen; lasse Gruppen nach einer Phase die **Wand wechseln** oder die Aufgabe an eine andere Station tragen, wenn es zur Aufgabe passt.
-- **Achte dabei auf:** Marker und Wischer, **Rotation** der Platzwahl, genug Abstand, damit alle an die Fläche kommen.
-- **Prüfe am Ende:** Liegt eine **sichtbare mathematische Spur** vor — oder nur verdecktes Heftwerk?
+- **Das Setup:** Jede Gruppe bekommt eine vertikale Fläche und *genau einen* Stift (erzwingt Kommunikation und abwechselndes Schreiben).
+- **Der Start:** Kurze Instruktion im Plenum, dann sofortiges Aufstehen. Die Diskussion findet stehend an der Wand statt, nicht vorab sitzend am Platz.
+- **Die Rotation:** Lass Gruppen nach einer gewissen Zeit die Station wechseln. Auftrag: „Geht eine Fläche weiter im Uhrzeigersinn, lest den Ansatz der Vorgruppe und rechnet von dort aus weiter.“
+- **Der Transfer:** Erst wenn die Lösung an der Wand ausdiskutiert und gesichert ist, wird das Destillat (evtl. unterstützt durch ein Foto) in das persönliche Heft übertragen.
 
-## Beispiele aus dem Unterricht
+## Beispiele aus dem Praxis
 
-1. **Drei Wände** mit Aufgabenvariationen — Gruppen **rotieren** und vergleichen Spuren.
-2. **Kurz** gemeinsam an der Wand modellieren, bei Bedarf **Foto** fürs Heft.
-3. **Mini-Whiteboards** für kurze Impulse; **große** vertikale Flächen, wenn längere gemeinsame Spuren und **Gruppenarbeit an einer gemeinsamen Oberfläche** sinnvoll sind.
+1. **Ideen-Staffellauf:** Drei verschiedene Aufgaben an drei Surfaces. Die Gruppen rotieren alle fünf Minuten, prüfen die Spuren der Vorgänger und arbeiten weiter.
+2. **Der schnelle Ausbruch:** Mitten in einer zähen Plenumssituation: „Steht auf, geht an die Tafeln, skizziert in zwei Minuten den Graphen.“
+3. **Gallery Walk zur Fehleranalyse:** Die Lehrkraft stoppt die Arbeitsphase. Alle treten einen Schritt zurück und betrachten die verschiedenen Lösungswege an den vertikalen Flächen im Raum, um gezielt Muster zu vergleichen.
 
-## Was kann eine Lehrkraft dabei falsch machen?
+## Anti-Patterns: Was bringt die Methode zum Scheitern?
 
-- Nur **ein** Board für die ganze Klasse — Schlange statt paralleler Gruppenarbeit.
-- **Permanente** Posterpflicht — Angst vor dem falschen Strich bleibt hoch.
-- **Keine Wechsel** — dieselben Gruppen kleben an derselben Fläche; andere bleiben unsichtbar oder ausgelassen.
-
-## Was kann in der Praxis schiefgehen?
-
-- Raum und **Barrierefreiheit** — Alternativen für Lernende, die Stehen schlecht vertragen (wechselnde Rollen, Sitzhöhe, kürzere Stehphasen).
+- **Permanenz erzwingen:** Flipcharts oder Poster aus Papier verwenden. Die Angst vor dem falschen Strich lähmt die Gruppe sofort.
+- **Zu wenig Platz:** Nur ein oder zwei nutzbare Flächen für die ganze Klasse. Es entstehen Warteschlangen, das Prinzip der simultanen Aktivierung kollabiert.
+- **Fehlende Rotation:** Wenn Gruppen monatelang an derselben Wandfläche kleben, entsteht territoriales Verhalten. Der Austausch zwischen den Gruppen sinkt.
+- **Inklusion ignorieren:** Keine Alternativen (wie höhenverstellbare Surfaces, Barhocker oder das zeitweise Zurücktreten) für Lernende schaffen, die physisch nicht dauerhaft stehen können.
 
 ## Querverweise
 
@@ -74,4 +77,4 @@ Sichtbare, gemeinsame Arbeit **mobilisiert Wissen** in der Gruppe. Du siehst for
 
 ## Quelle (Hintergrund)
 
-Liljedahl, P. (2016). *Building Thinking Classrooms …* (Studien zu Oberflächen, Stehen, Vertikalität, wechselnden Arbeitsorten).
+Liljedahl, P. (2016). *Building Thinking Classrooms …* (Die empirische Basis zur enormen Auswirkung von vertikalen, nicht-permanenten Flächen und der Arbeit im Stehen).
