@@ -1,70 +1,67 @@
 ---
 title: Monitoring-Chart — wer arbeitet mit welcher Idee?
-summary: Eine kleine Matrix während der Erarbeitung zeigt, welche Strategie wo auftaucht — die beste Grundlage für Auswahl und Reihenfolge im Plenum.
+summary: Das Monitoring-Chart macht aus passivem Beobachten gezieltes Steuern. Eine Matrix aus antizipierten Lösungswegen und Lerngruppen hält während der Arbeitsphase fest, wer welche Strategie nutzt – die evidenzbasierte Grundlage für Auswahl und Reihenfolge im Plenum.
 tags:
   - Plenum
   - Planung
   - Monitoring
 order: 28
 quiz:
-  - question: "Wozu dient ein Monitoring-Chart in einer Plenumsplanung?"
+  - question: "Wozu dient ein Monitoring-Chart in der Unterrichtsplanung?"
     options:
-      - "Während der Arbeitsphase schnell festhalten, welche Lösungswege wo vorkommen — als Grundlage für Auswahl und Reihenfolge im Plenum."
-      - "Eine sichtbare Aktivitätsdokumentation produzieren, die bei Beschwerden Beteiligung der Klasse belegen kann."
-      - "Den Lernfortschritt einzelner Gruppen für die nächste Notenkonferenz schriftlich festhalten."
+      - "Um während der Arbeitsphase Lösungswege zu erfassen und als Datenbasis für die Auswahl und Reihenfolge im Plenum zu nutzen."
+      - "Um eine sichtbare Aktivitätsdokumentation zu produzieren, die die allgemeine Beteiligung der Klasse belegt."
+      - "Um den Lernfortschritt einzelner Gruppen für Bewertungszwecke schriftlich zu fixieren."
     correctIndex: 0
-    explanation: "Das Chart ist ein Steuerwerkzeug für die Diskussion — kein Beleg- und kein Bewertungsbogen. Wer es zur Doku einsetzt, verliert es als Planungshilfe."
-  - question: "Welche Achsen tragen ein wirksames Monitoring-Chart?"
+    explanation: "Das Chart ist ein reines Steuerwerkzeug für die mathematische Diskussion. Wer es als Dokumentations- oder Bewertungsbogen zweckentfremdet, verliert seinen Nutzen als agile Planungshilfe."
+  - question: "Wie ist ein wirksames Monitoring-Chart aufgebaut?"
     options:
-      - "Aufgabe für Aufgabe ein Häkchen, ob die jeweilige Gruppe fertig ist — so siehst du den Bearbeitungsstand."
-      - "Die zuvor antizipierten Strategien als eine Achse, die Gruppen oder Lernenden als andere — Häkchen oder kurzer Code beim Rundgang."
-      - "Aufgabenstellung und Lösungszeit, um Effizienzunterschiede sichtbar zu machen."
+      - "Eine Liste der Aufgaben mit Häkchen pro Gruppe, um den Bearbeitungsstand (fertig / nicht fertig) zu kontrollieren."
+      - "Eine Kreuztabelle: Die antizipierten Lösungsstrategien bilden die eine Achse, die Gruppen die andere. Markiert wird mittels Kürzel."
+      - "Eine Gegenüberstellung von Aufgabenstellung und benötigter Lösungszeit, um Effizienzunterschiede zu messen."
     correctIndex: 1
-    explanation: "Reine Fertig-Häkchen und Tempo-Messungen sagen wenig über mathematische Substanz — das siehst du beim Einsammeln ohnehin. Erst die Kreuztabelle Strategie × Person oder Gruppe macht das Chart zur Landkarte."
-  - question: "Du hast drei Wege antizipiert, in der Klasse taucht spontan ein vierter auf. Wie gehst du damit um?"
+    explanation: "Reine Status- oder Tempomessungen liefern keine mathematische Substanz. Erst die Kreuztabelle (Strategie × Gruppe) macht das Chart zur nutzbaren Landkarte für das Plenum."
+  - question: "Es taucht spontan ein vierter, nicht antizipierter Lösungsweg in der Klasse auf. Wie reagierst du?"
     options:
-      - "Den vierten ignorieren — er steht nicht im Chart und stört die geplante Diskussion."
-      - "Den vierten Weg als zusätzliche Spalte aufnehmen, kurz mathematisch einordnen und für die Auswahl mitdenken."
-      - "Die Erarbeitungsphase verlängern, bis sich der vierte Weg einer der drei vorbereiteten Spalten zuordnen lässt."
+      - "Den Weg ignorieren, da er nicht im Chart steht und das geplante Plenum stört."
+      - "Den Weg als neue Spalte aufnehmen, mathematisch einordnen und in die Plenumsplanung integrieren."
+      - "Die Arbeitsphase verlängern, bis die Gruppe auf einen der antizipierten Wege umschwenkt."
     correctIndex: 1
-    explanation: "Antizipation ist Landkarte, nicht Zwang. Ignorieren verwirft potenziell die produktivste Spur. Die Diskussion an die Vorbereitung anzupassen, kehrt das Verhältnis um."
-
+    explanation: "Antizipation ist eine Orientierungshilfe, kein Zwangskorsett. Ignorieren kostet wertvolles mathematisches Potenzial. Das Chart muss die Realität im Raum abbilden, nicht umgekehrt."
 ---
 
 ## Kernaussage
 
-**Schriftliche Übersicht** beim Rundgang macht aus Beobachtung **Entscheidungsmaterial** fürs Plenum.
+Eine schriftliche Matrix transformiert passives Beobachten beim Rundgang in harte Daten für die Plenumssteuerung. 
 
 ## Was ist das?
 
-Ein **Monitoring-Chart** ist eine kleine Matrix, die du **vor** der Stunde anlegst: In den **Spalten** stehen die **Strategien oder Darstellungen**, die du erwartest (algebraisch, zeichnerisch, Zahlbeispiel, typischer Fehler …) — in den **Zeilen** die Gruppen oder Lernenden. Während des Rundgangs durch die Erarbeitungsphase trägst du nur **ein Häkchen oder ein Kürzel** ein, wo etwas auftaucht. So entsteht in wenigen Minuten eine **Landkarte**: Wer hat welchen Weg, wo sind Stolperstellen, wer bringt etwas ins Plenum ein? Im Plenum musst du nicht mehr aus dem Gedächtnis rekonstruieren — du **wählst aus** und legst die **Reihenfolge** fest.
+Das Monitoring-Chart ist eine Kreuztabelle, die **vor** der Stunde angelegt wird. Die Spalten enthalten die antizipierten mathematischen Strategien (z. B. algebraisch, grafisch, systematisches Probieren, typische Fehlkonzepte). Die Zeilen listen die Gruppen oder Lernenden auf. 
+
+Während der Erarbeitungsphase wird nicht mehr frei beobachtet, sondern systematisch erhoben: Taucht ein Weg auf, wird ein Häkchen oder Kürzel gesetzt. Das Resultat ist eine diagnostische Landkarte in Echtzeit. Sie zeigt, wer feststeckt, wer Vielfalt generiert und wer sich in welcher Reihenfolge für die Präsentation eignet.
 
 ## Warum ist das gut?
 
-Unter Zeitdruck vergisst du nicht, **wo** welche Idee lag. Du siehst auf einen Blick, ob **Vielfalt** entsteht oder ob alle denselben Weg fahren. Das unterstützt eine **faire** und **zielorientierte** Auswahl, wer ins Plenum kommt und was zuerst dran ist.
+Es entlastet das Arbeitsgedächtnis radikal. Unter Zeitdruck musst du Lösungswege, Fehler und Gruppenkonstellationen nicht mental nachhalten. Das Chart liefert die evidenzbasierte Grundlage, um das Plenum zielgerichtet zu choreografieren, statt reflexartig auf die erste Wortmeldung oder die lauteste Gruppe zurückzugreifen.
 
-## Wie geht das im Unterricht?
+## Der Ablauf im Unterricht
 
-- **So gehst du vor:** Vor der Stunde Chart skizzieren (Papier, Whiteboard, digitale Tabelle). Beim Rundgang **kurz bleiben** — nur **ankreuzen** oder Codes setzen; längere Gespräche führen später gezielt nach der Matrix.
-- **Achte dabei auf:** Datenschutz und wertschätzende Nutzung — es geht um **Mathematik sichtbar machen**, nicht um Ranking oder Schnelligkeitsvergleiche.
-- **Prüfe am Ende:** Hat das Chart deine Entscheidung für **Reihenfolge** und **Fokus** im Plenum erleichtert?
+1. **Vorbereitung (Antizipation):** Chart vorab skizzieren. Erwartete Wege und typische Fehler in die Spalten eintragen. Eine leere Spalte für "Unerwartetes" einplanen.
+2. **Datenerhebung (Monitoring):** Während der Arbeitsphase zirkulieren. Kurz bleiben. Nicht sofort intervenieren, sondern diagnostizieren. Die Lösungswege der Gruppen in der Matrix verorten.
+3. **Steuerung (Selektion und Sequenzierung):** Vor Plenumsbeginn das Chart scannen. Entscheidungen treffen: Welcher konzeptionelle Fehler wird zuerst dekonstruiert? Welche Gruppe stellt danach den Basisweg vor? Wer liefert im Anschluss die elegante Abstraktion?
 
-## Beispiele aus dem Unterricht
+## Beispiele aus der Praxis
 
-1. **Drei erwartete Wege** (algebraisch, zeichnerisch, Zahlbeispiel) × **sechs Gruppen** — beim Rundgang abhaken; nach der Phase siehst du sofort, ob zwei Gruppen denselben Fehlerweg teilen und sich das im Plenum lohnt.
-2. **Eine Spalte „Fragen / Unklar“** für Gruppen, die stecken — später entscheiden: kurz in der Gruppe klären oder als gemeinsame Stolperstelle ins Plenum.
-3. **Digitales Pad** mit denselben Spalten — du musst es nicht projizieren; es dient dir als Leitplanke beim Gehen und beim späteren Kurznotieren.
+1. **Mustererkennung:** Drei antizipierte Lösungswege auf sechs Gruppen verteilt. Das Chart zeigt sofort, ob die Klasse einseitig arbeitet oder ob genügend methodische Vielfalt für einen echten Vergleich im Plenum existiert.
+2. **Fehler-Clustering:** Mehrere Gruppen hängen an derselben konzeptionellen Hürde (z. B. Vorzeichenfehler bei Substitution). Das Chart macht das Cluster sichtbar. Du brichst die Einzelarbeit ab und holst genau diesen Knotenpunkt gebündelt ins Plenum.
+3. **Der unerwartete Weg:** Eine Gruppe nutzt einen Ansatz, der in der Vorbereitung übersehen wurde. Er wird im Chart notiert und gezielt als Kontrast zu den Standardwegen ans Ende der Plenumsphase gesetzt.
 
-## Was kann eine Lehrkraft dabei falsch machen?
+## Anti-Patterns: Was bringt die Methode zum Scheitern?
 
-- Das Chart **zu fein** gestalten — dann pflegst du die Tabelle statt die Klasse zu sehen.
-- Das Chart **dekorativ** ausfüllen und beim Plenum **nicht** danach auswählen — dann war der Aufwand umsonst.
-- **Nur Fertig-Häkchen** oder Zeiten eintragen — das sagt wenig darüber, **welche mathematische Idee** wo steckt.
-
-## Was kann in der Praxis schiefgehen?
-
-- Zu wenig Zeit für **Rundgänge** — dann bleibt die Matrix leer oder veraltet.
-- Spontane, produktive Wege **nicht** ergänzen — die Antizipation soll helfen, nicht die Realität ausblenden.
+- **Dekorative Datenerhebung:** Das Chart wird akribisch ausgefüllt, aber die Plenumsdiskussion startet am Ende doch mit der ziellosen Frage: „Wer möchte sein Ergebnis vorstellen?“. Die erhobenen Daten müssen die Regie übernehmen.
+- **Zu hohe Granularität:** Das Chart ist so detailliert formatiert, dass die Pflege mehr Aufmerksamkeit frisst als die Beobachtung der Lerngruppe. Ein simples Häkchen oder Kürzel muss reichen.
+- **Fokus auf Tempo statt Substanz:** Es wird nur eingetragen, wer „fertig“ ist. Das hilft zwar bei der Zeitsteuerung, liefert aber null Erkenntnisgewinn darüber, *welche* mathematische Idee im Plenum verhandelt werden muss.
+- **Tunnelblick:** Die vorab notierten Spalten werden als absolute Wahrheit betrachtet. Geniale, aber unerwartete Schülerideen werden ignoriert, weil sie nicht ins vorbereitete Raster passen.
 
 ## Querverweise
 
@@ -74,4 +71,4 @@ Unter Zeitdruck vergisst du nicht, **wo** welche Idee lag. Du siehst auf einen B
 
 ## Quelle (Hintergrund)
 
-Smith, M. S., & Stein, M. K. (2018). *5 Practices …* (2nd ed., Kap. 9 „Lesson 6“; Anhänge zu Monitoring-Charts).
+Smith, M. S., & Stein, M. K. (2018). *5 Practices for Orchestrating Productive Mathematics Discussions* (2nd ed., insb. Kap. 9 sowie Anhänge zur praktischen Nutzung von Monitoring-Charts).
