@@ -91,12 +91,21 @@ Die Idee scheitert nicht am Konzept, sondern an der Logistik. Wenn Mini-Whiteboa
 2. **Der Zwischenschritt:** Bei einer Gleichungsumformung: "Notiert nur die nächste Zeile." – Zwei typische Varianten gezielt zum Vergleich auswählen.
 3. **Der Konzept-Check:** "Skizziert die grobe Lage der Parabel." – Fokus auf Mustererkennung, nicht auf exaktes Rechnen.
 
+## Strategien bei Materialausfällen (Low-Admin)
+
+Wenn kein Budget für Klassensätze und kein fester Raum vorhanden ist, scheitert die Methode oft an leeren Stiften oder vergessenen Boards. Administrative Listen („Stift vergessen“) erzeugen jedoch oft mehr Aufwand als Nutzen. Ziel ist eine **strukturelle Konsequenz**, die im Moment des Unterrichts wirkt, ohne die Lehrkraft durch Dokumentation zu belasten:
+
+* **Der Entzug der Anonymität:** Der größte Vorteil der Boards ist die Sicherheit in der Masse. Wer im Heft arbeitet, verliert dieses Privileg. Da die Lösung von vorne nicht lesbar ist, wird die Person beim Auswerten gezielt angesprochen: „Da ich dein Board nicht sehen kann: Erkläre uns bitte kurz deinen Gedankengang.“ Der Wunsch, wieder in der anonymen Masse unterzutauchen, erhöht die Motivation zur Materialpflege.
+* **Physische Sichtbarkeit beim Zeigen:** Wer auf Papier antwortet, muss beim Kommando „3, 2, 1, zeigen“ aufstehen, damit das Ergebnis für die Lehrkraft identifizierbar ist. Dieses „Herausstechen“ aus der sitzenden Gruppe ist für Lernende deutlich unangenehmer als eine bloße Ermahnung.
+* **Zeitliche Konsequenz (Pause):** Da die synchrone Diagnose während der Stunde für Personen ohne Board nicht effizient möglich war, erfolgt eine individuelle Kurzkontrolle des Hefts direkt nach dem Klingeln. Der Verlust von 1–2 Minuten Pausenzeit ist eine der wirksamsten Währungen und erfordert keinerlei schriftliche Nachbereitung.
+
 ## Anti-Patterns: Was bringt die Methode zum Scheitern?
 
 * **Die Gleichzeitigkeit opfern:** Die Aufgaben sind zu lang oder komplex. Die Klasse wird nie gleichzeitig fertig, das gemeinsame Zeigen entfällt.
 * **Nur Schmierzettel-Nutzung:** Die Boards werden benutzt, aber nie auf Kommando hochgehalten. Der zentrale Effekt der Diagnose und Massenbeteiligung stirbt.
 * **Nur das Richtige feiern:** Spannende, häufige Fehlkonzepte werden ignoriert, weil man schnell zur "korrekten" Lösung eilt.
 * **Logistik ignorieren:** Keine festen Abläufe für Ausgabe und Einsammeln etabliert. Das führt zu Zeitverlust und der Lehrkraft-Aussage: "Das ist mir zu viel Aufwand."
+* **Nutzlose Ersatzbeschäftigung:** Wenn Material fehlt, wird die Beteiligung aufgegeben. Die 100-Prozent-Quote muss auch mit Heft/Papier (unter Inkaufnahme der o.g. Konsequenzen) eingefordert werden.
 
 ## Querverweise
 
@@ -107,4 +116,4 @@ Die Idee scheitert nicht am Konzept, sondern an der Logistik. Wenn Mini-Whiteboa
 
 ## Quelle (Hintergrund)
 
-Die Prinzipien der „mass participation“ und die Systematik der Mini-Whiteboards basieren primär auf **Tips for Teachers** (Craig Barton, insb. Tip 12).
+Die Prinzipien der „mass participation“ und die Systematik der Mini-Whiteboards basieren primär auf **Tips for Teachers** (Craig Barton, insb. Tip 12). Diese Seite ist eine eigenständige, didaktisch fokussierte Aufbereitung für die Praxis.
