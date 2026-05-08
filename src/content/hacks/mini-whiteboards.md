@@ -27,7 +27,7 @@ quiz:
       - Mehr Hausaufgaben zum Thema aufgeben, damit die Beteiligung schriftlich nachgeholt wird.
     correctIndex: 1
     explanation: Gezieltes Aufrufen verschiebt das Problem nur auf Einzelne, löst aber nicht das Grundmuster der Schnellantworten. Synchrones Antworten ändert die Spielregeln für alle gleichzeitig.
-  - question: Warum sollten die Bretter nach Fertigstellung mit der Schrift nach unten über die Tischkante gehalten werden ("Hover")?
+  - question: Warum sollten die Boards nach Fertigstellung mit der Schrift nach unten über die Tischkante gehalten werden ("Hover")?
     options:
       - Damit von vorne erkennbar ist, wer noch arbeitet, Stifte nicht rollen und Nachbarn nicht abschreiben können.
       - Damit Lernende die Antwort vor sich selbst verbergen und später unbeeinflusst umschreiben können.
@@ -45,7 +45,7 @@ quiz:
 
 ## Kernaussage
 
-Wenn alle gleichzeitig antworten, wird Denken sichtbar. Klare Routinen machen das Brett vom Schmierzettel zum schärfsten Diagnosewerkzeug im Raum. 
+Wenn alle gleichzeitig antworten, wird Denken sichtbar. Klare Routinen machen das Board vom Schmierzettel zum schärfsten Diagnosewerkzeug im Raum. 
 
 ## Was ist das?
 
@@ -53,13 +53,13 @@ Mini-Whiteboards erzwingen **hohe Beteiligung**. Statt der üblichen Meldung ein
 
 ## Warum ist das gut?
 
-Es beendet das Versteckspiel im Plenum. Du erhältst ein ungeschöntes Bild vom tatsächlichen Lernstand der gesamten Gruppe. Da sich Fehler auf dem Brett spurlos wegwischen lassen, sinkt die Hemmschwelle für erste Lösungsversuche drastisch im Vergleich zur dauerhaften Heftführung.
+Es beendet das Versteckspiel im Plenum. Du erhältst ein ungeschöntes Bild vom tatsächlichen Lernstand der gesamten Gruppe. Da sich Fehler auf dem Board spurlos wegwischen lassen, sinkt die Hemmschwelle für erste Lösungsversuche drastisch im Vergleich zur dauerhaften Heftführung.
 
 ## Der Basis-Ablauf im Unterricht
 
 1. **Knappe Aufgabe stellen:** Eindeutige Erwartung formulieren (z. B. "Schreibt nur den nächsten Umformungsschritt groß auf").
 2. **Denkzeit geben:** Absolute Ruhe.
-3. **Synchrones Zeigen:** Kommando geben ("3, 2, 1, zeigen"). Alle heben die Bretter.
+3. **Synchrones Zeigen:** Kommando geben ("3, 2, 1, zeigen"). Alle heben die Boards.
 4. **Auswerten:** Typische Muster, Fehler oder Lösungswege sofort aufgreifen und klären.
 
 ## Feinheiten: Stellschrauben für den Erfolg
@@ -67,18 +67,18 @@ Es beendet das Versteckspiel im Plenum. Du erhältst ein ungeschöntes Bild vom 
 Die Idee scheitert nicht am Konzept, sondern an der Logistik. Wenn Mini-Whiteboards zur festen Praxis werden, zählen folgende Routinen:
 
 ### 1. Reibungslose Logistik
-* **Ablauf automatisieren:** Wo liegen die Bretter? Wer teilt sie aus? Die Verteilung muss in unter einer Minute passieren. Sinnvoll: Feste Sets (Brett, Stift, Tuch) pro Person.
-* **Material pflegen:** Bretter ohne Kratzer, volle Stifte, saubere Tücher. Wenn das Material nervt, stirbt die Methode aus Frust. **Ersatzkappen** sammeln, um Austrocknen zu verhindern.
+* **Ablauf automatisieren:** Wo liegen die Boards? Wer teilt sie aus? Die Verteilung muss in unter einer Minute passieren. Sinnvoll: Feste Sets (Board, Stift, Tuch) pro Person.
+* **Material pflegen:** Boards ohne Kratzer, volle Stifte, saubere Tücher. Wenn das Material nervt, stirbt die Methode aus Frust. **Ersatzkappen** sammeln, um Austrocknen zu verhindern.
 
 ### 2. Standardisierte Handgriffe
-* **Der "Hover"-Griff:** Wer fertig ist, legt den Stift nicht ab (klappert), sondern hält das Brett mit der Schrift nach unten leicht über die Tischkante. Du siehst sofort, wer fertig ist; Nachbarn können nicht abgucken.
+* **Der "Hover"-Griff:** Wer fertig ist, legt den Stift nicht ab (klappert), sondern hält das Board mit der Schrift nach unten leicht über die Tischkante. Du siehst sofort, wer fertig ist; Nachbarn können nicht abgucken.
 * **Beide Seiten nutzen:** Rückseite für Skizzen/Nebenrechnungen, Vorderseite groß und deutlich für das Endergebnis.
-* **Zeigen in Portionen:** Bei großen Klassen nicht alle 30 Bretter gleichzeitig fordern. Lass reihenweise zeigen ("Reihe 1, zeigen – danke. Reihe 2, zeigen..."). Das verhindert Überforderung beim Lesen und senkt den Anpassungsdruck der vorderen Reihen.
+* **Zeigen in Portionen:** Bei großen Klassen nicht alle 30 Boards gleichzeitig fordern. Lass reihenweise zeigen ("Reihe 1, zeigen – danke. Reihe 2, zeigen..."). Das verhindert Überforderung beim Lesen und senkt den Anpassungsdruck der vorderen Reihen.
 
 ### 3. Diagnostische Auswertung
 * **Der erste Blick:** Richte deinen Blick gezielt dorthin, wo Lösungen erfahrungsgemäß zuerst kippen (schwächere oder unsichere Lernende), um das Minimalverständnis im Raum zu erfassen.
-* **Leere Bretter sind Daten:** Ein leeres Brett ist kein Unfall. Binde diese Personen direkt, aber unterstützend ein: "Was fehlt dir für den ersten Schritt?" Wer merkt, dass er mit "Nichts tun" nicht durchkommt, beginnt mitzudenken.
-* **Fehler entpersonalisieren:** Wenn du einen konzeptionellen Fehler besprichst, lass die Bretter erst wieder runternehmen. Steige ein mit: "Ich habe unter anderem diesen Lösungsweg gesehen..." – das hält den Fokus auf der Sache, nicht auf der Person.
+* **Leere Boards sind Daten:** Ein leeres Brett ist kein Unfall. Binde diese Personen direkt, aber unterstützend ein: "Was fehlt dir für den ersten Schritt?" Wer merkt, dass er mit "Nichts tun" nicht durchkommt, beginnt mitzudenken.
+* **Fehler entpersonalisieren:** Wenn du einen konzeptionellen Fehler besprichst, lass die Boards erst wieder runternehmen. Steige ein mit: "Ich habe unter anderem diesen Lösungsweg gesehen..." – das hält den Fokus auf der Sache, nicht auf der Person.
 
 ### 4. Integration in den Lernprozess
 * **Zusammenspiel mit dem Heft:** Bei längeren Heftphasen nur Zwischenergebnisse aufs Brett schreiben lassen. So checkst du beim Rundgang die Richtung, ohne jede Person einzeln kontrollieren zu müssen.
@@ -94,7 +94,7 @@ Die Idee scheitert nicht am Konzept, sondern an der Logistik. Wenn Mini-Whiteboa
 ## Anti-Patterns: Was bringt die Methode zum Scheitern?
 
 * **Die Gleichzeitigkeit opfern:** Die Aufgaben sind zu lang oder komplex. Die Klasse wird nie gleichzeitig fertig, das gemeinsame Zeigen entfällt.
-* **Nur Schmierzettel-Nutzung:** Die Bretter werden benutzt, aber nie auf Kommando hochgehalten. Der zentrale Effekt der Diagnose und Massenbeteiligung stirbt.
+* **Nur Schmierzettel-Nutzung:** Die Boards werden benutzt, aber nie auf Kommando hochgehalten. Der zentrale Effekt der Diagnose und Massenbeteiligung stirbt.
 * **Nur das Richtige feiern:** Spannende, häufige Fehlkonzepte werden ignoriert, weil man schnell zur "korrekten" Lösung eilt.
 * **Logistik ignorieren:** Keine festen Abläufe für Ausgabe und Einsammeln etabliert. Das führt zu Zeitverlust und der Lehrkraft-Aussage: "Das ist mir zu viel Aufwand."
 
